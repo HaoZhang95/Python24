@@ -11,10 +11,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day02/basic04.py">
+        <entry file="file://$PROJECT_DIR$/day04/basic01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="48">
+              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -41,6 +41,9 @@
         <option value="$PROJECT_DIR$/day02/basic02.py" />
         <option value="$PROJECT_DIR$/day02/basic03.py" />
         <option value="$PROJECT_DIR$/day02/basic04.py" />
+        <option value="$PROJECT_DIR$/day03/basic01.py" />
+        <option value="$PROJECT_DIR$/day03/basic02.py" />
+        <option value="$PROJECT_DIR$/day04/basic01.py" />
       </list>
     </option>
   </component>
@@ -65,11 +68,6 @@
               <item name="01Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="01Python" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="01Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01Python" type="462c0819:PsiDirectoryNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -80,7 +78,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,8 +92,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic04">
-    <configuration name="01关键字" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.basic02 (1)">
+    <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="01Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,11 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\01Python\day02\basic01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day03/basic01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic02 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="01Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +122,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/basic01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day03/basic02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic02 (1)" />
+        <item itemvalue="Python.basic01 (1)" />
         <item itemvalue="Python.basic04" />
         <item itemvalue="Python.basic03" />
         <item itemvalue="Python.basic02" />
-        <item itemvalue="Python.01关键字" />
-        <item itemvalue="Python.basic01" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +225,13 @@
     <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24893162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24866596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24239245" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2413793" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39916405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -284,8 +282,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day02/basic04.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="477">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="752" selection-start-line="752" selection-end-line="752" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
