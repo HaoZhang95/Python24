@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8049d1ed-035f-43f7-93bf-88066c865eff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/day10/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/day10/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/day10/basic03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/basic04.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11/basic03.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day10/basic03.py">
+        <entry file="file://$PROJECT_DIR$/day11/PoliceVsTheif.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="261">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -76,12 +75,18 @@
         <option value="$PROJECT_DIR$/day10/basic01.py" />
         <option value="$PROJECT_DIR$/day10/basic02.py" />
         <option value="$PROJECT_DIR$/day10/basic03.py" />
+        <option value="$PROJECT_DIR$/day11/basic01.py" />
+        <option value="$PROJECT_DIR$/day11/basic02.py" />
+        <option value="$PROJECT_DIR$/day11/basic04.py" />
+        <option value="$PROJECT_DIR$/day11/basic03.py" />
+        <option value="$PROJECT_DIR$/day12/basic01.py" />
+        <option value="$PROJECT_DIR$/day11/PoliceVsTheif.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
     <option name="height" value="1208" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -102,7 +107,12 @@
             <path>
               <item name="01Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="01Python" type="462c0819:PsiDirectoryNode" />
-              <item name="day10" type="462c0819:PsiDirectoryNode" />
+              <item name="day11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01Python" type="462c0819:PsiDirectoryNode" />
+              <item name="day12" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -129,28 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic01">
-    <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="01Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day10/basic01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.basic04">
     <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="01Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic02 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="01Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,11 +169,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day11" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day10/basic02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day11/basic02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic03 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day11" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day11/basic03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,7 +224,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic04 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="01Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -222,11 +232,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day11" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day09/basic04.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\01Python\day11\PoliceVsTheif.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic04" />
+        <item itemvalue="Python.basic03 (1)" />
+        <item itemvalue="Python.basic02" />
         <item itemvalue="Python.basic01" />
         <item itemvalue="Python.basic03" />
-        <item itemvalue="Python.basic02 (1)" />
-        <item itemvalue="Python.basic01 (1)" />
-        <item itemvalue="Python.basic04 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -259,10 +269,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="0" width="782" height="966" extended-state="0" />
+    <frame x="762" y="0" width="781" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.49933067" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.49865952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -561,8 +571,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day10/basic03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="333">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day12/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/basic03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/PoliceVsTheif.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
         </state>
       </provider>
     </entry>
