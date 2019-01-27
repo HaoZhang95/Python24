@@ -107,5 +107,4 @@ def main():
     # # 填充子弹
     # ak47.add_bullets(50)
 
-
 main()
