@@ -26,16 +26,3 @@
 
 [Issues](https://github.com/HaoZhang95/PythonAndMachineLearning/issues)
 
-## License
-
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
----
-
-**[⬆ 返回顶部](#catalog)**
-
-[opensource_icon]: http://nieweidong.github.com/images/open_source.svg
-[free_icon]: http://nieweidong.github.com/images/freeware.svg
-[hot_icon]: http://nieweidong.github.com/images/hot.svg
-[rec_icon]: http://nieweidong.github.com/images/rec.svg
-[must_icon]: http://nieweidong.github.com/images/must.svg
