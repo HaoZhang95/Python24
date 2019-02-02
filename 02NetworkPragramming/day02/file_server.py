@@ -4,6 +4,7 @@
 """
 import socket, os
 
+
 def read_file_data(file_name):
     """获取指定的文件数据"""
     try:
@@ -17,8 +18,12 @@ def read_file_data(file_name):
         file.close()
         return file_data
 
+
 # 创建一个服务器socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# 设置socket断开连接的选项,close的时候会立即释放，答应断开分手，1表示确定，0为取消
+server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 # 绑定端口
 server_socket.bind("", 8888)
