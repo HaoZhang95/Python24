@@ -8,7 +8,7 @@
 
 <h2 id="catalog">目录</h2>
 
-- [01Python基础](#python_basic)
+- [01Python基础](http://htmlpreview.github.io/?https://github.com/taijizhizao/markdowntoc/blob/master/index.html)
   - [基本语法](#fedev)
   - [I/O流读取](#node_read)
   - [面向对象](#interview)
