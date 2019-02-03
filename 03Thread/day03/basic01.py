@@ -13,6 +13,8 @@
     3- apply_async非阻塞的添加任务，不会等待任务结束，可以直接执行之后的代码
     4- 进程池中只要主进程已退出，所以正在执行的任务全部终止
     5- 池join的阻塞等待，只能在pool。close之后才能执行
+    6- 进程池的close的含义是：不在接收新的任务请求
+    7- 进程之前的通信，使用的是multiprocessing.Queue(),而进程池中的通信使用的是multiprocessing.Manager().Queue()
 """
 import multiprocessing, time, os, random
 
@@ -42,8 +44,11 @@ def processPool(max_size):
     pool.apply_async(func=worker, args=("333",))
     print("333任务执行完成")
 
-    # 关闭进程池
+    # 关闭进程池,正常关闭，不再允许添加新的任务
     pool.close()
+
+    # 立即终止进程池，暴力终止
+    # pool.terminate()
 
     # 等待所有任务执行完成
     pool.join()
