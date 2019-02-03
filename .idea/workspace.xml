@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39f1635e-884e-487d-9feb-bb8883fb9edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/03Thread/day04/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day04/basic03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day01/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day01/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/file_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/file_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/file_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/file_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Thread/day04/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day04/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Thread/day04/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day04/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04WebServer/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day01/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/03Thread/day04/basic03.py">
+        <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="72">
+              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -62,7 +73,6 @@
         <option value="$PROJECT_DIR$/03Thread/day03/basic01.py" />
         <option value="$PROJECT_DIR$/03Thread/day03/basic02.py" />
         <option value="$PROJECT_DIR$/03Thread/day03/basic03.py" />
-        <option value="$PROJECT_DIR$/04WebServer/day01/basic01.py" />
         <option value="$PROJECT_DIR$/04WebServer/day01/basic02.py" />
         <option value="$PROJECT_DIR$/05Regex/README.md" />
         <option value="$PROJECT_DIR$/06AdvancedPyton/README.md" />
@@ -71,16 +81,20 @@
         <option value="$PROJECT_DIR$/07MySql/README.md" />
         <option value="$PROJECT_DIR$/08WSGI_Mini_Web/README.md" />
         <option value="$PROJECT_DIR$/09WebFramework/README.md" />
+        <option value="$PROJECT_DIR$/03Thread/day04/basic03.py" />
         <option value="$PROJECT_DIR$/10Html_Css/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/03Thread/day04/basic03.py" />
+        <option value="$PROJECT_DIR$/03Thread/day04/basic01.py" />
+        <option value="$PROJECT_DIR$/03Thread/day04/basic02.py" />
+        <option value="$PROJECT_DIR$/04WebServer/day01/basic01.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="642" />
-    <option name="width" value="977" />
-    <option name="height" value="1208" />
+    <option name="x" value="954" />
+    <option name="y" value="1" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -100,13 +114,13 @@
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="03Thread" type="462c0819:PsiDirectoryNode" />
+              <item name="04WebServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="03Thread" type="462c0819:PsiDirectoryNode" />
-              <item name="day04" type="462c0819:PsiDirectoryNode" />
+              <item name="04WebServer" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -119,7 +133,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -145,8 +159,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic03">
-    <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.basic01 (2)">
+    <configuration name="basic01 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,11 +168,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day03" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04WebServer/day01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day03/basic01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04WebServer/day01/basic01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonAndMachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day04/basic01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,7 +223,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic03 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,11 +231,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day04" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day02/basic03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day04/basic02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,34 +265,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic04 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonAndMachineLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day02" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day02/basic04.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic01 (2)" />
+        <item itemvalue="Python.basic02" />
+        <item itemvalue="Python.basic01" />
         <item itemvalue="Python.basic03" />
         <item itemvalue="Python.basic02 (1)" />
-        <item itemvalue="Python.basic01 (1)" />
-        <item itemvalue="Python.basic04 (1)" />
-        <item itemvalue="Python.basic03 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -275,15 +289,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21650165" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17272249" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2819149" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,14 +312,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/00Python/day13/game_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01Linux/day01/basic02.py" />
     <entry file="file://$PROJECT_DIR$/01Linux/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -313,14 +319,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/day02/basic02.py">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day02/basic02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/day02/file_client.py">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day02/file_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
@@ -330,10 +336,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03Thread/day04/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/day02/file_server.py">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day02/file_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="67" />
@@ -367,21 +370,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/day01/basic01.py">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="48" selection-start-line="48" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/day01/basic02.py">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day01/basic02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/day02/basic01.py">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day02/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
@@ -464,9 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic02.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -502,21 +502,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02NetworkPragramming/README.md">
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="829">
             <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03Thread/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-985">
-            <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
@@ -603,24 +593,24 @@
     <entry file="file://$PROJECT_DIR$/10Html_Css/day05/basic01.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/10Html_Css/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1728">
-            <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="456">
+            <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10Html_Css/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="311">
+            <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
@@ -628,8 +618,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03Thread/day04/basic03.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03Thread/day04/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/urllib/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="228" column="59" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03Thread/day04/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03Thread/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-48">
+            <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>

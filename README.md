@@ -15,7 +15,7 @@
 
 - [x] [00Python基础](/00Python/README.md)
 - [x] [01Linux](/01Linux/README.md)
-- [x] [02网络编程](/02NetworkPragramming/README.md)
+- [x] [02网络编程](/02NetworkProgramming/README.md)
 - [x] [03多任务](/03Thread/README.md)
 - [x] [04WebServer](/04WebServer/README.md)
 - [x] [05Regex](/05Regex/README.md)
