@@ -13,10 +13,10 @@
 
 <h2 id="catalog">目录</h2>
 
-- [x] [00Python基础](/01Linux/README.md)
+- [x] [00Python基础](/00Python/README.md)
 - [x] [01Linux](/01Linux/README.md)
-- [x] [02网络编程](/01Linux/README.md)
-- [x] [03多任务](/01Linux/README.md)
+- [x] [02网络编程](/02NetworkProgramming/README.md)
+- [x] [03多任务](/03Thread/README.md)
 
 
 #### 您可以通过以下方式联系到我：
