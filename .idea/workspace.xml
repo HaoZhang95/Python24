@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39f1635e-884e-487d-9feb-bb8883fb9edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00Python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/00Python/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03Thread/day03/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day03/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03Thread/day03/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day03/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03Thread/day03/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day03/basic03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03Thread/day04/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day04/basic03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03Thread/day04/basic03.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="336">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -634,8 +628,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03Thread/day04/basic03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="336">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
         </state>
       </provider>
     </entry>
