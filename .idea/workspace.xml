@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39f1635e-884e-487d-9feb-bb8883fb9edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day01/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day01/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/file_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/file_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkPragramming/day02/file_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/day02/file_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03Thread/day04/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day04/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03Thread/day04/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/day04/basic02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04WebServer/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day01/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="497">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -90,9 +79,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="954" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -104,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,7 +115,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,15 +277,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17272249" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.35005337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2819149" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28141782" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -590,9 +578,7 @@
     <entry file="file://$PROJECT_DIR$/09WebFramework/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/10Html_Css/day05/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/10Html_Css/day05/basic01.py" />
     <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -656,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="497">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
