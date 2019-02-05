@@ -10,8 +10,8 @@ class HTTPServer(object):
     def __init__(self):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-        # socket优化，避免程序关闭后重启会出现地址重用的问题
-        # 参数1：设置socket所在的层级
+        # socket优化，一个服务器的端口释放后会等待两分钟之后才能再被使用，SO_REUSEADDR是让端口释放后立即就可以被再次使用。
+        # 参数1：设置socket所在的层级，SOL_SOCKET: 基本套接口
         # 参数2：设置socket的设置选项，地址重用选项
         # 参数3：设置还是取消，1/0
         server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
