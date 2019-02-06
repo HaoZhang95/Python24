@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39f1635e-884e-487d-9feb-bb8883fb9edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/05Regex/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/day01/basic01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05Regex/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/day01/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Regex/day01/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/day01/basic03.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/05Regex/day01/basic02.py">
+        <entry file="file://$PROJECT_DIR$/05Regex/day01/basic03.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="48">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -86,6 +86,7 @@
         <option value="$PROJECT_DIR$/04WebServer/day02/basic03.py" />
         <option value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
         <option value="$PROJECT_DIR$/05Regex/day01/basic02.py" />
+        <option value="$PROJECT_DIR$/05Regex/day01/basic03.py" />
       </list>
     </option>
   </component>
@@ -132,7 +133,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -296,7 +297,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21804512" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21804512" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,13 +331,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day01/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02NetworkProgramming/day02/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -682,8 +676,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/05Regex/day01/basic02.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="288">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05Regex/day01/basic03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
