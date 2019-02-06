@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39f1635e-884e-487d-9feb-bb8883fb9edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/04WebServer/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day01/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04WebServer/day02/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day02/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04WebServer/day02/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day02/basic02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04WebServer/day02/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day02/basic03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Regex/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/day01/basic01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic03.py">
+        <entry file="file://$PROJECT_DIR$/05Regex/day01/basic01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="72">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -86,10 +84,11 @@
         <option value="$PROJECT_DIR$/04WebServer/day02/basic02.py" />
         <option value="$PROJECT_DIR$/04WebServer/day01/basic02.py" />
         <option value="$PROJECT_DIR$/04WebServer/day02/basic03.py" />
+        <option value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1080" />
@@ -164,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic02 (1)">
+  <component name="RunManager" selected="Python.basic01">
     <configuration name="basic01 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,11 +193,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05Regex/day01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day04/basic01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,7 +248,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,11 +256,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03Thread/day04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04WebServer/day02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03Thread/day04/basic02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04WebServer/day02/basic03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic01" />
+        <item itemvalue="Python.basic03" />
         <item itemvalue="Python.basic02 (1)" />
         <item itemvalue="Python.basic02 (2)" />
         <item itemvalue="Python.basic01 (2)" />
-        <item itemvalue="Python.basic02" />
-        <item itemvalue="Python.basic01" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +301,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21753247" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21861471" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -432,9 +431,6 @@
           <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05Regex/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -630,9 +626,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic03.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic03.py" />
     <entry file="file://$PROJECT_DIR$/04WebServer/day02/static/a.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -683,8 +677,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="1776">
+          <caret line="74" column="42" lean-forward="true" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+          <folding>
+            <element signature="e#781#794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05Regex/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
