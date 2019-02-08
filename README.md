@@ -1,6 +1,6 @@
 # PythonAndMachineLearning [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-这个仓库主要为了学习**Python和机器学习基础**，具体的文档说明将在今后逐步添加（2019-01-13）
+这个仓库主要为了学习**Python和机器学习基础**，每一章的具体知识点可以在百度云查看**html课件文档**，具体的文档说明将在今后逐步添加（2019-01-13）
 ****
 	
 |Author|白发老书生|
