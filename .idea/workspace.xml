@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="39f1635e-884e-487d-9feb-bb8883fb9edc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05Regex/day01/basic03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/day01/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/day01/basic02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06AdvancedPyton/day01/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/day01/basic03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic03.py">
+        <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="144">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -32,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -43,8 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01Linux/day01/basic01.py" />
-        <option value="$PROJECT_DIR$/02NetworkPragramming/day01/basic01.py" />
         <option value="$PROJECT_DIR$/02NetworkPragramming/day01/basic02.py" />
         <option value="$PROJECT_DIR$/02NetworkPragramming/day02/basic01.py" />
         <option value="$PROJECT_DIR$/02NetworkPragramming/day02/basic03.py" />
@@ -94,14 +88,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/06AdvancedPyton/day01/basic02.py" />
         <option value="$PROJECT_DIR$/06AdvancedPyton/day01/basic03.py" />
+        <option value="$PROJECT_DIR$/06AdvancedPyton/day01/basic04.py" />
+        <option value="$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="710" />
-    <option name="y" value="1" />
-    <option name="width" value="1218" />
-    <option name="height" value="1208" />
+    <option name="width" value="1219" />
+    <option name="height" value="1209" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -127,7 +122,7 @@
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
               <item name="06AdvancedPyton" type="462c0819:PsiDirectoryNode" />
-              <item name="day01" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,7 +136,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -167,8 +162,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic03 (1)">
-    <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.basic01 (1)">
+    <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,11 +171,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05Regex/day01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06AdvancedPyton/day02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,7 +247,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -260,11 +255,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04WebServer/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06AdvancedPyton/day01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04WebServer/day02/basic03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06AdvancedPyton/day01/basic04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic01 (1)" />
+        <item itemvalue="Python.basic04" />
         <item itemvalue="Python.basic03 (1)" />
         <item itemvalue="Python.basic02 (3)" />
         <item itemvalue="Python.basic02" />
-        <item itemvalue="Python.basic01" />
-        <item itemvalue="Python.basic03" />
       </list>
     </recent_temporary>
   </component>
@@ -339,20 +334,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/Python37/Lib/multiprocessing/spawn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03Thread/day02/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03Thread/day02/demo/basic01.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -638,22 +619,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05Regex/day01/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/05Regex/day01/basic03.py" />
     <entry file="file://$PROJECT_DIR$/05Regex/day01/basic02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/06AdvancedPyton/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -691,8 +663,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="1176">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day02/basic03.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day02/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
