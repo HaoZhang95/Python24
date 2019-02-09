@@ -47,7 +47,8 @@ class PyCharm(App):
 
 class Chrome(App):
 
-    # super关键字来调用父类的属性和方法
+    # super关键字来调用父类方法
+    # 通过自身的self获得父类的属性值
     def install(self):
         print("正在解压缩安装程序...")
         super().install()
