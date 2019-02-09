@@ -73,9 +73,7 @@ def testRegex02():
 
 
 """
-    Python贪婪和非贪婪,这个知识点略过
-    贪婪：
-    非贪婪：
+    Python中正则表达式的贪婪和非贪婪,这个知识点略过
 """
 
 def testRegex03():
