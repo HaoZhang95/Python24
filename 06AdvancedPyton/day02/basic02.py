@@ -3,20 +3,20 @@
     1- 看上去是属性的获取，其实是方法的执行，但是并没有小括号:p1.name
 """
 
-class Person(object):
 
+class Person(object):
     def __init__(self, name, age):
         self.__age = age
         self.__name = name
 
     def get_age(self):
         print("这里是对私有属性获取的权限验证")
-        if 1==1:
+        if 1 == 1:
             return self.__age
 
     def set_age(self, age):
         print("这里是对私有属性获取的权限验证")
-        if 1==1:
+        if 1 == 1:
             self.__age = age
 
     """
@@ -25,10 +25,11 @@ class Person(object):
         3- @name.deleter删除属性，在del obj.name的时候被调用
         
     """
+
     @property
     def name(self):
         print("这里是对私有属性获取的权限验证")
-        if 1==1:
+        if 1 == 1:
             return self.__name
 
     @name.setter
@@ -39,9 +40,10 @@ class Person(object):
     def name(self):
         del self.__name
 
+
 def test01():
 
-    p1 = Person("老王",18)
+    p1 = Person("老王", 18)
 
     print(p1.get_age())
     print(p1.name)
@@ -56,8 +58,9 @@ def test01():
     1- 使用property定义的类属性
     2- 当使用obj.属性的时候就会调用property(get_bar, set_bar, del_bar)中的第一个参数的方法
 """
-class Foo(object):
 
+
+class Foo(object):
     def get_bar(self):
         print("getter...")
         return "老王"
@@ -73,13 +76,14 @@ class Foo(object):
     # 使用property定义的类属性
     BAR = property(get_bar, set_bar, "This is description...")
 
+
 def test02():
 
     obj = Foo()
 
-    print(obj.BAR)      # 自动调用property第一个参数的方法get_bar
-    obj.BAR = "New Name"        # set_bar
-    desc = obj.BAR.__doc__      #获取第四个参数desc
+    print(obj.BAR)  # 自动调用property第一个参数的方法get_bar
+    obj.BAR = "New Name"  # set_bar
+    desc = obj.BAR.__doc__  #获取第四个参数desc
     print(desc)
 
 

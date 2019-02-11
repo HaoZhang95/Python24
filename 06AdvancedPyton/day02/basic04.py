@@ -10,11 +10,13 @@
 
     1- 获取返回的对象本身必须实现enter和exit魔法方法
     2- 获取该返回对象的时候就会触发enter鞍前方法
-    3- 当with里面的代码执行完成后悔自动触发该对象的exit善后工作
+    3- 当with里面
+    的代码执行完成后悔自动触发该对象的exit善后工作
 """
+from contextlib import contextmanager
+
 
 class MyFile(object):
-
     def __init__(self, filename, mode):
         self.filename = filename
         self.mode = mode
@@ -30,11 +32,14 @@ class MyFile(object):
         print("will exit...")
         self.file.close()
 
+
 """
     1- open("output.txt", "w") 如果成功，返回值给f
     2- 当with中的代码结束的时候，会**自动**调用close方法，实现原理就是默认实现了上下文管理器
     3- with后面不止可以写open文件类，还可以写自己实现上下文管理器的自定义类
 """
+
+
 def test01():
 
     with open("output.txt", "w") as f:
@@ -43,19 +48,20 @@ def test01():
     with MyFile("output1.txt", "w") as f:
         f.write("Hello World 2.0")
 
+
 """
     使用contextmanager的模式, 方法前面加上@contextmanager的修饰器
-    
     1- 方法的yield返回值之前的代码就相当于enter方法
     2- yield之后的代码就类似exit方法
 """
-from contextlib import contextmanager
+
 
 @contextmanager
 def my_open(path, mode):
     f = open(path, mode)
     yield f
     f.close()
+
 
 def test02():
     with my_open("output2.txt", "w") as f:

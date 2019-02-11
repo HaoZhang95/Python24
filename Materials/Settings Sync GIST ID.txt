@@ -1,0 +1,3 @@
+Sync : 上传完成. GIST ID : 3d80e69997f3cf28e31946b894fcdd16 .请在其他计算机上复制并使用此ID以下载设置.
+
+Github上使用的token是：db7671dfd9d2e06be9bd3730c6905f2e5968f2f6
