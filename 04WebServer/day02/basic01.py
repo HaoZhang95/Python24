@@ -115,7 +115,7 @@ class HTTPServer(object):
 
 def testWeb():
 
-    # sys.argv 存放的是该**进程**运行时候的命令行参数 -> ['basic01.py', '8888']
+    # sys.argv 存放的是该**进程**运行时候的命令行参数 -> ['basic01.sql', '8888']
     print(sys.argv)
     if len(sys.argv) != 2:
         print("参数个数错误，只需要一个端口号.")
