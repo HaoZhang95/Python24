@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/B.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/C.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/a.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04WebServer/day02/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/day02/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07MySql/day04/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/07MySql/day04/basic01.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07MySql/day04/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/07MySql/day04/basic02.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07MySql/day04/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,16 +21,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="111" column="76" lean-forward="true" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="76" />
+              <folding>
+                <element signature="e#40#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/07MySql/day04/basic02.sql">
+        <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="132">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -39,7 +56,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>like</find>
+      <find>server_socket</find>
     </findStrings>
+    <replaceStrings>
+      <replace>self.server_socket</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,14 +72,17 @@
         <option value="$PROJECT_DIR$/07MySql/day03/basic02.py" />
         <option value="$PROJECT_DIR$/07MySql/day04/basic01.sql" />
         <option value="$PROJECT_DIR$/07MySql/day04/basic02.sql" />
+        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" />
+        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" />
+        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1389" />
-    <option name="height" value="789" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1390" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -97,6 +121,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\08WSGI_Mini_Web\day01" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,7 +255,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="12" weight="0.32682925" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.32682925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -293,18 +322,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day04/basic03.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/07MySql/day04/basic03.py" />
     <entry file="file://$PROJECT_DIR$/07MySql/day04/basic02.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="1080">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1616" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/a.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/site-packages/gevent/_socket3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="438" selection-start-line="438" selection-end-line="438" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic02.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="111" column="76" lean-forward="true" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="76" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
