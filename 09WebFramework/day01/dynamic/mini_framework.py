@@ -2,15 +2,26 @@ import time
 
 """
     业务逻辑的拆分，和服务器分开，框架进行中间人
+    读取模板信息，返回自定义的前段模板
+    open在没有指明参数的话，默认模式是r
 """
 
 
+# 引用地址有一个坑，open的路径不是以当前mini_framework的路径算，而是以当前运行的py程序算
+# 当前运行的是basic01.py所以open的是./当前路径下的template，而不是../富集目录下的templates
+# open读取文件的时候，一定要告诉read的编码方式，不然windows当前电脑会以gbk的形式read，会报错
 def index():
-    return "----主页----current time is %s" % time.ctime()
+
+    with open("./templates/index.html", encoding='UTF-8') as f:
+        html_content = f.read()
+    return html_content
 
 
 def center():
-    return "<h1>----中心主页----current time is %s</h1>" % time.ctime()
+
+    with open("./templates/center.html", encoding='UTF-8') as f:
+        html_content = f.read()
+    return html_content
 
 
 def register():

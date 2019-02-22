@@ -1,0 +1,15 @@
+body{
+	background-color: black;
+	color: green;
+}
+div{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+p{
+	color: #5f5f5f;
+	font:normal 20px/40px 'Microsoft Yahei';
+	text-indent: 40px
+}

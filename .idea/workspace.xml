@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/B.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/C.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/dynamic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery.animate-colors-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery.animate-colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/swiper.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/static/js/zepto.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/templates/center.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day01/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day01/basic01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,43 +36,21 @@
     <favorites_list name="PythonAndMachineLearning" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="111" column="76" lean-forward="true" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="76" />
-              <folding>
-                <element signature="e#40#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>like</find>
       <find>server_socket</find>
+      <find>mini</find>
+      <find>file_data</find>
     </findStrings>
     <replaceStrings>
       <replace>self.server_socket</replace>
@@ -73,16 +67,17 @@
         <option value="$PROJECT_DIR$/07MySql/day04/basic01.sql" />
         <option value="$PROJECT_DIR$/07MySql/day04/basic02.sql" />
         <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" />
-        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" />
         <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" />
+        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" />
+        <option value="$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py" />
+        <option value="$PROJECT_DIR$/09WebFramework/day01/basic01.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1390" />
-    <option name="height" value="790" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1208" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -92,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,11 +106,43 @@
               <item name="08WSGI_Mini_Web" type="462c0819:PsiDirectoryNode" />
               <item name="day01" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,7 +151,11 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day01\dynamic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day01" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\08WSGI_Mini_Web\day01" />
     </key>
   </component>
@@ -139,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic01 (1)">
+  <component name="RunManager" selected="Python.basic01 (2)">
     <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,6 +185,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic01 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonAndMachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day01/basic01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,6 +258,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic01 (2)" />
         <item itemvalue="Python.basic01 (1)" />
         <item itemvalue="Python.basic01" />
         <item itemvalue="Python.basic02" />
@@ -235,14 +289,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13267326" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.269437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966533" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3299866" />
       <window_info id="Project Explorer" order="3" weight="0.3299866" />
       <window_info id="DB Browser" order="4" weight="0.32871288" />
-      <window_info id="Job Explorer" order="5" weight="0.32931727" />
+      <window_info id="Job Explorer" order="5" weight="0.32841823" />
       <window_info anchor="bottom" id="Console" order="0" />
       <window_info anchor="bottom" id="DB Execution Console" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
@@ -255,7 +308,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.32682925" />
+      <window_info anchor="bottom" id="Run" order="12" weight="0.32682925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -368,18 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="111" column="76" lean-forward="true" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="76" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -387,6 +430,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
