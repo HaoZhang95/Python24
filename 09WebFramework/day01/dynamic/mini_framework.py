@@ -1,4 +1,5 @@
 import time
+import re
 
 """
     业务逻辑的拆分，和服务器分开，框架进行中间人
@@ -14,6 +15,7 @@ def index():
 
     with open("./templates/index.html", encoding='UTF-8') as f:
         html_content = f.read()
+
     return html_content
 
 
@@ -21,6 +23,11 @@ def center():
 
     with open("./templates/center.html", encoding='UTF-8') as f:
         html_content = f.read()
+
+    # 使用正则表达式替换显示数据库的真正数据内容
+    # {大括号在正则中有特殊含义，使用\{转义，使其显示字符表面的意思
+    data = "这是数据库读取的数据..."
+    html_content = re.sub(r"\{%content%\}", data, html_content)
     return html_content
 
 
