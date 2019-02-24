@@ -64,7 +64,7 @@ class WSGIServer(object):
                 # 更改为with的安全打开文件方式，上下文管理器
                 # 请求index.py返回的是index.html的内容，但是html中需要加载的css等，css请求是走这里的
                 # 所以需要在这里设置静态文件的路径http://127.0.0.1:9999/css/bootstrap.min.css
-                with open("./static/" + path_info, "rb") as f:
+                with open("../static/" + path_info, "rb") as f:
                     file_data = f.read()
                     print(len(file_data))
 

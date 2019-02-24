@@ -13,7 +13,7 @@ import re
 # open读取文件的时候，一定要告诉read的编码方式，不然windows当前电脑会以gbk的形式read，会报错
 def index():
 
-    with open("./templates/index.html", encoding='UTF-8') as f:
+    with open("../templates/index.html", encoding='UTF-8') as f:
         html_content = f.read()
 
     return html_content
@@ -21,7 +21,7 @@ def index():
 
 def center():
 
-    with open("./templates/center.html", encoding='UTF-8') as f:
+    with open("../templates/center.html", encoding='UTF-8') as f:
         html_content = f.read()
 
     # 使用正则表达式替换显示数据库的真正数据内容
