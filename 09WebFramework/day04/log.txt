@@ -1,0 +1,8 @@
+2019-02-25 21:24:33,260 - basic02.py[line:35] - WARNING: 这是 loggging a warning message
+2019-02-25 21:24:33,262 - basic02.py[line:36] - ERROR: 这是 an loggging error message
+2019-02-25 21:24:33,263 - basic02.py[line:37] - CRITICAL: 这是 loggging critical message
+2019-02-25 21:24:42,161 - basic02.py[line:71] - INFO: 这是 logger info message
+2019-02-25 21:24:42,162 - basic02.py[line:72] - WARNING: 这是 logger warning message
+2019-02-25 21:24:42,162 - basic02.py[line:73] - ERROR: 这是 logger error message
+2019-02-25 21:24:42,162 - basic02.py[line:74] - CRITICAL: 这是 logger critical message
+2019-02-25 21:24:42,162 - basic02.py[line:74] - CRITICAL: 这是 logger critical message
