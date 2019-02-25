@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/09WebFramework/day02/dynamic/mini_framework.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/day03/dynamic/mini_framework.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09WebFramework/templates/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day01/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/css/swiper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/a.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery-1.12.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/jquery-1.12.4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery-1.12.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/jquery-1.12.4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery.animate-colors-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/jquery.animate-colors-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery.animate-colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/jquery.animate-colors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/jquery.cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/jquery.cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/swiper.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/swiper.jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/swiper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/static/js/zepto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/static/js/zepto.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/templates/center.html" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/templates/center.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day01/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day02/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day02/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day02/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day02/basic03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/day03/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day03/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/day03/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day03/basic02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/day03/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/day04/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day04/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/templates/center.html" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/templates/center.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,26 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic02.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-              <folding>
-                <element signature="e#40#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/09WebFramework/day02/dynamic/mini_framework.py">
+        <entry file="file://$PROJECT_DIR$/09WebFramework/day04/basic01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -79,6 +50,13 @@
       <find>等价</find>
       <find>.py</find>
       <find>print</find>
+      <find>add</find>
+      <find>82</find>
+      <find>000822</find>
+      <find>add_focus</find>
+      <find>00822</find>
+      <find>note</find>
+      <find>temp</find>
     </findStrings>
     <replaceStrings>
       <replace>self.server_socket</replace>
@@ -103,18 +81,23 @@
         <option value="$PROJECT_DIR$/09WebFramework/day02/basic01.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day01/basic01.py" />
-        <option value="$PROJECT_DIR$/09WebFramework/templates/center.html" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/basic03.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/basic02.py" />
-        <option value="$PROJECT_DIR$/09WebFramework/templates/index.html" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/dynamic/mini_framework.py" />
+        <option value="$PROJECT_DIR$/09WebFramework/templates/index.html" />
+        <option value="$PROJECT_DIR$/09WebFramework/templates/center.html" />
+        <option value="$PROJECT_DIR$/09WebFramework/day03/dynamic/mini_framework.py" />
+        <option value="$PROJECT_DIR$/09WebFramework/day03/basic01.py" />
+        <option value="$PROJECT_DIR$/09WebFramework/day03/basic02.py" />
+        <option value="$PROJECT_DIR$/09WebFramework/day04/basic01.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1210" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1390" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -141,20 +124,7 @@
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
               <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="09WebFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="day04" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -163,12 +133,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Videos/2018年6月北京黑马python24期全套视频课程/0-24期课件资料/09-web框架基础&amp;实战/24-21{web框架-完善}/4-代码/21day" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day03" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day02\dynamic" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day01" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\08WSGI_Mini_Web\day01" />
@@ -190,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic02">
+  <component name="RunManager" selected="Python.basic01 (3)">
     <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="basic01 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +193,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day02/basic01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day03/basic01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic01 (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonAndMachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day04/basic01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic02 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonAndMachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day03/basic02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,55 +269,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="basic03" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonAndMachineLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day01/basic03.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="basic04" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonAndMachineLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day01/basic04.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic01 (3)" />
+        <item itemvalue="Python.basic01 (2)" />
+        <item itemvalue="Python.basic02 (1)" />
         <item itemvalue="Python.basic02" />
         <item itemvalue="Python.basic01 (1)" />
-        <item itemvalue="Python.basic01" />
-        <item itemvalue="Python.basic04" />
-        <item itemvalue="Python.basic03" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +302,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16237624" />
@@ -349,8 +322,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.32682925" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32820514" />
+      <window_info anchor="bottom" id="Run" order="12" weight="0.34358975" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -530,41 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/center.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,6 +517,84 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/static/js/server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/dynamic/mini_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic03.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day04/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>

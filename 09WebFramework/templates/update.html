@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页 - 个人选股系统 V5.87</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#update").click(function(){
+                var item = $("#note_info").val();
+                // alert("/update/{%code%}/" + item + ".html");
+                $.get("/update/{%code%}/" + item + ".html", function(data, status){
+                    alert("数据: " + data + "\n状态: " + status);
+                    self.location='/center.html';
+                });
+            });
+        });
+    </script>
+  </head>
+  <body>
+<div class="navbar navbar-inverse navbar-static-top ">
+    <div class="container">
+    <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a href="#" class="navbar-brand">选股系统</a>
+    </div>
+    <div class="collapse navbar-collapse" id="mymenu">
+        <ul class="nav navbar-nav">
+            <li><a href="/index.html">股票信息</a></li>
+            <li><a href="/center.html">个人中心</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+  <div class="container">
+    <div class="container-fluid">
+      <div class="input-group">
+          <span class="input-group-addon">正在修改：</span>
+          <span class="input-group-addon">{%code%}</span>
+          <input id="note_info" type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="{%note_info%}">
+          <span id="update" class="input-group-addon" style="cursor: pointer">修改</span>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>            
