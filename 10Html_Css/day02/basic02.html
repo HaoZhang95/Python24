@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        
+        /* 类选择器 */
+        .class1{
+            color: red;
+        }
+
+        /* 开发中是不会使用id选择器添加css的！ id选择器用来处理js事件*/
+        /* #id1{
+            color: green;
+        } */
+
+
+        /* 层级或者叫做后代选择器, css中的书写可以使用A>B 或者是 空格A B */
+        ul>li{
+            color: red;
+        }
+
+        ol>li{
+            color: green;
+        }
+
+        .father p {
+            color: aqua;
+        }
+
+        /* 指定标签的选择器，(多个条件满足的情况) p标签并且含有类名box */
+        p.box {
+            color: red;
+        }
+
+
+        /* 组选择器，使用**逗号**分开 */
+        /* 中间有空格的是层叠选择器，没有空格的是指定标签选择器, 逗号隔开的是组选择器 */
+
+        h1, span, div{
+            color:black;
+        }
+
+        /* 伪元素选择器规定使用冒号开头(1个或者2个都可以)，用来在元素的前面或者后面添加参数 */
+        /* before 或者after中必须有content，否则无效 */
+        div.fake::before{
+            content: "24期";
+            color: red;
+        }
+
+        div.fake:after{
+            content: "很帅";
+            color: red;
+            font-size: 60px;
+        }
+
+        /* Font的符合属性，必须按照如下顺序：是否加粗，是否倾斜，字号/行高, 字体 */
+        /* font的符合属性必须含有：字体和字号 */
+        span{
+            font: bold, italic, 30px/100px "微软雅黑";
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- html属性中的类选择器 -->
+    <div class="class1">模块1</div>
+    <!-- html属性中的id选择器， 同一个Id名在同一张页面不能重复: id类选择器主要用来处理js的行为动作 -->
+    <div id="id1">模块2</div>
+    <div>模块3</div>
+
+    <!-- 后代(层级) 选择器 -->
+    <ul>
+        <li>ul里面的li</li>
+    </ul>
+
+    <ol>
+        <li>ol里面的Li</li>
+    </ol>
+
+    <div class="father">
+        <p>这是段落...</p>
+    </div>
+
+    <!-- 指定标签的选择器，(多个条件满足的情况) p标签并且含有类名box -->
+    <div class="box">应用了类box的div</div>
+    <p>这是p标签</p>
+    <p class="box">应用了类box的p</p>
+
+    <!-- 组选择器 -->
+    <h1>文字1</h1>
+    <p>文字2</p>
+    <div>文字2</div>
+    <span>文字2</span>
+
+    <!-- 伪元素选择器, div里面开头的位置， div里面结尾的位置添加文字或者样式 -->
+    <div class="fake">班长很帅</div>
+
+</body>
+</html>
