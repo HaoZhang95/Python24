@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+        /*  标签选择器，直接生效与每一个div标签 */
+        div{
+
+            color: red;
+
+        }
+    
+        /* 类选择器，单独的设置每一个类名为xxx的元素 */
+        /* 在标签的后面添加html属性class="A1 A2" */
+        .box{
+            color: green
+        }
+
+        .font60{
+            font-size: 60px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>模块1</div>
+    <div class="box font60">模块2</div>
+    <div>模块3</div>
+    <div class="box font60">模块4</div>
+
+    <!-- 原样输出div等标签 &less than 左尖括号 -->
+    <p>这是一&lt;div&gt;标签</p>
+
+    <!-- 识别多个空格 -->
+    <p>哈哈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈哈</p>
+
+</body>
+</html>
+

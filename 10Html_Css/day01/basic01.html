@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 设置字符编码 -->
+    <meta charset="UTF-8">      
+    <!-- 适配屏幕宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置ie低版本显示成win10的edge的效果, 兼容性提高 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 网页的title -->
+    <title>淘宝...</title>
+
+
+    <!-- 键入式引入css,添加css, css在style的环境中运行， cascating STYLE sheet-->
+    <style>
+        
+        h1{
+            color: aqua;
+            font-size: 20px;
+        }
+    
+    </style>
+
+    <!-- 外链式引入css, rel关系：就是本html和后面href文件的关系 -->
+    <!-- 开发使用外链式，其他只做了解 -->
+    <link rel="stylesheet" href="./css/my_css.css">
+
+    <!-- 行内式添加style html属性, 引号里面写css键值对 -->
+
+</head>
+<body>
+    
+    <!-- 一个网页只能使用一个h1标签，用来存放logo,换行的标签是块标签 -->
+    <!-- 不换行的标签，行内标签或者内联标签 -->
+    <h1>我的理想h1</h1>
+    <h2>我的理想h2</h2>
+    <h3 style="color: aqua; font-size: 20px">我的理想h3</h3>
+    <h4>我的理想h4</h4>
+    <h5>我的理想h5</h5>
+    <h6>我的理想h6</h6>
+
+    <p>这是段落</p>
+
+    <!-- div布局分区块 -->
+    <div>布局就用div</div>
+
+    <!-- 下面的内联标签都可以：存放特殊效果的文字或者小图片 -->
+    <!-- strong和bold加粗显示效果一样，但是strong会加强语义，把搜索的关键字尽量放在带有语义的标签中，优先抓取，有利于SEO优化 -->
+    <!-- 单个字母的都是不强调语义的 -->
+    <span>span</span>
+    <b>bold加粗文字</b>
+    <i>倾斜文字</i>
+    <u>下划线</u>
+    <s>中删除线</s>
+
+    <strong>strong带有语义的加粗文字</strong>
+    <em>em带有语义的倾斜文字</em>
+    <ins>ins带有语义的下划线文字</ins>
+    <del>del带有语义的删除线文字</del>
+
+    <!-- img图片标签，一行标签可以添加多个键值对key=""，但是需要使用空格隔开 -->
+    <img src="./images/icon1.jpg" title="这是图片的Title" alt="图片加载失败，加载的Title">
+
+    <!-- 单双标记的区分：如果能够逻辑判断内容是否保包含，比如<img>的属性都在<>内，能够逻辑判断内容的起始位置 -->
+    <a href="https://google.com" target="_blank">这是超链接</a>
+    <a href="./xxx.html" target="_blank">这是本地超链接</a>
+
+    <!-- 有竖直页面滚动条的话，一个#号的可以返回到页面顶部 -->
+    <!-- IE不支持两个警号的写法，两个/三个＃号 无区别-->
+    <a href="#" target="_blank">开发时空出来的超链接地址使用#的假链接</a>
+    <a href="##" target="_blank">开发时空出来的超链接地址使用#</a>
+    <a href="###" target="_blank">开发时空出来的超链接地址使用#</a>
+
+</body>
+</html>
+
+<!-- 感叹号 + Tab键,生成默认的html模板 -->
+<!-- 安装openChrome和open in broswer两个前段插件 -->
+
+<!-- 
+    <html></html>标签中包含head+body
+    head存放的是给浏览器查看的，css+js都是美化和动作也是给浏览器看的，所以放在head标签中
+    body给用户看的内容
+
+    <!DOCTYPE html>规定文档dtd格式，没有的话不同的浏览器会以不同的html版本来解析下面的代码显示内容，加上这句话就是调节兼容性
+ -->
