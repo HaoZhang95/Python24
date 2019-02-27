@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        
+        /* 定位常用语两个元素在Z轴上的位置，比如页面固定的回到顶部，或者轮播图中左右箭头按钮 */
+        .profile{
+            border: 1px solid red;
+
+            position: absolute;
+
+           
+            left: 100px;
+            top: 200px;
+        }
+
+        /* position: static静态定位，就是不定位，根没写一样 */
+        /* position: relative相对定位，任何一种定位形式，如果想改变位置，都必须设置偏移量(参照物)，left right top bottom于某一个元素*/
+                    /* 1- 不改变元素类型,div图片还是占用一整行 */
+                    /* 2- 参照的是自己原本的位置，相对于自己 */
+                    /* 3- 占位脱离标准流，原来的位置留有大量的空白*/
+
+        /* postion: absolute 绝对定位,可以更改参照物
+        先以最近的已经定位的父级为参照物，如果前面的条件不满足，那么久以浏览器为参照物
+        把父级固定住，子绝父相，把父级设置为相对定位，那么子类设置为绝对定位的话，参照物就是父类
+
+        1- 参照于浏览器(垂直滚动的时候，会变化)
+        2- 元素类型具备内联块inline-block，不在是占用一整行 
+        3- 完全脱离标准流，不再有空白 */
+
+        /* postion: fixed 固定定位
+         1- 参照于浏览器(垂直滚动的时候不变) 
+         2- 改变元素类型，元素类型具备内联块inline-block，不在是占用一整行 
+         3- 完全脱离标准流，不再有空白 */
+
+        .con {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .gold{
+            width: 100px;
+            height: 100px;
+            background: gold;
+            border-radius: 20px;
+
+            /* 子绝父相，需要把five设置到gold的标签内部 */
+            position: relative;
+        }
+
+        /* 因为five这个类是加载span标签上，直接设置文字颜色的话，直接color，即可，不是text-color，因为本身就是span */
+        .five{
+            width: 30px;
+            height: 30px;
+            background: red;
+            position: absolute;
+
+            text-align: center;
+            color: aliceblue;
+            line-height: 30px;
+            font-weight: bold;
+
+            left: 85%;
+            top: -15%;
+            border-radius: 50%;     /* 写自己宽度的50%，不要直接写15px */
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /* 以con1为父级 */
+        .con1 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .gold1{
+            width: 100px;
+            height: 100px;
+            background: gold;
+            border-radius: 20px;
+        }
+
+        /* 因为five这个类是加载span标签上，直接设置文字颜色的话，直接color，即可，不是text-color，因为本身就是span */
+        .five1{
+            width: 30px;
+            height: 30px;
+            background: red;
+            position: absolute;
+
+            text-align: center;
+            color: aliceblue;
+            line-height: 30px;
+            font-weight: bold;
+
+            right: -15px;
+            top: -15px;
+            border-radius: 50%;     /* 写自己宽度的50%，不要直接写15px */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    
+    <div class="profile"><img src="../../10Html_Css/day01/images/icon4.jpg"></div>
+
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+    <p>定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位定位</p>
+
+
+    <!-- 以gold为父类 -->
+    <div class="con">
+        <div class="gold">
+            <span class="five">5</span>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- /* 以con1为父级 */ -->
+    <div class="con1">
+        <div class="gold1"></div>
+        <span class="five1">5</span>
+    </div>
+
+</body>
+</html>

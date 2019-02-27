@@ -5,8 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+
+    <style>
+    
+        /* con父类如果忘记设置高度，而且子元素都设置了浮动，那么就会导致父类高度为0的塌陷，footer直接上到最上面 */
+        .con {
+            width: 1200px;
+            /* height: 300px; */
+            /* height: 300px; */
+            background: pink;
+            margin: 0 auto;
+
+            /* 第一种解决方法 */
+            /* 作用1：当父元素设置了高度时，子元素的内容超出父元素会被隐藏 */
+            /* 作用2：父元素没有设置高度，且子元素设置了浮动。
+            如果我们给父元素加上overflow:hidden属性，子元素的立体浮动被清除，从浮动的不占用空间到占用空间，子元素的高度就会撑开父元素。 */
+            overflow: hidden;
+
+            /* overflow设置为auto的话，超出的话，就会显示竖直滚动条 */
+            /* overflow: auto; */
+        }
+
+        .left {
+            width: 300px;
+            height: 500px;
+            background: green;
+            float: left;
+        }
+        
+        .right {
+            width: 880px;
+            height: 300px;
+            background: blue;
+            float: right;
+        }
+
+        .footer{
+            background: orange;
+            height: 100px;
+        }
+
+        /* 第二种解决方法 */
+        /* <!-- 类名clearfix使用伪类::after清除浮动，清除子元素的浮动效果，不占用空间到变成占用空间--> */
+        /* after在标签后面添加一个标签clear both表示即清楚float left又清除float right对其的影响 */
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        /* 第三种解决方法 */
+        .clear_fix{
+            clear: both;
+        }
+
+    </style>
+
 </head>
 <body>
     
+    <!-- 类名clearfix使用伪类::after清除浮动 -->
+    <div class="con clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <!-- 或者直接添加一个div -->
+        <!-- <div class="clear_fix"></div> -->
+    </div>
+
+    <div class="footer"></div>
+
 </body>
 </html>
