@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        
+        /* 清除样式: margin padding列表清除样式符号 */
+        ul,ol{
+            list-style: none;
+        }
+
+        /* 批量清除内边距和外边距 */
+        h1,p,h2{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* 重置默认样式，设置超链接没有下划线 */
+        a{
+            text-decoration: none;
+            color: #333333;
+        }
+
+        /* 伪类和伪元素都是以冒号开始的，伪类主要用来状态的检测，比如鼠标悬停, 链接已经被点击,点着不松开*/
+        a:hover{
+            color: red
+        }
+
+        /* 链接未被访问 */
+        a:link{
+            color: #333333;
+        }
+
+        /* 链接已被访问 */
+        a:visited{
+            color: green;
+        }
+
+        /* 点着不放 */
+        a:active{
+            color: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- css reset重置，清空并且设置一些标签默认的样式 -->
+    <!-- 开发中直接复制现成的css重置文件，直接引入即可 -->
+    <h1>这是h1标签</h1>
+
+    <ul>
+        <li>这是li</li>
+    </ul>
+
+    <a href="#">这是超链接</a>
+
+</body>
+</html>
