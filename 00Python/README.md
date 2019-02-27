@@ -1,6 +1,6 @@
 # 00Python基础[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-具体的请查看该篇章中的代码实现。（2019-01-18）
+具体的请查看该篇章中的代码实现。
 ****
 	
 |Author|白发老书生|

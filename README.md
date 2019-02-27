@@ -25,6 +25,16 @@
 - [x] [09WebFramework](/09WebFramework/README.md)
 - [x] [10Html_Css](/10Html_Css/README.md)
 
+- [x] [11JavaScript](/11JavaScript/README.md)
+- [x] [12jQuery_Basic](/12jQuery_Basic/README.md)
+- [x] [13jQuery_Advanced](/13jQuery_Advanced/README.md)
+- [x] [14Django](/14Django/README.md)
+- [x] [15Flask](/15Flask/README.md)
+- [x] [16Redis](/16Redis/README.md)
+- [x] [17Git](/17Git/README.md)
+
+
+
 
 #### 您可以通过以下方式联系到我：
 - 微博 [@gods--favoured--one](https://www.weibo.com/2749787910/profile?topnav=1&wvr=6&is_all=1)

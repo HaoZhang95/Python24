@@ -2,15 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/09WebFramework/day04/basic04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09WebFramework/day04/dynamic/mini_framework.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09WebFramework/day04/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09WebFramework/day04/web_server.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/day01/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/day01/basic02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/day01/basic03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/day02/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/day02/basic02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11JavaScript/day02/basic03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day01/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day01/basic02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day01/basic03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day02/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day02/basic02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day02/basic03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day01/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day01/basic02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day01/basic03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day02/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day02/basic02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day02/basic03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day01/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day01/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day01/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day02/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day02/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day02/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day03/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day03/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day03/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day04/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day04/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day04/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day05/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day05/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day05/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day06/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day06/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14Django/day06/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day01/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day01/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day01/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day02/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day02/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day02/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day03/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day03/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day03/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day04/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day04/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day04/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day05/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day05/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day05/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day06/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day06/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15Flask/day06/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16Redis/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16Redis/day01/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16Redis/day01/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16Redis/day01/basic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17Git/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17Git/day01/basic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17Git/day01/basic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17Git/day01/basic03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day04/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day04/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day04/basic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day04/basic02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/day04/basic03.py" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/day04/basic03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10Html_Css/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/10Html_Css/day01/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/00Python/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Linux/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01Linux/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02NetworkProgramming/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Thread/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04WebServer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Regex/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07MySql/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07MySql/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09WebFramework/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10Html_Css/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10Html_Css/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10Html_Css/day03/basic01.html" beforeDir="false" afterPath="$PROJECT_DIR$/10Html_Css/day03/basic01.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +94,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/16Redis/day01/basic01.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/17Git/day01/basic01.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/10Html_Css/day03/basic01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="408">
+              <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/17Git/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="408">
+                <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/16Redis/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="648">
+                <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -99,6 +204,29 @@
         <option value="$PROJECT_DIR$/09WebFramework/day04/basic03.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day04/basic04.py" />
         <option value="$PROJECT_DIR$/10Html_Css/day01/basic01.py" />
+        <option value="$PROJECT_DIR$/11JavaScript/day01/basic01.html" />
+        <option value="$PROJECT_DIR$/11JavaScript/day01/basic02.html" />
+        <option value="$PROJECT_DIR$/11JavaScript/day01/basic03.html" />
+        <option value="$PROJECT_DIR$/11JavaScript/README.md" />
+        <option value="$PROJECT_DIR$/12jQuery/README.md" />
+        <option value="$PROJECT_DIR$/10Html_Css/README.md" />
+        <option value="$PROJECT_DIR$/09WebFramework/README.md" />
+        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/README.md" />
+        <option value="$PROJECT_DIR$/07MySql/README.md" />
+        <option value="$PROJECT_DIR$/06AdvancedPyton/README.md" />
+        <option value="$PROJECT_DIR$/05Regex/README.md" />
+        <option value="$PROJECT_DIR$/04WebServer/README.md" />
+        <option value="$PROJECT_DIR$/03Thread/README.md" />
+        <option value="$PROJECT_DIR$/02NetworkProgramming/README.md" />
+        <option value="$PROJECT_DIR$/01Linux/README.md" />
+        <option value="$PROJECT_DIR$/00Python/README.md" />
+        <option value="$PROJECT_DIR$/14Django/day01/basic01.py" />
+        <option value="$PROJECT_DIR$/13jQuery_Advanced/README.md" />
+        <option value="$PROJECT_DIR$/14Django/README.md" />
+        <option value="$PROJECT_DIR$/10Html_Css/day03/basic01.html" />
+        <option value="$PROJECT_DIR$/15Flask/README.md" />
+        <option value="$PROJECT_DIR$/16Redis/README.md" />
+        <option value="$PROJECT_DIR$/17Git/README.md" />
       </list>
     </option>
   </component>
@@ -132,7 +260,23 @@
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="10Html_Css" type="462c0819:PsiDirectoryNode" />
+              <item name="16Redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="16Redis" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="17Git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="17Git" type="462c0819:PsiDirectoryNode" />
               <item name="day01" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -148,16 +292,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django\day02" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django\day01" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\11JavaScript" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day01\dynamic" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day04" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day03" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day02\dynamic" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -314,7 +458,7 @@
     <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16237624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966533" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3299866" />
       <window_info id="Project Explorer" order="3" weight="0.3299866" />
@@ -343,237 +487,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day03/basic01.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/site-packages/pymysql/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day01/basic01.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day02/basic01.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day03/basic03.py" />
-    <entry file="file://$PROJECT_DIR$/07MySql/day03/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day04/basic01.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07MySql/day04/basic03.py" />
-    <entry file="file://$PROJECT_DIR$/07MySql/day04/basic02.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1616" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2664" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day01/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/static/a.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/site-packages/gevent/_socket3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="438" selection-start-line="438" selection-end-line="438" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04WebServer/day02/basic02.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/09WebFramework/static/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/basic04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/dynamic/mini_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/dynamic/mini_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day02/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/static/js/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/center.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/templates/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09WebFramework/day03/dynamic/mini_framework.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -660,7 +573,263 @@
     <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/css/my_css.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11JavaScript/day02/basic01.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12jQuery_Basic/day01/basic01.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13jQuery_Advanced/day01/basic01.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10Html_Css/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08WSGI_Mini_Web/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07MySql/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05Regex/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04WebServer/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03Thread/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02NetworkProgramming/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01Linux/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00Python/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day01/basic03.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day02/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day03/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day04/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day05/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day06/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day01/basic02.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day06/basic03.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13jQuery_Advanced/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="4" selection-start-column="4" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12jQuery_Basic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="14" selection-start-column="14" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11JavaScript/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="792">
+            <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3336">
+            <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15Flask/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10Html_Css/day03/basic01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15Flask/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="984">
+            <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16Redis/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16Redis/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="648">
+            <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17Git/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17Git/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="408">
+            <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

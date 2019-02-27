@@ -1,6 +1,6 @@
 # 01Linux基础 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Linux基础先跳过，没有具体的代码实现，具体的请查看该篇章中的pdf文档，里面包含了各种Linux知识点和操作命令。（2019-01-23）
+Linux基础先跳过，没有具体的代码实现，具体的请查看该篇章中的pdf文档，里面包含了各种Linux知识点和操作命令。
 ****
 	
 |Author|白发老书生|
