@@ -1,0 +1,10 @@
+/* 存初始化代码 */
+ul,ol{ list-style: none;}
+/* ol{ list-style: none;} */
+/* h1,p,li,ul{ margin: 0; padding: 0;} */
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul{margin: 0; padding: 0;}
+/* 设置样式：设置文字样式  超链接样式 */
+body{font-size: 12px; color: #666; font-family: '宋体';}
+a{ text-decoration: none; color: #666;}
+/* 伪类：也是以冒号   伪类是状态 */
+a:hover{ color: #37ab40;}

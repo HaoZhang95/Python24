@@ -1,0 +1,65 @@
+.site_nav_wrap{
+    height: 29px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #dddddd;
+}
+
+.site_nav{
+    width: 1200px;
+    height: 29px;
+    background: pink;
+    margin: 0 auto;
+    line-height: 29px;
+}
+
+.site_nav .left {
+    float: left;
+}
+
+.site_nav ul {
+    float: right;
+}
+
+.site_nav li {
+    float: left;
+}
+
+.site_nav .line {
+    margin: 0 15px;
+}
+
+.con {
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.con .left{
+    width: 200px;
+    height: 270px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    border-top: none;
+}
+
+.con .left li{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #eee;
+    font-size: 14px;
+    /* 雪碧图距离左边34px，在雪碧图向上移动101px */
+    background: url(../images/icons.png) no-repeat 34px -92px;
+}
+
+.con .left li a{
+    color: #333333;
+    /* width: 200px;
+    display: inline-block; 或者下面的一句话*/
+    display: block;
+    background: url(../images/icons.png) no-repeat 180px -385px;
+}
+
+.con .left li a:hover{
+    color: #37ab40;
+}

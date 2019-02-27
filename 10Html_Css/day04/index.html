@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 注意引入css的顺序，先reset清空再设置自己的标签样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+    
+    <!-- 天天生鲜项目首页 -->
+
+    <div class="site_nav_wrap">
+        <div class="site_nav">
+
+            <p class="left">欢迎来到天天生鲜!</p>
+
+            <ul>
+                <!-- li默认是块级占用一行，里面有一个子标签a,设置左图标给li标签,左边距距离li的左边34px -->
+                <!-- 右图标设置给a标签，但是a标签是行内标签，只包含本身内容的大小,需要display成block，这样子标签a没自己的宽高，就会占用和li一样的空间 -->
+                <!-- a标签display不能设置成inline-block的原因是: 此时的a标签虽然可以设置自己的宽高，去父类li找，li中设置height=44px 
+                然后a就继承了44px高度，但是li父类中并没有设置width,找父类只会寻找一层，不会找多层，上一层没有就不再寻找了，那么此时的a标签作用范围只是文字本身，点击范围不在是整行，设置右图标的话，
+                只能根据a标签的x，y坐标来设置，但是此时背景图超过a的文字内容后，就会消失，整体a的范围就这么大。
+
+                /* width: 200px;
+                display: inline-block; 或者下面的一句话*/
+
+                display: block;
+                -->
+                <li><a href=#"">登陆</a></li>
+                <li class="line">|</li>
+                <li><a href="#">注册</a></li>
+                <li class="line">|</li>
+                <li><a href="#">我的购物车</a></li>
+                <li class="line">|</li>
+                <li><a href="#">我的订单</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="con">
+
+        <div class="left">
+            <ul>
+                <li><a href="#">新鲜水果</a></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
