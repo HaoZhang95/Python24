@@ -2,87 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/11JavaScript/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11JavaScript/day01/basic01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11JavaScript/day01/basic02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11JavaScript/day01/basic03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11JavaScript/day02/basic01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11JavaScript/day02/basic02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11JavaScript/day02/basic03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day01/basic01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day01/basic02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day01/basic03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day02/basic01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day02/basic02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12jQuery_Basic/day02/basic03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day01/basic01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day01/basic02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day01/basic03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day02/basic01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day02/basic02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13jQuery_Advanced/day02/basic03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day01/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day01/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day01/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day02/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day02/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day02/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day03/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day03/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day03/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day04/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day04/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day04/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day05/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day05/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day05/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day06/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day06/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14Django/day06/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day01/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day01/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day01/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day02/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day02/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day02/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day03/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day03/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day03/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day04/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day04/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day04/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day05/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day05/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day05/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day06/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day06/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15Flask/day06/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16Redis/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16Redis/day01/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16Redis/day01/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16Redis/day01/basic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Git/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Git/day01/basic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Git/day01/basic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Git/day01/basic03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00Python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/00Python/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01Linux/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01Linux/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02NetworkProgramming/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/02NetworkProgramming/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03Thread/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03Thread/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04WebServer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/04WebServer/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05Regex/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07MySql/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07MySql/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08WSGI_Mini_Web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/08WSGI_Mini_Web/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09WebFramework/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09WebFramework/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10Html_Css/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10Html_Css/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10Html_Css/day03/basic01.html" beforeDir="false" afterPath="$PROJECT_DIR$/10Html_Css/day03/basic01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11JavaScript/day01/basic01.html" beforeDir="false" afterPath="$PROJECT_DIR$/11JavaScript/day01/basic01.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +15,7 @@
     <favorites_list name="PythonAndMachineLearning" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/07MySql/day03/basic02.py" />
         <option value="$PROJECT_DIR$/07MySql/day04/basic01.sql" />
         <option value="$PROJECT_DIR$/07MySql/day04/basic02.sql" />
         <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" />
@@ -186,6 +106,7 @@
         <option value="$PROJECT_DIR$/16Redis/README.md" />
         <option value="$PROJECT_DIR$/17Git/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" />
       </list>
     </option>
   </component>
@@ -248,28 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic01">
-    <configuration name="basic01 (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonAndMachineLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day04" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day04/basic01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.basic04 (1)">
     <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,6 +233,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="basic04 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonAndMachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06AdvancedPyton/day02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="basic04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -356,11 +277,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic04 (1)" />
         <item itemvalue="Python.basic01" />
         <item itemvalue="Python.basic04" />
         <item itemvalue="Python.basic03" />
         <item itemvalue="Python.basic02 (2)" />
-        <item itemvalue="Python.basic01 (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -418,13 +339,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic03.py" />
     <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -491,16 +405,8 @@
     <entry file="file://$PROJECT_DIR$/09WebFramework/day04/log.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/css/my_css.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/css/my_css.css" />
     <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic03.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -761,6 +667,13 @@
             <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
         </state>
       </provider>
     </entry>

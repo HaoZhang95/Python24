@@ -6,8 +6,95 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- js的三种导入方式运行环境是cript标签，css的运行环境是style -->
+
+    <!-- 1- 嵌入式写法 -->
+    <script>
+    
+        //  js 函数,js的代码分号可写可不写,建议写分号，用来js文件格式化压缩的时候(去除多余空行)，清晰分辨
+        // alert("Hello World...")
+
+        // <!-- js入口函数:让浏览器从上到下遇见js先跳过，先加载html，css代码，读取完成后再加载js -->
+        // <!-- 不然浏览器从上到下，在没有加载html，css的时候就加载js的代码 -->
+        // 在html,css窗口加载完毕才会执行window.onload的函数
+        window.onload = function () {
+            // 修改标签的内容, 内容的修改都是通过innerHTML
+            document.getElementById("box").innerHTML = "js控制的内容";
+            // 添加标签到父标签
+            document.getElementById("box").innerHTML = "<p>div内部的p标签</p>";
+            // 清空标签内容
+            // document.getElementById("box").innerHTML = "";
+
+
+            // 修改节点样式是通过style来修改,css的background-color在js中使用的是大驼峰backgroundColor
+            document.getElementById("box").style.width = "500px";
+            document.getElementById("box").style.background = "green";
+            document.getElementById("box").style.fontSize = "60px";
+
+
+            // 修改标签的属性,直接点属性即可,大部分html的属性名在js中是一样的,只有class属性不一样,在js中是className
+            document.getElementById("link").href = "https://www.baidu.com"
+            document.getElementById("pic").src = "xxx.jpg"
+            document.getElementById("pic").alt = "这是被修改的替换文字"
+            document.getElementById("pic").className = "box2"
+
+
+            // js中的变量var
+            var oMyLink = document.getElementById("link");
+            oMyLink.className = "box3"
+            oMyLink.className = "box3"
+
+            // js数据类型 
+            console.log("类型是%s", typeof(1.1));              // number (不存在int,float) 
+            console.log(typeof("Hello World"));    // string                    
+            console.log(typeof(false));            // boolean           
+            console.log(typeof(null));             // object(js中的null也是一个对象)           
+            console.log(typeof(myObj));             // undefined           
+
+            // 定义函数，js允许函数预解析,可以调用在定义之前,变量不支持预解析
+            // js中的与或非 && || !, python中的是单词and or not
+            myFunc("你好")
+            function myFunc(str) {
+                console.log("%s,函数已被调用...", str);
+
+                if (1 > 2) {
+                    console.log("1 > 2");
+                } else if (1 == 2){
+                    console.log("1 = 2");
+                } else {
+                    console.log("1 < 2");
+                }
+            }
+        }
+
+    </script>
+
+    <!-- 2- 外链式写法，开发中使用的就是外链式,注意外链式的也必须加window.onload -->
+    <!-- <script src="./js/my_js.js"></script> -->
+
 </head>
 <body>
 
+    <!-- 3- 行内式js, 用于处理行内元素用户出发的事件(click, 划过等等),用户不触发不会执行 -->
+    <div onclick="alert('Hello World...')">测试行内js</div>
+
+    <!-- DOM文档对象模型:通过DOM自己的方式，将页面的所有标签形成一个**倒置**的树状结构图
+    树状结构图中查找的是节点，从而找到节点(标签,属性,方法和内容)去被js控制
+
+                                        Document
+                            Head                        Body
+                    metadata    title                h1  span    h2
+                                                (每个节点的属性，方法，内容都可以被控制)     
+    -->
+
+    <!-- DOM查找结点的方式
+        1- getElementById   最快的方式
+    -->
+    <div id="box">测试DOM的查找及控制内容</div>
+
+    <a href="#" id="link">这是超链接</a>
+    <img src="1.jpg" id="pic" alt="替换文字" class="box">
+    
 </body>
 </html>
