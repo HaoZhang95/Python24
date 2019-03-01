@@ -6,8 +6,122 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script>
+    
+        window.onload = function () {
+
+            function func1() {
+                // 数组的第一种写法
+                var arr1 = [1, 2, 3, "abc"];
+                console.log(arr1[2]);
+                
+                // 数组的第二种写法
+                var arr2 = new Array(1, 2, 3, "abc");
+
+                console.log(arr1.length);
+                // 数组添加push
+                arr1.push("def")
+                console.log(arr1);
+                
+                // 结尾删除数据pop
+                arr1.pop()
+                console.log(arr1);
+
+                // 在特定位置删除数据slice，在1的位置删除2个元素，并且添加xyz
+                // arr1.slice(1)  会导致删除1位置后的所有元素,slice方法返回i的是新数组，非原数组上进行的修改
+                console.log(arr1.slice(1, 2));
+                console.log(arr1.slice(1, 2, "xyz"));
+
+                // 将数组元素之间添加间隔符,返回一个字符串
+                console.log(arr1.join('-'));
+
+                // 数组的反转
+                arr1.reverse()
+                console.log(arr1);
+            }
+
+            // var num2;
+            function func2() {
+                
+                // 如果函数中忘记写var关键字的话，不会报错，
+                // 虽然是在函数中声明的局部变量,但是写丢了var,会自动生成一个script全局变量num10,func中的都是赋值
+                var i = 0
+                num2 = 888;
+                while (i < 3) {
+                    console.log("循环次数:%s", i);
+                    i += 1;     // or i++;
+                }
+
+                for(var i=0; i<3; i++) {
+                    console.log("循环次数:%s", i);
+                }
+
+            }
+
+            function func3() {
+                var array = ["战狼2", "前任3", "泰坦尼克号", "疯狂的外星人"]
+                // 有多少数据,就动态的生成多少个li
+                var my_ul = document.getElementById("myul")
+                var str = '';
+                for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+                    
+                    // 生成一个li标签
+                    str += '<li>' + element +'</li>';
+                }
+
+                // 使用innerHTML向里面添加li
+                my_ul.innerHTML = str
+            }
+
+            function func4() {
+                // 数组去重需要手动,使用indexOf和循环
+                var array = [1, 2, 3, 4, 3, 2, 1]
+                var new_array = [];
+                for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+
+                    // indexOf(ele) 返回的是ele在数组中第一次出现的索引位置
+                    // 如果该元素出现的位置正好等于当前index,表示第一次出现,那么添加到新的数组中
+                    // 如果该元素的index不等于当前索引，表示不是第一次出现,则不添加
+                    if (array.indexOf(element) == index) {
+                        new_array.push(element)
+                    }
+                }
+
+                console.log(new_array);
+            }
+
+            function func5() {
+                // 字符串的操作
+                var str1 = '10.9'
+                console.log(typeof(str1));
+                console.log(parseInt(str1));
+                console.log(parseFloat(str1));
+                
+                var str2 = "2018-1-18"
+                console.log(str2.split('-')[0]);
+                console.log(str2.substring(0, 4));
+
+                // 字符串reverse,手动将str -> 数组(reverse) -> str
+                console.log(str2.split('').reverse().join(''));
+            }
+
+            func5()
+
+        }
+
+    </script>
+
 </head>
 <body>
+
+    <ul id="myul">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
 
 </body>
 </html>

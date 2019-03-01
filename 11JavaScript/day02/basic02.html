@@ -6,8 +6,111 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script>
+        
+        window.onload = function () {
+            
+            function func1() {
+                // 定时器(轮播图),定时器时间到了就执行一次命令
+                // setTimeout(执行的命令, 延迟时间)     执行一次
+                // setInterval(执行的命令, 延迟时间)    循环执行,但是需要设置停止条件
+                // clearInterval(定时器名) 来停止死循环
+                var btn1 = document.getElementById("btn1")
+                var btn2 = document.getElementById("btn2")
+                var btn3 = document.getElementById("btn3")
+
+                var oTimer = null;
+
+                btn1.onclick = function () {
+                    setTimeout(() => {
+                        console.log("3s的时间到了.");
+                    }, 3000);
+                }
+
+                btn2.onclick = function () {
+                    oTimer = setInterval(() => {
+                        console.log("......");
+                    }, 1000);
+                }
+
+                btn3.onclick = function () {
+                    clearInterval(oTimer)
+                    oTimer = null;
+                }
+
+            }
+
+            function func2() {
+                var box = document.getElementById("box")
+                var btn = document.getElementById("btn4")
+                var num = 0;
+                var speed = 5;
+                var oTimer = setInterval(() => {
+                    // box.left += 10; 不能直接这样，修改css的left需要使用style
+                    num += speed;
+                    // 当num=800的时候,进行反向运动
+                    if (num >= 800) {
+                        speed = -5
+                    } 
+
+                    if (num <= 0) {
+                        speed = 5;
+                    }
+
+                    box.style.left = num + "px";
+                }, 50);
+
+
+                btn.onclick = function () {
+                    clearInterval(oTimer)
+                    oTimer = null
+                }
+            }
+
+            function func3() {
+                // 1- 轮播图的原理父类有一个div显示区域，里面有ul,ul里面的动态生成li,进行innerHTML的li标签拼接
+                // 2- 不断的改变某个标签(控制所有的产品，选中父类的ul)的left取值,多次定时
+                // 3- 当ul在父类div滚动的时候，超过位置就自动隐藏了
+                // 4- 无缝拼接的话，原理是显示区域可以显示5个产品,复制一份的目的是,总共10个li标签，保证移动时候,显示区域是由替补的产品替换
+                // 5- 一直左侧移动的话会漏孔,防止的话，当第十个li到达显示区域的最右边的话，那么直接left回到0,显示第一个li标签
+                // 6- 判断的条件就是就是ul的left是否到达10个li的中间,也就是显示区域刚好开始显示第6个li, if num = 负的显示区域宽度
+                // 7- 点击向右的箭头时，ul会向左移动,防止右侧镂空，则ul的left = 负的显示区域宽度时候,将left = 0
+                //    点击向左的箭头时，ul会向右移动,防止左侧镂空，则ul的left = 0,将left = 负的显示区域宽度 
+            }
+
+
+            func2()
+
+        }
+        
+    </script>
+
+    <style>
+        
+        div{
+            width: 200px;
+            height: 200px;
+            background: pink;
+
+            /* <!-- 通过修改margin/position来使其移动, margin不合适 --> */
+            position: fixed;
+            left: 0;
+            top: 50;
+        }
+    
+    </style>
+
 </head>
 <body>
+
+    <button id="btn1">单次定时</button>
+    <button id="btn2">多次循环定时</button>
+    <button id="btn3">停止循环定时</button>
+    <button id="btn4">停止div运动</button>
+
+    <!-- 通过修改margin/position来使其移动, margin不合适 -->
+    <div id="box"></div>
 
 </body>
 </html>
