@@ -1,13 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>todolist</title>
+	<style type="text/css">
+		.list_con{
+			width:600px;
+			margin:50px auto 0;
+		}
+		.inputtxt{
+			width:550px;
+			height:30px;
+			border:1px solid #ccc;
+			padding:0px;
+			text-indent:10px;			
+		}
+		.inputbtn{
+			width:40px;
+			height:32px;
+			padding:0px;
+			border:1px solid #ccc;
+		}
+		.list{
+			margin:0;
+			padding:0;
+			list-style:none;
+			margin-top:20px;
+		}
+		.list li{
+			height:40px;
+			line-height:40px;
+			border-bottom:1px solid #ccc;
+		}
+
+		.list li span{
+			float:left;
+		}
+
+		.list li a{
+			float:right;
+			text-decoration:none;
+			margin:0 10px;
+		}
+	</style>
+	<script type="text/javascript" src="../../12jQuery_Basic/day01/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		// 增加按钮单击：获取用户输入的数据 -- 放到节点变量li标签中 -- 追加函数把节点变量追加到页面中
+		$('#btn1').click(function(){
+			var vals = $('#txt1').val()
+			// alert(vals)
+			// 如果用户输入的内容是空，报错
+			if(vals =='') {
+				alert('请输入内容');
+				return;
+			}
+
+            // 超链接如果写javascript:;或者javascript:void(0)表示此链接不跳转任何界面
+			var lis = $('<li><span>'+vals+'</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>');
+			lis.prependTo($('#list'));
+		})
+
+        // 用户点击了添加，页面新增一行记录，不能直接在js中设置list下面a的点击事件，因为程序运行的时候,jquery根本
+        // 读取不到用户添加的元素，只能绑定页面已经写好存在的元素的事件，所以只能使用delegate事件委托处理未来元素
+
+		// $('#list a').click(function(){
+		// 	alert(1) //不能触发命令：当程序执行的时候，jq还读取不到未来元素，所以就没有对应的命令被触发
+		// })
+
+        $("#list").delegate("a", "click", function () {
+            
+            // 一行li标签有3个a标签，使用a标签上的类名来区分不同的a标签
+            var myClass = $(this).prop("class");
+
+            // 删除的对象是该this的a标签中的父级li标签
+            if (myClass == "del") {
+                $(this).parent().remove()
+            } else if (myClass == "up") {
+                if ($(this).parent().index() == 0) {
+                    alert("已经在顶部了...")
+                    return;
+                }
+                // 同级改变li的位置使用的是insert而不是prepend
+                $(this).parent().insertBefore($(this).parent().prev())
+            } else if(myClass == 'down') {
+
+                // 判断是不是最后一个，可以使用length判断或者当前的next是不是还有元素
+                if ($(this).parent().next().length == 0) {
+
+                    alert("已经在底部了...")
+                    return;
+                }
+                console.log(111);
+                
+                // 同级改变li的位置使用的是insert而不是prepend
+                $(this).parent().insertAfter($(this).parent().next())
+            }
+
+        })
+	})
+	</script>	
 </head>
 <body>
 
+	<div class="list_con">
+	<h2>To do list</h2>
+		<input type="text" name="" id="txt1" class="inputtxt">
+		<input type="button" name="" value="增加" id="btn1" class="inputbtn">
+		
+		<ul id="list" class="list">
+
+			<li><span>学习html</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<li><span>学习css</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<!-- sfasdjf -->
+			<li><span>学习javascript</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+
+		</ul>
+
+	</div>
 </body>
 </html>
