@@ -41,8 +41,17 @@
             // $('选择器')和css的选择器一样, $('button')意思是button标签选择器
             function func2() {
                 $('#btn1').click(function () {
-                    // $("div").hide(500)
-                    $("#box").toggle(500)
+
+                    // $("div").hide(500)           直接隐藏
+                    // $("#box").toggle(500)        切换show/hide
+                    // $("#box").fadeToggle()       切换fadeiin/faddeout
+                    // $("#box").fadeTo(500, 0.6)   500ms变化到0.6的透明度
+                    $("#box").slideToggle()
+
+                    // 设置初始的css位置
+                    // $("#box").css({"top": "10px", "opacity": 0})
+                    // 设置移动到目标css的属性和时间等动画
+                    // $("#box").animate({"top": "50%", "opacity": 1})
                 })
 
                 $('#btn2').click(function () {
@@ -100,7 +109,7 @@
                 })
             }
 
-            func7()
+            func2()
 
             
         })

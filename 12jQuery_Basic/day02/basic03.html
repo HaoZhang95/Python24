@@ -13,15 +13,156 @@
         $(function () {
             
             function func1() {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() >= 200) {
+                        console.log("大于200")
+                        $(".search").css({"position": "fixed", "left": 0, "top": 0})
+                    } else {
 
+                        // 取消定位就是不定位，static
+                        $(".search").css({"position": "static"})
+                    }
+                })
             }
 
             func1()
         })
         
     </script>
+
+    <style>
+        
+        .center {
+            width: 1200px;
+            height: 200px;
+            border: 1px solid grey;
+            margin: 0px auto;
+        }
+
+        .search {
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+        }
+
+    </style>
+
 </head>
 <body>
+
+    <!-- 模拟taobao的搜索框,超出部分直接固定住 -->
+
+    <div class="center">
+
+        <div class="search"></div>
+
+    </div>
+
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
 
 </body>
 </html>
