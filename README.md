@@ -12,6 +12,8 @@
 
 ![Logo](https://i.imgur.com/lAUV1FT.png)
 
+具体详细的Python学习路线图可以在[此处](http://bbs.itheima.com/forum.php?mod=viewthread&tid=414606&page=1)中查看
+
 
 <h2 id="catalog">目录</h2>
 
