@@ -10,6 +10,7 @@
     border: 1px solid pink;
     margin: 100px auto;
     position: relative;
+    overflow: hidden;
 }
 
 .slide ol{

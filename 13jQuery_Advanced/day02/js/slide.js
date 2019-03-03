@@ -2,6 +2,7 @@ $(function () {
 
     var index_of_current_li = 0
     var index_of_target_li = 0
+    var arrow_flag = true
 
     var $img_li = $(".slide ul li")
 
@@ -29,35 +30,54 @@ $(function () {
     var $right = $(".slide .right")
 
     $right.click(function () {
-        index_of_target_li++;
-        console.log(121);
-        
-        pic_move()
+        if (arrow_flag) {
+            arrow_flag = false
+            index_of_target_li++;
+            pic_move()
+        }
     })
 
     $left.click(function () {
-        index_of_target_li--;
-        pic_move()
+        if (arrow_flag) {
+            arrow_flag = false
+            index_of_target_li--;
+            pic_move()
+        }
     })
 
     // 自动播放
+    var oTimer = setInterval(auto_move, 3000)
+
+    function auto_move() {
+        index_of_target_li++;
+        pic_move()
+    }
 
     // 鼠标移入离开事件
+    var $slide = $(".slide")
+    $slide.hover(function () {
+        clearInterval(oTimer)
+        oTimer = null
+    }, function () {
+        oTimer = setInterval(auto_move, 3000)
+    })
+
    
     // 图片移动
     function pic_move() {
         if (index_of_current_li < index_of_target_li) {
             // 从右向左移动图片---需要保证目标图在右侧, 防止跳着点原点,目标图位置错乱
-            $img_li.eq(index_of_current_li).animate({"left": "-760px"})
-
+            // 为了防止用户连续点击，动画需要先停止再重新执行，否则会出乱,遇到animate就自动在前加上stop()
+            $img_li.eq(index_of_current_li).stop().animate({"left": "-760px"}, function () {
+                arrow_flag = true
+            })
             $img_li.eq(index_of_target_li).css({"left": "760px"})
-            $img_li.eq(index_of_target_li).animate({"left": "0px"})
         } else {
             // 从左向右移动图片---需要保证目标图在左侧
-            $img_li.eq(index_of_current_li).animate({"left": "760px"})
-
+            $img_li.eq(index_of_current_li).stop().animate({"left": "760px"}, function () {
+                arrow_flag = true
+            })
             $img_li.eq(index_of_target_li).css({"left": "-760px"})
-            $img_li.eq(index_of_target_li).animate({"left": "0px"})
         }
 
         // 如果到结尾，显示第一张图,仍然摆位置从右侧到左侧
@@ -67,9 +87,9 @@ $(function () {
 
             // 摆位置
             $img_li.eq(index_of_target_li).css({"left": "760px"})
-            $img_li.eq(index_of_target_li).animate({"left": "0px"})
-
-            $img_li.eq(index_of_current_li).animate({"left": "-760px"})
+            $img_li.eq(index_of_current_li).stop().animate({"left": "-760px"}, function () {
+                arrow_flag = true
+            })
         }
 
         // 如果到开头，显示最后一张图,仍然摆位置从左侧到右侧
@@ -79,12 +99,15 @@ $(function () {
 
             // 摆位置
             $img_li.eq(index_of_target_li).css({"left": "-760px"})
-            $img_li.eq(index_of_target_li).animate({"left": "0px"})
-
-            $img_li.eq(index_of_current_li).animate({"left": "760px"})
+            $img_li.eq(index_of_current_li).stop().animate({"left": "760px"}, function () {
+                arrow_flag = true
+            })
         }
 
         // 更新index和圆点
+        $img_li.eq(index_of_target_li).stop().animate({"left": "0px"}, function () {
+            arrow_flag = true
+        })
         index_of_current_li = index_of_target_li
         $point_li.eq(index_of_target_li).addClass("active").siblings().removeClass("active")
     }
