@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/18新经资讯项目/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19Django_Advanced/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20美多商城项目/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyThesis/MyThesis.docx" beforeDir="false" afterPath="$PROJECT_DIR$/MyThesis/MyThesis.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20美多商城项目/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/20美多商城项目/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/20美多商城项目/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="669">
-                <caret line="209" column="15" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
+              <first_editor relative-caret-position="573">
+                <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -704,8 +700,8 @@
     <entry file="file://$PROJECT_DIR$/20美多商城项目/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="669">
-            <caret line="209" column="15" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
+          <first_editor relative-caret-position="573">
+            <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
