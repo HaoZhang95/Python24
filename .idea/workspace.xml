@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" beforeDir="false" afterPath="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11JavaScript/day01/basic01.html" beforeDir="false" afterPath="$PROJECT_DIR$/11JavaScript/day01/basic01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18新经资讯项目/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19Django_Advanced/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20美多商城项目/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyThesis/MyThesis.docx" beforeDir="false" afterPath="$PROJECT_DIR$/MyThesis/MyThesis.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +18,20 @@
     <favorites_list name="PythonAndMachineLearning" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20美多商城项目/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="669">
+                <caret line="209" column="15" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,9 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/07MySql/day04/basic01.sql" />
-        <option value="$PROJECT_DIR$/07MySql/day04/basic02.sql" />
-        <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic01.py" />
         <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/basic02.py" />
         <option value="$PROJECT_DIR$/08WSGI_Mini_Web/day01/mini_framework.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day01/basic02.py" />
@@ -107,14 +120,17 @@
         <option value="$PROJECT_DIR$/17Git/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" />
+        <option value="$PROJECT_DIR$/18新经资讯项目/README.md" />
+        <option value="$PROJECT_DIR$/19Django_Advanced/README.md" />
+        <option value="$PROJECT_DIR$/20美多商城项目/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1390" />
-    <option name="height" value="790" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="1738" />
+    <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -132,6 +148,11 @@
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="20美多商城项目" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -145,16 +166,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django\day02" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django\day01" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\11JavaScript" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\09WebFramework\day01\dynamic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18新经资讯项目" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django\day02" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\14Django\day01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -309,8 +330,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20330033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966533" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3299866" />
       <window_info id="Project Explorer" order="3" weight="0.3299866" />
@@ -339,24 +361,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic03.py" />
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="195" lean-forward="true" selection-end-line="221" />
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09WebFramework/day04/run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09WebFramework/day04/basic01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1208">
@@ -674,6 +678,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/18新经资讯项目/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="511">
+            <caret line="94" column="15" lean-forward="true" selection-start-line="94" selection-start-column="15" selection-end-line="94" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19Django_Advanced/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="456">
+            <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20美多商城项目/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="669">
+            <caret line="209" column="15" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
