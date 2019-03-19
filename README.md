@@ -40,6 +40,14 @@
 - [x] [19Django_Advanced](/19Django_Advanced/README.md)
 - [x] [20美多商城项目](/20美多商城项目/README.md)
 
+- [x] [21爬虫入门](/21爬虫入门/README.md)
+- [x] [22爬虫提高](/22爬虫提高/README.md)
+- [x] [23电商爬虫和Scrapy框架](/23电商爬虫和Scrapy框架/README.md)
+- [x] [24自动化运维](/24自动化运维/README.md)
+- [x] [25项目环境自动化部署](/25项目环境自动化部署/README.md)
+- [x] [26数据结构](/26数据结构/README.md)
+- [x] [27数据挖掘](/27数据挖掘/README.md)
+
 
 
 
