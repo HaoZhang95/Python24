@@ -7,7 +7,7 @@
 import re
 
 
-def testRegex01():
+def test_regex01():
 
     # <re.Match object; span=(0, 3), match='终结者'>
     result1 = re.match(r"终结者", "终结者1")
@@ -116,9 +116,8 @@ def testRegex04():
             print("变量名：%s不符合命名要求." % temp)
 
 
-
 def main():
-    # testRegex01()
+    # test_regex01()
     # testRegex02()
     # testRegex03()
     testRegex04()

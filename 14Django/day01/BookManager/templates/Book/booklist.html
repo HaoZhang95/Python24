@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    {# 模板语言中的注释使用花括号中包括警号 #}
+    {# 花括号中的是%的是模板编程语言,跟jsp差不多   #}
+    {# 直接两个花括号表示直接加载某一个变量值   #}
+
+    <ul>
+        {% for book in book_list %}
+            {# href前面加这个/表示从根路径显示: 8080/1, 不加的话显示当前路径下:8080/booklist/1 #}
+
+            {# 直接从根路由进行拼接 #}
+            {# <li><a href="/{{ book.id }}">{{ book.name }}</a></li>#}
+
+            {# href中的是花括号+百分号, url 后面添加urls.py中的路由中的name, 后面是动态参数: --> 8080/booklist/1 #}
+            {# 指定href并不是直接从根路径进行拼接，而是从name=details的路由后面开始拼接 #}
+            <li><a href="{% url 'details'  book.id  %}">{{ book.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

@@ -2,20 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/22爬虫提高/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23电商爬虫和Scrapy框架/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24自动化运维/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25项目环境自动化部署/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/26数据结构/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27数据挖掘/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Regex/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/day01/basic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day01/basic01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day01/basic02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day01/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day02/basic01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day02/basic02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day02/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day03/basic01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day03/basic02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day03/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day04/basic01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day04/basic02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day04/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day05/basic01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day05/basic02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day05/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day06/basic01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day06/basic02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day06/basic03.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PythonAndMachineLearning$basic01__1_.coverage" NAME="basic01 (1) Coverage Results" MODIFIED="1553528241871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05Regex/day01" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="PythonAndMachineLearning" />
@@ -62,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/09WebFramework/day01/basic01.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/basic03.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/basic02.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/dynamic/mini_framework.py" />
@@ -94,7 +109,6 @@
         <option value="$PROJECT_DIR$/02NetworkProgramming/README.md" />
         <option value="$PROJECT_DIR$/01Linux/README.md" />
         <option value="$PROJECT_DIR$/00Python/README.md" />
-        <option value="$PROJECT_DIR$/14Django/day01/basic01.py" />
         <option value="$PROJECT_DIR$/13jQuery_Advanced/README.md" />
         <option value="$PROJECT_DIR$/14Django/README.md" />
         <option value="$PROJECT_DIR$/10Html_Css/day03/basic01.html" />
@@ -113,14 +127,16 @@
         <option value="$PROJECT_DIR$/26数据结构/README.md" />
         <option value="$PROJECT_DIR$/27数据挖掘/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
+        <option value="$PROJECT_DIR$/14Django/day01/basic01.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="1738" />
-    <option name="height" value="988" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="1740" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -140,42 +156,12 @@
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="20美多商城项目" type="462c0819:PsiDirectoryNode" />
+              <item name="14Django" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="21爬虫入门" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="22爬虫提高" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="23电商爬虫和Scrapy框架" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="24自动化运维" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="25项目环境自动化部署" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="26数据结构" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="27数据挖掘" type="462c0819:PsiDirectoryNode" />
+              <item name="15Flask" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -185,10 +171,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Videos/2018年6月北京黑马python24期全套视频课程/0-24期课件资料/09-web框架基础&amp;实战/24-21{web框架-完善}/4-代码/21day" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -215,7 +202,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.basic04 (1)">
+  <component name="RunManager" selected="Python.basic01 (1)">
+    <configuration name="basic01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonAndMachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05Regex/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="basic01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonAndMachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -228,28 +237,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10Html_Css/day01/basic01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="basic02 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonAndMachineLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09WebFramework/day04" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day04/basic02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,6 +259,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day04/basic03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -291,6 +281,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06AdvancedPyton/day02/basic04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -312,6 +303,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09WebFramework/day04/basic04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -323,11 +315,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic01 (1)" />
         <item itemvalue="Python.basic04 (1)" />
         <item itemvalue="Python.basic01" />
         <item itemvalue="Python.basic04" />
         <item itemvalue="Python.basic03" />
-        <item itemvalue="Python.basic02 (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -341,8 +333,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550667200072</updated>
+      <workItem from="1553527934330" duration="1165000" />
+      <workItem from="1553529136191" duration="9000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,9 +351,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20326488" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.208166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966533" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3299866" />
       <window_info id="Project Explorer" order="3" weight="0.3299866" />
@@ -365,36 +362,33 @@
       <window_info anchor="bottom" id="Console" order="0" />
       <window_info anchor="bottom" id="DB Execution Console" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32820514" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32754344" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32948717" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3287841" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run" order="12" weight="0.34358975" />
+      <window_info anchor="bottom" id="Run" order="12" weight="0.34243175" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/10Html_Css/day01/basic01.py" />
-    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/css/my_css.css" />
-    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic03.html" />
-    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -521,33 +515,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day01/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day01/basic03.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day02/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day03/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day04/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day05/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day06/basic01.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day01/basic02.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/day06/basic03.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day01/basic03.py" />
+    <entry file="file://$PROJECT_DIR$/14Django/day02/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/14Django/day03/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/14Django/day04/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/14Django/day05/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/14Django/day06/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/14Django/day06/basic03.py" />
     <entry file="file://$PROJECT_DIR$/13jQuery_Advanced/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -609,26 +583,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="312">
             <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15Flask/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="48">
-            <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14Django/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="669">
-            <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
@@ -748,6 +702,59 @@
             <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03Thread/day03/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day01/basic02.py" />
+    <entry file="file://$PROJECT_DIR$/05Regex/day01/basic01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day01/basic01.py" />
+    <entry file="file://$PROJECT_DIR$/15Flask/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="669">
+            <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09WebFramework/day03/basic02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
