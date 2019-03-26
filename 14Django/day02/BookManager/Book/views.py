@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-from Book.models import BookInfo, PeopleInfo
+from Book.models import BookInfo, PeopleInfo, AreaInfo
 
 
 def book_list(request):
@@ -119,3 +119,11 @@ def book_list(request):
     # 惰性查询，并不是在book_list = BookInfo.books.all()立即查询
     # 而是在模板中使用到book_list的时候才会真正的在数据库查询
     return render(request, "Book/booklist.html", context)
+
+
+def area_list(request):
+
+    city_info = AreaInfo.objects.get(name='广州市')
+    context = {'city': city_info}
+
+    return render(request, 'Book/arealist.html', context)

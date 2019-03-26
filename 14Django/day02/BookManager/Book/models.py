@@ -61,3 +61,15 @@ class PeopleInfo(models.Model):
 
     class Meta:
         db_table = "peopleinfo"
+
+
+# 地区列表信息,自关联的表结构(多个一对多的表相结合)： id, name, parent 省去了多张表的创建
+# 多对一，拿到外键parent获得的就是省会 --> city.parent.name
+# 一对多，使用模型名字的小写 --> ity.areainfo_set.all
+class AreaInfo(models.Model):
+    name = models.CharField(max_length=30)
+    parent = models.ForeignKey('self', null=True, blank=True, on_delete=models.CASCADE)
+
+    # 元类信息 ：修改表名
+    class Meta:
+        db_table = 'areainfo'

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>当前城市：{{ city.name }}</h1>
+
+    {#  多对一，拿到外键parent获得的就是省会  #}
+    <h1>上级省会：{{ city.parent.name }}</h1>
+
+    <h1>下属区县：</h1>
+    <ul>
+
+        {# 一对多，使用模型名字的小写 #}
+        {% for qu in city.areainfo_set.all %}
+            <li>{{ qu.name }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
