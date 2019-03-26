@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05Regex/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/05Regex/day01/basic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day01/basic01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day01/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day01/basic03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day02/basic01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day02/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day02/basic03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day03/basic01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day03/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day03/basic03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day04/basic01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day04/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day04/basic03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day05/basic01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day05/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day05/basic03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day06/basic01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day06/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14Django/day06/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day01/BookManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/14Django/day01/BookManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14Django/day01/BookManager/instruction01.py" beforeDir="false" afterPath="$PROJECT_DIR$/14Django/day01/BookManager/instruction01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +18,36 @@
     <favorites_list name="PythonAndMachineLearning" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/Book/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/BookManager/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/Book/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/Book/views.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,8 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/09WebFramework/day02/basic03.py" />
-        <option value="$PROJECT_DIR$/09WebFramework/day02/basic02.py" />
         <option value="$PROJECT_DIR$/09WebFramework/day02/dynamic/mini_framework.py" />
         <option value="$PROJECT_DIR$/09WebFramework/templates/index.html" />
         <option value="$PROJECT_DIR$/09WebFramework/templates/center.html" />
@@ -129,6 +137,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/05Regex/day01/basic01.py" />
         <option value="$PROJECT_DIR$/14Django/day01/basic01.py" />
+        <option value="$PROJECT_DIR$/14Django/day02/BookManager/BookManager/settings.py" />
+        <option value="$PROJECT_DIR$/14Django/day02/BookManager/Book/models.py" />
       </list>
     </option>
   </component>
@@ -157,6 +167,35 @@
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
               <item name="14Django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="14Django" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="14Django" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="BookManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="14Django" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="BookManager" type="462c0819:PsiDirectoryNode" />
+              <item name="Book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="14Django" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="BookManager" type="462c0819:PsiDirectoryNode" />
+              <item name="BookManager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -335,11 +374,12 @@
       <updated>1550667200072</updated>
       <workItem from="1553527934330" duration="1165000" />
       <workItem from="1553529136191" duration="9000" />
+      <workItem from="1553606908350" duration="196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1174000" />
+    <option name="totallyTimeSpent" value="1370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,8 +392,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.208166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21084337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966533" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3299866" />
       <window_info id="Project Explorer" order="3" weight="0.3299866" />
@@ -389,22 +430,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/11JavaScript/day01/basic01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11JavaScript/day02/basic01.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12jQuery_Basic/day01/basic01.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/13jQuery_Advanced/day01/basic01.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/10Html_Css/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -755,6 +780,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/Book/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/Book/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/BookManager/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14Django/day02/BookManager/Book/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

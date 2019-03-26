@@ -41,7 +41,13 @@
               2- python manage.py createsuperuser 创建管理员
               3- 启动服务,到 http://127.0.0.1:8000/admin进行登陆
               4- 在admin.py中注册自己的数据models用来在后台显示
+"""
 
-    
+"""
+    ORM: object-relation-mapping 对象关系映射
+    优点：面向对象编程，不再是面向数据库写代码
+        实现了数据模型和数据库的解耦，不在关注用的是oracle,mysql还是其他数据库
+    缺点: object需要花费一点时间转换为sql语句，有性能损失(不过可忽略不计)
+
 """
 

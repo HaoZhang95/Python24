@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>书籍信息列表</title>
+</head>
+<body>
+
+    <ul>
+
+        {% for book in book_list %}
+            <li>{{ book.name }}</li>
+        {% endfor %}
+
+    </ul>
+
+    <h1>阅读量之和：{{ total_count.read_count__sum }}</h1>
+    <h1>{{book2.name }}</h1>
+
+    <ul>
+
+        {% for people in people_list2 %}
+            <li>{{ people.name }}</li>
+        {% endfor %}
+
+    </ul>
+    <ul>
+
+        {% for book in book_list2 %}
+            <li>{{ book.name }}</li>
+        {% endfor %}
+
+    </ul>
+
+
+</body>
+</html>
