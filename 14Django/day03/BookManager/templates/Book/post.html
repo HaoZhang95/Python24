@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/test41/" method="post">
+
+        {# 必须带有这个token用来安全认证，表示这是从django向服务器进行post的,表示是不是django页面进行请求的 #}
+        {% csrf_token %}
+
+        <input type="text" name="username">
+        <br>
+        <br>
+        <input type="password" name="password">
+        <br>
+        <br>
+        <input type="radio" name="sex" value="男">男 <input type="radio" name="sex" value="女">女
+        <br>
+        <br>
+        <input type="checkbox" name="like" value="足球">足球 <input type="checkbox" name="like" value="篮球">篮球 <input type="checkbox" name="like" value="羽毛球">羽毛球
+        <br>
+        <br>
+        <input type="submit" value="提交">
+
+
+
+    </form>
+
+</body>
+</html>

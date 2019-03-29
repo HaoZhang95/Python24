@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+
+    {# 加载static文件夹下的jquery, 需要在settings中配置STATICFILES_DIRS变量 #}
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+
+    <script>
+
+        {# 等待dom记载完成 #}
+        $(function () {
+            {# 点击按钮 #}
+            $('#ajaxbtn').click(function () {
+                {# ajax发送 #}
+                $.get('/test51/', function (json_data) {
+
+                    book_list = json_data['book_list'];
+
+                    $('#test li').remove();
+
+                    test_ul = $('#test');
+
+                    $.each(book_list, function (index, book) {
+                        test_ul.append('<li>'+ book.name +'</li>')
+                    })
+                })
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<input id="ajaxbtn" type="button" value="ajax_request">
+
+<ul>
+    <li>鹅鹅鹅</li>
+    <li>曲项向天歌</li>
+    <li>白毛浮绿水</li>
+    <li>红掌拨清波</li>
+</ul>
+
+<ul id="test" style="background: red;width: 100px;height: 100px;">
+    <li>床前明月光</li>
+    <li>地上鞋两双</li>
+    <li>举头望明月</li>
+    <li>低头思故乡</li>
+</ul>
+
+</body>
+</html>
