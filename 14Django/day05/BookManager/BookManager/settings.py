@@ -37,11 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     # 安装自己的应用
+
     'Book',
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -51,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'BookManager.urls'
 
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'BookManager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+        'NAME': 'BookDB24', # 数据库名称
+        'HOST': '192.168.1.102', # 数据库主机(建议使用主机真实IP)
+        'PORT': '3306',  # 数据库端口
+        'USER': 'root',  # 数据库用户名
+        'PASSWORD': 'haozhang',  # 数据库密码
     }
 }
 
@@ -120,7 +124,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# 这个staticurl只是判断文件的地址是不是加载本地的一个flag，只有符合STATIC-URL的话，才回去加载下面的STATICFILS_DIRS路径
+# STATIC_URL = '/xyz/'
 STATIC_URL = '/static/'
+
 
 # 配置静态文件加载路径
 STATICFILES_DIRS = [

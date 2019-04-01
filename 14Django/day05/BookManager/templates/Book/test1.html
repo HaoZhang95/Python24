@@ -13,9 +13,19 @@
     {% comment %}
         首先，判断图片本地地址的开始部分是否与STATIC_URL一致，如果一致则取出余下部分images/mm01.jpg
         然后，使用os.path.join(BASE_DIR, 'static') 拼接 images/mm01.jpg得到静态文件加载全路径
-        提示：STATIC_URL不一致就报404
+        提示：STATIC_URL不一致就报404, 缺点就是明文暴露了静态文件的真实目录途径
     {% endcomment %}
     <img src="/static/images/Passport%20Photo.jpg">
+
+
+    {#  动态的加载读取settings里面的static url路径，方便地址修改，另一个优点就是，隐藏静态文件的路径，比如自己设置STATIC_URL='XYZ'  #}
+    {#  那么浏览器的超链接就会显示为: xyz/images/01.png 隐藏了真实的静态文件存储目录  #}
+    {#  下面两种方法都可以，注意都是加载的STATIC_URL不是其他的 #}
+
+    {% load static from staticfiles%}
+    {#    {% load staticfiles %}#}
+
+    <img src="{% static  'images/Passport%20Photo.jpg' %}">
 
 </body>
 </html>
