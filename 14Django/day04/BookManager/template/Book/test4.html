@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/test41/" method="post">
+
+        {# 服务器给员工的工牌，submit的时候拿着工牌去回送服务器的请求 #}
+        {% comment %}
+            {% csrf_token %}会在源代码中显示的验证信息：
+            <input type="hidden" name="csrfmiddlewaretoken"
+                           value="2TL3FmjMOc0kDx0mzC5y2CsQmG0Co3GhFKebvQlIWzXeiwAQMEF6kmdQud2RGgoA">
+            同时也会向客户端中写入一个cookie，值和上面的隐藏input的value一样
+        {% endcomment %}
+        {% csrf_token %}
+
+        <input type="text" name="uname">
+        <br>
+        <br>
+        <input type="text" name="money">
+        <br>
+        <br>
+        <input type="submit" value="转账">
+    </form>
+
+</body>
+</html>

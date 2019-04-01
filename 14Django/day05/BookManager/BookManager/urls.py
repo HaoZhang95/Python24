@@ -16,14 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 
-
-# 使用namespace的时候需要增加app_name变量,或者直接在include中添加
-# app_name = 'book'
 urlpatterns = [
     path('admin/', admin.site.urls),
-
-    # 给Book.urls的路由起一个别名，用作反向解析
-    # re_path(r'^', include('Book.urls', namespace='book'))
     re_path(r'^', include(('Book.urls', 'book'), namespace='book')),
-
 ]

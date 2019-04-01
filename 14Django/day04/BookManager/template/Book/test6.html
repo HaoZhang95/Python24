@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反向解析</title>
+</head>
+<body>
+
+    {# <a href="/test61/">跳转到fan1</a> #}
+
+    {# book --> Book.urls中的namespace 也就是book应用#}
+    {# test61 --> Book.urls中一个路由的name #}
+    {# 这样变化的话，只需要修改urls中的地址即可，不再需要修改两方面 #}
+    <a href="{% url 'book:test61' %}">跳转到Test61</a>
+
+
+    {#  反响解析中的位置参数  #}
+    {#  <a href="/test8/11/22">跳转到Test81</a>  #}
+    {#  11和22会匹配给book:test8中的正则， 'test8/(\d+)/(\d+)/' #}
+    <a href="{% url 'book:test8' 11 22 %}">跳转到Test81</a>
+
+
+    {#  大致流程就是：连接先去找别名为book的应用下别名为test10的路由 #}
+    {#  该路由的正则表达式中num1的值赋值给11，从而确定整个超链接的url地址   #}
+    <a href="{% url 'book:test10' num1=11 num2=22 %}">跳转到Test81</a>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML转义</title>
+</head>
+<body>
+
+    {#默认会进行HTML转义，右击检查源代码的时候，就会发现：&lt;h1&gt;我是最大的标题标签&lt;/h1&gt;#}
+    {{ text }}
+
+    {#  后面添加一个过滤器，告诉该变量不需要被转移，是安全的标签string  #}
+    {{ text|safe }}
+
+    {#  默认的就是自动转移，管道未|escape  #}
+
+    {#  设置一段代码都禁止转移, on / off  #}
+    {% autoescape on %}
+
+    {% endautoescape %}
+
+
+</body>
+</html>

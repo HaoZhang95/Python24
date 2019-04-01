@@ -22,6 +22,7 @@
         <h1>这是修改后不同的子模板的seatch bar</h1>
     {% endblock %}
 
+    {#  视图函数传给子模板的context可以被父模板拿到，这点和python有点不同  #}
     {% block body %}
         <h1>这是子模板的body</h1>
         <h1>{{ name }}</h1>

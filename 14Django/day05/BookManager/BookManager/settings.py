@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd4q(-+wr@ha59@f-2pd#0pc&jk*ry-c@_w*z$(aa75m1v*x$s#'
+SECRET_KEY = '9-eo@m3i#i6zv^7i62%50@ba7y4ec&mp8dr$cb4$0ni1v!+ezm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # 安装自定义应用
+    # 安装自己的应用
     'Book',
 ]
 
@@ -46,8 +46,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-
-    # 默认开启了CSRF跨站请求
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -59,7 +57,7 @@ ROOT_URLCONF = 'BookManager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'template')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,12 +78,8 @@ WSGI_APPLICATION = 'BookManager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-        'NAME': 'BookDB24', # 数据库名称
-        'HOST': '192.168.1.102', # 数据库主机(建议使用主机真实IP)
-        'PORT': '3306',  # 数据库端口
-        'USER': 'root',  # 数据库用户名
-        'PASSWORD': 'haozhang',  # 数据库密码
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
