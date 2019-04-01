@@ -20,18 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wb3i0m1p1n9l6z^hu)y%^2imx7een!!i*-%9whfvl2!++k&k&*'
+SECRET_KEY = 'd4q(-+wr@ha59@f-2pd#0pc&jk*ry-c@_w*z$(aa75m1v*x$s#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-# 设置为线上模式，并且允许任何网点访问页面，否则会拒绝此访问
-# 此外如果改为线上模式，那么django不再提供静态文件的逻辑处理，因为django擅长处理动态逻辑，静态文件处理交给nginx来处理
-# DEBUG = False
-#
-# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,19 +34,16 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-
-    # 默认安装了session
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 安装自定义应用
     'Book',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-
-    # 默认启动了session
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -66,7 +57,7 @@ ROOT_URLCONF = 'BookManager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,7 +75,6 @@ WSGI_APPLICATION = 'BookManager.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 
 DATABASES = {
     'default': {
@@ -134,8 +124,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-# 为jquery配置路径，静态的文件存放在static文件下
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]

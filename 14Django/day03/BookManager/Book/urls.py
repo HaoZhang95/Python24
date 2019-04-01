@@ -29,6 +29,20 @@ urlpatterns = [
     # ajax局部刷新需要使用jsonresponse返回一个json
     re_path('test5/$', views.test5),
 
-    # 响应json给ajax
+    # 响应json给ajax,ajax一般和jsonResponse组合使用
     re_path('test51/$', views.test51),
+
+    # login
+    re_path('test6/$', views.test6),
+
+    # 响应login的redirect
+    re_path('^test61/$', views.test61),
+
+    # 响应的时候写入cookie
+    re_path('^test7/$', views.test7),
+
+    # session
+    re_path('^test8/$', views.test8),
+
+
 ]

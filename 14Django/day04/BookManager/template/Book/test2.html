@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>子模板</title>
+
+    {% extends 'base.html' %}
+
+</head>
+<body>
+
+    {#  如果该模板继承一个父模板，那么context上下文获取的变量，只能显示在block括号之内才能获取  #}
+    {#  如果该模板为子模板，集成自某个父模板，那么该模板只能显示block之内的内容，也就是说下面的两行并不会显示出来  #}
+    {{ name }}
+    <h1>asdasfa</h1>
+
+    {#  子模板中重写父类的search bar的block  #}
+    {% block search_bar %}
+        <h1>这是修改后不同的子模板的seatch bar</h1>
+    {% endblock %}
+
+    {% block body %}
+        <h1>这是子模板的body</h1>
+        <h1>{{ name }}</h1>
+    {% endblock %}
+
+</body>
+</html>

@@ -7,13 +7,15 @@
     {# 加载static文件夹下的jquery, 需要在settings中配置STATICFILES_DIRS变量 #}
     <script src="/static/js/jquery-1.12.4.min.js"></script>
 
+    {#  ajax和http请i求的区别就是ajax支持局部刷新，ajax类似于内置在网页中的小型客户端，处理局部刷新的请求  #}
+
     <script>
 
         {# 等待dom记载完成 #}
         $(function () {
             {# 点击按钮 #}
             $('#ajaxbtn').click(function () {
-                {# ajax发送 #}
+                {# ajax发送，到test51的视图函数返回一个jsonResponse #}
                 $.get('/test51/', function (json_data) {
 
                     book_list = json_data['book_list'];

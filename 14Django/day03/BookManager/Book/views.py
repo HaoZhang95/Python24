@@ -1,5 +1,5 @@
 from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from Book.models import BookInfo
@@ -91,3 +91,41 @@ def test51(request):
     json_dict = {'book_list': book_dict_list}
 
     return JsonResponse(json_dict)
+
+
+def test6(request):
+    # test61/: http://127.0.0.1:8000/test6/test61/
+    # /test61/: http://127.0.0.1:8000/test61/ 开头一斜线表示从根路径开始拼接
+    return redirect('/test61/')
+
+
+def test61(request):
+    return HttpResponse('登陆成功...')
+
+
+def test7(request):
+    """先判断cookie的读取"""
+    request.COOKIES.get('login')
+    if 'login' in request.COOKIES:
+        pass
+    # request.delete_cookie('')
+
+    """cookie的写入"""
+    response = HttpResponse('ok...')
+    # 一次只能写入一个key-value
+    response.set_cookie('login', 'yes')
+
+    return response
+
+
+def test8(request):
+    """默认存储在django_session的表中,暗文的方式存储，并且把这个暗文的key存储到cookie中，所以session是基于cookie的"""
+    request.session['login'] = 'yes'
+
+    #  request.session.get('键',默认值)
+    #  del request.session['键']
+    #  request.session.clear()
+
+    return HttpResponse('ok...')
+
+

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>{{ name }}</h1>
+
+    <ul>
+        {% for book in booklist %}
+            {% if book.id <= 2 %}
+                <li style="background: red">{{ book.name }}</li>
+            {% elif book.id == 3 %}
+                <li style="background: green">{{ book.name }}</li>
+            {% else %}
+                <li style="background: blue">{{ book.name }}</li>
+
+
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for book in booklist %}
+
+            {% if book.name|length > 4 %}
+                <li style="background: red">{{ book.name }}--{{ book.pub_date|date:'Y年m月j日' }}</li>
+            {% else %}
+                <li style="background: green">{{ book.name }}--{{ book.pub_date }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+
+    {#  使用自定义过滤器之前必须在html中进行load, forloop.counter默认的索引就是从1开始，和book.id一样  #}
+    {% load myFilter %}
+    <ul>
+        {% for book in booklist %}
+
+            {% if forloop.counter|mod %}
+                <li style="background: red">{{ book.name }}--{{ book.pub_date|date:'Y年m月j日' }}</li>
+            {% else %}
+                <li style="background: green">{{ book.name }}--{{ book.pub_date }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    {# 这是单行注释 #}
+    {% comment %}
+        这是行注释
+    {% endcomment %}
+    {% load myFilter %}
+    <ul>
+        {% for book in booklist %}
+
+            {% if forloop.counter|mod2:3 %}
+                <li style="background: red">{{ book.name }}--{{ book.pub_date|date:'Y年m月j日' }}</li>
+            {% else %}
+                <li style="background: green">{{ book.name }}--{{ book.pub_date }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
