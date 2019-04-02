@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18af351-fe2a-4bfd-b795-432cff145ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/14Django/day05/BookManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/14Django/day05/BookManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17Git/day01/basic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17Git/day01/basic02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/17Git/day01/basic03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="623">
+              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
             </state>
           </provider>
         </entry>
@@ -374,12 +371,12 @@
       <workItem from="1553527934330" duration="1165000" />
       <workItem from="1553529136191" duration="9000" />
       <workItem from="1553606908350" duration="196000" />
-      <workItem from="1554236670804" duration="323000" />
+      <workItem from="1554236670804" duration="560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1693000" />
+    <option name="totallyTimeSpent" value="1930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="623">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
         </state>
       </provider>
     </entry>
