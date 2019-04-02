@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="799df2fe-bd88-4807-bbd7-fb5a505b30a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/middleware/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/myMiddleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.12.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Book/test2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Book/test3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Book/test4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Book/test5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/base_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookManager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookManager/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic.py" afterDir="false" />
-    </list>
+    <list default="true" id="799df2fe-bd88-4807-bbd7-fb5a505b30a7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,6 +59,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,7 +104,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,16 +172,17 @@
       <workItem from="1554137980497" duration="613000" />
       <workItem from="1554147658062" duration="1666000" />
       <workItem from="1554208541096" duration="12457000" />
+      <workItem from="1554236652758" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14736000" />
+    <option name="totallyTimeSpent" value="14745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14643237" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14792503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -211,7 +196,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32829374" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32754344" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
