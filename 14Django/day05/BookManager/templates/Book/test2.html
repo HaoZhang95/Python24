@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    {#  注意上传的方式post，按钮的类型file，还有表单必须加上 enctype="multipart/form-data  #}
+    <form action="/test21/" method="post" enctype="multipart/form-data">
+
+        {#  CSRF验证 #}
+        {% csrf_token %}
+
+        <input type="file" name="pic">
+        <br>
+        <br>
+        <input type="submit" value="上传">
+
+    </form>
+
+</body>
+</html>

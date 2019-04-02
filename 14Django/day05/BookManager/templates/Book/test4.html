@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    {#上一页, 模板中只能获取数据，并不能在模板中定义函数修改数据，只能使用管道来修改获取的数据#}
+    {% if current_page.has_previous %}
+        <a href="/page{{ current_page.number|add:-1 }}/">上一页</a>
+    {% endif %}
+
+    {#遍历出当前页中的10条省份信息#}
+    <ul>
+        {% for bookinfo in current_page %}
+            <li>{{ bookinfo.name }}</li>
+        {% endfor %}
+    </ul>
+
+    {#底部分页码#}
+    {% for index in current_page.paginator.page_range %}
+
+        {# 如果展示的是当前页就不需要超链接 #}
+        {% if current_page.number == index %}
+            {{ index }}
+        {% else %}
+            <a href="/page{{ index }}/">{{ index }}</a>
+        {% endif %}
+
+    {% endfor %}
+
+    {#下一页#}
+    {% if current_page.has_next %}
+        <a href="/page{{ current_page.number|add:1 }}/">下一页</a>
+    {% endif %}
+
+</body>
+</html>

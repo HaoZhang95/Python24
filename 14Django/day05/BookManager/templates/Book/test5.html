@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    {#    <script src="/static/js/jquery-1.12.4.min.js"></script>   #}
+
+    {% load static %}
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+
+    <script>
+
+        $(function () {
+
+            $.get('/sheng/', function (json_dict) {
+                sheng_list = json_dict['shenglist'];
+
+                // 取出标签
+                sheng_tag = $("#sheng");
+
+                $.each(sheng_list, function (index, sheng) {
+                    sheng_tag.append('<option value="'+sheng[0]+'">'+sheng[1]+'</option>');
+                })
+            })
+
+
+            {# 当省份选项变化时执行的函数 #}
+            $('#sheng').change(function () {
+                {# 获取选中的省份id #}
+                shengid = $(this).val();
+                {# 省份id作为ajax请求参数获取市信息 #}
+                $.get('/shi/', {'shengid':shengid}, function (shidata) {
+                    {# 获取市标签: 为防止上次内容拼接到本次，需清空标签内容 #}
+                    shitag = $('#shi').empty().append('<option value="0">请选择</option>');
+                    {# 遍历市信息列表 #}
+                    $.each(shidata.list, function (i, shi) {
+                        {# 拼接市标签内容 #}
+                        shitag.append('<option value="'+shi.id+'">'+shi.name+'</option>');
+                    });
+                });
+            });
+
+            {# 当市选项变化时执行的函数 #}
+            $('#shi').change(function () {
+                {# 获取选中的市id #}
+                shiid = $(this).val();
+                {# 市id作为ajax请求参数获取区信息 #}
+                $.get('/qu/', {'shiid':shiid}, function (qudata) {
+                    {# 获取标签: 为防止上次内容拼接到本次，需清空标签内容 #}
+                    qutag = $('#qu').empty().append('<option value="0">请选择</option>');
+                    {# 遍历市信息列表 #}
+                    $.each(qudata.list, function (i, qu) {
+                        {# 拼接市标签内容 #}
+                        qutag.append('<option value="'+qu.id+'">'+qu.name+'</option>');
+                    });
+                });
+            });
+        })
+    </script>
+
+
+</head>
+<body>
+
+    <select id="sheng">
+        <option value="0">请选择</option>
+    </select>
+
+    <select id="shi">
+        <option value="0">请选择</option>
+    </select>
+
+    <select id="qu">
+        <option value="0">请选择</option>
+    </select>
+
+</body>
+</html>
