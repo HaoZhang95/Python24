@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {#  模板代码复用的三种方式: macro宏代码函数, extends继承配合block使用, include包含一个html  #}
+
+    {% block top %}
+        这是顶部公用的html代码
+    {% endblock %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block bottom %}
+        这是底部公用的html代码
+    {% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post">
+        <label>用户名：</label><input type="text" name="username" placeholder="请输入用户名"><br/>
+        <label>密码：</label><input type="password" name="password" placeholder="请输入密码"><br/>
+        <label>确认密码：</label><input type="password" name="password2" placeholder="请输入确认密码"><br/>
+        <input type="submit" value="注册">
+    </form>
+
+    {#  获取后台发送的flash闪现消息，注意这里是方法的调用  #}
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+
+    <h1>以下是使用Flask-WTF扩展实现的表单</h1>
+    <form method="post">
+
+        {#  原始的格式<label>XXX</label>    <input>YYY</input>, stringField对应的就是input标签  #}
+        {{ register_form.username.label }}{{ register_form.username }}<br>
+        {{ register_form.password.label }}{{ register_form.password }}<br>
+        {{ register_form.password2.label }}{{ register_form.password2 }}<br>
+        {{ register_form.submit }}<br>
+    </form>
+
+</body>
+</html>

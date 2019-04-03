@@ -1,0 +1,23 @@
+{#  base.html基类就是相同的代码抽取出去，公共的代码，不同的代码挖个坑让子类去填写(重写)  #}
+{% extends 'base.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+    {% block content %}
+        这是子类重写的内容
+    {% endblock content %}
+
+    {% include 'demo1.html' %}
+
+</body>
+</html>

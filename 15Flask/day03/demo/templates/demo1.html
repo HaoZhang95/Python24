@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label>用户名：</label><input type="text" name="username"><br/>
+        <label>身份证号：</label><input type="text" name="idcard"><br/>
+        <label>密码：</label><input type="password" name="password"><br/>
+        <label>确认密码：</label><input type="password" name="password2"><br/>
+        <input type="submit" value="注册">
+    </form>
+    {#  macro宏，可以看作是是jinja2的一个函数，返回一个模板或者html代码  #}
+    {#  flask模板代码的复用使用macro宏, 使用方法就跟function函数一样 #}
+    {#  定义宏，相当于定义一个函数，在使用的时候直接调用该宏，传入不同的参数就可以了  #}
+    {%  macro my_input(label='', type='text', name='', value='') %}
+        <label> {{ label }} </label><input type="{{ type }}" name="{{ name }}" value="{{ value }}"><br/>
+    {%  endmacro  %}
+
+    <form>
+        {{ my_input('用户名：', name='username') }}
+        {{ my_input('密码：', type='password', name='password') }}
+        {{ my_input('确认密码：', type='password', name='password2') }}
+        {{ my_input(type='submit', value='注册') }}
+    </form>
+
+
+    {#  导入macro, 把所有的macro抽取到一个macro.html  #}
+    {% import 'macro.html' as my_macro %}
+
+    <form>
+        {{ my_macro.my_input('用户名：', name='username') }}
+        {{ my_macro.my_input('密码：', type='password', name='password') }}
+        {{ my_macro.my_input('确认密码：', type='password', name='password2') }}
+        {{ my_macro.my_input(type='submit', value='注册') }}
+    </form>
+
+</body>
+</html>
