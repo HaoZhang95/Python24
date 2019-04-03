@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {#  flask中可以进行数字计算，django中不行，只能通过管道来运算  #}
+    {{ my_dict['name'] }}
+    {{ my_int }}
+    {{ my_str }}
+
+
+    {#  flask中的filter前提是设置了模板语言，flask特有的链式filter  #}
+    {#  filter: length, upper, lower, reverse, last, first， sort列表排序, sum列表求和  #}
+    {{ 'abc' | upper}}
+    {{ 'aBc' | lower}}
+    {{ 'aBc' | reverse | lower}}
+
+    {#  禁止转义和striptags去掉html标签  #}
+    <p>{{ '<em>hello</em>' | safe }}</p>
+    <p>{{ '<em>hello</em>' | striptags }}</p>
+
+    {#  过滤器的参数传递 sum(attribute='XXX') #}
+    总价为:{{ my_dict | sum(attribute='price') }}
+
+    {#  列表的reverse需要自定义的过滤器进行反转  #}
+    {{ my_num_list | list_reverse }}
+
+
+</body>
+</html>
