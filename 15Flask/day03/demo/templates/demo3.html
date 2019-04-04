@@ -14,6 +14,7 @@
         <label>密码：</label><input type="password" name="password" placeholder="请输入密码"><br/>
         <label>确认密码：</label><input type="password" name="password2" placeholder="请输入确认密码"><br/>
         <input type="submit" value="注册">
+
     </form>
 
     {#  获取后台发送的flash闪现消息，注意这里是方法的调用  #}
@@ -24,6 +25,7 @@
     <h1>以下是使用Flask-WTF扩展实现的表单</h1>
     <form method="post">
 
+
         {#  原始的格式<label>XXX</label>    <input>YYY</input>, stringField对应的就是input标签  #}
         {{ register_form.username.label }}{{ register_form.username }}<br>
         {{ register_form.password.label }}{{ register_form.password }}<br>
@@ -31,5 +33,8 @@
         {{ register_form.submit }}<br>
     </form>
 
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
 </body>
 </html>

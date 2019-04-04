@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
+from wtforms.validators import InputRequired, EqualTo
 
 app = Flask(__name__)
 app.secret_key = 'Hao'
+# 提交表单的时候关闭CSRF跨域请求伪造
+app.config['WTF_CSRF_ENABLED'] = False
 
 
 @app.route('/')
@@ -47,18 +50,38 @@ def demo3():
 
 
 # 自定义注册表单，集成自flaskform,其使用是以对象的形式，需要定义不同的对象属性
+# 在定义wtforms的时候添加限制条件-验证器 validators=[]一个列表
 class RegisterForm(FlaskForm):
-    username = StringField(label='用户名:', render_kw={'placeholder': '请输入用户名'})
-    password = PasswordField(label='密码:')
-    password2 = PasswordField(label='确认密码:')
+    username = StringField(label='用户名:', validators=[InputRequired('请输入用户名')], render_kw={'placeholder': '请输入用户名'})
+    password = PasswordField(label='密码:', validators=[InputRequired('请输入密码')])
+    password2 = PasswordField(label='确认密码:',validators=[InputRequired('请输入确认密码'), EqualTo('password')])
     submit = SubmitField(label='提交')
 
 
-@app.route('/demo4')
+@app.route('/demo4', methods=['POST', 'GET'])
 def demo4():
 
     # 把WTF对象实例化，传递到模板中进行调用渲染
     register_form = RegisterForm()
+
+    # 通过对属性添加的验证器进行判断
+    if register_form.validate_on_submit():
+
+        # 取到表单中提交上来的三个参数
+        username = request.form.get("username")
+        password = request.form.get("password")
+        password2 = request.form.get("password2")
+
+        # 取值方式2
+        # username = register_form.username.data
+
+        # 假装做注册操作
+        print(username, password, password2)
+        return "success"
+    else:
+        if request.method == "POST":
+            flash("参数错误")
+
     return render_template('demo3.html', register_form=register_form)
 
 
