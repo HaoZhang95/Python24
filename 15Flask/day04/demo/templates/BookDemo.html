@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>图书管理</h1>
+    <form method="post">
+        {{ book_form.csrf_token }}<br>
+        {{ book_form.author.label }}{{ book_form.author }}<br>
+        {{ book_form.book.label }}{{ book_form.book }}<br>
+        {{ book_form.submit }}<br>
+
+        {% for message in get_flashed_messages() %}
+            {{ message }}   <br>
+        {% endfor %}
+    </form>
+
+    <hr>
+
+    <h2>书籍列表</h2>
+    <ul>
+        {% for author in authors %}
+            <li>
+                {{ author.name }} <a href="/delete_author/{{ author.id }}">删除</a>
+                <ul>
+                    {% for book in author.books %}
+                        <li>{{ book.name }} <a href="/delete_book/{{ book.id }}">删除</a></li>
+                    {% else %}
+                        <li>无书籍</li>
+                    {% endfor %}
+                </ul>
+
+            </li>
+        {% endfor %}
+    </ul>
+{#    <hr>#}
+{#    <ul>#}
+{#        {% for author in authors %}#}
+{#            <li>{{ author.name }}</li>#}
+{#            <ul>#}
+{#                {% for book in author.books %}#}
+{#                    <li>{{ book.name }}</li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+
+</body>
+</html>

@@ -14,7 +14,9 @@
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../day04\templates" />
+        <option value="$MODULE_DIR$/templates" />
+        <option value="$MODULE_DIR$/demo/templates" />
+        <option value="$MODULE_DIR$/cart/templates" />
       </list>
     </option>
   </component>
