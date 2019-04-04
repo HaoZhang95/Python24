@@ -28,3 +28,8 @@ class LoginTestCase(unittest.TestCase):
         self.assertEqual(errcode, -2, '返回的状态码错误')
 
     # 测试用户名或者密码不正确，会返回errcode = -1
+
+
+if __name__ == '__main__':
+    # 在mian方法中使用unitest.main之后就可以命令行直接运行这个py文件了
+    unittest.main()

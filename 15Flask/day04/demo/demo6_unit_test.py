@@ -15,10 +15,12 @@ class DatabaseTestCase(unittest.TestCase):
         app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:mysql@localhost/test0'
         self.app = app
         db.create_all()
-        pass
+
 
     def tearDown(self):
         """单元测试结束后执行的操作"""
+
+        # db.session类似于数据库的连接
         db.session.remove()
         db.drop_all()
 

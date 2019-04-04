@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ed91efb-c8b3-40cd-8009-0996dc88433d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/static/PassportPhoto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo5_unit_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo6_unit_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/templates/BookDemo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/day04.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/day04.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo3.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo4.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo5_unit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo5_unit_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo6_unit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo6_unit_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/day04$Unittests_for_demo5_unit_test_LoginTestCase.coverage" NAME="Unittests for demo5_unit_test.LoginTestCase Coverage Results" MODIFIED="1554411180675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
+    <SUITE FILE_PATH="coverage/day04$Unittests_for_demo5_unit_test_LoginTestCase.coverage" NAME="Unittests for demo5_unit_test.LoginTestCase Coverage Results" MODIFIED="1554412010360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
     <SUITE FILE_PATH="coverage/day04$Flask__demo_demo5_py_.coverage" NAME="Flask (demo/demo5.py) Coverage Results" MODIFIED="1554410773263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/day04$Flask__demo_demo2_py_.coverage" NAME="Flask (demo/demo2.py) Coverage Results" MODIFIED="1554411160052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/day04$Flask__demo_demo1_py_.coverage" NAME="Flask (demo/demo1.py) Coverage Results" MODIFIED="1554391924062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -85,20 +71,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/demo6_unit_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,8 +108,8 @@
         <option value="$PROJECT_DIR$/cart/views.py" />
         <option value="$PROJECT_DIR$/cart/__init__.py" />
         <option value="$PROJECT_DIR$/demo/demo5.py" />
-        <option value="$PROJECT_DIR$/demo/demo5_unit_test.py" />
         <option value="$PROJECT_DIR$/demo/demo6_unit_test.py" />
+        <option value="$PROJECT_DIR$/demo/demo5_unit_test.py" />
       </list>
     </option>
   </component>
@@ -321,7 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554362206293</updated>
       <workItem from="1554362207858" duration="237000" />
-      <workItem from="1554364554908" duration="17941000" />
+      <workItem from="1554364554908" duration="18681000" />
     </task>
     <servers />
   </component>
@@ -344,13 +317,15 @@
     <history-entry file="Unittests_for_demo5_unit_test_LoginTestCase - 2019.04.04 at 23h 53m 01s.xml">
       <configuration name="Unittests for demo5_unit_test.LoginTestCase" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_demo5_unit_test_LoginTestCase - 2019.04.05 at 00h 06m 51s.xml">
+      <configuration name="Unittests for demo5_unit_test.LoginTestCase" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18178000" />
+    <option name="totallyTimeSpent" value="18918000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="934" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="934" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14658634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -358,7 +333,7 @@
       <window_info anchor="bottom" id="Database Console" weight="0.3287841" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.516129" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.516129" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995037" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,7 +342,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3287841" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3287841" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -506,23 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo5_unit_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -535,11 +493,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo6_unit_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="-281">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo5_unit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
         </state>
       </provider>
     </entry>
