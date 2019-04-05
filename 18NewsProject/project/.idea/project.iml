@@ -14,7 +14,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../18新经资讯项目\templates" />
+        <option value="$MODULE_DIR$/../project\templates" />
       </list>
     </option>
   </component>
