@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
 .idea
+# logs文件夹下自己设置的log文件命名就是log1,2,3所以这里写log*
+logs/log*
 __pycache__/
 *.py[cod]
 *$py.class
