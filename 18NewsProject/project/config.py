@@ -18,7 +18,7 @@ class Config(object):
     REDIS_HOST = "127.0.0.1"
     REDIS_PORT = 6379
 
-    # session保存配置
+    # session保存配置，这个StrictRedis用来保存的是session到redis中
     SESSION_TYPE = 'redis'
     SESSION_REDIS = StrictRedis(host=REDIS_HOST, port=REDIS_PORT)
     SESSION_USE_SIGNER = True

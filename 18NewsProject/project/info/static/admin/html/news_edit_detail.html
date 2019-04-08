@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新经资讯后台管理</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.form.min.js"></script>
+	<script src="../tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="../js/tinymce_setup.js"></script>
+	<script src="../js/news_edit_detail.js"></script>
+</head>
+<body>
+	<div class="breadcrub">
+			当前位置：新闻管理>新闻版本编辑			
+		</div>
+		<div class="pannel">
+			<form class="news_edit">
+			<h3 class="review_title">新闻版式编辑</h3>
+	    	<div class="form_group">
+	    		<label>新闻标题：</label>
+	    		<input type="text" class="input_txt2" value="日本史上最大IPO之一要来了：软银计划将手机业务分拆上市">
+	    	</div>
+	    	<div class="form_group">
+				<label>新闻分类：</label>
+				<select class="sel_opt">
+					<option value="">分类一</option>
+					<option value="">分类二</option>
+					<option value="">分类三</option>
+				</select>
+			</div>
+			<div class="form_group">
+				<label>新闻摘要：</label>
+				<textarea class="input_multxt">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank Corp.分拆上市，或募资2万亿日元(约180亿美元。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</textarea>
+			</div>
+			<div class="form_group">
+				<label>索引图片：</label>
+                <img src="" alt="索引图片" class="index_pic">
+			</div>
+			<div class="form_group">
+				<label>上传图片：</label>
+				<input type="file" class="input_file">
+			</div>
+			<div class="form_group">
+				<label>新闻内容：</label>
+				<div class="rich_wrap fl">
+					<input class="input_area" id="rich_content" name="content" value="哈哈"></input>
+				</div>
+			</div>
+			<div class="form_group indent_group line_top">
+				<input type="submit" value="确定" class="confirm">
+				<input type="button" value="取消" class="cancel" onclick="cancel()">
+			</div>
+			</form>	
+		</div>
+
+</body>
+</html>

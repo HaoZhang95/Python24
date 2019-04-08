@@ -14,9 +14,10 @@ from flask_session import Session
 
 # 初始化数据库, 需要被manage.py外界访问，需要提取到外面
 # 在flask中的很多扩展中都可以先初始化对象，然后再去调用init.app方法去关联app
-from info.modules.index import index_blue
-
 db = SQLAlchemy()
+
+# redis_store: StrictRedis = None
+redis_store = None  # type: StrictRedis
 
 
 def setup_log(config_name):
@@ -39,6 +40,7 @@ def create_app(config_name):
     setup_log(config_name)
 
     # 初始化FLASK对象
+    # 因为静态文件static目录和当前app的__name__同级，所以不需要额外设置，templates也是
     app = Flask(__name__)
 
     # 加载配置
@@ -47,14 +49,18 @@ def create_app(config_name):
     # db = SQLAlchemy(app)
     db.init_app(app)
 
-    # 初始化redis
+    # 初始化redis，这个StrictRedis是用来保存项目中的K-V，并不是保存session的redis
+    global redis_store
     redis_store = StrictRedis(host=config[config_name].REDIS_HOST, port=config[config_name].REDIS_PORT)
     # 开启csrf保护， 源代码中显示，如果不符合csrf直接return请求
     CSRFProtect(app)
     # 设置session保存制定位置
     Session(app)
 
-    # 注册蓝图
+    # 注册蓝图, 如果下面的import放在上面的话，那么卡启动的时候就会报错
+    # 因为一个包去导入另一个包然会最后一个views.py去导入redis_store的时候就发现当前的文件还有有执行到redis_store = None
+    # 这个循环导入，就会还没定义这个redis_store，因此以后何时注册蓝图，何时导入这个蓝图，蓝图的导入不要放在顶部
+    from info.modules.index import index_blue
     app.register_blueprint(index_blue)
 
     return app

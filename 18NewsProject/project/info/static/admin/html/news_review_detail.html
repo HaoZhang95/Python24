@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新经资讯后台管理</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="../js/news_review_detail.js"></script>
+</head>
+<body>
+    <div class="breadcrub">
+            当前位置：新闻管理>新闻审核
+        </div>
+        <div class="pannel">
+            <form class="news_review">
+            <h3 class="review_title">内容审核</h3>
+            <div class="form_group">
+                <label>新闻标题：</label>
+                <input type="text" class="input_txt2" value="日本史上最大IPO之一要来了：软银计划将手机业务分拆上市" readonly>
+            </div>
+            <div class="form_group">
+                    <label>新闻分类：</label>
+                    <div class="category_name">分类一</div>
+            </div>
+            <div class="form_group">
+                <label>新闻摘要：</label>
+                <textarea class="input_multxt" readonly>据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank Corp.分拆上市，或募资2万亿日元(约180亿美元。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</textarea>
+            </div>
+            <div class="form_group">
+                <label>索引图片：</label>
+                <img src="" alt="索引图片" class="index_pic">
+            </div>
+            <div class="form_group">
+                <label>新闻内容：</label>
+                <div class="rich_wrap fl">
+                    <input class="input_area" id="rich_content" value="哈哈"></input>
+                </div>
+            </div>
+            <div class="form_group indent_group">
+                <input type="radio" name="action" checked="" value="accept"> 通过&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="action" value="reject"> 拒绝通过
+            </div>
+            <div class="form_group group_hide">
+                <label>拒绝原因：</label>
+                <textarea class="input_multxt" name="reason"></textarea>
+            </div>
+            <div class="form_group indent_group line_top">
+                <input type="submit" value="确定" class="confirm">
+                <input type="button" value="取消" class="cancel" onclick="cancel()">
+            </div>
+            <!-- 隐藏字段，用于记录当前新闻id -->
+            <input name="news_id" value="1" hidden>
+            </form>    
+        </div>
+        
+        <script>
+        $(function(){
+            var $radio = $('input[name="action"]');
+            $radio.click(function(){
+                if($(this).index()==1)
+                {
+                    $('.group_hide').show();
+                }
+                else{
+                    $('.group_hide').hide();
+                }
+            });
+
+            tinymce.init({
+                //选择class为content的标签作为编辑器
+                selector: '#rich_content',
+                //方向从左到右
+                directionality:'ltr',
+                //语言选择中文
+                language:'zh_CN',
+                //高度为400
+                height:400,
+                width: '100%',
+                //按tab不换行
+                nonbreaking_force_tab: true,
+                readonly:1
+            });
+            
+            })        
+        </script>    
+</body>
+</html>

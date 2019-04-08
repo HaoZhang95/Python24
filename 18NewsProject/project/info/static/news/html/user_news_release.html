@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.form.min.js"></script>
+    <script src="../tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="../js/tinymce_setup.js"></script>
+    <script type="text/javascript" src="../js/user_news_release.js"></script>
+</head>
+<body class="inframe_body">
+    <form class="release_form">
+        <h3>新闻发布</h3>
+        <div class="form-group"><label>新闻标题：</label><input type="text" class="input_txt2" name="title"></div>
+        <div class="form-group">
+            <label>新闻分类：</label>
+            <select class="sel_opt" name="category_id">
+                <option value="">分类一</option>
+                <option value="">分类二</option>
+                <option value="">分类三</option>
+            </select>
+        </div>
+        <div class="form-group"><label>摘要：</label><textarea class="input_multxt" name="digest"></textarea></div>
+        <div class="form-group"><label>上传图片：</label><input type="file" name="index_image" class="input_file"></div>
+        <div class="form-group">
+            <label>内容：</label>
+            <div class="fl"><input class="input_area" id="rich_content" name="content" value=" "/></div>
+        </div>
+        <div class="form-group">            
+            <input type="submit" value="发 布" class="input_sub input_sub2">
+        </div>
+        <div class="error_tip2">错误提示</div>
+    </form>
+    <script>
+        $(function(){
+            window.parent.fnSetIframeHeight(900);
+        })
+    </script>
+</body>
+</html>

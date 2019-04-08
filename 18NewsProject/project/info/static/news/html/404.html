@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+    <div class="header_con">
+        <div class="header">
+            <a href="/" class="logo fl"><img src="../images/logo.png" alt="logo"></a>
+            <div class="user_btns fr">
+                <a href="javascript:;" class="login_btn">登录</a> / <a href="javascript:;" class="register_btn">注册</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conter_con">        
+        <div class="error_con">
+            <img src="../images/not_found.png" alt="404">
+            <h3>OOPS!</h3>
+            <h4>该内容不存在</h4>
+            <p>请检查你输入的网址是否正确，请点击以下按钮返回主页或者发送错误报告</p>
+            <a href="../../../templates/news/index.html">返回首页</a>
+        </div>            
+    </div>
+    
+    <!-- 登录表单 -->
+    <form class="login_form_con">
+        <div class="login_form">
+            <div class="login_title">
+                <h3>登 录</h3>
+                <a href="javascript:;" class="shutoff"></a>
+            </div>
+            <div class="form_group">                
+                <input type="text" name="username" autocomplete="off">
+                <div class="input_tip">用户名/手机号</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="password">
+                <div class="input_tip">密码(不少于6位)</div>
+            </div>
+            <input type="submit" name="" value="登 录" class="input_sub">
+            <div class="down_link">还没有账号？<a href="#" class="to_register">立即注册</a></div>
+        </div>
+        <div class="mask"></div>
+    </form>
+    
+    <!-- 注册表单 -->
+    <form class="register_form_con">
+        <div class="register_form">
+            <div class="register_title">
+                <h3>注 册</h3>
+                <a href="javascript:;" class="shutoff"></a>
+            </div>
+            <div class="form_group">                
+                <input type="text" name="username" autocomplete="off" class="phone_input">
+                <div class="input_tip">手机号</div>
+                <div class="error_tip">手机号不能为空</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="code_pwd" class="code_pwd">
+                <div class="input_tip">手机验证码</div>
+                <a href="javascript:;" class="get_code">点击获取验证码</a>
+                <div class="error_tip">验证码不能为空</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="password" class="pass_input">
+                <div class="input_tip">密码(不少于6位)</div>
+                <div class="error_tip">密码不能为空</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="code_pwd" class="code_pwd">
+                <div class="input_tip">图形验证码</div>
+                <img src="../images/pic_code.png" class="get_pic_code">
+                <div class="error_tip">图形码不能为空</div>
+            </div>
+            
+            <div  class="form_group2 clearfix">
+                <input type="checkbox" class="agree_input" checked>
+                <p>同意使用条款，并已阅读"跟帖评论自律管理承诺书"</p>
+                <div class="error_tip">请勾选</div>
+            </div>
+            <input type="submit" name="" value="注 册" class="input_sub">
+            <div class="down_link">已有账号？<a href="#" class="to_login">立即登录</a></div>
+        </div>
+        <div class="mask"></div>
+    </form>
+</body>
+</html>

@@ -1,17 +1,13 @@
+from flask import render_template, current_app
 from info.modules.index import index_blue
 
 
 @index_blue.route('/')
 def index():
-    # 这个session是flask自带的session
-    # session['name'] = 'Hao'
+    return render_template('news/index.html')
 
-    # 测试打印日志，使用python中的logging模块
-    # logging.debug('测试debug')
-    # logging.warning('测试warning')
-    # logging.error('测试error')
-    # logging.fatal('测试fatal')
 
-    # flask种的logger输出日志
-    # current_app.logger.error('flask中的测试error')
-    return 'Hello World!'
+@index_blue.route('/favicon.ico')
+def favicon():
+    # 访问网站图标，send_static_file 是flask系统访问静态文件所调用的方法
+    return current_app.send_static_file('news/favicon.ico')

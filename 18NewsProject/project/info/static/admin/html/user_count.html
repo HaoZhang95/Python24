@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新经资讯后台管理</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/echarts.min.js"></script>
+</head>
+<body>
+	<div class="breadcrub">
+		当前位置：用户管理>用户统计
+	</div>
+	<div class="spannels">
+		<div class="spannel scolor01">
+			<em>36365</em><span>人</span>
+			<b>用户总数</b>
+		</div>
+		<div class="spannel scolor02">
+			<em>146</em><span>人</span>
+			<b>用户月新增数</b>
+		</div>
+		<div class="spannel2 scolor03">
+			<em>32</em><span>人</span>
+			<b>用户日新增数</b>
+		</div>		
+	</div>
+	
+	<div class="pannel">
+		<div id="chart_show" class="chart_show"></div>
+	</div>
+	<script>
+		var oChart = echarts.init(document.getElementById('chart_show'));
+		var chartopt = {
+					    title:{
+					        text: '用户登录活跃数',
+		                    left: 'center',
+		                    top: '10'
+					    },
+					    tooltip:{
+					        trigger: 'axis'
+					    },
+					    legend: {
+					        data:['active'],
+		                    top: '40'
+					    },
+					    toolbox: {
+					        show : true,
+					        feature : {
+					            mark : {show: true},
+					            dataView : {show: true, readOnly: false},
+					            magicType : {show: true, type: ['line','bar']},
+					            restore : {show: true},
+					            saveAsImage : {show: true}
+					        }
+					    },
+				    	calculable : true,               
+					    xAxis : [
+					        {
+		                        name: '今天',
+					            type : 'category',
+					            boundaryGap : false,
+					            data : ["08:15","09:15","10:15","11:15","12:15","13:15","14:15","15:15","16:15","17:15","18:15","19:15"]
+					        }
+					    ],        
+					    yAxis : [
+					        {
+		                        name: '活跃用户数量',
+					            type : 'value'
+					        }
+					    ],      
+					    series : [
+					        {
+					            name:'active',
+					            type:'line',
+					            smooth:true,
+					            itemStyle: {normal: {areaStyle: {type: 'default'}, color: '#f80'}, lineStyle: {color: '#f80'}},
+					            data:[14951,14861,7186,15861,14951,14861,7186,14951,14861,7186,15861,14951]
+					        }],
+					    areaStyle:{
+						        normal:{
+						            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+						                offset: 0,
+						                color: 'rgba(255,136,0,0.39)'
+						            }, {
+						                offset: .34,
+						                color: 'rgba(255,180,0,0.25)'
+						            },{
+						                offset: 1,
+						                color: 'rgba(255,222,0,0.00)'
+						            }])
+
+						        }
+						    }
+
+            			};
+
+            oChart.setOption(chartopt);
+
+	</script>
+</body>
+</html>

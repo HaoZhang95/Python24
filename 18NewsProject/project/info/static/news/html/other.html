@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户概况</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.pagination.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.pagination.min.js"></script>
+    <script type="text/javascript" src="../js/other.js"></script>
+</head>
+<body>
+    <div class="header_con">
+        <div class="header">
+            <a href="#" class="logo fl"><img src="../images/logo.png" alt="logo"></a>
+            <div class="user_login fr" style="display: block;">
+                <img src="../images/person01.png" class="lgin_pic">
+                <a href="#">张大山</a>
+                <a href="#">退出</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conter_con">
+        <div class="user_menu_con fl">
+            <div class="user_center_pic">
+                <img src="../images/user_pic.png" alt="用户图片">
+            </div>
+            <div class="user_center_name">用户李思</div>
+
+            <ul class="other_detail">
+                <li>性 别：女</li>
+                <li>签 名：这个人很懒，什么都没留下</li>
+            </ul>
+            
+            <div class="focus_other">
+                <a href="javascript:;" class="focus">关注</a>
+        <a href="javascript:;" class="focused"><span class="out">已关注</span><span class="over">取消关注</span></a>
+            </div>            
+
+        </div>
+
+        <div class="user_con fr">
+            <div class="other_collect">
+                <h3>他的文章</h3>
+                <ul class="article_list">
+                    <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                    <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                    <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                    <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                    <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                    <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                </ul>
+                
+                <div id="pagination" class="page"></div>
+                <script>
+                    $(function(){
+                        $("#pagination").pagination({
+                            currentPage: 2,
+                            totalPage: 3,
+                            callback: function(current) {
+                                alert('ok!');
+                            }
+                        });
+                    });
+                </script>
+            </div>
+
+        </div>        
+    </div>
+    <div class="footer">        
+        <div class="footer_links">
+            <a href="">关于我们</a>
+            <span>|</span>
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">招聘人才</a>
+            <span>|</span>
+            <a href="">友情链接</a>
+        </div>
+        <p class="copyright">
+            CopyRight © 2018 新经资讯信息技术有限公司 All Rights Reserved<br />
+电话：010-****888    京ICP备*******8号
+        </p>
+    </div>
+    
+    <!-- 登录表单 -->
+    <form class="login_form_con">
+        <div class="login_form">
+            <div class="login_title">
+                <h3>登 录</h3>
+                <a href="javascript:;" class="shutoff"></a>
+            </div>
+            <div class="form_group">                
+                <input type="text" name="username" autocomplete="off">
+                <div class="input_tip">用户名/手机号</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="password">
+                <div class="input_tip">密码(不少于6位)</div>
+            </div>
+            <input type="submit" name="" value="登 录" class="input_sub">
+            <div class="down_link">还没有账号？<a href="#" class="to_register">立即注册</a></div>
+        </div>
+        <div class="mask"></div>
+    </form>
+    
+    <!-- 注册表单 -->
+    <form class="register_form_con">
+        <div class="register_form">
+            <div class="register_title">
+                <h3>注 册</h3>
+                <a href="javascript:;" class="shutoff"></a>
+            </div>
+            <div class="form_group">                
+                <input type="text" name="username" autocomplete="off" class="phone_input">
+                <div class="input_tip">手机号</div>
+                <div class="error_tip">手机号不能为空</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="code_pwd" class="code_pwd">
+                <div class="input_tip">手机验证码</div>
+                <a href="javascript:;" class="get_code">点击获取验证码</a>
+                <div class="error_tip">验证码不能为空</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="password" class="pass_input">
+                <div class="input_tip">密码(不少于6位)</div>
+                <div class="error_tip">密码不能为空</div>
+            </div>
+            <div class="form_group">                
+                <input type="password" name="code_pwd" class="code_pwd">
+                <div class="input_tip">图形验证码</div>
+                <img src="../images/pic_code.png" class="get_pic_code">
+                <div class="error_tip">图形码不能为空</div>
+            </div>
+            
+            <div  class="form_group2 clearfix">
+                <input type="checkbox" class="agree_input" checked>
+                <p>同意使用条款，并已阅读"跟帖评论自律管理承诺书"</p>
+                <div class="error_tip">请勾选</div>
+            </div>
+            <input type="submit" name="" value="注 册" class="input_sub">
+            <div class="down_link">已有账号？<a href="#" class="to_login">立即登录</a></div>
+        </div>
+        <div class="mask"></div>
+    </form>
+</body>
+</html>
