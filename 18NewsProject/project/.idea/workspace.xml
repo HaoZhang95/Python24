@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef93c000-570a-4e5c-ad0d-9f74b3c7be33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/info/libs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/CCPRestSDK.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/sms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/xmltojson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/modules/passport/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/modules/passport/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/captcha/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/captcha/captcha.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/Arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/Georgia.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/actionj.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/response_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,18 +62,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info/templates/news/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -109,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="384">
+              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -121,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -304,7 +274,7 @@
       <workItem from="1554496837935" duration="132000" />
       <workItem from="1554725538008" duration="4413000" />
       <workItem from="1554729996302" duration="16979000" />
-      <workItem from="1554788863400" duration="20019000" />
+      <workItem from="1554788863400" duration="20116000" />
     </task>
     <task id="LOCAL-00001" summary="更新了manage.py文件">
       <created>1554726624329</created>
@@ -334,11 +304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554746343273</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="18新经新闻项目day02完成">
+      <created>1554841069667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554841069667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41543000" />
+    <option name="totallyTimeSpent" value="41640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
@@ -451,7 +428,8 @@
     <MESSAGE value="更新了manage.py文件" />
     <MESSAGE value="Session的保存位置指定&amp;测试" />
     <MESSAGE value="抽取项目蓝图到modules目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="抽取项目蓝图到modules目录" />
+    <MESSAGE value="18新经新闻项目day02完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="18新经新闻项目day02完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -653,6 +631,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/info/static/news/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
@@ -662,20 +650,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="384">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
