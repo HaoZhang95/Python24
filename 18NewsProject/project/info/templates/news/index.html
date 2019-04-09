@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    {#  ajax必须配置，否则ajax的post请求一直404  #}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>首页-新经资讯</title>
     <link rel="stylesheet" type="text/css" href="../../static/news/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../static/news/css/main.css">
     <script type="text/javascript" src="../../static/news/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../../static/news/js/main.js"></script>
     <script type="text/javascript" src="../../static/news/js/index.js"></script>
+
 </head>
 <body>
 <div class="header_con">
@@ -137,6 +142,9 @@
 
 <!-- 注册表单 -->
 <form class="register_form_con">
+
+{#    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />#}
+
     <div class="register_form">
         <div class="register_title">
             <h3>注 册</h3>
@@ -148,13 +156,13 @@
             <div id="register-mobile-err" class="error_tip">手机号不能为空</div>
         </div>
         <div class="form_group">
-            <input type="text" name="code_pwd" id="imagecode" class="code_pwd">
+            <input type="text" name="image_code" id="imagecode" class="code_pwd">
             <div class="input_tip">图形验证码</div>
             <img src="../../static/news/images/pic_code.png" class="get_pic_code" onclick="generateImageCode()">
             <div id="register-image-code-err" class="error_tip">图形码不能为空</div>
         </div>
         <div class="form_group">
-            <input type="text" name="smscode" id="smscode" class="code_pwd">
+            <input type="text" name="sms_code" id="smscode" class="code_pwd">
             <div class="input_tip">手机验证码</div>
             <a href="javascript:;" class="get_code" onclick="sendSMSCode()">点击获取验证码</a>
             <div id="register-sms-code-err" class="error_tip">验证码不能为空</div>

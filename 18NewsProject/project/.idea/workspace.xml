@@ -2,280 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef93c000-570a-4e5c-ad0d-9f74b3c7be33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/info/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/css/jquery.pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/news_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/news_edit_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/news_review.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/news_review_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/news_type.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/user_count.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/html/user_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/images/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/images/login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/images/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/echarts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/jquery-1.12.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/jquery.form.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/jquery.pagination.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/news_edit_detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/news_review_detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/news_type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/js/tinymce_setup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/jquery.tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/langs/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/langs/zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/codesample/css/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/help/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/help/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/uncompressed/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/uncompressed/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/print/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/toc/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/object.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/trans.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/themes/inlite/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/themes/mobile/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/themes/modern/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/css/jquery.pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/other.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_base_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_collection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_follow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_news_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_news_release.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_pass_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/html/user_pic_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/clock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/collect_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/comment_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/focus_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/hit_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/news_pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/not_found.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/person01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/person02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/person03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/pic_code.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/reply_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/shutoff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/tip_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/user_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/worm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/images/zan_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/jquery-1.12.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/jquery.form.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/jquery.pagination.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/other.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/tinymce_setup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/user_base_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/user_follow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/user_news_release.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/user_pass_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/js/user_pic_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/jquery.tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/langs/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/langs/zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/help/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/help/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/uncompressed/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/uncompressed/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/print/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/toc/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/object.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/trans.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/themes/inlite/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/themes/mobile/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/themes/modern/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/templates/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/libs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/CCPRestSDK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/sms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/libs/yuntongxun/xmltojson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/modules/passport/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/modules/passport/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/captcha/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/captcha/captcha.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/Arial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/Georgia.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/actionj.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/utils/response_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/modules/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/modules/index/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/static/news/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -284,10 +29,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/project$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1554757068347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1554840841247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$project.coverage" NAME="project Coverage Results" MODIFIED="1554744564652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$views.coverage" NAME="views Coverage Results" MODIFIED="1554756791120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/info/modules/index" />
     <SUITE FILE_PATH="coverage/project$Flask__manage_py___1_.coverage" NAME="Flask (manage.py) (1) Coverage Results" MODIFIED="1554756913810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$sms.coverage" NAME="sms Coverage Results" MODIFIED="1554793179270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/info/libs/yuntongxun" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -320,7 +66,74 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="65" column="15" lean-forward="true" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info/templates/news/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info/static/news/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="203" column="26" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -330,6 +143,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gener</find>
+      <find>register</find>
+      <find>methods</find>
+      <find>method</find>
+      <find>sen</find>
+      <find>send</find>
+      <find>generateImageCode</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>methods</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -338,16 +165,20 @@
       <list>
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/Config.py" />
-        <option value="$PROJECT_DIR$/logs/log" />
         <option value="$PROJECT_DIR$/info/modules/index/__init__.py" />
         <option value="$PROJECT_DIR$/info/modules/__init__.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/info/models.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2df8d7ad-3188-4d7d-81ce-83f930491001/console.sql" />
-        <option value="$PROJECT_DIR$/info/__init__.py" />
-        <option value="$PROJECT_DIR$/info/templates/news/index.html" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/info/modules/index/views.py" />
+        <option value="$PROJECT_DIR$/info/modules/passport/__init__.py" />
+        <option value="$PROJECT_DIR$/info/libs/yuntongxun/sms.py" />
+        <option value="$PROJECT_DIR$/info/__init__.py" />
+        <option value="$PROJECT_DIR$/info/templates/news/index.html" />
+        <option value="$PROJECT_DIR$/info/static/news/js/main.js" />
+        <option value="$PROJECT_DIR$/info/modules/passport/views.py" />
+        <option value="$PROJECT_DIR$/logs/log" />
       </list>
     </option>
   </component>
@@ -365,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,10 +203,34 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,16 +241,19 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info\libs" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info\modules\passport" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info\utils" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info\templates" />
+      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info\static" />
       <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info\templates" />
-      <recent name="C:\Users\HaoZhang\Documents\PythonAndMachineLearning\18NewsProject\project\info" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -411,30 +268,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (manage.py)">
-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/info/modules/index" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/info/modules/index/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="Flask (manage.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
       <module name="project" />
       <option name="target" value="$PROJECT_DIR$/manage.py" />
       <option name="targetType" value="PATH" />
@@ -449,14 +285,9 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.views" />
-      <item itemvalue="Flask server.Flask (manage.py)" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Flask server.Flask (manage.py)" />
-        <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
   </component>
@@ -473,6 +304,7 @@
       <workItem from="1554496837935" duration="132000" />
       <workItem from="1554725538008" duration="4413000" />
       <workItem from="1554729996302" duration="16979000" />
+      <workItem from="1554788863400" duration="20019000" />
     </task>
     <task id="LOCAL-00001" summary="更新了manage.py文件">
       <created>1554726624329</created>
@@ -506,18 +338,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21524000" />
+    <option name="totallyTimeSpent" value="41543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682731" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1746988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986613" weight="0.32978722" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986613" weight="0.3286052" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32033098" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -528,13 +361,38 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32978722" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4986613" weight="0.32978722" />
-      <window_info anchor="right" id="Redis Servers" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32931727" />
+      <window_info anchor="right" id="Redis Servers" order="5" weight="0.32931727" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20950468" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986613" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3995272" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32978722" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50133866" side_tool="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32978722" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32978722" />
+      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4986613" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32931727" />
+      <window_info anchor="right" id="Redis Servers" order="5" weight="0.32931727" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -595,6 +453,17 @@
     <MESSAGE value="抽取项目蓝图到modules目录" />
     <option name="LAST_COMMIT_MESSAGE" value="抽取项目蓝图到modules目录" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/info/modules/passport/views.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_wtf/csrf.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -620,38 +489,11 @@
     <entry file="file://$PROJECT_DIR$/logs/.keepgit">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/modules/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/modules/index/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1554730056336&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
       <provider selected="true" editor-type-id="r" />
     </entry>
     <entry file="file://$PROJECT_DIR$/info/constants.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Videos/2018年6月北京黑马python24期全套视频课程/0-24期课件资料/18-【项目】新经资讯/【项目】新经资讯/09-新经资讯/3.资料/测试数据/information_info_news.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -669,9 +511,6 @@
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/static/news/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/info/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,42 +532,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/__init__.py">
+    <entry file="file://$PROJECT_DIR$/info/static/admin/html/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/libs/yuntongxun/sms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+        <state relative-caret-position="424">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="675" column="13" selection-start-line="675" selection-start-column="13" selection-end-line="675" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/_compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/wrappers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/index/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/index/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/passport/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/cli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/templates/news/index.html">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+        <state relative-caret-position="183">
+          <caret line="1798" selection-start-line="1798" selection-end-line="1798" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/static/admin/html/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/modules/index/views.py">
+    <entry file="file://$PROJECT_DIR$/info/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="624">
+          <caret line="65" column="15" lean-forward="true" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/utils/response_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="1122" lean-forward="true" selection-start-line="1122" selection-end-line="1122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/templates/news/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/static/news/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="203" column="26" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="192">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

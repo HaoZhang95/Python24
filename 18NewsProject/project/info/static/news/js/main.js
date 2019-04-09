@@ -1,14 +1,26 @@
 $(function(){
 
+    // {#  ajax必须配置，否则ajax的post请求一直404  #}
+    var csrftoken = $('meta[name=csrf-token]').attr('content')
+    console.log("meta中的:" + csrftoken);
+
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken)
+            }
+        }
+    })
+
 	// 打开登录框
 	$('.login_btn').click(function(){
         $('.login_form_con').show();
-	})
+	});
 	
 	// 点击关闭按钮关闭登录框或者注册框
 	$('.shutoff').click(function(){
 		$(this).closest('form').hide();
-	})
+	});
 
     // 隐藏错误
     $(".login_form #mobile").focus(function(){
@@ -49,19 +61,19 @@ $(function(){
 
     $('.form_group').on('click',function(){
     $(this).children('input').focus()
-    })
+    });
 
     $('.form_group input').on('focusin',function(){
-        $(this).siblings('.input_tip').animate({'top':-5,'font-size':12},'fast')
+        $(this).siblings('.input_tip').animate({'top':-5,'font-size':12},'fast');
         $(this).parent().addClass('hotline');
-    })
+    });
 
 
 	// 打开注册框
 	$('.register_btn').click(function(){
 		$('.register_form_con').show();
 		generateImageCode()
-	})
+	});
 
 
 	// 登录框和注册框切换
@@ -69,13 +81,13 @@ $(function(){
 		$('.login_form_con').hide();
 		$('.register_form_con').show();
         generateImageCode()
-	})
+	});
 
 	// 登录框和注册框切换
 	$('.to_login').click(function(){
 		$('.login_form_con').show();
 		$('.register_form_con').hide();
-	})
+	});
 
 	// 根据地址栏的hash值来显示用户中心对应的菜单
 	var sHash = window.location.hash;
@@ -100,13 +112,15 @@ $(function(){
 		}
 		$(this).addClass('active').siblings().removeClass('active');
 		$(this).find('a')[0].click()
-	})
+	});
 
     // TODO 登录表单提交
     $(".login_form_con").submit(function (e) {
-        e.preventDefault()
-        var mobile = $(".login_form #mobile").val()
-        var password = $(".login_form #password").val()
+
+        // 阻止默认的表单提交，不然的话后端返回的错误无法处理， 自定义提交实现局部的错误提示
+        e.preventDefault();
+        var mobile = $(".login_form #mobile").val();
+        var password = $(".login_form #password").val();
 
         if (!mobile) {
             $("#login-mobile-err").show();
@@ -123,7 +137,7 @@ $(function(){
         var params = {
             "mobile":mobile,
             "password":password
-        }
+        };
 
         $.ajax({
             url:'/passport/login',
@@ -142,18 +156,18 @@ $(function(){
             }
         })
 
-    })
+    });
 
 
     // TODO 注册按钮点击
     $(".register_form_con").submit(function (e) {
         // 阻止默认提交操作,不让其往默认的action提交
-        e.preventDefault()
+        e.preventDefault();
 
 		// 取到用户输入的内容
-        var mobile = $("#register_mobile").val()
-        var smscode = $("#smscode").val()
-        var password = $("#register_password").val()
+        var mobile = $("#register_mobile").val();
+        var smscode = $("#smscode").val();
+        var password = $("#register_password").val();
 
 		if (!mobile) {
             $("#register-mobile-err").show();
@@ -181,7 +195,7 @@ $(function(){
             "mobile":mobile,
             "sms_code":smscode,
             "password":password
-        }
+        };
 
         $.ajax({
             url:'/passport/register',
@@ -200,7 +214,7 @@ $(function(){
             }
         })
     })
-})
+});
 
 //退出登陆
 function logout() {
@@ -215,25 +229,30 @@ function logout() {
 }
 
 
-var imageCodeId = ""
-var preimageCodeId = ""
+var imageCodeId = "";
+var preimageCodeId = "";
 
 // TODO 生成一个图片验证码的编号，并设置页面中图片验证码img标签的src属性
+// 图片验证码的流程：每个验证码生成之前会使用uuid获取一个唯一的编号对应这个验证码，请求页面的验证码图片的url中就包含这个编号
+//然后后端把编号取出，当作一个key，随机生成一个验证码当作value存在redis，返回给客户端
+//如果客户输入的验证码和编码和redis中的对应，那么就允许给客户端发送短信验证码
 function generateImageCode() {
 
     //1.生成一个随机字符串
     imageCodeId = generateUUID();
 
     //2.拼接图片url地址
-    image_url = '/passport/image_code?cur_id='+imageCodeId + "&pre_id="+preimageCodeId
+    // image_url = '/passport/image_code?cur_id='+imageCodeId;
+    image_url = '/passport/image_code?cur_id='+imageCodeId + "&pre_id="+preimageCodeId;
 
     //3.将地址设置到image标签的src属性中,为image_url
-    $('.get_pic_code').attr('src',image_url)
+    $('.get_pic_code').attr('src',image_url);
 
-    //4.记录上一次的编号
+    //4.记录上一次的编号，用于用户点击验证码进行刷新
     preimageCodeId = imageCodeId
 
 }
+
 
 // 发送短信验证码
 function sendSMSCode() {
@@ -263,16 +282,19 @@ function sendSMSCode() {
         "image_code_id":imageCodeId
     }
 
+    // 得到的是undefined，要想ajax的post成功，必须在headers中带上csrf_tokem
+    console.log("ajax中的:" + getCookie('csrf_token'));
     //发送获取短信请求
     $.ajax({
         url:'/passport/sms_code',//请求地址
-        type:'post',
+        type:'POST',
         data:JSON.stringify(params),
         contentType:'application/json',
         headers:{'X-CSRFToken':getCookie('csrf_token')},
         success: function (resp) {
             //判断是否请求成功
-            if(resp.errno == '0'){
+            console.log(resp)
+            if(resp.error == '0'){
 
                 //定义倒计时时间
                 var num = 60;
@@ -283,7 +305,7 @@ function sendSMSCode() {
                     //判断是否倒计时结束
                     if(num == 1){
                         //清除定时器
-                        clearInterval(t)
+                        clearInterval(t);
                         //设置标签点击事件,并设置内容
                         $(".get_code").attr("onclick",'sendSMSCode()');
                         $(".get_code").html('点击获取验证码');
@@ -302,7 +324,11 @@ function sendSMSCode() {
                 $(".get_code").attr("onclick",'sendSMSCode()');
                 generateImageCode();
             }
+        }, error: function (error) {
+            console.log(error);
+            console.log(error.toString());
         }
+
     })
 
 }
