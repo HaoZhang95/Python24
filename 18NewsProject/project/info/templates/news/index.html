@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     {#  ajax必须配置，否则ajax的post请求一直404  #}
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+{#    <meta name="csrf-token" content="{{ csrf_token() }}">#}
 
     <title>首页-新经资讯</title>
     <link rel="stylesheet" type="text/css" href="../../static/news/css/reset.css">
@@ -19,12 +19,22 @@
     <div class="header">
         <a href="#" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
         <ul class="menu fl">
-            <li class="active" data-cid="1"><a href="javascript:;">最新</a></li>
-            <li data-cid="2"><a href="javascript:;">股市</a></li>
-            <li data-cid="3"><a href="javascript:;">债市</a></li>
-            <li data-cid="4"><a href="javascript:;">商品</a></li>
-            <li data-cid="5"><a href="javascript:;">外汇</a></li>
-            <li data-cid="6"><a href="javascript:;">公司</a></li>
+
+
+            {% for category in data.category_dict_list %}
+                {% if loop.index == 1 %}
+                    <li class="active" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                {% else %}
+                    <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+{#            <li class="active" data-cid="1"><a href="javascript:;">最新</a></li>#}
+{#            <li data-cid="2"><a href="javascript:;">股市</a></li>#}
+{#            <li data-cid="3"><a href="javascript:;">债市</a></li>#}
+{#            <li data-cid="4"><a href="javascript:;">商品</a></li>#}
+{#            <li data-cid="5"><a href="javascript:;">外汇</a></li>#}
+{#            <li data-cid="6"><a href="javascript:;">公司</a></li>#}
         </ul>
 
         {% if data.user_info %}
@@ -46,65 +56,25 @@
 </div>
 
 <div class="conter_con">
-    <ul class="list_con fl">
-        <li>
-            <a href="#" class="news_pic fl"><img src="../../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="author fl">
-                    <img src="../../static/news/images/person.png" alt="author">
-                    <a href="#">乐鸣</a>
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-        <li>
-            <a href="#" class="news_pic fl"><img src="../../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="source fl">
-                    来源：广州日报
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-        <li>
-            <a href="#" class="news_pic fl"><img src="../../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="author fl">
-                    <img src="../../static/news/images/person.png" alt="author">
-                    <a href="#">乐鸣</a>
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-        <li>
-            <a href="#" class="news_pic fl"><img src="../../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="source fl">
-                    来源：广州日报
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-    </ul>
+    <ul class="list_con fl"></ul>
     <div class="rank_con fr">
         <div class="rank_title">
             <h3>点击排行</h3>
         </div>
         <ul class="rank_list">
-            <li><span class="first">1</span><a href="#">势如破竹！人民币再度连闯四道关口 在岸、离岸双双升破6.42</a></li>
-            <li><span class="second">2</span><a href="#">凛冬已至，还有多少银行人在假装干银行</a></li>
-            <li><span class="third">3</span><a href="#">人民日报：部分城市楼市放松限制引关注，楼市调控不会“拉抽屉”</a></li>
-            <li><span>4</span><a href="#">势如破竹！人民币再度连闯四道关口 在岸、离岸双双升破6.42</a></li>
-            <li><span>5</span><a href="#">凛冬已至，还有多少银行人在假装干银行</a></li>
-            <li><span>6</span><a href="#">人民日报：部分城市楼市放松限制引关注，楼市调控不会“拉抽屉”</a></li>
+
+            {% for news in data.news_dict_list %}
+                {# 使用自定义过滤器对不同的排名添加不同的类, index0默认从0开始,loop.index默认从1开始 #}
+                <li><span class="{{ loop.index0|index_class }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
+            {% endfor %}
+{#            #}
+{#            <li><span class="first">1</span><a href="#">势如破竹！人民币再度连闯四道关口 在岸、离岸双双升破6.42</a></li>#}
+{#            <li><span class="second">2</span><a href="#">凛冬已至，还有多少银行人在假装干银行</a></li>#}
+{#            <li><span class="third">3</span><a href="#">人民日报：部分城市楼市放松限制引关注，楼市调控不会“拉抽屉”</a></li>#}
+{#            <li><span>4</span><a href="#">势如破竹！人民币再度连闯四道关口 在岸、离岸双双升破6.42</a></li>#}
+{#            <li><span>5</span><a href="#">凛冬已至，还有多少银行人在假装干银行</a></li>#}
+{#            <li><span>6</span><a href="#">人民日报：部分城市楼市放松限制引关注，楼市调控不会“拉抽屉”</a></li>#}
+
         </ul>
     </div>
 </div>

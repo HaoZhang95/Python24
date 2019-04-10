@@ -1,16 +1,16 @@
 $(function(){
 
     // {#  ajax必须配置，否则ajax的post请求一直404  #}
-    var csrftoken = $('meta[name=csrf-token]').attr('content')
-    console.log("meta中的:" + csrftoken);
-
-    $.ajaxSetup({
-        beforeSend: function(xhr, settings) {
-            if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
-                xhr.setRequestHeader("X-CSRFToken", csrftoken)
-            }
-        }
-    })
+    // var csrftoken = $('meta[name=csrf-token]').attr('content')
+    // console.log("meta中的:" + csrftoken);
+    //
+    // $.ajaxSetup({
+    //     beforeSend: function(xhr, settings) {
+    //         if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
+    //             xhr.setRequestHeader("X-CSRFToken", csrftoken)
+    //         }
+    //     }
+    // })
 
 	// 打开登录框
 	$('.login_btn').click(function(){
@@ -144,6 +144,7 @@ $(function(){
             type:'post',
             data:JSON.stringify(params),
             contentType:'application/json',
+            // 不带上cookie中的token的话，那么就会被CSRFProtect(app)拦截，返回400错误
             headers:{'X-CSRFToken':getCookie('csrf_token')},
             success: function (resp) {
                 //判断是否登陆成功
