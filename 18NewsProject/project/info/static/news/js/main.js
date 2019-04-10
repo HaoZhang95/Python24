@@ -207,7 +207,7 @@ $(function(){
                 //判断是否注册成功
                 if(resp.errno == '0'){
                     //重新加载当前页面
-                    window.location.reload()
+                    window.location.reload();
                 }else{
                     alert(resp.errmsg);
                 }
@@ -294,7 +294,7 @@ function sendSMSCode() {
         success: function (resp) {
             //判断是否请求成功
             console.log(resp)
-            if(resp.error == '0'){
+            if(resp.errno == '0'){
 
                 //定义倒计时时间
                 var num = 60;

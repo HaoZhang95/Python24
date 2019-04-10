@@ -26,15 +26,22 @@
             <li data-cid="5"><a href="javascript:;">外汇</a></li>
             <li data-cid="6"><a href="javascript:;">公司</a></li>
         </ul>
-        <div class="user_btns fr">
-            <a href="javascript:;" class="login_btn">登录</a> / <a href="javascript:;" class="register_btn">注册</a>
-        </div>
+
+        {% if data.user_info %}
+            <div class="user_login fr">
+                <img src="{% if data.user_info.avatar_url %}{{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
+                <a href="#">{{ data.user_info.nick_name }}</a>
+                <a href="javascript:;" onclick="logout()">退出</a>
+            </div>
+        {% else %}
+            <div class="user_btns fr">
+                <a href="javascript:;" class="login_btn">登录</a> / <a href="javascript:;" class="register_btn">注册</a>
+            </div>
+        {% endif %}
+
+
         <!-- 用户登录后显示下面，隐藏上面 -->
-        <div class="user_login fr">
-            <img src="../../static/news/images/person01.png" class="lgin_pic">
-            <a href="#">用户张三</a>
-            <a href="#">退出</a>
-        </div>
+
     </div>
 </div>
 

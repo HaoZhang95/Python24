@@ -59,6 +59,7 @@ class User(BaseModel, db.Model):
     news_list = db.relationship('News', backref='user', lazy='dynamic')
 
     # property修饰方法之后可以当成属性使用
+    # 使用security包中的generate_password_hash方法
     @property
     def password(self):
         raise AttributeError("当前属性不可读")
