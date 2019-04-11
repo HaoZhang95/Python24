@@ -3,7 +3,7 @@ from logging.handlers import RotatingFileHandler
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_wtf.csrf import CSRFProtect
+from flask_wtf.csrf import CSRFProtect, generate_csrf
 from redis import StrictRedis
 from config import config
 
@@ -14,6 +14,7 @@ from flask_session import Session
 
 # 初始化数据库, 需要被manage.py外界访问，需要提取到外面
 # 在flask中的很多扩展中都可以先初始化对象，然后再去调用init.app方法去关联app
+from info.utils.common import do_index_class
 
 db = SQLAlchemy()
 
@@ -66,10 +67,39 @@ def create_app(config_name):
     #         }
     #     }
     # })
+
+    """
+        真正的session建立cookie注入是来自于这个方法CSRFProtect(app)，或者在session['xxx']=yyy赋值的时候也能建立
+        一个是全局url保护，一个只是部分的
+        
+        1- Flask-wtf扩展中的CSRF保护，设置在Session(app)之前，因为先产生session_id才能保存在redis中
+        2- CSRF的保护会在访问页面的时候，生成session_id进行cookie注入，CSRFProtect开启的话，
+        <meta name="csrf-token" content="{{ csrf_token() }}">中的csrf_token()方法的调用是来自CSRFprotect中，也就是来自flask-wtf中
+        在html中获取了生成的csrf-token才能在js中进行请求的时候带上token，也就是session_id进行验证，不然400错误码
+        
+        CSRFProtect(app)做了两件事：1-从cookie中取出随机值  2- 进行验证，返回响应
+        我们需要做： 1- 在界面加载的时候，在cookie中设置一个csrf-token  
+                    2- 表单提交的时候带上自己生成的token
+                    3- 因为我们登陆注册中使用的是ajax请求，并不是表单，所以不需要在表单中添加{{XXX}}，需要在ajax中设置header
+        上面的方法也可行，就是meta的那种方法，二选一
+    """
     CSRFProtect(app)
 
     # 设置session保存制定位置
     Session(app)
+
+    # 在蓝图之前添加自定义过滤器
+    app.add_template_filter(do_index_class, "index_class")
+
+    # 响应客户端的时候添加上token到cookie
+    @app.after_request
+    def after_request(response):
+        # 通过flask-wtf中生成csrf
+        csrf_token = generate_csrf()
+        # 设置cookie
+        response.set_cookie("csrf_token", csrf_token)
+        # 返回被装饰后的response
+        return response
 
     # 注册蓝图, 如果下面的import放在上面的话，那么卡启动的时候就会报错
     # 因为一个包去导入另一个包然会最后一个views.py去导入redis_store的时候就发现当前的文件还有有执行到redis_store = None

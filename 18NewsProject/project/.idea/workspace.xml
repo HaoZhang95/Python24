@@ -253,7 +253,7 @@
       <workItem from="1554725538008" duration="4413000" />
       <workItem from="1554729996302" duration="16979000" />
       <workItem from="1554788863400" duration="20116000" />
-      <workItem from="1554897871410" duration="24559000" />
+      <workItem from="1554897871410" duration="25182000" />
     </task>
     <task id="LOCAL-00001" summary="更新了manage.py文件">
       <created>1554726624329</created>
@@ -297,11 +297,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554917815318</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="18新经新闻项目day03完成">
+      <created>1554926472273</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554926472273</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66199000" />
+    <option name="totallyTimeSpent" value="66822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
@@ -415,7 +422,8 @@
     <MESSAGE value="抽取项目蓝图到modules目录" />
     <MESSAGE value="18新经新闻项目day02完成" />
     <MESSAGE value="18新经新闻项目day03部分完成(使用自己的CSRF)" />
-    <option name="LAST_COMMIT_MESSAGE" value="18新经新闻项目day03部分完成(使用自己的CSRF)" />
+    <MESSAGE value="18新经新闻项目day03完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="18新经新闻项目day03完成" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
