@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {#  ajax必须配置，否则ajax的post请求一直404  #}
+    {#    <meta name="csrf-token" content="{{ csrf_token() }}">#}
+
+    <title>{% block title_block %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="../../static/news/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../static/news/css/main.css">
+    <script type="text/javascript" src="../../static/news/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../static/news/js/main.js"></script>
+    {% block script %}{% endblock %}
+
+</head>
+<body>
+<div class="header_con">
+    <div class="header">
+        <a href="#" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
+
+        {#  子模板如果不想要下面的只需要重写赋值为空即可  #}
+        {% block category_block %}
+            <ul class="menu fl">
+
+
+                {% for category in data.category_dict_list %}
+                    {% if loop.index == 1 %}
+                        <li class="active" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                    {% else %}
+                        <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endblock %}
+
+        {% if data.user_info %}
+            <div class="user_login fr">
+                <img src="{% if data.user_info.avatar_url %}{{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
+                <a href="#">{{ data.user_info.nick_name }}</a>
+                <a href="javascript:;" onclick="logout()">退出</a>
+            </div>
+        {% else %}
+            <div class="user_btns fr">
+                <a href="javascript:;" class="login_btn">登录</a> / <a href="javascript:;" class="register_btn">注册</a>
+            </div>
+        {% endif %}
+
+
+        <!-- 用户登录后显示下面，隐藏上面 -->
+
+    </div>
+</div>
+
+<div class="conter_con">
+
+    {% block content_block %}
+
+        {% block author_block %}
+
+        {% endblock %}
+
+    {% endblock %}
+
+    <div class="rank_con fr">
+
+        <div class="rank_title">
+            <h3>点击排行</h3>
+        </div>
+        <ul class="rank_list">
+
+            {% for news in data.news_dict_list %}
+                {# 使用自定义过滤器对不同的排名添加不同的类, index0默认从0开始,loop.index默认从1开始 #}
+                <li><span class="{{ loop.index0|index_class }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="footer_links">
+        <a href="">关于我们</a>
+        <span>|</span>
+        <a href="">联系我们</a>
+        <span>|</span>
+        <a href="">招聘人才</a>
+        <span>|</span>
+        <a href="">友情链接</a>
+    </div>
+    <p class="copyright">
+        CopyRight © 2018 新经资讯信息技术有限公司 All Rights Reserved<br />
+        电话：010-****888    京ICP备*******8号
+    </p>
+</div>
+
+<!-- 登录表单 -->
+<form class="login_form_con">
+    <div class="login_form">
+        <div class="login_title">
+            <h3>登 录</h3>
+            <a href="javascript:;" class="shutoff"></a>
+        </div>
+        <div class="form_group">
+            <input id="mobile" type="text" name="mobile" autocomplete="off">
+            <div class="input_tip">手机号</div>
+            <div id="login-mobile-err" class="error_tip">手机号不能为空</div>
+        </div>
+        <div class="form_group">
+            <input id="password" type="password" name="password">
+            <div class="input_tip">密码(不少于6位)</div>
+            <div id="login-password-err" class="error_tip">密码不能为空</div>
+        </div>
+        <input type="submit" name="" value="登 录" class="input_sub">
+        <div class="down_link">还没有账号？<a href="javascript:;" class="to_register">立即注册</a></div>
+    </div>
+    <div class="mask"></div>
+</form>
+
+<!-- 注册表单 -->
+<form class="register_form_con">
+
+    {#    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />#}
+
+    <div class="register_form">
+        <div class="register_title">
+            <h3>注 册</h3>
+            <a href="javascript:;" class="shutoff"></a>
+        </div>
+        <div class="form_group">
+            <input type="text" name="mobile" autocomplete="off" id="register_mobile" class="phone_input">
+            <div class="input_tip">手机号</div>
+            <div id="register-mobile-err" class="error_tip">手机号不能为空</div>
+        </div>
+        <div class="form_group">
+            <input type="text" name="image_code" id="imagecode" class="code_pwd">
+            <div class="input_tip">图形验证码</div>
+            <img src="../../static/news/images/pic_code.png" class="get_pic_code" onclick="generateImageCode()">
+            <div id="register-image-code-err" class="error_tip">图形码不能为空</div>
+        </div>
+        <div class="form_group">
+            <input type="text" name="sms_code" id="smscode" class="code_pwd">
+            <div class="input_tip">手机验证码</div>
+            <a href="javascript:;" class="get_code" onclick="sendSMSCode()">点击获取验证码</a>
+            <div id="register-sms-code-err" class="error_tip">验证码不能为空</div>
+        </div>
+        <div class="form_group">
+            <input type="password" name="password" id="register_password" class="pass_input">
+            <div class="input_tip">密码(不少于6位)</div>
+            <div id="register-password-err" class="error_tip">密码不能为空</div>
+        </div>
+        <div  class="form_group2 clearfix">
+            <input type="checkbox" class="agree_input" checked>
+            <p>同意使用条款，并已阅读"跟帖评论自律管理承诺书"</p>
+            <div class="error_tip">请勾选</div>
+        </div>
+        <input type="submit" name="" value="注 册" class="input_sub">
+        <div class="down_link">已有账号？<a href="javascript:;" class="to_login">立即登录</a></div>
+    </div>
+    <div class="mask"></div>
+</form>
+</body>
+</html>
