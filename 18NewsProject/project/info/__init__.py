@@ -11,11 +11,6 @@ from config import config
 # 注意使用的是扩展中的session，并不是flask中的session，需要添加扩展
 from flask_session import Session
 
-
-# 初始化数据库, 需要被manage.py外界访问，需要提取到外面
-# 在flask中的很多扩展中都可以先初始化对象，然后再去调用init.app方法去关联app
-from info.utils.common import do_index_class
-
 db = SQLAlchemy()
 
 # redis_store: StrictRedis = None
@@ -88,7 +83,10 @@ def create_app(config_name):
     # 设置session保存制定位置
     Session(app)
 
-    # 在蓝图之前添加自定义过滤器
+    # 在蓝图之前添加自定义过滤器,过滤器的import也是何时注册何时调用，否则会循环依赖错误
+    # 初始化数据库, 需要被manage.py外界访问，需要提取到外面
+    # 在flask中的很多扩展中都可以先初始化对象，然后再去调用init.app方法去关联app
+    from info.utils.common import do_index_class
     app.add_template_filter(do_index_class, "index_class")
 
     # 响应客户端的时候添加上token到cookie
@@ -112,5 +110,8 @@ def create_app(config_name):
 
     from info.modules.news import news_blue
     app.register_blueprint(news_blue)
+
+    from info.modules.profile import profile_blue
+    app.register_blueprint(profile_blue)
 
     return app

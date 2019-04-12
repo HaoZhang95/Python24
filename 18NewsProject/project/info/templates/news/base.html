@@ -17,7 +17,7 @@
 <body>
 <div class="header_con">
     <div class="header">
-        <a href="#" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
+        <a href="/" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
 
         {#  子模板如果不想要下面的只需要重写赋值为空即可  #}
         {% block category_block %}
@@ -37,7 +37,7 @@
         {% if data.user_info %}
             <div class="user_login fr">
                 <img src="{% if data.user_info.avatar_url %}{{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
-                <a href="#">{{ data.user_info.nick_name }}</a>
+                <a href="#" id="nick_name">{{ data.user_info.nick_name }}</a>
                 <a href="javascript:;" onclick="logout()">退出</a>
             </div>
         {% else %}
@@ -62,19 +62,21 @@
 
     {% endblock %}
 
-    <div class="rank_con fr">
+    {% block rank_block %}
+        <div class="rank_con fr">
+            <div class="rank_title">
+                <h3>点击排行</h3>
+            </div>
+            <ul class="rank_list">
 
-        <div class="rank_title">
-            <h3>点击排行</h3>
+                {% for news in data.news_dict_list %}
+                    {# 使用自定义过滤器对不同的排名添加不同的类, index0默认从0开始,loop.index默认从1开始 #}
+                    <li><span class="{{ loop.index0|index_class }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
-        <ul class="rank_list">
+    {% endblock %}
 
-            {% for news in data.news_dict_list %}
-                {# 使用自定义过滤器对不同的排名添加不同的类, index0默认从0开始,loop.index默认从1开始 #}
-                <li><span class="{{ loop.index0|index_class }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
 
 </div>
 <div class="footer">
