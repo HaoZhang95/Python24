@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" type="text/css" href="../../static/news/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../static/news/css/jquery.pagination.css">
+    <link rel="stylesheet" type="text/css" href="../../static/news/css/main.css">
+    <script type="text/javascript" src="../../static/news/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../static/news/js/jquery.pagination.min.js"></script>
+</head>
+<body class="inframe_body">
+    <div class="my_collect">
+        <h3>我的收藏</h3>
+        <ul class="article_list">
+
+            {% for news in data.collections %}
+                <li><a href="/news/{{ news.id }}" target="_blank">{{ news.title }}</a><span>{{ news.create_time }}</span></li>
+            {% endfor %}
+
+        </ul>
+
+
+
+        <div id="pagination" class="page"></div>
+        <script>
+            $(function() {
+                $("#pagination").pagination({
+                    currentPage: {{ data.current_page }},
+                    totalPage: {{ data.total_page }},
+                    callback: function(current) {
+                        window.location.href = "/user/collection?p=" + current
+                    }
+                });
+            });
+        </script>
+
+    </div>
+</body>
+</html>

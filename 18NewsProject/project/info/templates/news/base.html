@@ -23,7 +23,6 @@
         {% block category_block %}
             <ul class="menu fl">
 
-
                 {% for category in data.category_dict_list %}
                     {% if loop.index == 1 %}
                         <li class="active" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
