@@ -21,7 +21,8 @@ def news_list():
         per_page = int(per_page)
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.PARAMERR, errmsg='参数错误')
+        page = 1
+        per_page = 10
 
     # 默认加载cid=1的新闻，如果用户点击种类cid=2，那么就添加一个过滤器列表
     filters = [News.status == 0]

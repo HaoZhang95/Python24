@@ -136,7 +136,7 @@ def news_comment():
 
 @news_blue.route('/news_collect', methods=['POST'])
 @user_login_data
-def coolect_news():
+def collect_news():
 
     user = g.user
     if not user:
@@ -212,7 +212,7 @@ def news_detail(news_id):
     news.clicks += 1
 
     # 判断用户是否收藏了该新闻
-    is_collected = True
+    is_collected = False
 
     if user:
         # 这里不需要user.collection_news.all()，因为模型中使用了lazy，用到的时候自动查询所有，不过加上也行
@@ -235,7 +235,7 @@ def news_detail(news_id):
         comment_likes = CommentLike.query.filter(CommentLike.comment_id.in_(comment_ids),
                                                                             CommentLike.user_id == g.user.id).all()
         # 3. 第二步得到的是CommentLike模型，因为是多对多，所以根据模型获得被点赞的comment模型的id
-        comment_like_ids = [ comment_like.comment_id for comment_like in comment_likes]
+        comment_like_ids = [comment_like.comment_id for comment_like in comment_likes]
 
     comments_dict_list = []
     for comment in comments:
@@ -249,12 +249,20 @@ def news_detail(news_id):
 
         comments_dict_list.append(comment_dict)
 
+    # 如果当前新闻有作者，并且当前登录用用户已关注这个用户
+    is_followed = False
+
+    if news.user and user:
+        if news.user in user.followed:
+            is_followed = True
+
     data = {
         "user_info": user.to_dict() if user else None,
         "news_dict_list": news_dict_list,
         "news": news.to_dict(),
         "is_collected": is_collected,
         "comments": comments_dict_list,
+        "is_followed": is_followed,
     }
 
     # 因为details.html继承自base.html，而base.html中使用了data数据，不传递的话渲染子模板的话会报错

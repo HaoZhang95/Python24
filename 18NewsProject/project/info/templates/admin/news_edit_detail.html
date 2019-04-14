@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新经资讯后台管理</title>
+	<link rel="stylesheet" type="text/css" href="../../static/admin/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../static/admin/css/main.css">
+	<script type="text/javascript" src="../../static/admin/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../static/admin/js/jquery.form.min.js"></script>
+	<script src="../../static/admin/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="../../static/admin/js/tinymce_setup.js"></script>
+	<script src="../../static/admin/js/news_edit_detail.js"></script>
+</head>
+<body>
+	<div class="breadcrub">
+			当前位置：新闻管理>新闻版本编辑			
+		</div>
+		<div class="pannel">
+			<form class="news_edit">
+			<h3 class="review_title">新闻版式编辑</h3>
+
+
+                <div class="form_group">
+                    <label>新闻标题：</label>
+                    <input name="title" type="text" class="input_txt2" value="{{ data.news.title }}">
+                </div>
+                <div class="form_group">
+                    <label>新闻分类：</label>
+                    <select class="sel_opt" name="category_id">
+                        {% for category in data.categories %}
+                            <option value="{{ category.id }}" {% if category.is_selected %}selected{% endif %}>{{ category.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label>新闻摘要：</label>
+                    <textarea class="input_multxt" name="digest">{{ data.news.digest }}</textarea>
+                </div>
+                <div class="form_group">
+                    <label>索引图片：</label>
+                    <img src="{{ data.news.index_image_url }}" alt="索引图片" class="index_pic">
+                </div>
+                <div class="form_group">
+                    <label>上传图片：</label>
+                    <input type="file" name="index_image" class="input_file">
+                </div>
+                <div class="form_group">
+                    <label>新闻内容：</label>
+                    <div class="rich_wrap fl">
+                        <input class="input_area" id="rich_content" name="content" value="{{ data.news.content }}"></input>
+                    </div>
+                </div>
+                {# 添加隐藏字段新闻id #}
+                <input type="hidden" name="news_id" value="{{ data.news.id }}">
+
+
+			<div class="form_group indent_group line_top">
+				<input type="submit" value="确定" class="confirm">
+				<input type="button" value="取消" class="cancel" onclick="cancel()">
+			</div>
+			</form>	
+		</div>
+
+</body>
+</html>

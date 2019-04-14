@@ -236,6 +236,11 @@ body{
     margin:20px 30px 0 0;
 }
 
+.to_follow{
+    float: right;
+    margin:25px 0 0 0;
+}
+
 .writings span,.follows span{
     display: block;
     font-size:12px;

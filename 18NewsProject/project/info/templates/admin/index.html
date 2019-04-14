@@ -28,8 +28,8 @@
 			<div class="first_menu"><a href="#" class="icon02">新闻管理</a></div>
 			<ul class="sub_menu">
 				<li><a href="{{ url_for("admin.news_review") }}" class="icon031" target="main_frame">新闻审核</a></li>
-				<li><a href="../../static/admin/html/news_edit.html" class="icon032" target="main_frame">新闻版式编辑</a></li>
-				<li><a href="../../static/admin/html/news_type.html" class="icon034" target="main_frame">新闻分类管理</a></li>
+				<li><a href="{{ url_for("admin.news_edit") }}" class="icon032" target="main_frame">新闻版式编辑</a></li>
+				<li><a href="{{ url_for("admin.news_type") }}" class="icon034" target="main_frame">新闻分类管理</a></li>
 			</ul>
 		</div>
 	</div>

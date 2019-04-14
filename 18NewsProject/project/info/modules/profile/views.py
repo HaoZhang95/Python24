@@ -67,23 +67,23 @@ def news_release():
     index_image = request.files.get("index_image")
     category_id = request.form.get("category_id")
     # 1.1 判断数据是否有值
-    if not all([title, source, digest, content, index_image, category_id]):
+    if not all([title, source, digest, content, category_id]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
 
     # 1.2 尝试读取图片
     try:
         category_id = int(category_id)
-        index_image = index_image.read()
+        # index_image = index_image.read()
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
 
     # 2. 将标题图片上传到七牛
-    try:
-        key = storage(index_image)
-    except Exception as e:
-        current_app.logger.error(e)
-        return jsonify(errno=RET.THIRDERR, errmsg="上传图片错误")
+    # try:
+    #     key = storage(index_image)
+    # except Exception as e:
+    #     current_app.logger.error(e)
+    #     return jsonify(errno=RET.THIRDERR, errmsg="上传图片错误")
 
     # 3. 初始化新闻模型，并设置相关数据
     news = News()
@@ -91,7 +91,7 @@ def news_release():
     news.digest = digest
     news.source = source
     news.content = content
-    news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
+    news.index_image_url = constants.QINIU_DOMIN_PREFIX + "XXX"
     news.category_id = category_id
     news.user_id = g.user.id
     # 1代表待审核状态
