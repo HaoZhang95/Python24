@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户中心</title>
-	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.form.min.js"></script>
-    <script src="../tinymce/js/tinymce/tinymce.min.js"></script>
-    <script src="../js/tinymce_setup.js"></script>
-    <script type="text/javascript" src="../js/user_news_release.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../static/news/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../static/news/css/main.css">
+    <script type="text/javascript" src="../../static/news/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../static/news/js/jquery.form.min.js"></script>
+    <script src="../../static/news/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="../../static/news/js/tinymce_setup.js"></script>
+    <script type="text/javascript" src="../../static/news/js/user_news_release.js"></script>
 </head>
 <body class="inframe_body">
     <form class="release_form">
@@ -18,9 +18,9 @@
         <div class="form-group">
             <label>新闻分类：</label>
             <select class="sel_opt" name="category_id">
-                <option value="">分类一</option>
-                <option value="">分类二</option>
-                <option value="">分类三</option>
+                {% for category in data.categories %}
+                    <option value="{{ category.id }}">{{ category.name }}</option>
+                {% endfor %}
             </select>
         </div>
         <div class="form-group"><label>摘要：</label><textarea class="input_multxt" name="digest"></textarea></div>

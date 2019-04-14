@@ -22,8 +22,8 @@
             <li><a href="../../static/news/html/user_follow.html" target="main_frame">我的关注</a></li>
             <li><a href="{{ url_for('profile.pass_info') }}" target="main_frame">密码修改</a></li>
             <li><a href="{{ url_for('profile.user_collection') }}" target="main_frame">我的收藏</a></li>
-            <li><a href="../../static/news/html/user_news_release.html" target="main_frame">新闻发布</a></li>
-            <li><a href="../../static/news/html/user_news_list.html" target="main_frame">新闻列表</a></li>
+            <li><a href="{{ url_for('profile.news_release') }}" target="main_frame">新闻发布</a></li>
+            <li><a href="{{ url_for('profile.user_news_list') }}" target="main_frame">新闻列表</a></li>
         </ul>
     </div>
 

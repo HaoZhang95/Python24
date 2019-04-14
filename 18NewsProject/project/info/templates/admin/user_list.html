@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新经资讯后台管理</title>
+    <link rel="stylesheet" type="text/css" href="../../static/admin/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../static/admin/css/main.css">
+    <link rel="stylesheet" href="../../static/admin/css/jquery.pagination.css">
+    <script type="text/javascript" src="../../static/admin/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../static/admin/js/jquery.pagination.min.js"></script>
+</head>
+<body>
+    <div class="breadcrub">
+            当前位置：用户管理>用户列表
+        </div>
+        <div class="pannel">
+            <table class="common_table">
+                <tr>
+                    <th>用户名</th>
+                    <th>电话</th>
+                    <th>注册时间</th>
+                    <th>上次登录时间</th>
+                </tr>
+                {% for user in data.users %}
+                    <tr>
+                        <td>{{ user.nick_name }}</td>
+                        <td>{{ user.mobile }}</td>
+                        <td>{{ user.register }}</td>
+                        <td>{{ user.last_login }}</td>
+                    </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+
+        <div class="box">
+            <div id="pagination" class="page"></div>
+        </div>
+
+        <script>
+            $(function() {
+                $("#pagination").pagination({
+                    currentPage: {{ data.current_page }},
+                    totalPage: {{ data.total_page }},
+                    callback: function(current) {
+                        window.location.href = '/admin/user_list?p=' + current
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

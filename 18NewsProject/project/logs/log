@@ -3645,3 +3645,606 @@ INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 00:07:20] "GET /static/news/ima
 INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 00:07:28] "GET /user/collection?p=1 HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 00:07:30] "GET /user/collection?p=2 HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 00:07:32] "GET /user/collection?p=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:09:54] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:09:54] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:09:54] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:09:54] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:09:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:09:57] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:04] "GET /user/info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:05] "GET /static/news/images/user_pic.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:06] "GET /user/base_info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:06] "GET /static/news/js/user_base_info.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:08] "GET /user/news_release HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:08] "GET /static/news/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:08] "GET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:08] "GET /static/news/js/tinymce_setup.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:08] "GET /static/news/js/user_news_release.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:09] "GET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:10] "GET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:10:10] "GET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:25] "GET /user/info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:26] "GET /user/base_info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:30] "GET /static/news/html/user_news_list.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:30] "GET /static/news/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:30] "GET /static/news/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:30] "GET /static/news/images/tip_bg.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:39] "GET /user/news_release HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:15:57] "GET /user/news_release HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:30:59] "GET /user/info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:31:00] "GET /user/base_info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:31:01] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:31:05] "GET /user/news_release HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\profile\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:17] "GET /user/info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:18] "GET /user/base_info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:19] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:23] "GET /user/news_list HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:23] "GET /user/news_list?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:23] "GET /user/news_list?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:23] "GET /user/news_list?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:23] "GET /user/news_list?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:48:23] "GET /user/news_list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:51:15] "GET /user/info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:51:16] "GET /user/base_info HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:51:17] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 07:51:25] "GET /user/news_list HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:25] "GET /user/info4 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:26] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:34] "GET /user/index.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:42] "GET /user/index.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:04:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:05:01] "POST /passport/logout HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:05:01] "GET /user/index.html HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:05:50] "GET /user/index.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:05:53] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:05:54] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [13/Apr/2019 08:05:55] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:31] "GET / HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:32] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:32] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:32] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:33] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:33] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:25:33] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:02] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:03] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:04] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:04] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:04] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:11] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:11] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:11] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:11] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:26:11] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:06] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:13] "POST /admin/login HTTP/1.1" 302 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:13] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:13] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:13] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:14] "GET /static/admin/html/user_count.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:14] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:14] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:21] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:26] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:40:35] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:41:24] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:43:22] "GET /admin/login HTTP/1.1" 302 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:43:22] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:53:28] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:53:30] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:53:40] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 16:53:42] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:04:11] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:04:11] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:04:13] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:05:37] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:05] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:06] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:09] "POST /passport/logout HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:09] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:10] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:18] "GET /admin/inedx HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:19] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:29] "GET /admin/index HTTP/1.1" 302 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:29] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:30] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:06:39] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\utils\\common.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:40] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:11:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:12:40] "POST /admin/login HTTP/1.1" 302 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:12:40] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:34:17] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:34:20] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:34:21] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:58:45] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:58:48] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 17:58:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:03:38] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:03:42] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:03:43] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:03:54] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:03:57] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:03:57] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:04:23] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:04:26] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:04:26] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:04:47] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:07:36] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:07:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:08:58] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:09:01] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:09:02] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:53] "GET /admin/index HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:53] "GET /admin/index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:53] "GET /admin/index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:53] "GET /admin/index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:54] "GET /admin/index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:54] "GET /admin/index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:42:55] "GET /admin/index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:47] "GET /admin/index HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:47] "GET /admin/index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:47] "GET /admin/index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:47] "GET /admin/index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:48] "GET /admin/index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:48] "GET /admin/index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:43:49] "GET /admin/index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:23] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:26] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:35] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:36] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:36] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:36] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:37] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:38] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:38] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:39] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:39] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:39] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:40] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:40] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:40] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:41] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:41] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:41] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:41] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:41] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:42] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:44:42] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:45:52] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:45:54] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:45:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:45:57] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:03] "GET /admin/user_list?p=5 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:05] "GET /admin/user_list?p=7 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:06] "GET /admin/user_list?p=1001 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:09] "GET /admin/user_list?p=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:19] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:20] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:20] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:51] "GET /static/admin/html/news_review.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:46:53] "GET /static/admin/html/news_edit.html HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:54:54] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:54:56] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:54:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:55:00] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:56:18] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:56:20] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:56:22] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:56:23] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:57:56] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:57:59] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:58:00] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:58:02] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:59:20] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:59:21] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:59:21] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:59:23] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 18:59:27] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:22] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:24] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:24] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:34] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:35] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:36] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:00:41] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:36] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:38] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:39] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:40] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:49] "GET /admin/news_review?keywords=°²È« HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:55] "GET /admin/news_review?keywords=°² HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:08:58] "GET /admin/news_review?keywords= HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'C:\\Users\\HaoZhang\\Documents\\PythonAndMachineLearning\\18NewsProject\\project\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:05] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:06] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:12] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:15] "GET /admin/news_review_detail/4 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:15] "GET /static/admin/tinymce/js/tinymce/tinymce.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:15] "GET /static/admin/js/news_review_detail.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:15] "GET /static/admin/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:15] "GET /static/admin/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:15] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:16] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:16] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:28] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:30] "GET /admin/news_review_detail/7 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:35] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:38] "GET /admin/news_review_detail/7 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:41] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:21:42] "GET /admin/news_review_detail/4 HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:41] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:43] "GET /admin/news_review_detail/9999999999 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:43] "GET /admin/news_review_detail/9999999999?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:43] "GET /admin/news_review_detail/9999999999?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:43] "GET /admin/news_review_detail/9999999999?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:43] "GET /admin/news_review_detail/9999999999?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:22:43] "GET /admin/news_review_detail/9999999999?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 580-475-056
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:24:54] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:24:57] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:24:58] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:25:25] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 19:25:27] "GET /admin/news_review_detail/4 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Apr/2019 20:53:56] "GET /admin/news_review_detail/6 HTTP/1.1" 200 -

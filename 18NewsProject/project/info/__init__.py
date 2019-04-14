@@ -1,7 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
-from flask import Flask
+from flask import Flask, render_template, g
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from redis import StrictRedis
@@ -89,6 +89,16 @@ def create_app(config_name):
     from info.utils.common import do_index_class
     app.add_template_filter(do_index_class, "index_class")
 
+    # 设置全局的404页面,errorhandler去捕获制定状态吗的错误
+    from info.utils.common import user_login_data
+
+    @app.errorhandler(404)
+    @user_login_data
+    def page_not_found(error):
+        user = g.user
+        data = {"user_info": user.to_dict() if user else None}
+        return render_template('news/404.html', data=data)
+
     # 响应客户端的时候添加上token到cookie
     @app.after_request
     def after_request(response):
@@ -113,5 +123,8 @@ def create_app(config_name):
 
     from info.modules.profile import profile_blue
     app.register_blueprint(profile_blue)
+
+    from info.modules.admin import admin_blue
+    app.register_blueprint(admin_blue)
 
     return app

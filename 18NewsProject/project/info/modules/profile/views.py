@@ -1,10 +1,112 @@
 from flask import render_template, redirect, g, request, jsonify, current_app
 
 from info import db, constants
+from info.models import Category, News
 from info.modules.profile import profile_blue
 from info.utils.common import user_login_data
 from info.utils.image_store import storage
 from info.utils.response_code import RET
+
+
+@profile_blue.route("/news_list")
+@user_login_data
+def user_news_list():
+
+    user = g.user
+
+    page = request.args.get("p", 1)
+    news_list = []
+    current_page = 1
+    total_page = 1
+    try:
+        paginate = News.query.filter(News.user_id == user.id).paginate(page, constants.USER_COLLECTION_MAX_NEWS, False)
+        news_list = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    news_dict_list = []
+    for news in news_list:
+        news_dict_list.append(news.to_review_dict())
+
+    data = {
+        "news_list": news_dict_list,
+        "current_page": current_page,
+        "total_page": total_page,
+    }
+
+    return render_template("news/user_news_list.html", data=data)
+
+
+@profile_blue.route("/news_release", methods=['GET', 'POST'])
+@user_login_data
+def news_release():
+
+    if request.method == 'GET':
+        # 加载新闻分类数据
+        categories = []
+        try:
+            categories = Category.query.all()
+        except Exception as e:
+            current_app.logger.error(e)
+
+        categories_dict_list = []
+        for category in categories:
+            categories_dict_list.append(category.to_dict())
+
+        # 去除**最新**这个分类
+        categories_dict_list.pop(0)
+        return render_template("news/user_news_release.html", data={"categories": categories_dict_list})
+
+    # 1. 获取要提交的数据
+    title = request.form.get("title")
+    source = "个人发布"
+    digest = request.form.get("digest")
+    content = request.form.get("content")
+    index_image = request.files.get("index_image")
+    category_id = request.form.get("category_id")
+    # 1.1 判断数据是否有值
+    if not all([title, source, digest, content, index_image, category_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+
+    # 1.2 尝试读取图片
+    try:
+        category_id = int(category_id)
+        index_image = index_image.read()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+
+    # 2. 将标题图片上传到七牛
+    try:
+        key = storage(index_image)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="上传图片错误")
+
+    # 3. 初始化新闻模型，并设置相关数据
+    news = News()
+    news.title = title
+    news.digest = digest
+    news.source = source
+    news.content = content
+    news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
+    news.category_id = category_id
+    news.user_id = g.user.id
+    # 1代表待审核状态
+    news.status = 1
+
+    # 4. 保存到数据库
+    try:
+        db.session.add(news)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存数据失败")
+    # 5. 返回结果
+    return jsonify(errno=RET.OK, errmsg="发布成功，等待审核")
 
 
 @profile_blue.route("/collection")

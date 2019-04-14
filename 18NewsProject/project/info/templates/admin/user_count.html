@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>新经资讯后台管理</title>
-	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<script type="text/javascript" src="../js/echarts.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../static/admin/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../static/admin/css/main.css">
+	<script type="text/javascript" src="../../static/admin/js/echarts.min.js"></script>
 </head>
 <body>
 	<div class="breadcrub">
@@ -13,15 +13,15 @@
 	</div>
 	<div class="spannels">
 		<div class="spannel scolor01">
-			<em>36365</em><span>人</span>
+			<em>{{ data.total_count }}</em><span>人</span>
 			<b>用户总数</b>
 		</div>
 		<div class="spannel scolor02">
-			<em>146</em><span>人</span>
+			<em>{{ data.mon_count }}</em><span>人</span>
 			<b>用户月新增数</b>
 		</div>
 		<div class="spannel2 scolor03">
-			<em>32</em><span>人</span>
+			<em>{{ data.day_count }}</em><span>人</span>
 			<b>用户日新增数</b>
 		</div>		
 	</div>
@@ -60,7 +60,8 @@
 		                        name: '今天',
 					            type : 'category',
 					            boundaryGap : false,
-					            data : ["08:15","09:15","10:15","11:15","12:15","13:15","14:15","15:15","16:15","17:15","18:15","19:15"]
+					            {#data : ["08:15","09:15","10:15","11:15","12:15","13:15","14:15","15:15","16:15","17:15","18:15","19:15"]#}
+                                data : {{ data.active_date | safe }}
 					        }
 					    ],        
 					    yAxis : [
@@ -75,7 +76,8 @@
 					            type:'line',
 					            smooth:true,
 					            itemStyle: {normal: {areaStyle: {type: 'default'}, color: '#f80'}, lineStyle: {color: '#f80'}},
-					            data:[14951,14861,7186,15861,14951,14861,7186,14951,14861,7186,15861,14951]
+					            {#data:[14951,14861,7186,15861,14951,14861,7186,14951,14861,7186,15861,14951]#}
+                                data: {{ data.active_count }}
 					        }],
 					    areaStyle:{
 						        normal:{

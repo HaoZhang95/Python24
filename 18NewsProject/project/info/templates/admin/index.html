@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新经资讯后台管理</title>
+	<link rel="stylesheet" type="text/css" href="../../static/admin/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../static/admin/css/main.css">
+	<script type="text/javascript" src="../../static/admin/js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<a href="#" class="logo fl"><img src="../../static/admin/images/logo.png" alt="logo"></a>
+		<a href="#" class="logout fr">退 出</a>
+	</div>
+	
+	<div class="side_bar">
+		<div class="user_info">
+			<img src="../../static/admin/images/person.png" alt="张大山">
+			<p>欢迎你 <em>{{ user.nick_name }}</em></p>
+		</div>
+
+		<div class="menu_con">
+			<div class="first_menu active"><a href="#" class="icon01">用户管理</a></div>
+			<ul class="sub_menu show">
+				<li><a class="icon022" href="{{ url_for("admin.user_count") }}" target="main_frame">用户统计</a></li>
+				<li class="current"><a href="{{ url_for("admin.user_list") }}" class="icon021" target="main_frame">用户列表</a></li>
+			</ul>
+			<div class="first_menu"><a href="#" class="icon02">新闻管理</a></div>
+			<ul class="sub_menu">
+				<li><a href="{{ url_for("admin.news_review") }}" class="icon031" target="main_frame">新闻审核</a></li>
+				<li><a href="../../static/admin/html/news_edit.html" class="icon032" target="main_frame">新闻版式编辑</a></li>
+				<li><a href="../../static/admin/html/news_type.html" class="icon034" target="main_frame">新闻分类管理</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main_body" id="main_body">
+		<iframe src="{{ url_for("admin.user_count") }}" frameborder="0" id="main_frame" name="main_frame" frameborder="0" scrolling="auto"></iframe>
+	</div>
+	
+	<script>
+		$(function(){
+			$('.first_menu').click(function(){
+				$(this).addClass('active').siblings('.first_menu').removeClass('active');
+				$(this).next().slideDown().siblings('.sub_menu').slideUp();
+			})
+			var frame_w = $('#main_body').outerWidth();
+			var frame_h = $('#main_body').outerHeight();
+			$('#main_frame').css({'width':frame_w,'height':frame_h});
+		})
+	</script>
+
+</body>
+</html>

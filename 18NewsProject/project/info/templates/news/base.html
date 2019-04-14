@@ -78,21 +78,25 @@
 
 
 </div>
-<div class="footer">
-    <div class="footer_links">
-        <a href="">关于我们</a>
-        <span>|</span>
-        <a href="">联系我们</a>
-        <span>|</span>
-        <a href="">招聘人才</a>
-        <span>|</span>
-        <a href="">友情链接</a>
+
+{% block bottom_block %}
+    <div class="footer">
+        <div class="footer_links">
+            <a href="">关于我们</a>
+            <span>|</span>
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">招聘人才</a>
+            <span>|</span>
+            <a href="">友情链接</a>
+        </div>
+        <p class="copyright">
+            CopyRight © 2018 新经资讯信息技术有限公司 All Rights Reserved<br />
+            电话：010-****888    京ICP备*******8号
+        </p>
     </div>
-    <p class="copyright">
-        CopyRight © 2018 新经资讯信息技术有限公司 All Rights Reserved<br />
-        电话：010-****888    京ICP备*******8号
-    </p>
-</div>
+{% endblock %}
+
 
 <!-- 登录表单 -->
 <form class="login_form_con">

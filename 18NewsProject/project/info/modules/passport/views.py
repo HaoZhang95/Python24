@@ -16,6 +16,8 @@ def logout():
     session.pop('user_id', None)
     session.pop('mobile', None)
     session.pop('nick_name', None)
+    # 不清除admin，会在管理员和普通用户切换过程中，能够以普通用户身份来登陆管理员
+    session.pop('is_admin', None)
     return jsonify(errno=RET.OK, errmsg='退出成功')
 
 

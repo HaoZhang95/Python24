@@ -24,7 +24,7 @@ def news_list():
         return jsonify(errno=RET.PARAMERR, errmsg='参数错误')
 
     # 默认加载cid=1的新闻，如果用户点击种类cid=2，那么就添加一个过滤器列表
-    filters = []
+    filters = [News.status == 0]
     if cid != 1:
         filters.append(News.category_id == cid)
 

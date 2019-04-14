@@ -1,5 +1,5 @@
 """
-    index的蓝图
+    admin的蓝图
 """
 from flask import Blueprint
 

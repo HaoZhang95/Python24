@@ -48,7 +48,6 @@ def user_login_data(func):
     return wrapper
 
 
-
 def query_user_data():
     user_id = session.get('user_id', None)
     user = None
