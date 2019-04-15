@@ -1,0 +1,83 @@
+{% extends "news/base.html" %}
+
+{% block title_block %}
+用户概况
+{% endblock %}
+
+{% block css_block %}
+    {#  如果这个css放在main.css后面的话，分页的央视会改变，所以在base.html中加了这个block  #}
+    <link rel="stylesheet" type="text/css" href="../../static/news/css/jquery.pagination.css">
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="../../static/news/js/jquery.pagination.min.js"></script>
+    <script type="text/javascript" src="../../static/news/js/other.js"></script>
+{% endblock %}
+
+{% block content_block %}
+    <div class="user_menu_con fl">
+        <div class="user_center_pic">
+            <img src="{% if data.other_info.avatar_url %}
+                        {{ data.other_info.avatar_url }}
+                        {% else %}
+                        ../../static/news/images/user_pic.png
+            {% endif %}" alt="用户图片">
+        </div>
+        <div class="user_center_name">{{ data.other_info.nick_name }}</div>
+
+        <ul class="other_detail">
+            <li>性 别：{% if data.other_info.gender == "MAN" %}男
+            {% else %}女
+            {% endif %}</li>
+            <li>签 名：{% if data.other_info.signature %}
+                {{ data.other_info.signature }}
+            {% else %}
+                这个人很懒，什么都没留下
+            {% endif %}</li>
+        </ul>
+
+        <div class="focus_other">
+
+            <a href="javascript:;" class="focus block-center" data-userid="{{ data.other_info.id }}" style="display: {% if data.is_followed %}none
+            {% else %}block
+            {% endif %}">关注</a><br>
+            <a href="javascript:;" class="focused block-center" data-userid="{{ data.other_info.id }}" style="display: {% if data.is_followed %}block
+            {% else %}none
+            {% endif %}"><span class="out">已关注</span><span class="over">取消关注</span></a>
+
+        </div>
+
+    </div>
+
+    <div class="user_con fr">
+        <div class="other_collect">
+            <h3>他的文章</h3>
+            <ul class="article_list">
+                <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+                <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><span>2018-1-17</span></li>
+            </ul>
+
+            <div id="pagination" class="page"></div>
+            <script>
+                $(function(){
+                    $("#pagination").pagination({
+                        currentPage: 2,
+                        totalPage: 3,
+                        callback: function(current) {
+                            getNewsList(current)
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block rank_block %}
+
+{% endblock %}
