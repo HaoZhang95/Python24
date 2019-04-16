@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef93c000-570a-4e5c-ad0d-9f74b3c7be33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/modules/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/modules/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/modules/profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/modules/profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/other.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/other.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_follow.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user_follow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/other.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/other.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/user_follow.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/user_follow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/news/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/news/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -311,7 +299,7 @@
       <workItem from="1555128448924" duration="4661000" />
       <workItem from="1555247280636" duration="11486000" />
       <workItem from="1555267636610" duration="12144000" />
-      <workItem from="1555302781670" duration="5945000" />
+      <workItem from="1555302781670" duration="5982000" />
     </task>
     <task id="LOCAL-00001" summary="更新了manage.py文件">
       <created>1554726624329</created>
@@ -390,11 +378,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555279808793</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="18新经新闻项目day07完成">
+      <created>1555311364917</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555311364917</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132908000" />
+    <option name="totallyTimeSpent" value="132945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="974" extended-state="6" />
@@ -404,7 +399,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4966533" visible="true" weight="0.28723404" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966533" weight="0.28723404" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32269505" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,7 +484,8 @@
     <MESSAGE value="18新经新闻项目day05完成" />
     <MESSAGE value="18新经新闻项目day06完成" />
     <MESSAGE value="18新经新闻项目day07部分完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="18新经新闻项目day07部分完成" />
+    <MESSAGE value="18新经新闻项目day07完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="18新经新闻项目day07完成" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
