@@ -86,26 +86,26 @@
     * 2.10_Django使用模板方式
     * 2.11_Django模板语法
     
-    * 3.1_模板纠正与每日反馈说明
-    * 3.2_Django使用表单的方法
-    * 3.3_使用表单举例
 
-* [Part09](#Part09)
-    * 01_使用Admin站点的预设值
-    * 02_自定义Admin管理器
-    * 03_Admin站点列表页控制
-    * 04_Admin站点编辑页面控制
-    * 05_控制Admin站点的整体标题信息
-    * 06_上传图片使用
+* [day04](#day04)
+
+	* 1.1_模板纠正与每日反馈说明
+    * 1.2_Django使用表单的方法
+    * 1.3_使用表单举例
+	
+    * 2.1_使用Admin站点的预设值
+    * 2.2_自定义Admin管理器
+    * 2.3_Admin站点列表页控制
+    * 2.4_Admin站点编辑页面控制
+    * 2.5_控制Admin站点的整体标题信息
+    * 2.6_上传图片使用
     
-
-* [Part10](#Part10)
-    * 01_向DjangoRESTframework过渡说明
-    * 02_前后端分离介绍
-    * 03_什么是RESTful风格
-    * 04_RESTful设计方法
-    * 05_xml格式说明
-    * 06_使用Django定义REST-API
+    * 3.1_向DjangoRESTframework过渡说明
+    * 3.2_前后端分离介绍
+    * 3.3_什么是RESTful风格
+    * 3.4_RESTful设计方法
+    * 3.5_xml格式说明
+    * 3.6_使用Django定义REST-API
 
 * [Part11](#Part11)
     * 01_对于序列化的理解说明
