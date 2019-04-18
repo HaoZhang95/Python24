@@ -26,5 +26,6 @@ urlpatterns = [
     # {% url 'app_name: 该app_name下对应的路由中的name'%}
     path('user/', include(('user.urls', 'user'))),
     path('req/', include(('reqresp.urls', 'reqresp'), namespace='req')),
+    path('drf/', include(('DRF.urls', 'DRF'))),
 
 ]

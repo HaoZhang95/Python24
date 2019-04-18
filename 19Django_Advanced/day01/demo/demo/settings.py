@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # 安装自己的应用
     'user.apps.UserConfig',
     'reqresp.apps.ReqrespConfig',
+    'DRF.apps.DrfConfig',
 ]
 
 MIDDLEWARE = [
@@ -89,7 +90,7 @@ DATABASES = {
         'PORT': 3306,                  # 数据库端口
         'USER': "root",                # 用户名
         'PASSWORD': "haozhang",           # 密码
-        'NAME': "django_demo",         # 数据库名
+        'NAME': "bookdb24",         # 数据库名
     }
 }
 

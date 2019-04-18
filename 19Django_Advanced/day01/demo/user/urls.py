@@ -9,5 +9,6 @@ urlpatterns = [
     re_path('test3/(\d+)/(\d+)', views.test3),
     re_path('test4/(?P<a>\d+)/(?P<b>\d+)', views.test4),
     path('test5/', views.test5),
+    path('test6/', views.Test6View.as_view()),
 
 ]
