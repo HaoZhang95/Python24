@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 安装第三方的DRF框架
+    'rest_framework',
+
     # 安装自己的应用
     'user.apps.UserConfig',
     'reqresp.apps.ReqrespConfig',
