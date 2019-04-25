@@ -6,7 +6,27 @@ headers = {
 
 
 def test01():
-    pass
+    """36kr.com的内容是存放在script标签中"""
+
+    class Kr36(object):
+
+        def __init__(self):
+            self.url = 'https://36kr.com/'
+            self.headers = headers
+
+        def get_data(self):
+            resp = requests.get(url=self.url, headers=self.headers)
+
+        def parse_data(self):
+            pass
+
+        def save_data(self):
+            pass
+
+        def run(self):
+            data = self.get_data()
+            parse_data = self.parse_data(data)
+
 
 
 def main():
