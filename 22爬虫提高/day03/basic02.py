@@ -28,9 +28,20 @@ def test01():
             parse_data = self.parse_data(data)
 
 
+def test02():
+    """
+        selenium是一个测试工具，requests能做的这个测试工具也能做，类似于一个运行在浏览器上的测试工具
+        这个测试工具模拟浏览器接受自己的指令来加载页面(模拟浏览器操作做)，甚至可以加载phantomJS这样无界面的浏览器
+
+        phantomJS是无头浏览器，会把返回的js加载到内存中执行js处理
+    """
+    pass
+
+
 
 def main():
-    test01()
+    # test01()
+    test02()
 
 
 if __name__ == '__main__':
