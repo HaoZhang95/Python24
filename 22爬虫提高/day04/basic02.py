@@ -1,31 +1,33 @@
-import requests
+import pymongo
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
-}
+"""
+    MangoDB术语的对应表
+    database --> database
+    table    --> collection
+    row      --> document
+    column   --> field
+"""
 
 
 def test01():
-    """36kr.com的内容是存放在script标签中"""
+    """mangodb云服务链接"""
 
-    class Kr36(object):
 
-        def __init__(self):
-            self.url = 'https://36kr.com/'
-            self.headers = headers
+    client = pymongo.MongoClient("mongodb+srv://Hao:123456Hao@python24-urhj5.mongodb.net/test?retryWrites=true")
 
-        def get_data(self):
-            resp = requests.get(url=self.url, headers=self.headers)
+    db = client.get_database('Python24')
+    table = db.Test
 
-        def parse_data(self):
-            pass
+    print(table.count_documents({}))
 
-        def save_data(self):
-            pass
 
-        def run(self):
-            data = self.get_data()
-            parse_data = self.parse_data(data)
+    # table.inventory.insert_one(
+    #     {"item": "canvas",
+    #      "qty": 100,
+    #      "tags": ["cotton"],
+    #      "size": {"h": 28, "w": 35.5, "uom": "cm"}})
+
+    print(table.count_documents({}))
 
 
 
