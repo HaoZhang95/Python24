@@ -6,12 +6,12 @@ headers = {
 
 
 def test01():
-    """36kr.com的内容是存放在script标签中"""
+    """斗鱼平台获取直播房间和的信息"""
 
-    class Kr36(object):
+    class Douyu(object):
 
         def __init__(self):
-            self.url = 'https://36kr.com/'
+            self.url = 'https://www.douyu.com/'
             self.headers = headers
 
         def get_data(self):
