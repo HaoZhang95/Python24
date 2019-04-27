@@ -1,32 +1,22 @@
-import requests
+import pymongo
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
-}
+"""
+    MangoDB术语的对应表
+    database --> database
+    table    --> collection
+    row      --> document
+    column   --> field
+"""
+client = pymongo.MongoClient("mongodb+srv://Hao:123456Hao@python24-urhj5.mongodb.net/test?retryWrites=true")
 
+db = client.get_database('Python')
+
+collection = db.get_collection('Test')
 
 def test01():
-    """36kr.com的内容是存放在script标签中"""
+    """  """
 
-    class Kr36(object):
-
-        def __init__(self):
-            self.url = 'https://36kr.com/'
-            self.headers = headers
-
-        def get_data(self):
-            resp = requests.get(url=self.url, headers=self.headers)
-
-        def parse_data(self):
-            pass
-
-        def save_data(self):
-            pass
-
-        def run(self):
-            data = self.get_data()
-            parse_data = self.parse_data(data)
-
+    print(collection.name)
 
 
 def main():

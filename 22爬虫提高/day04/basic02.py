@@ -10,24 +10,18 @@ import pymongo
 
 
 def test01():
-    """mangodb云服务链接"""
-
+    """
+    mongodb云服务链接
+    注意点：登陆的用户和密码并不是Mongodb注册的账号密码，而是为这个数据库创建的用户的用户名和密码
+   """
 
     client = pymongo.MongoClient("mongodb+srv://Hao:123456Hao@python24-urhj5.mongodb.net/test?retryWrites=true")
 
+    # 使用python24这个数据
     db = client.get_database('Python24')
-    table = db.Test
-
-    print(table.count_documents({}))
-
-
-    # table.inventory.insert_one(
-    #     {"item": "canvas",
-    #      "qty": 100,
-    #      "tags": ["cotton"],
-    #      "size": {"h": 28, "w": 35.5, "uom": "cm"}})
-
-    print(table.count_documents({}))
+    # 获得试用的table表
+    collection = db.get_collection('Test')
+    print(collection.name)
 
 
 
