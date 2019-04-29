@@ -9,7 +9,7 @@
     1- scheduler调度器接受不同的url，传递给scrapy引擎
     2- 引擎发送url请求给downloader进行下载数据
     3- downloader下载好的数据返回给scrapy引擎
-    4- 引擎把收到的数据发送给spider进行数据解析
+    4- 引擎把收到的数据发送给spider进行数据解析,此时scrapy有两个选择1-解析数据返回给引擎  2= 解析中有url，再次跟进的话把url返回给调度器再次循环
     5- 解析好的数据返回给scrapy引擎
     6- 引擎把解析好的数据发送给item pipeline进行数据持久化
 
