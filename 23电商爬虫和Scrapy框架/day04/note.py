@@ -36,3 +36,6 @@
     6- redis中添加redis_key
 
 """
+print('aaa')
+
+
