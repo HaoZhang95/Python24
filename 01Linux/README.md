@@ -9,6 +9,7 @@ Linux基础，没有具体的代码实现，具体的请查看该篇章中的htm
 
 ****
 <h2 id="catalog">讲义html</h2>
+* [Linux基础](#Linux基础)
     * [01-学01_Python 基础课程安排](/linux_html/01_Python基础课程安排.html)
     * 02-操作系统相关
     * 03-shell介绍
