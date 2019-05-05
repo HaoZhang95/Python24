@@ -12,7 +12,7 @@ Linux基础，没有具体的代码实现，具体的请查看该篇章中的htm
 * [Linux基础](#Linux基础)
     * [01-学01_Python基础课程安排](/linux_html/01_Python基础课程安排.html)
     * [Issues](https://github.com/HaoZhang95/PythonAndMachineLearning/01Linux/linux_html/01_Python基础课程安排.html)
-    * 02-操作系统相关
+    * 02-操作系统相关(/linux_html/01_Python基础课程安排.html)
     * 03-shell介绍
     * 01_Python 基础课程安排
     * 02_操作系统（科普章节）
@@ -28,7 +28,7 @@ Linux基础，没有具体的代码实现，具体的请查看该篇章中的htm
     * 12_其他命令
 
 * [Linux基础](#Linux基础)
-    * 01-学01_Python基础课程安排
+    * [01-学01_Python基础课程安排](/linux_html/01_Python基础课程安排.html)
     * 02-操作系统相关
     * 03-shell介绍
     * 01_Python 基础课程安排
