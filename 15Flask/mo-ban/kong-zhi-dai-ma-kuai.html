@@ -1,0 +1,1067 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book Flask框架 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>控制代码块 | Flask框架</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../mo-ban/mo-ban-dai-ma-fu-yong.html" />
+    
+    
+    <link rel="prev" href="../mo-ban/zi-ding-yi-guo-lv-qi.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="2.5"
+        data-chapter-title="控制代码块"
+        data-filepath="mo-ban/kong-zhi-dai-ma-kuai.md"
+        data-basepath=".."
+        data-revision="Wed May 30 2018 20:13:27 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Flask框架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="shi-tu-ji-lu-you.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        视图及路由
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="shi-tu-ji-lu-you/flaskjian-jie.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/flaskjian-jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Flask简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shi-tu-ji-lu-you/flaskhuan-jing-an-zhuang.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/flaskhuan-jing-an-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        虚拟环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="shi-tu-ji-lu-you/helloworld.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/helloworld.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        HelloWorld
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="shi-tu-ji-lu-you/xiang-guan-pei-zhi-can-shu.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/xiang-guan-pei-zhi-can-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        相关配置参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="shi-tu-ji-lu-you/lu-you-de-ge-zhong-ding-yi.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/lu-you-de-ge-zhong-ding-yi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        路由基本定义
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="shi-tu-ji-lu-you/shi-tu-chang-yong-luo-ji.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/shi-tu-chang-yong-luo-ji.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        视图常用逻辑
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="shi-tu-ji-lu-you/zheng-ze-pi-pei-lu-you.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/zheng-ze-pi-pei-lu-you.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        正则匹配路由
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="shi-tu-ji-lu-you/yi-chang-bu-huo.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/yi-chang-bu-huo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        异常捕获
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="shi-tu-ji-lu-you/qing-qiu-gou-zi.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/qing-qiu-gou-zi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        请求勾子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="shi-tu-ji-lu-you/flaskzhuang-shi-qi-lu-you-ju-ti-shi-xian.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/flaskzhuang-shi-qi-lu-you-ju-ti-shi-xian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        装饰器路由具体实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="shi-tu-ji-lu-you/huo-qu-qing-qiu-can-shu.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/huo-qu-qing-qiu-can-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        获取请求参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="shi-tu-ji-lu-you/zhuang-tai-bao-chi.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        状态保持
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="shi-tu-ji-lu-you/zhuang-tai-bao-chi/cookie.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/cookie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.1.</b>
+                        
+                        Cookie
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="shi-tu-ji-lu-you/zhuang-tai-bao-chi/session.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/session.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.2.</b>
+                        
+                        Session
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="shi-tu-ji-lu-you/shang-xia-wen.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/shang-xia-wen.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                        上下文
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="shi-tu-ji-lu-you/flask-script.html">
+            
+                
+                    <a href="../shi-tu-ji-lu-you/flask-script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                        Flask-Script
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="mo-ban.html">
+            
+                
+                    <a href="../mo-ban.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        模板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="mo-ban/jinja2mo-ban-yin-qing.html">
+            
+                
+                    <a href="../mo-ban/jinja2mo-ban-yin-qing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Jinja2简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mo-ban/jinja2mo-ban-yin-qing-shi-yong.html">
+            
+                
+                    <a href="../mo-ban/jinja2mo-ban-yin-qing-shi-yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        模板的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="mo-ban/guo-lv-qi.html">
+            
+                
+                    <a href="../mo-ban/guo-lv-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="mo-ban/zi-ding-yi-guo-lv-qi.html">
+            
+                
+                    <a href="../mo-ban/zi-ding-yi-guo-lv-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        自定义过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="mo-ban/kong-zhi-dai-ma-kuai.html">
+            
+                
+                    <a href="../mo-ban/kong-zhi-dai-ma-kuai.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        控制代码块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="mo-ban/mo-ban-dai-ma-fu-yong.html">
+            
+                
+                    <a href="../mo-ban/mo-ban-dai-ma-fu-yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        模板代码复用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="mo-ban/mo-ban-dai-ma-fu-yong/hong.html">
+            
+                
+                    <a href="../mo-ban/mo-ban-dai-ma-fu-yong/hong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.1.</b>
+                        
+                        宏
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="mo-ban/mo-ban-dai-ma-fu-yong/ji-cheng.html">
+            
+                
+                    <a href="../mo-ban/mo-ban-dai-ma-fu-yong/ji-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.2.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="mo-ban/mo-ban-dai-ma-fu-yong/bao-han.html">
+            
+                
+                    <a href="../mo-ban/mo-ban-dai-ma-fu-yong/bao-han.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.3.</b>
+                        
+                        包含
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="mo-ban/te-you-bian-liang-he-han-shu.html">
+            
+                
+                    <a href="../mo-ban/te-you-bian-liang-he-han-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        特有变量和函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="mo-ban/flask-wtfbiao-dan.html">
+            
+                
+                    <a href="../mo-ban/flask-wtfbiao-dan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Flask-WTF表单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="mo-ban/csrf.html">
+            
+                
+                    <a href="../mo-ban/csrf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        CSRF(理解)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="shu-ju-ku.html">
+            
+                
+                    <a href="../shu-ju-ku.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        数据库
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="shu-ju-ku/orm.html">
+            
+                
+                    <a href="../shu-ju-ku/orm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        ORM
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.html">
+            
+                
+                    <a href="../shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Flask-SQLAlchemy安装及配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.html">
+            
+                
+                    <a href="../shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        数据库的基本操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.html">
+            
+                
+                    <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        综合案例-图书管理
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.html">
+            
+                
+                    <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                        定义模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.html">
+            
+                
+                    <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                        数据库表创建&amp;测试数据添加
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.html">
+            
+                
+                    <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.3.</b>
+                        
+                        数据显示&amp;表单添加
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.html">
+            
+                
+                    <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.4.</b>
+                        
+                        表单验证
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.html">
+            
+                
+                    <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.5.</b>
+                        
+                        删除数据
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="shu-ju-ku/duo-dui-duo-yan-lian.html">
+            
+                
+                    <a href="../shu-ju-ku/duo-dui-duo-yan-lian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        多对多演练
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="shu-ju-ku/shu-ju-ku-qian-yi.html">
+            
+                
+                    <a href="../shu-ju-ku/shu-ju-ku-qian-yi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        数据库迁移
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="shu-ju-ku/chang-jian-guan-xi-mo-ban-dai-ma.html">
+            
+                
+                    <a href="../shu-ju-ku/chang-jian-guan-xi-mo-ban-dai-ma.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        常见关系模板代码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="lan-tu-dan-yuan-ce-shi.html">
+            
+                
+                    <a href="../lan-tu-dan-yuan-ce-shi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        蓝图&amp;单元测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lan-tu-dan-yuan-ce-shi/lan-tu.html">
+            
+                
+                    <a href="../lan-tu-dan-yuan-ce-shi/lan-tu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        蓝图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="lan-tu-dan-yuan-ce-shi/dan-yuan-ce-shi.html">
+            
+                
+                    <a href="../lan-tu-dan-yuan-ce-shi/dan-yuan-ce-shi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        单元测试
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Flask框架</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x5757;">&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x5757;</h1>
+<p>&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x5757;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#xFF1A;</p>
+<pre><code>- if/else if /else / endif
+- for / endfor
+</code></pre><h2 id="if&#x8BED;&#x53E5;">if&#x8BED;&#x53E5;</h2>
+<p>Jinja2 &#x8BED;&#x6CD5;&#x4E2D;&#x7684;if&#x8BED;&#x53E5;&#x8DDF; Python &#x4E2D;&#x7684; if &#x8BED;&#x53E5;&#x76F8;&#x4F3C;,&#x540E;&#x9762;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x6216;&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x503C;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5C06;&#x51B3;&#x5B9A;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x54EA;&#x4E2A;&#x6D41;&#x7A0B;&#x4F1A;&#x88AB;&#x6267;&#x884C;:</p>
+<pre><code class="lang-python">{%if user.is_logged_in() %}
+    &lt;a href=&apos;/logout&apos;&gt;Logout&lt;/a&gt;
+{% else %}
+    &lt;a href=&apos;/login&apos;&gt;Login&lt;/a&gt;
+{% endif %}
+</code></pre>
+<p>&#x8FC7;&#x6EE4;&#x5668;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x5728; if &#x8BED;&#x53E5;&#x4E2D;:</p>
+<pre><code class="lang-python">{% <span class="hljs-keyword">if</span> comments | length &gt; <span class="hljs-number">0</span> %}
+    There are {{ comments | length }} comments
+{% <span class="hljs-keyword">else</span> %}
+    There are no comments
+{% endif %}
+</code></pre>
+<h2 id="&#x5FAA;&#x73AF;">&#x5FAA;&#x73AF;</h2>
+<ul>
+<li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; Jinja2 &#x4E2D;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x6765;&#x8FED;&#x4EE3;&#x4EFB;&#x4F55;&#x5217;&#x8868;&#x6216;&#x8005;&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;</li>
+</ul>
+<pre><code class="lang-python">{% for post in posts %}
+    &lt;div&gt;
+        &lt;h1&gt;{{ post.title }}&lt;/h1&gt;
+        &lt;p&gt;{{ post.text | safe }}&lt;/p&gt;
+    &lt;/div&gt;
+{% endfor %}
+</code></pre>
+<ul>
+<li>&#x5FAA;&#x73AF;&#x548C;if&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x6A21;&#x62DF; Python &#x5FAA;&#x73AF;&#x4E2D;&#x7684; continue &#x529F;&#x80FD;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x5C06;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;post.text&#x4E0D;&#x4E3A;None&#x7684;&#x90A3;&#x4E9B;post&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python">{% for post in posts if post.text %}
+    &lt;div&gt;
+        &lt;h1&gt;{{ post.title }}&lt;/h1&gt;
+        &lt;p&gt;{{ post.text | safe }}&lt;/p&gt;
+    &lt;/div&gt;
+{% endfor %}
+</code></pre>
+<ul>
+<li>&#x5728;&#x4E00;&#x4E2A; for &#x5FAA;&#x73AF;&#x5757;&#x4E2D;&#x4F60;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x53D8;&#x91CF;:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53D8;&#x91CF;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">loop.index</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x8FED;&#x4EE3;&#x7684;&#x6B21;&#x6570;&#xFF08;&#x4ECE; 1 &#x5F00;&#x59CB;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.index0</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x8FED;&#x4EE3;&#x7684;&#x6B21;&#x6570;&#xFF08;&#x4ECE; 0 &#x5F00;&#x59CB;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.revindex</td>
+<td style="text-align:left">&#x5230;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x9700;&#x8981;&#x8FED;&#x4EE3;&#x7684;&#x6B21;&#x6570;&#xFF08;&#x4ECE; 1 &#x5F00;&#x59CB;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.revindex0</td>
+<td style="text-align:left">&#x5230;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x9700;&#x8981;&#x8FED;&#x4EE3;&#x7684;&#x6B21;&#x6570;&#xFF08;&#x4ECE; 0 &#x5F00;&#x59CB;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.first</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#xFF0C;&#x4E3A; True &#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.last</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x662F;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#xFF0C;&#x4E3A; True &#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.length</td>
+<td style="text-align:left">&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">loop.cycle</td>
+<td style="text-align:left">&#x5728;&#x4E00;&#x4E32;&#x5E8F;&#x5217;&#x95F4;&#x671F;&#x53D6;&#x503C;&#x7684;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x3002;&#x89C1;&#x4E0B;&#x9762;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>&#x5728;&#x5FAA;&#x73AF;&#x5185;&#x90E8;,&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x53EB;&#x505A;loop&#x7684;&#x7279;&#x6B8A;&#x53D8;&#x91CF;&#x6765;&#x83B7;&#x5F97;&#x5173;&#x4E8E;for&#x5FAA;&#x73AF;&#x7684;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;</p>
+<ul>
+<li>&#x6BD4;&#x5982;&#xFF1A;&#x8981;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x77E5;&#x9053;&#x5F53;&#x524D;&#x88AB;&#x8FED;&#x4EE3;&#x7684;&#x5143;&#x7D20;&#x5E8F;&#x53F7;&#xFF0C;&#x5E76;&#x6A21;&#x62DF;Python&#x4E2D;&#x7684;enumerate&#x51FD;&#x6570;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;loop&#x53D8;&#x91CF;&#x7684;index&#x5C5E;&#x6027;,&#x4F8B;&#x5982;:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python">{% <span class="hljs-keyword">for</span> post <span class="hljs-keyword">in</span> posts%}
+{{loop.index}}, {{post.title}}
+{% endfor %}
+</code></pre>
+<ul>
+<li>&#x4F1A;&#x8F93;&#x51FA;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x679C;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-number">1</span>, Post title
+<span class="hljs-number">2</span>, Second Post
+</code></pre>
+<ul>
+<li>cycle&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x7684;&#x65F6;&#x5019;,&#x8FD4;&#x56DE;&#x5176;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;,&#x53EF;&#x4EE5;&#x62FF;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;:</li>
+</ul>
+<pre><code class="lang-python">{% <span class="hljs-keyword">for</span> post <span class="hljs-keyword">in</span> posts%}
+{{loop.cycle(<span class="hljs-string">&apos;odd&apos;</span>,<span class="hljs-string">&apos;even&apos;</span>)}} {{post.title}}
+{% endfor %}
+</code></pre>
+<ul>
+<li>&#x4F1A;&#x8F93;&#x51FA;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python">odd Post Title
+even Second Post
+</code></pre>
+<h2 id="&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;">&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;</h2>
+<ul>
+<li>&#x5B9E;&#x73B0;&#x7684;&#x6548;&#x679C;</li>
+</ul>
+<p><img src="../assets/&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x6548;&#x679C;.png" alt=""></p>
+<ul>
+<li>&#x51C6;&#x5907;&#x6570;&#x636E;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x53EA;&#x663E;&#x793A;4&#x884C;&#x6570;&#x636E;&#xFF0C;&#x80CC;&#x666F;&#x989C;&#x8272;&#x4F9D;&#x6B21;&#x4E3A;&#xFF1A;&#x9EC4;&#xFF0C;&#x7EFF;&#xFF0C;&#x7EA2;&#xFF0C;&#x7D2B;</span>
+my_list = [
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&#x6211;&#x7231;&#x5DE5;&#x4F5C;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&#x5DE5;&#x4F5C;&#x4F7F;&#x4EBA;&#x5FEB;&#x4E50;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>,
+        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&#x6C89;&#x8FF7;&#x4E8E;&#x5DE5;&#x4F5C;&#x65E0;&#x6CD5;&#x81EA;&#x62D4;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&#x65E5;&#x6E10;&#x6D88;&#x7626;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">5</span>,
+        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&#x4EE5;&#x68A6;&#x4E3A;&#x9A6C;&#xFF0C;&#x8D8A;&#x9A91;&#x8D8A;&#x50BB;&quot;</span>
+    }
+]
+</code></pre>
+<ul>
+<li>&#x6A21;&#x677F;&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code class="lang-html">{% for item in my_list if item.id != 5 %}
+    {% if loop.index == 1 %}
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-color: orange&quot;</span>&gt;</span>{{ item.value }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    {% elif loop.index == 2 %}
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-color: green&quot;</span>&gt;</span>{{ item.value }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    {% elif loop.index == 3 %}
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-color: red&quot;</span>&gt;</span>{{ item.value }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    {% else %}
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-color: purple&quot;</span>&gt;</span>{{ item.value }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    {% endif %}
+{% endfor %}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../mo-ban/zi-ding-yi-guo-lv-qi.html" class="navigation navigation-prev " aria-label="Previous page: 自定义过滤器"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../mo-ban/mo-ban-dai-ma-fu-yong.html" class="navigation navigation-next " aria-label="Next page: 模板代码复用"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Flask框架 -->
+</html>

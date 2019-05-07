@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4873eae9-ce1e-46d6-8bed-6f0a243acac4" name="Default Changelist" comment="" />
+    <list default="true" id="4873eae9-ce1e-46d6-8bed-6f0a243acac4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="288">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -93,6 +95,24 @@
             <path>
               <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="5-9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="5-9" type="462c0819:PsiDirectoryNode" />
+              <item name="gitbook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonAndMachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonAndMachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="5-9" type="462c0819:PsiDirectoryNode" />
+              <item name="gitbook" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,7 +196,7 @@
       <workItem from="1557087373986" duration="552000" />
       <workItem from="1557087950825" duration="1389000" />
       <workItem from="1557230951322" duration="907000" />
-      <workItem from="1557231861487" duration="3273000" />
+      <workItem from="1557231861487" duration="3939000" />
     </task>
     <task id="LOCAL-00001" summary="测试安装deepin">
       <created>1556912915307</created>
@@ -238,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8422000" />
+    <option name="totallyTimeSpent" value="9088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1030" extended-state="6" />
@@ -379,8 +399,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
