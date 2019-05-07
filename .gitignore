@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 .idea
+.idea
 # logs文件夹下自己设置的log文件命名就是log1,2,3所以这里写log*
 logs/log*
 # 不添加迁移文件

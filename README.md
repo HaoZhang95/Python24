@@ -1,18 +1,27 @@
 # PythonAndMachineLearning [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-这个仓库主要为了学习**Python和机器学习基础**，每一章的具体知识点可以在百度云查看**html课件文档**，具体的文档说明将在今后逐步添加（2019-01-13）
+传智播客&黑马出品的Python24期人工智能整套代码和讲义集合，仓库主要为了学习**Python和机器学习基础**，每一章的具体知识点可以在下面的目录中详细查看**课程大纲**，具体的讲义文档，提供在线阅读和下载，大部分的章节讲义使用了Gitbook进行整章的阅读，同样的，在学习的过程中，我在代码中都每行进行了注释，方便进行阅读和理解，希望能够帮助大家。资源搜集劳神费力，望大家多多支持,多多Star。备注：讲义的内容来源于网络，如有侵权，请及时联系撤销发布。
+                                                                                                                                      
 ****
 	
 |Author|白发老书生|
 |---|---
-|E-mail|china.hao.zhang@gmail.com
-> 最近更新：2019-02-26 （08Web框架实战DONE）
+|E-mail|Github联系我
+> 最近更新至第23章节：2019-05-08
 
 ****
 
 ![Logo](https://i.imgur.com/lAUV1FT.png)
 
-具体详细的Python学习路线图可以在[此处](http://bbs.itheima.com/forum.php?mod=viewthread&tid=414606&page=1)中查看
+具体更详细的Python学习路线图可以在[此处](http://bbs.itheima.com/forum.php?mod=viewthread&tid=414606&page=1)中查看
+
+> 讲义文档，在线阅读
+
+[![讲义文档](https://i.imgur.com/pE1FRnd.png)](https://haozhang95.github.io/PythonAndMachineLearning/)
+
+> 讲义文档，百度云下载
+
+前往百度云(提取码：nhja)，点击[这里](https://pan.baidu.com/s/1stzmPEMGMo3W1g_CnlZ_bA)
 
 
 <h2 id="catalog">目录</h2>
@@ -51,9 +60,6 @@
 
 
 
-#### 您可以通过以下方式联系到我：
-- 微博 [@gods--favoured--one](https://www.weibo.com/2749787910/profile?topnav=1&wvr=6&is_all=1)
-
 ## About Me
 - [Take a look](http://htmlpreview.github.io/?https://github.com/taijizhizao/markdowntoc/blob/master/index.html)
 
@@ -62,6 +68,5 @@
 [Commits](https://github.com/HaoZhang95/PythonAndMachineLearning/commits/master)
 
 ## 报告问题
-
 [Issues](https://github.com/HaoZhang95/PythonAndMachineLearning/issues)
 
