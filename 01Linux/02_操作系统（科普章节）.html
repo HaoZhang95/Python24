@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="utf-8">
-<title># 其他命令</title>
+<title># 操作系统（科普章节）</title>
 <style>
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;}
 ol,ul{list-style:none}
@@ -278,343 +278,110 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 </style>
 
 <style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
-<h1 id="toc_0">其他命令</h1>
+<h1 id="toc_0">操作系统（科普章节）</h1>
 
 <h2 id="toc_1">目标</h2>
 
 <ul>
-<li>查找文件
-
-<ul>
-<li><code>find</code></li>
-</ul></li>
-<li>软链接
-
-<ul>
-<li><code>ln</code></li>
-</ul></li>
-<li>打包和压缩
-
-<ul>
-<li><code>tar</code></li>
-</ul></li>
-<li>软件安装
-
-<ul>
-<li><code>apt-get</code></li>
-</ul></li>
+<li>了解<strong>操作系统</strong>及作用</li>
 </ul>
 
-<h2 id="toc_2">01. 查找文件</h2>
-
-<ul>
-<li><code>find</code> 命令功能非常强大，通常用来在 <strong>特定的目录下</strong> <strong>搜索</strong> 符合条件的文件</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>01</td>
-<td>find [路径] -name &quot;*.py&quot;</td>
-<td>查找指定路径下扩展名是 <code>.py</code> 的文件，包括子目录</td>
-</tr>
-</tbody>
-</table>
-
-<ul>
-<li>如果省略路径，表示在当前文件夹下查找</li>
-<li>之前学习的通配符，在使用 <code>find</code> 命令时同时可用</li>
-<li>有关 <code>find</code> 的高级使用，在就业班会讲</li>
-</ul>
-
-<h3 id="toc_3">演练目标</h3>
-
-<ul>
-<li>1. 搜索桌面目录下，文件名包含 <code>1</code> 的文件</li>
-</ul>
-
-<pre><code class="language-bash">find -name &quot;*1*&quot;
-</code></pre>
-
-<ul>
-<li>2. 搜索桌面目录下，所有以 <code>.txt</code> 为扩展名的文件</li>
-</ul>
-
-<pre><code class="language-bash">find -name &quot;*.txt&quot;
-</code></pre>
-
-<ul>
-<li>3. 搜索桌面目录下，以数字 <code>1</code> 开头的文件</li>
-</ul>
-
-<pre><code class="language-bash">find -name &quot;1*&quot;
-</code></pre>
-
-<h2 id="toc_4">02. 软链接</h2>
-
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>01</td>
-<td>ln -s 被链接的源文件 链接文件</td>
-<td>建立文件的软链接，用通俗的方式讲<strong>类似于</strong> Windows 下的<strong>快捷方式</strong></td>
-</tr>
-</tbody>
-</table>
-
-<ul>
-<li>注意：</li>
-<li>1. 没有 <code>-s</code> 选项建立的是一个 <strong>硬链接文件</strong> 
-
-<ul>
-<li>两个文件占用相同大小的硬盘空间，<strong>工作中几乎不会建立文件的硬链接</strong></li>
-</ul></li>
-<li>2. <strong>源文件要使用绝对路径</strong>，不能使用相对路径，这样可以方便移动链接文件后，仍然能够正常使用</li>
-</ul>
-
-<h3 id="toc_5">演练目标</h3>
-
-<ul>
-<li>1. 将桌面目录下的 <code>01.py</code> <strong>移动</strong>到 <code>demo/b/c</code> 目录下</li>
-<li>2. 在桌面目录下新建 <code>01.py</code> 的 <strong>软链接</strong> <code>FirstPython</code>
-
-<ul>
-<li>分别使用 <strong>相对路径</strong> 和 <strong>绝对路径</strong> 建立 <code>FirstPython</code> 的软链接</li>
-</ul></li>
-<li>3. 将 <code>FirstPython</code> <strong>移动</strong>到 <code>demo</code> 目录下，对比使用 <strong>相对路径</strong> 和 <strong>绝对路径</strong> 的区别</li>
-</ul>
-
-<h3 id="toc_6">硬链接简介（知道）</h3>
-
-<ul>
-<li>在使用 <code>ln</code> 创建链接时，如果没有 <code>-s</code> 选项，会创建一个 <strong>硬链接</strong>，而不是软链接</li>
-</ul>
-
-<h4 id="toc_7">硬链接演练</h4>
-
-<ul>
-<li>1. 在 <code>~/Desktop/demo</code> 目录下建立 <code>~/Desktop/demo/b/c/01.py</code> 的硬链接 <code>01_hard</code></li>
-<li>2. 使用 <code>ls -l</code> 查看文件的<strong>硬链接数</strong>（硬链接——有多少种方式可以访问文件或者目录）</li>
-<li>3. 删除 <code>~/Desktop/demo/b/c/01.py</code>，并且使用 <code>tree</code> 来确认 <code>demo</code> 目录下的三个链接文件</li>
-</ul>
-
-<h4 id="toc_8">文件软硬链接的示意图</h4>
-
-<p><img src="media/14934226357576/001_%E6%96%87%E4%BB%B6%E8%BD%AF%E7%A1%AC%E9%93%BE%E6%8E%A5%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt="001_文件软硬链接示意图"/>￼</p>
+<h2 id="toc_2">1. 操作系统（Operation System，OS）</h2>
 
 <blockquote>
-<p>在 Linux 中，<strong>文件名</strong> 和 <strong>文件的数据</strong> 是分开存储的</p>
+<p>操作系统作为接口的示意图</p>
 </blockquote>
 
-<ul>
-<li>提示：
-
-<ul>
-<li>在 Linux 中，只有文件的 <code>硬链接数 == 0</code> 才会被删除</li>
-<li>使用 <code>ls -l</code> 可以查看一个文件的硬链接的数量</li>
-<li>在日常工作中，几乎不会建立文件的硬链接，知道即可</li>
-</ul></li>
-</ul>
-
-<h2 id="toc_9">03. 打包压缩</h2>
-
-<ul>
-<li><strong>打包压缩</strong> 是日常工作中备份文件的一种方式</li>
-<li>在不同操作系统中，常用的打包压缩方式是不同的
-
-<ul>
-<li><code>Windows</code> 常用 <code>rar</code></li>
-<li><code>Mac</code> 常用 <code>zip</code></li>
-<li><code>Linux</code> 常用 <code>tar.gz</code></li>
-</ul></li>
-</ul>
-
-<h3 id="toc_10">3.1 打包 ／ 解包</h3>
-
-<ul>
-<li><code>tar</code> 是 Linux 中最常用的 <strong>备份</strong>工具，此命令可以 <strong>把一系列文件</strong> 打包到 <strong>一个大文件中</strong>，也可以把一个 <strong>打包的大文件恢复成一系列文件</strong></li>
-<li><code>tar</code> 的命令格式如下：</li>
-</ul>
-
-<pre><code class="language-bash"># 打包文件
-tar -cvf 打包文件.tar 被打包的文件／路径...
-
-# 解包文件
-tar -xvf 打包文件.tar
-</code></pre>
-
-<ul>
-<li><code>tar</code> 选项说明</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>c</td>
-<td>生成档案文件，创建打包文件</td>
-</tr>
-<tr>
-<td>x</td>
-<td>解开档案文件</td>
-</tr>
-<tr>
-<td>v</td>
-<td>列出归档解档的详细过程，显示进度</td>
-</tr>
-<tr>
-<td>f</td>
-<td>指定档案文件名称，f 后面一定是 .tar 文件，所以必须放选项最后</td>
-</tr>
-</tbody>
-</table>
+<p><img src="../media/14924509291640/001_OS作为接口的示意图.png" alt="001_OS作为接口的示意图"/>￼</p>
 
 <blockquote>
-<p>注意：<code>f</code> 选项必须放在最后，其他选项顺序可以随意</p>
+<p>没有安装操作系统的计算机，通常被称为 <strong>裸机</strong></p>
+
+<ul>
+<li>如果想在 <strong>裸机</strong> 上运行自己所编写的程序，就必须用机器语言书写程序</li>
+<li>如果计算机上安装了操作系统，就可以在操作系统上安装支持的高级语言环境，用高级语言开发程序</li>
+</ul>
 </blockquote>
 
-<h4 id="toc_11">打包解包演练</h4>
-
-<ol>
-<li>删除桌面下的所有内容</li>
-<li>在桌面下新建三个空白文件 <code>01.py</code>、<code>02.py</code>、<code>03.py</code></li>
-<li>将这三个文件打一个 <code>py.tar</code> 的包</li>
-<li>新建 <code>tar</code> 目录，并且将 <code>py.tar</code> 移动到 <code>tar</code> 目录下</li>
-<li>解包 <code>py.tar</code></li>
-</ol>
-
-<h3 id="toc_12">3.2 压缩／解压缩</h3>
-
-<h4 id="toc_13">1) <code>gzip</code></h4>
+<h3 id="toc_3">1.1 操作系统的作用</h3>
 
 <ul>
-<li><code>tar</code> 与 <code>gzip</code> 命令结合可以使用实现文件 <strong>打包和压缩</strong>
+<li>是现代计算机系统中 <strong>最基本和最重要</strong> 的系统软件</li>
+<li>是 <strong>配置在计算机硬件上的第一层软件</strong>，是对硬件系统的首次扩展</li>
+<li>主要作用是<strong>管理好硬件设备</strong>，并为用户和应用程序提供一个简单的接口，以便于使用</li>
+<li>而其他的诸如编译程序、数据库管理系统，以及大量的应用软件，都直接依赖于操作系统的支持</li>
+</ul>
+
+<h3 id="toc_4">1.2 不同应用领域的主流操作系统</h3>
 
 <ul>
-<li><code>tar</code> 只负责打包文件，但不压缩</li>
-<li>用 <code>gzip</code> 压缩 <code>tar</code> 打包后的文件，其扩展名一般用 <code>xxx.tar.gz</code></li>
+<li>桌面操作系统</li>
+<li>服务器操作系统</li>
+<li>嵌入式操作系统</li>
+<li>移动设备操作系统</li>
+</ul>
+
+<h4 id="toc_5">1&gt; 桌面操作系统</h4>
+
+<ul>
+<li>Windows 系列
+
+<ul>
+<li>用户群体大</li>
+</ul></li>
+<li>macOS
+
+<ul>
+<li>适合于开发人员</li>
+</ul></li>
+<li>Linux
+
+<ul>
+<li>应用软件少</li>
 </ul></li>
 </ul>
 
-<blockquote>
-<p>在 <code>Linux</code> 中，最常见的压缩文件格式就是 <code>xxx.tar.gz</code></p>
-</blockquote>
+<h4 id="toc_6">2&gt; 服务器操作系统</h4>
 
 <ul>
-<li><p>在 <code>tar</code> 命令中有一个选项 <strong>-z</strong> 可以调用 <code>gzip</code>，从而可以方便的实现压缩和解压缩的功能</p></li>
-<li><p>命令格式如下：</p></li>
-</ul>
-
-<pre><code class="language-bash"># 压缩文件
-tar -zcvf 打包文件.tar.gz 被压缩的文件／路径...
-
-# 解压缩文件
-tar -zxvf 打包文件.tar.gz
-
-# 解压缩到指定路径
-tar -zxvf 打包文件.tar.gz -C 目标路径
-</code></pre>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-C</td>
-<td>解压缩到指定目录，注意：要解压缩的目录必须存在</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_14">2) <code>bzip2(two)</code></h4>
+<li>Linux
 
 <ul>
-<li><p><code>tar</code> 与 <code>bzip2</code> 命令结合可以使用实现文件 <strong>打包和压缩</strong>（用法和 <code>gzip</code> 一样）</p>
-
-<ul>
-<li><code>tar</code> 只负责打包文件，但不压缩，</li>
-<li>用 <code>bzip2</code> 压缩 <code>tar</code> 打包后的文件，其扩展名一般用 <code>xxx.tar.bz2</code></li>
+<li>安全、稳定、免费</li>
+<li>占有率高</li>
 </ul></li>
-<li><p>在 <code>tar</code> 命令中有一个选项 <strong>-j</strong> 可以调用 <code>bzip2</code>，从而可以方便的实现压缩和解压缩的功能</p></li>
-<li><p>命令格式如下：</p></li>
-</ul>
-
-<pre><code class="language-bash"># 压缩文件
-tar -jcvf 打包文件.tar.bz2 被压缩的文件／路径...
-
-# 解压缩文件
-tar -jxvf 打包文件.tar.bz2
-</code></pre>
-
-<h2 id="toc_15">04. 软件安装</h2>
-
-<h2 id="toc_16">4.1 通过 apt 安装／卸载软件</h2>
+<li>Windows Server
 
 <ul>
-<li>apt 是 <code>Advanced Packaging Tool</code>，是 Linux 下的一款安装包管理工具</li>
-<li>可以在终端中方便的 <strong>安装</strong>／<strong>卸载</strong>／<strong>更新软件包</strong></li>
+<li>付费</li>
+<li>占有率低</li>
+</ul></li>
 </ul>
 
-<pre><code class="language-bash"># 1. 安装软件
-$ sudo apt install 软件包
+<p><img src="../media/14924509291640/002_机房照片.jpg" alt="002_机房照片"/>￼</p>
 
-# 2. 卸载软件
-$ sudo apt remove 软件名
-
-# 3. 更新已安装的包
-$ sudo apt upgrade 
-</code></pre>
-
-<h3 id="toc_17">安装演练</h3>
-
-<pre><code class="language-bash"># 一个小火车提示
-$ sudo apt install sl
-
-# 一个比较漂亮的查看当前进程排名的软件
-$ sudo apt install htop
-</code></pre>
-
-<h2 id="toc_18">4.2 配置软件源</h2>
+<h4 id="toc_7">3&gt; 嵌入式操作系统</h4>
 
 <ul>
-<li>如果希望在 <code>ubuntu</code> 中安装软件，<strong>更加快速</strong>，可以通过设置<strong>镜像源</strong>，选择一个访问网速更快的服务器，来提供软件下载／安装服务</li>
-<li>提示：更换服务器之后，需要一个相对比较长时间的更新过程，需要耐心等待。更新完成后，再安装软件都会从新设置的服务器下载软件了</li>
+<li>Linux</li>
 </ul>
 
-<blockquote>
-<p>所谓镜像源，就是<strong>所有服务器的内容是相同的（镜像）</strong>，但是根据所在位置不同，国内服务器通常速度会更快一些！</p>
-</blockquote>
+<h4 id="toc_8">4&gt; 移动设备操作系统</h4>
 
-<p><img src="media/14934226357576/003_%E9%95%9C%E5%83%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt="003_镜像服务器示意图"/>￼</p>
+<ul>
+<li>iOS</li>
+<li>Android（基于 <code>Linux</code>）</li>
+</ul>
 
-<p><img src="media/14949111037784/001_ubuntu%E8%AE%BE%E7%BD%AE%E8%BD%AF%E4%BB%B6%E6%BA%90.png" alt="001_ubuntu设置软件源"/>￼</p>
+<h3 id="toc_9">1.3 虚拟机</h3>
+
+<p>虚拟机（Virtual Machine）指通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统</p>
+
+<ul>
+<li>虚拟系统通过生成现有操作系统的全新虚拟镜像，具有真实操作系统完全一样的功能</li>
+<li>进入虚拟系统后，所有操作都是在这个全新的独立的虚拟系统里面进行，可以独立安装运行软件，保存数据，拥有自己的独立桌面，不会对真正的系统产生任何影响</li>
+<li>而且能够在现有系统与虚拟镜像之间灵活切换的一类操作系统</li>
+</ul>
 
 </div></body>
 
