@@ -1,0 +1,797 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>反序列化使用 | 课程介绍</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../C03-Serializer/ModelSerializer.html" />
+    
+    
+    <link rel="prev" href="../C03-Serializer/Serializing.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.3"
+        data-chapter-title="反序列化使用"
+        data-filepath="C03-Serializer/Deserializing.md"
+        data-basepath=".."
+        data-revision="Sat Aug 11 2018 20:38:56 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="C01-IntroduceToDRF/index.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        引入DjangoRESTframework
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="C01-IntroduceToDRF/SeparatedFrontendAndBackend.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/SeparatedFrontendAndBackend.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Web应用模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="C01-IntroduceToDRF/HowToDesignREST.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/HowToDesignREST.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        RESTful设计方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="C01-IntroduceToDRF/DevelopRESTAPIWithDjango.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/DevelopRESTAPIWithDjango.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        使用Django开发REST接口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        明确REST接口开发的核心任务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="C01-IntroduceToDRF/AboutDRF.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/AboutDRF.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        DjangoRESTframework简介
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="C02-DRFProject/index.html">
+            
+                
+                    <a href="../C02-DRFProject/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        DRF工程搭建
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="C02-DRFProject/InstallAndConfig.html">
+            
+                
+                    <a href="../C02-DRFProject/InstallAndConfig.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        环境安装与配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="C02-DRFProject/TheFirstDRFProgram.html">
+            
+                
+                    <a href="../C02-DRFProject/TheFirstDRFProgram.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        见识DRF的魅力
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="C03-Serializer/index.html">
+            
+                
+                    <a href="../C03-Serializer/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Serializer序列化器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="C03-Serializer/Declaring.html">
+            
+                
+                    <a href="../C03-Serializer/Declaring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义Serializer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="C03-Serializer/Serializing.html">
+            
+                
+                    <a href="../C03-Serializer/Serializing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        序列化使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="C03-Serializer/Deserializing.html">
+            
+                
+                    <a href="../C03-Serializer/Deserializing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        反序列化使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="C03-Serializer/ModelSerializer.html">
+            
+                
+                    <a href="../C03-Serializer/ModelSerializer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        模型类序列化器ModelSerializer
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="C04-View/index.html">
+            
+                
+                    <a href="../C04-View/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        视图
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="C04-View/RequestAndResponse.html">
+            
+                
+                    <a href="../C04-View/RequestAndResponse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request与Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="C04-View/View.html">
+            
+                
+                    <a href="../C04-View/View.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        视图概览
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="C04-View/ViewIntroduction.html">
+            
+                
+                    <a href="../C04-View/ViewIntroduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        视图说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="C04-View/ViewSet.html">
+            
+                
+                    <a href="../C04-View/ViewSet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        视图集ViewSet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="C04-View/Routers.html">
+            
+                
+                    <a href="../C04-View/Routers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        路由Router
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="C05-Components/index.html">
+            
+                
+                    <a href="../C05-Components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        其他功能
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="C05-Components/Authentication.html">
+            
+                
+                    <a href="../C05-Components/Authentication.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        认证
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="C05-Components/Permissions.html">
+            
+                
+                    <a href="../C05-Components/Permissions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        权限
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="C05-Components/Throttling.html">
+            
+                
+                    <a href="../C05-Components/Throttling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        限流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="C05-Components/Filtering.html">
+            
+                
+                    <a href="../C05-Components/Filtering.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        过滤
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="C05-Components/Ordering.html">
+            
+                
+                    <a href="../C05-Components/Ordering.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="C05-Components/Pagination.html">
+            
+                
+                    <a href="../C05-Components/Pagination.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="C05-Components/Exceptions.html">
+            
+                
+                    <a href="../C05-Components/Exceptions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        异常处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="C05-Components/Documents.html">
+            
+                
+                    <a href="../C05-Components/Documents.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        自动生成接口文档
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >课程介绍</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4F7F;&#x7528;">&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4F7F;&#x7528;</h1>
+<h2 id="1--&#x9A8C;&#x8BC1;">1.  &#x9A8C;&#x8BC1;</h2>
+<p>&#x4F7F;&#x7528;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#x7684;&#x6570;&#x636E;&#x6216;&#x4FDD;&#x5B58;&#x6210;&#x6A21;&#x578B;&#x7C7B;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5728;&#x83B7;&#x53D6;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x6570;&#x636E;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x8C03;&#x7528;<strong>is_valid()</strong>&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#x8FD4;&#x56DE;True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;False&#x3002;</p>
+<p>&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x7684;<strong>errors</strong>&#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x5178;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x5B57;&#x6BB5;&#x548C;&#x5B57;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x5982;&#x679C;&#x662F;&#x975E;&#x5B57;&#x6BB5;&#x9519;&#x8BEF;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539;REST framework&#x914D;&#x7F6E;&#x4E2D;&#x7684;<strong>NON_FIELD_ERRORS_KEY</strong>&#x6765;&#x63A7;&#x5236;&#x9519;&#x8BEF;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x952E;&#x540D;&#x3002;</p>
+<p>&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x7684;<strong>validated_data</strong>&#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5728;&#x5B9A;&#x4E49;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x65F6;&#xFF0C;&#x6307;&#x660E;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x7C7B;&#x578B;&#x548C;&#x9009;&#x9879;&#x53C2;&#x6570;&#xFF0C;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x9A8C;&#x8BC1;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x5982;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x5B9A;&#x4E49;&#x8FC7;&#x7684;BookInfoSerializer</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x5668;&quot;&quot;&quot;</span>
+    id = serializers.IntegerField(label=<span class="hljs-string">&apos;ID&apos;</span>, read_only=<span class="hljs-keyword">True</span>)
+    btitle = serializers.CharField(label=<span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>, max_length=<span class="hljs-number">20</span>)
+    bpub_date = serializers.DateField(label=<span class="hljs-string">&apos;&#x53D1;&#x5E03;&#x65E5;&#x671F;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+    bread = serializers.IntegerField(label=<span class="hljs-string">&apos;&#x9605;&#x8BFB;&#x91CF;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+    bcomment = serializers.IntegerField(label=<span class="hljs-string">&apos;&#x8BC4;&#x8BBA;&#x91CF;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+    image = serializers.ImageField(label=<span class="hljs-string">&apos;&#x56FE;&#x7247;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x6784;&#x9020;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5C06;&#x8981;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x6570;&#x636E;&#x4F20;&#x9012;&#x7ED9;data&#x6784;&#x9020;&#x53C2;&#x6570;&#xFF0C;&#x8FDB;&#x800C;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> booktest.serializers <span class="hljs-keyword">import</span> BookInfoSerializer
+data = {<span class="hljs-string">&apos;bpub_date&apos;</span>: <span class="hljs-number">123</span>}
+serializer = BookInfoSerializer(data=data)
+serializer.is_valid()  <span class="hljs-comment"># &#x8FD4;&#x56DE;False</span>
+serializer.errors
+<span class="hljs-comment"># {&apos;btitle&apos;: [ErrorDetail(string=&apos;This field is required.&apos;, code=&apos;required&apos;)], &apos;bpub_date&apos;: [ErrorDetail(string=&apos;Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].&apos;, code=&apos;invalid&apos;)]}</span>
+serializer.validated_data  <span class="hljs-comment"># {}</span>
+
+data = {<span class="hljs-string">&apos;btitle&apos;</span>: <span class="hljs-string">&apos;python&apos;</span>}
+serializer = BookInfoSerializer(data=data)
+serializer.is_valid()  <span class="hljs-comment"># True</span>
+serializer.errors  <span class="hljs-comment"># {}</span>
+serializer.validated_data  <span class="hljs-comment">#  OrderedDict([(&apos;btitle&apos;, &apos;python&apos;)])</span>
+</code></pre>
+<p>is_valid()&#x65B9;&#x6CD5;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x65F6;&#x629B;&#x51FA;&#x5F02;&#x5E38;serializers.ValidationError&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F20;&#x9012;<strong>raise_exception=True</strong>&#x53C2;&#x6570;&#x5F00;&#x542F;&#xFF0C;REST framework&#x63A5;&#x6536;&#x5230;&#x6B64;&#x5F02;&#x5E38;&#xFF0C;&#x4F1A;&#x5411;&#x524D;&#x7AEF;&#x8FD4;&#x56DE;HTTP 400 Bad Request&#x54CD;&#x5E94;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Return a 400 response if the data was invalid.</span>
+serializer.is_valid(raise_exception=<span class="hljs-keyword">True</span>)
+</code></pre>
+<p>&#x5982;&#x679C;&#x89C9;&#x5F97;&#x8FD9;&#x4E9B;&#x8FD8;&#x4E0D;&#x591F;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x8865;&#x5145;&#x5B9A;&#x4E49;&#x9A8C;&#x8BC1;&#x884C;&#x4E3A;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<h4 id="1&#xFF09;validators">1&#xFF09;validators</h4>
+<p>&#x5728;&#x5B57;&#x6BB5;&#x4E2D;&#x6DFB;&#x52A0;validators&#x9009;&#x9879;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8865;&#x5145;&#x9A8C;&#x8BC1;&#x884C;&#x4E3A;&#xFF0C;&#x5982;</p>
+<pre><code class="lang-python">
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about_django</span><span class="hljs-params">(value)</span>:</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-string">&apos;django&apos;</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> value.lower():
+        <span class="hljs-keyword">raise</span> serializers.ValidationError(<span class="hljs-string">&quot;&#x56FE;&#x4E66;&#x4E0D;&#x662F;&#x5173;&#x4E8E;Django&#x7684;&quot;</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x5668;&quot;&quot;&quot;</span>
+    id = serializers.IntegerField(label=<span class="hljs-string">&apos;ID&apos;</span>, read_only=<span class="hljs-keyword">True</span>)
+    btitle = serializers.CharField(label=<span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>, max_length=<span class="hljs-number">20</span>, validators=[about_django])
+    bpub_date = serializers.DateField(label=<span class="hljs-string">&apos;&#x53D1;&#x5E03;&#x65E5;&#x671F;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+    bread = serializers.IntegerField(label=<span class="hljs-string">&apos;&#x9605;&#x8BFB;&#x91CF;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+    bcomment = serializers.IntegerField(label=<span class="hljs-string">&apos;&#x8BC4;&#x8BBA;&#x91CF;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+    image = serializers.ImageField(label=<span class="hljs-string">&apos;&#x56FE;&#x7247;&apos;</span>, required=<span class="hljs-keyword">False</span>)
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> booktest.serializers <span class="hljs-keyword">import</span> BookInfoSerializer
+data = {<span class="hljs-string">&apos;btitle&apos;</span>: <span class="hljs-string">&apos;python&apos;</span>}
+serializer = BookInfoSerializer(data=data)
+serializer.is_valid()  <span class="hljs-comment"># False   </span>
+serializer.errors
+<span class="hljs-comment">#  {&apos;btitle&apos;: [ErrorDetail(string=&apos;&#x56FE;&#x4E66;&#x4E0D;&#x662F;&#x5173;&#x4E8E;Django&#x7684;&apos;, code=&apos;invalid&apos;)]}</span>
+</code></pre>
+<h4 id="2&#xFF09;validatefieldname">2&#xFF09;<code>validate_&lt;field_name&gt;</code></h4>
+<p>&#x5BF9;<code>&lt;field_name&gt;</code>&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x5982;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x5668;&quot;&quot;&quot;</span>
+    ...
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">validate_btitle</span><span class="hljs-params">(self, value)</span>:</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-string">&apos;django&apos;</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> value.lower():
+            <span class="hljs-keyword">raise</span> serializers.ValidationError(<span class="hljs-string">&quot;&#x56FE;&#x4E66;&#x4E0D;&#x662F;&#x5173;&#x4E8E;Django&#x7684;&quot;</span>)
+        <span class="hljs-keyword">return</span> value
+</code></pre>
+<p>&#x6D4B;&#x8BD5;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> booktest.serializers <span class="hljs-keyword">import</span> BookInfoSerializer
+data = {<span class="hljs-string">&apos;btitle&apos;</span>: <span class="hljs-string">&apos;python&apos;</span>}
+serializer = BookInfoSerializer(data=data)
+serializer.is_valid()  <span class="hljs-comment"># False   </span>
+serializer.errors
+<span class="hljs-comment">#  {&apos;btitle&apos;: [ErrorDetail(string=&apos;&#x56FE;&#x4E66;&#x4E0D;&#x662F;&#x5173;&#x4E8E;Django&#x7684;&apos;, code=&apos;invalid&apos;)]}</span>
+</code></pre>
+<h4 id="3&#xFF09;validate">3&#xFF09;validate</h4>
+<p>&#x5728;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x4E2D;&#x9700;&#x8981;&#x540C;&#x65F6;&#x5BF9;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x9A8C;&#x8BC1;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;validate&#x65B9;&#x6CD5;&#x6765;&#x9A8C;&#x8BC1;&#xFF0C;&#x5982;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x5668;&quot;&quot;&quot;</span>
+    ...
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">validate</span><span class="hljs-params">(self, attrs)</span>:</span>
+        bread = attrs[<span class="hljs-string">&apos;bread&apos;</span>]
+        bcomment = attrs[<span class="hljs-string">&apos;bcomment&apos;</span>]
+        <span class="hljs-keyword">if</span> bread &lt; bcomment:
+            <span class="hljs-keyword">raise</span> serializers.ValidationError(<span class="hljs-string">&apos;&#x9605;&#x8BFB;&#x91CF;&#x5C0F;&#x4E8E;&#x8BC4;&#x8BBA;&#x91CF;&apos;</span>)
+        <span class="hljs-keyword">return</span> attrs
+</code></pre>
+<p>&#x6D4B;&#x8BD5;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> booktest.serializers <span class="hljs-keyword">import</span> BookInfoSerializer
+data = {<span class="hljs-string">&apos;btitle&apos;</span>: <span class="hljs-string">&apos;about django&apos;</span>, <span class="hljs-string">&apos;bread&apos;</span>: <span class="hljs-number">10</span>, <span class="hljs-string">&apos;bcomment&apos;</span>: <span class="hljs-number">20</span>}
+s = BookInfoSerializer(data=data)
+s.is_valid()  <span class="hljs-comment"># False</span>
+s.errors
+<span class="hljs-comment">#  {&apos;non_field_errors&apos;: [ErrorDetail(string=&apos;&#x9605;&#x8BFB;&#x91CF;&#x5C0F;&#x4E8E;&#x8BC4;&#x8BBA;&#x91CF;&apos;, code=&apos;invalid&apos;)]}</span>
+</code></pre>
+<h2 id="2--&#x4FDD;&#x5B58;">2.  &#x4FDD;&#x5B58;</h2>
+<p>&#x5982;&#x679C;&#x5728;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x60F3;&#x8981;&#x57FA;&#x4E8E;validated_data&#x5B8C;&#x6210;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B9E;&#x73B0;create()&#x548C;update()&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x5668;&quot;&quot;&quot;</span>
+    ...
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create</span><span class="hljs-params">(self, validated_data)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;&#x65B0;&#x5EFA;&quot;&quot;&quot;</span>
+        <span class="hljs-keyword">return</span> BookInfo(**validated_data)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">(self, instance, validated_data)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;&#x66F4;&#x65B0;&#xFF0C;instance&#x4E3A;&#x8981;&#x66F4;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&quot;&quot;&quot;</span>
+        instance.btitle = validated_data.get(<span class="hljs-string">&apos;btitle&apos;</span>, instance.btitle)
+        instance.bpub_date = validated_data.get(<span class="hljs-string">&apos;bpub_date&apos;</span>, instance.bpub_date)
+        instance.bread = validated_data.get(<span class="hljs-string">&apos;bread&apos;</span>, instance.bread)
+        instance.bcomment = validated_data.get(<span class="hljs-string">&apos;bcomment&apos;</span>, instance.bcomment)
+        <span class="hljs-keyword">return</span> instance
+</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x4FEE;&#x6539;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x5668;&quot;&quot;&quot;</span>
+    ...
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create</span><span class="hljs-params">(self, validated_data)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;&#x65B0;&#x5EFA;&quot;&quot;&quot;</span>
+        <span class="hljs-keyword">return</span> BookInfo.objects.create(**validated_data)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">(self, instance, validated_data)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;&#x66F4;&#x65B0;&#xFF0C;instance&#x4E3A;&#x8981;&#x66F4;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&quot;&quot;&quot;</span>
+        instance.btitle = validated_data.get(<span class="hljs-string">&apos;btitle&apos;</span>, instance.btitle)
+        instance.bpub_date = validated_data.get(<span class="hljs-string">&apos;bpub_date&apos;</span>, instance.bpub_date)
+        instance.bread = validated_data.get(<span class="hljs-string">&apos;bread&apos;</span>, instance.bread)
+        instance.bcomment = validated_data.get(<span class="hljs-string">&apos;bcomment&apos;</span>, instance.bcomment)
+        instance.save()
+        <span class="hljs-keyword">return</span> instance
+</code></pre>
+<p>&#x5B9E;&#x73B0;&#x4E86;&#x4E0A;&#x8FF0;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;save()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x4E86;</p>
+<pre><code class="lang-python">book = serializer.save()
+</code></pre>
+<p>&#x5982;&#x679C;&#x521B;&#x5EFA;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;&#x4F20;&#x9012;instance&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x8C03;&#x7528;save()&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;create()&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x76F8;&#x53CD;&#xFF0C;&#x5982;&#x679C;&#x4F20;&#x9012;&#x4E86;instance&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x8C03;&#x7528;save()&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;update()&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> db.serializers <span class="hljs-keyword">import</span> BookInfoSerializer
+data = {<span class="hljs-string">&apos;btitle&apos;</span>: <span class="hljs-string">&apos;&#x5C01;&#x795E;&#x6F14;&#x4E49;&apos;</span>}
+serializer = BookInfoSerializer(data=data)
+serializer.is_valid()  <span class="hljs-comment"># True</span>
+serializer.save()  <span class="hljs-comment"># &lt;BookInfo: &#x5C01;&#x795E;&#x6F14;&#x4E49;&gt;</span>
+
+<span class="hljs-keyword">from</span> db.models <span class="hljs-keyword">import</span> BookInfo
+book = BookInfo.objects.get(id=<span class="hljs-number">2</span>)
+data = {<span class="hljs-string">&apos;btitle&apos;</span>: <span class="hljs-string">&apos;&#x501A;&#x5929;&#x5251;&apos;</span>}
+serializer = BookInfoSerializer(book, data=data)
+serializer.is_valid()  <span class="hljs-comment"># True</span>
+serializer.save()  <span class="hljs-comment"># &lt;BookInfo: &#x501A;&#x5929;&#x5251;&gt;</span>
+book.btitle  <span class="hljs-comment"># &apos;&#x501A;&#x5929;&#x5251;&apos;</span>
+</code></pre>
+<h4 id="&#x4E24;&#x70B9;&#x8BF4;&#x660E;&#xFF1A;">&#x4E24;&#x70B9;&#x8BF4;&#x660E;&#xFF1A;</h4>
+<p>1&#xFF09; &#x5728;&#x5BF9;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x8FDB;&#x884C;save()&#x4FDD;&#x5B58;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x989D;&#x5916;&#x4F20;&#x9012;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5728;create()&#x548C;update()&#x4E2D;&#x7684;validated_data&#x53C2;&#x6570;&#x83B7;&#x53D6;&#x5230;</p>
+<pre><code class="lang-python">serializer.save(owner=request.user)
+</code></pre>
+<p>2&#xFF09;&#x9ED8;&#x8BA4;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x5FC5;&#x987B;&#x4F20;&#x9012;&#x6240;&#x6709;required&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x9A8C;&#x8BC1;&#x5F02;&#x5E38;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;partial&#x53C2;&#x6570;&#x6765;&#x5141;&#x8BB8;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x66F4;&#x65B0;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Update `comment` with partial data</span>
+serializer = CommentSerializer(comment, data={<span class="hljs-string">&apos;content&apos;</span>: <span class="hljs-string">u&apos;foo bar&apos;</span>}, partial=<span class="hljs-keyword">True</span>)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../C03-Serializer/Serializing.html" class="navigation navigation-prev " aria-label="Previous page: 序列化使用"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../C03-Serializer/ModelSerializer.html" class="navigation navigation-next " aria-label="Next page: 模型类序列化器ModelSerializer"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

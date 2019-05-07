@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<table border="0" height="600px" align="left">
+		<tbody><tr>
+			<td width="240px" align="left" valign="top" style="BORDER-RIGHT: #eeeeee 1px solid">
+				<ul id="tree" class="ztree" style="width: 240px; overflow: auto; position: fixed; z-index: 2147483647; border: 0px none; left: 0px; top: 0px;">
+				</ul>
+			</td>
+			<td width="80%" align="left" valign="top" style="padding-left: 20px; text-align:left;padding-right: 50px; " class="markdown-body"> 
+
+				<!-- ===========body(begin)============ -->
+
+
+
+
+
+
+<h3 id="-">条件查询</h3>
+<p>用法：<br>模型类.objects.filter(模型类属性名__条件名 = 值)</p>
+<ul>
+<li><p>判等： exact</p>
+<pre><code class="ruby">  <span class="comment"># 例：查询id为1的员工</span>
+  <span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span>=<span class="number">1</span>;
+  <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">id__exact</span>=<span class="number">1</span>)
+  <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier"><span class="keymethods">id</span></span>=<span class="number">1</span>)
+</code></pre></li><li><p>模糊查询： contains / endswith / startswith</p>
+<pre><code class="ruby">  <span class="comment"># 例：查询名字包含'马'的员工</span>
+  <span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">name</span></span> <span class="identifier">like</span> <span class="string">'%马%'</span>;
+  <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">name__contains</span>=<span class="string">'马'</span>)
+
+  <span class="comment"># 例：查询名字以'军'结尾的员工</span>
+  <span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">name</span></span> <span class="identifier">like</span> <span class="string">'%军'</span>;
+  <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">name__endswith</span>=<span class="string">'军'</span>)
+</code></pre></li><li><p>空查询： isnull </p>
+<pre><code class="python">  <span class="comment"># 例：查询备注信息不为空的员工</span>
+  select * <span class="keyword">from</span> employee where comment <span class="keyword">is</span> <span class="keyword">not</span> null ;
+  Employee.objects.filter(comment__isnull=<span class="built_in">False</span>)
+</code></pre></li><li><p>范围查询: in</p>
+<pre><code class="ruby">  <span class="comment"># 例：查询id编号为1或3或5的员工</span>
+  <span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> <span class="identifier"><span class="keyword">in</span></span> (<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>); 
+  <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">id__in</span>=[<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>])
+</code></pre></li><li><p>比较查询: gt(greater than) lt(less than) gte  lte</p>
+<pre><code class="cs">  # 例：查询age大于等于<span class="number">30</span>的员工
+  <span class="keyword">select</span> * <span class="keyword">from</span> employee <span class="keyword">where</span> age &gt;= <span class="number">30</span>; 
+  Employee.objects.filter(age__gte=<span class="number">30</span>)
+</code></pre></li><li><p>日期查询： year</p>
+<pre><code class="cs">  # 例：查询<span class="number">2015</span>年入职的员工
+  <span class="keyword">select</span> * <span class="keyword">from</span> employee <span class="keyword">where</span> year(hire_date) = <span class="number">2015</span>; 
+  Employee.objects.filter(hire_date__year=<span class="number">2015</span>)
+
+  # 例：查询<span class="number">2014</span>年<span class="number">1</span>月<span class="number">1</span>日后入职的员工
+  <span class="keyword">select</span> * <span class="keyword">from</span> employee <span class="keyword">where</span> hire_date &gt;= <span class="string">'2014-1-1'</span>;
+  Employee.objects.filter(hire_date__gte=<span class="string">'2014-1-1'</span>)
+</code></pre></li><li><p>返回不满足条件的数据： exclude</p>
+</li></ul>
+<p>用法： 模型类.objects.exclude(条件)</p>
+<pre><code class="ruby">    <span class="comment"># 例：查询id不为3的员工</span>
+    <span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> != <span class="number">3</span>; 
+    <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">exclude</span>(<span class="identifier"><span class="keymethods">id</span></span>=<span class="number">3</span>)
+</code></pre><h3 id="f-">F对象</h3>
+<p>用法： F(‘字段’)<br><code>from django.db.models import F</code>    </p>
+<pre><code class="ruby"><span class="comment"># 例：查询年龄大于id的员工信息（无实际意义）</span>
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier">age</span> &gt; <span class="identifier"><span class="keymethods">id</span></span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">age__gt</span>=<span class="constant">F</span>(‘<span class="identifier"><span class="keymethods">id</span></span>’))
+
+<span class="comment"># 例：查询年龄大于4倍id编号的员工信息（无实际意义）</span>
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier">age</span> &gt; <span class="identifier"><span class="keymethods">id</span></span> * <span class="number">4</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">age__gt</span>=<span class="constant">F</span>(‘<span class="identifier"><span class="keymethods">id</span></span>’) * <span class="number">4</span> )
+</code></pre><h3 id="q-">Q对象</h3>
+<p>用法： Q(条件1) 逻辑操作符 Q(条件2)</p>
+<p><code>from django.db.models import Q</code></p>
+<pre><code class="ruby">例：查询<span class="identifier"><span class="keymethods">id</span></span>大于<span class="number">3</span>且年龄大于<span class="number">30</span>的员工信息。
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> &gt; <span class="number">3</span> <span class="identifier"><span class="keyword">and</span></span> <span class="identifier">age</span> &gt; <span class="number">30</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">id__gt</span>=<span class="number">3</span>, <span class="identifier">age__gt</span>=<span class="number">30</span>)
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="constant">Q</span>(<span class="identifier">id__gt</span>=<span class="number">3</span>) &amp; <span class="constant">Q</span>(<span class="identifier">age__gt</span>=<span class="number">30</span>))
+
+例：查询<span class="identifier"><span class="keymethods">id</span></span>大于<span class="number">3</span>或者年龄大于<span class="number">30</span>的员工信息。
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> &gt; <span class="number">3</span> <span class="identifier"><span class="keyword">or</span></span> <span class="identifier">age</span> &gt; <span class="number">30</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="constant">Q</span>(<span class="identifier">id__gt</span>=<span class="number">3</span>) | <span class="constant">Q</span>(<span class="identifier">age__gt</span>=<span class="number">30</span>))
+
+例：查询<span class="identifier"><span class="keymethods">id</span></span>不等于<span class="number">3</span>员工信息。
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> != <span class="number">3</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(~<span class="constant">Q</span>(<span class="identifier"><span class="keymethods">id</span></span>=<span class="number">3</span>))
+</code></pre><h3 id="order_by-">order_by方法</h3>
+<p>用法：<br>升序： 模型类.objects.order_by(‘字段名’)<br>降序： 模型类.objects.order_by(‘-字段名’)</p>
+<pre><code class="ruby">例：查询所有员工信息，按照<span class="identifier"><span class="keymethods">id</span></span>从小到大进行排序。
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">order</span> <span class="identifier">by</span> <span class="identifier"><span class="keymethods">id</span></span> <span class="identifier">asc</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">order_by</span>(<span class="string">'id'</span>)
+
+例：查询所有员工信息，按照<span class="identifier"><span class="keymethods">id</span></span>从大到小进行排序。
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">order</span> <span class="identifier">by</span> <span class="identifier"><span class="keymethods">id</span></span> <span class="identifier">desc</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">order_by</span>(<span class="string">'-id'</span>)
+
+例：把<span class="identifier"><span class="keymethods">id</span></span>大于<span class="number">3</span>的员工信息, 按年龄从大到小排序显示；
+<span class="identifier"><span class="keymethods">select</span></span> * <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> &gt; <span class="number">8</span> <span class="identifier">order</span> <span class="identifier">by</span> <span class="identifier">age</span> <span class="identifier">desc</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">id__gt</span>=<span class="number">8</span>).<span class="identifier">order_by</span>(<span class="string">'-age'</span>)
+</code></pre><h3 id="aggregate-">aggregate方法</h3>
+<p>用法： 模型类.objects.aggregate（聚合类（’模型属性’））</p>
+<pre><code class="python"><span class="keyword">from</span> django.db.models <span class="keyword">import</span> Sum, Count, Max, Min, Avg
+
+例：查询所有员工的平均工资
+select avg(salary) <span class="keyword">from</span> employee; 
+Employee.objects.aggregate(Avg(<span class="string">'salary'</span>))
+</code></pre><h3 id="count-">count方法</h3>
+<p>用法： 模型类.objects.count()</p>
+<pre><code class="ruby">例：统计所有员工的人数。
+<span class="identifier"><span class="keymethods">select</span></span> <span class="identifier"><span class="keymethods">count</span></span>(*) <span class="identifier">from</span> <span class="identifier">employee</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier"><span class="keymethods">count</span></span>()
+
+例：统计<span class="identifier"><span class="keymethods">id</span></span>大于<span class="number">3</span>的所有员工的人数。
+<span class="identifier"><span class="keymethods">select</span></span> <span class="identifier"><span class="keymethods">count</span></span>(*) <span class="identifier">from</span> <span class="identifier">employee</span> <span class="identifier">where</span> <span class="identifier"><span class="keymethods">id</span></span> &gt; <span class="number">3</span>; 
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">id__gt</span>=<span class="number">3</span>).<span class="identifier"><span class="keymethods">count</span></span>()
+</code></pre><h3 id="-">关联查询</h3>
+<pre><code class="ruby">例：查询 “研发部” 的所有员工
+<span class="comment"># 方式一：</span>
+<span class="identifier">d</span> = <span class="constant">Department</span>.<span class="identifier">objects</span>.<span class="identifier">get</span>(<span class="identifier"><span class="keymethods">name</span></span>=‘研发部’)
+<span class="identifier">d</span>.<span class="identifier">employee_set</span>.<span class="identifier">all</span>()        <span class="comment"># 一查多</span>
+<span class="comment"># 方式二：</span>
+<span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">department__name</span>=<span class="string">'研发部'</span>)
+
+例：查询 “赵小二” 所属的部门信息
+<span class="comment"># 方式一：    </span>
+<span class="identifier">e</span> = <span class="constant">Employee</span>.<span class="identifier">objects</span>.<span class="identifier">get</span>(<span class="identifier"><span class="keymethods">name</span></span>=<span class="string">'赵小二'</span>)
+<span class="identifier">e</span>.<span class="identifier">department</span>            <span class="comment"># 多查一</span>
+<span class="comment"># 方式二：</span>
+<span class="constant">Department</span>.<span class="identifier">objects</span>.<span class="identifier">filter</span>(<span class="identifier">employee__name</span>=<span class="string">'赵小二'</span>)
+</code></pre>
+
+
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+
+
+
+
+
+
+
+
+
+
+
+				<!-- ===========body(end)============ -->
+			</td>
+
+		</tr>
+	</tbody>
+	</table>
+</body>
+
+
+<link rel="stylesheet" type="text/css" href="./resource/jscss/zTreeStyle.css">
+<link rel="stylesheet" type="text/css" href="./resource/jscss/github2-rightpart.css" media="all">
+<link rel="stylesheet" type="text/css" href="./resource/jscss/github1-contents.css">
+<script type="text/javascript" src="./resource/jscss/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="./resource/jscss/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="./resource/jscss/ztree_toc.js"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+	$('#tree').ztree_toc({
+	});
+});
+-->
+</script>
+
+
+<link rel="stylesheet" href="./resource/jscss/vs.min.css">
+<script src="./resource/jscss/highlight.min.js"></script>
+<script>hljs.tabReplace = '    ';hljs.initHighlightingOnLoad();</script>
+
+
+<style>
+	body {
+		background-color: white;
+		margin:0; padding:0;
+		text-align: center;
+	}
+	div, p, table, th, td {
+		list-style:none;
+		margin:0; padding:0;
+		color:#333; font-size:12px;
+		font-family:dotum, Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+	}
+	.ztree li a.curSelectedNode {
+		padding-top: 0px;
+		background-color: #FFE6B0;
+		color: black;
+		height: 16px;
+		border: 1px #FFB951 solid;
+		opacity: 0.8;
+	}
+	.ztree{
+		overflow: auto;
+		height:100%;
+		min-height: 300px;
+		top: 0px;
+	}
+</style>
+</html>

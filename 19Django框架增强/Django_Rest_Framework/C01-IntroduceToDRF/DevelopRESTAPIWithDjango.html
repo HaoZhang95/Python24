@@ -1,0 +1,870 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>使用Django开发REST接口 | 课程介绍</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html" />
+    
+    
+    <link rel="prev" href="../C01-IntroduceToDRF/HowToDesignREST.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.3"
+        data-chapter-title="使用Django开发REST接口"
+        data-filepath="C01-IntroduceToDRF/DevelopRESTAPIWithDjango.md"
+        data-basepath=".."
+        data-revision="Sat Aug 11 2018 20:38:56 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="C01-IntroduceToDRF/index.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        引入DjangoRESTframework
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="C01-IntroduceToDRF/SeparatedFrontendAndBackend.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/SeparatedFrontendAndBackend.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Web应用模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="C01-IntroduceToDRF/HowToDesignREST.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/HowToDesignREST.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        RESTful设计方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="C01-IntroduceToDRF/DevelopRESTAPIWithDjango.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/DevelopRESTAPIWithDjango.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        使用Django开发REST接口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        明确REST接口开发的核心任务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="C01-IntroduceToDRF/AboutDRF.html">
+            
+                
+                    <a href="../C01-IntroduceToDRF/AboutDRF.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        DjangoRESTframework简介
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="C02-DRFProject/index.html">
+            
+                
+                    <a href="../C02-DRFProject/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        DRF工程搭建
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="C02-DRFProject/InstallAndConfig.html">
+            
+                
+                    <a href="../C02-DRFProject/InstallAndConfig.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        环境安装与配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="C02-DRFProject/TheFirstDRFProgram.html">
+            
+                
+                    <a href="../C02-DRFProject/TheFirstDRFProgram.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        见识DRF的魅力
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="C03-Serializer/index.html">
+            
+                
+                    <a href="../C03-Serializer/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Serializer序列化器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="C03-Serializer/Declaring.html">
+            
+                
+                    <a href="../C03-Serializer/Declaring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义Serializer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="C03-Serializer/Serializing.html">
+            
+                
+                    <a href="../C03-Serializer/Serializing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        序列化使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="C03-Serializer/Deserializing.html">
+            
+                
+                    <a href="../C03-Serializer/Deserializing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        反序列化使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="C03-Serializer/ModelSerializer.html">
+            
+                
+                    <a href="../C03-Serializer/ModelSerializer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        模型类序列化器ModelSerializer
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="C04-View/index.html">
+            
+                
+                    <a href="../C04-View/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        视图
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="C04-View/RequestAndResponse.html">
+            
+                
+                    <a href="../C04-View/RequestAndResponse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request与Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="C04-View/View.html">
+            
+                
+                    <a href="../C04-View/View.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        视图概览
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="C04-View/ViewIntroduction.html">
+            
+                
+                    <a href="../C04-View/ViewIntroduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        视图说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="C04-View/ViewSet.html">
+            
+                
+                    <a href="../C04-View/ViewSet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        视图集ViewSet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="C04-View/Routers.html">
+            
+                
+                    <a href="../C04-View/Routers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        路由Router
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="C05-Components/index.html">
+            
+                
+                    <a href="../C05-Components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        其他功能
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="C05-Components/Authentication.html">
+            
+                
+                    <a href="../C05-Components/Authentication.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        认证
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="C05-Components/Permissions.html">
+            
+                
+                    <a href="../C05-Components/Permissions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        权限
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="C05-Components/Throttling.html">
+            
+                
+                    <a href="../C05-Components/Throttling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        限流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="C05-Components/Filtering.html">
+            
+                
+                    <a href="../C05-Components/Filtering.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        过滤
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="C05-Components/Ordering.html">
+            
+                
+                    <a href="../C05-Components/Ordering.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="C05-Components/Pagination.html">
+            
+                
+                    <a href="../C05-Components/Pagination.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="C05-Components/Exceptions.html">
+            
+                
+                    <a href="../C05-Components/Exceptions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        异常处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="C05-Components/Documents.html">
+            
+                
+                    <a href="../C05-Components/Documents.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        自动生成接口文档
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >课程介绍</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x4F7F;&#x7528;django&#x5F00;&#x53D1;rest-&#x63A5;&#x53E3;">&#x4F7F;&#x7528;Django&#x5F00;&#x53D1;REST &#x63A5;&#x53E3;</h1>
+<p>&#x6211;&#x4EEC;&#x4EE5;&#x5728;Django&#x6846;&#x67B6;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x56FE;&#x4E66;&#x82F1;&#x96C4;&#x6848;&#x4F8B;&#x6765;&#x5199;&#x4E00;&#x5957;&#x652F;&#x6301;&#x56FE;&#x4E66;&#x6570;&#x636E;&#x589E;&#x5220;&#x6539;&#x67E5;&#x7684;REST API&#x63A5;&#x53E3;&#xFF0C;&#x6765;&#x7406;&#x89E3;REST API&#x7684;&#x5F00;&#x53D1;&#x3002;</p>
+<p>&#x5728;&#x6B64;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x524D;&#x540E;&#x7AEF;&#x5747;&#x53D1;&#x9001;JSON&#x683C;&#x5F0F;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># views.py</span>
+
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookListView</span><span class="hljs-params">(View)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x56FE;&#x4E66;&#x3001;&#x589E;&#x52A0;&#x56FE;&#x4E66;
+    &quot;&quot;&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x56FE;&#x4E66;
+        &#x8DEF;&#x7531;&#xFF1A;GET /books/
+        &quot;&quot;&quot;</span>
+        queryset = BookInfo.objects.all()
+        book_list = []
+        <span class="hljs-keyword">for</span> book <span class="hljs-keyword">in</span> queryset:
+            book_list.append({
+                <span class="hljs-string">&apos;id&apos;</span>: book.id,
+                <span class="hljs-string">&apos;btitle&apos;</span>: book.btitle,
+                <span class="hljs-string">&apos;bpub_date&apos;</span>: book.bpub_date,
+                <span class="hljs-string">&apos;bread&apos;</span>: book.bread,
+                <span class="hljs-string">&apos;bcomment&apos;</span>: book.bcomment,
+                <span class="hljs-string">&apos;image&apos;</span>: book.image.url <span class="hljs-keyword">if</span> book.image <span class="hljs-keyword">else</span> <span class="hljs-string">&apos;&apos;</span>
+            })
+        <span class="hljs-keyword">return</span> JsonResponse(book_list, safe=<span class="hljs-keyword">False</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x65B0;&#x589E;&#x56FE;&#x4E66;
+        &#x8DEF;&#x7531;&#xFF1A;POST /books/
+        &quot;&quot;&quot;</span>
+        json_bytes = request.body
+        json_str = json_bytes.decode()
+        book_dict = json.loads(json_str)
+
+        <span class="hljs-comment"># &#x6B64;&#x5904;&#x8BE6;&#x7EC6;&#x7684;&#x6821;&#x9A8C;&#x53C2;&#x6570;&#x7701;&#x7565;</span>
+
+        book = BookInfo.objects.create(
+            btitle=book_dict.get(<span class="hljs-string">&apos;btitle&apos;</span>),
+            bpub_date=book_dict.get(<span class="hljs-string">&apos;bpub_date&apos;</span>)
+        )
+
+        <span class="hljs-keyword">return</span> JsonResponse({
+            <span class="hljs-string">&apos;id&apos;</span>: book.id,
+            <span class="hljs-string">&apos;btitle&apos;</span>: book.btitle,
+            <span class="hljs-string">&apos;bpub_date&apos;</span>: book.bpub_date,
+            <span class="hljs-string">&apos;bread&apos;</span>: book.bread,
+            <span class="hljs-string">&apos;bcomment&apos;</span>: book.bcomment,
+            <span class="hljs-string">&apos;image&apos;</span>: book.image.url <span class="hljs-keyword">if</span> book.image <span class="hljs-keyword">else</span> <span class="hljs-string">&apos;&apos;</span>
+        }, status=<span class="hljs-number">201</span>)
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookDetailView</span><span class="hljs-params">(View)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self, request, pk)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x56FE;&#x4E66;&#x4FE1;&#x606F;
+        &#x8DEF;&#x7531;&#xFF1A; GET  /books/&lt;pk&gt;/
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">try</span>:
+            book = BookInfo.objects.get(pk=pk)
+        <span class="hljs-keyword">except</span> BookInfo.DoesNotExist:
+            <span class="hljs-keyword">return</span> HttpResponse(status=<span class="hljs-number">404</span>)
+
+        <span class="hljs-keyword">return</span> JsonResponse({
+            <span class="hljs-string">&apos;id&apos;</span>: book.id,
+            <span class="hljs-string">&apos;btitle&apos;</span>: book.btitle,
+            <span class="hljs-string">&apos;bpub_date&apos;</span>: book.bpub_date,
+            <span class="hljs-string">&apos;bread&apos;</span>: book.bread,
+            <span class="hljs-string">&apos;bcomment&apos;</span>: book.bcomment,
+            <span class="hljs-string">&apos;image&apos;</span>: book.image.url <span class="hljs-keyword">if</span> book.image <span class="hljs-keyword">else</span> <span class="hljs-string">&apos;&apos;</span>
+        })
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">put</span><span class="hljs-params">(self, request, pk)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x4FEE;&#x6539;&#x56FE;&#x4E66;&#x4FE1;&#x606F;
+        &#x8DEF;&#x7531;&#xFF1A; PUT  /books/&lt;pk&gt;
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">try</span>:
+            book = BookInfo.objects.get(pk=pk)
+        <span class="hljs-keyword">except</span> BookInfo.DoesNotExist:
+            <span class="hljs-keyword">return</span> HttpResponse(status=<span class="hljs-number">404</span>)
+
+        json_bytes = request.body
+        json_str = json_bytes.decode()
+        book_dict = json.loads(json_str)
+
+        <span class="hljs-comment"># &#x6B64;&#x5904;&#x8BE6;&#x7EC6;&#x7684;&#x6821;&#x9A8C;&#x53C2;&#x6570;&#x7701;&#x7565;</span>
+
+        book.btitle = book_dict.get(<span class="hljs-string">&apos;btitle&apos;</span>)
+        book.bpub_date = book_dict.get(<span class="hljs-string">&apos;bpub_date&apos;</span>)
+        book.save()
+
+        <span class="hljs-keyword">return</span> JsonResponse({
+            <span class="hljs-string">&apos;id&apos;</span>: book.id,
+            <span class="hljs-string">&apos;btitle&apos;</span>: book.btitle,
+            <span class="hljs-string">&apos;bpub_date&apos;</span>: book.bpub_date,
+            <span class="hljs-string">&apos;bread&apos;</span>: book.bread,
+            <span class="hljs-string">&apos;bcomment&apos;</span>: book.bcomment,
+            <span class="hljs-string">&apos;image&apos;</span>: book.image.url <span class="hljs-keyword">if</span> book.image <span class="hljs-keyword">else</span> <span class="hljs-string">&apos;&apos;</span>
+        })
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete</span><span class="hljs-params">(self, request, pk)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x5220;&#x9664;&#x56FE;&#x4E66;
+        &#x8DEF;&#x7531;&#xFF1A; DELETE /books/&lt;pk&gt;/
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">try</span>:
+            book = BookInfo.objects.get(pk=pk)
+        <span class="hljs-keyword">except</span> BookInfo.DoesNotExist:
+            <span class="hljs-keyword">return</span> HttpResponse(status=<span class="hljs-number">404</span>)
+
+        book.delete()
+
+        <span class="hljs-keyword">return</span> HttpResponse(status=<span class="hljs-number">204</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># urls.py</span>
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^books/$&apos;</span>, views.BookListView.as_view()),
+    url(<span class="hljs-string">r&apos;^books/(?P&lt;pk&gt;\d+)/$&apos;</span>, views.BookDetailView.as_view())
+]
+</code></pre>
+<h4 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h4>
+<p>&#x4F7F;&#x7528;Postman&#x6D4B;&#x8BD5;&#x4E0A;&#x8FF0;&#x63A5;&#x53E3;</p>
+<p>1&#xFF09; &#x83B7;&#x53D6;&#x6240;&#x6709;&#x56FE;&#x4E66;&#x6570;&#x636E;</p>
+<p>GET &#x65B9;&#x5F0F;&#x8BBF;&#x95EE; <a href="http://127.0.0.1:8000/books/&#xFF0C;" target="_blank">http://127.0.0.1:8000/books/&#xFF0C;</a> &#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;200&#xFF0C;&#x6570;&#x636E;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-json">[
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x5C04;&#x96D5;&#x82F1;&#x96C4;&#x4F20;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1980-05-01&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">12</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">34</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x5929;&#x9F99;&#x516B;&#x90E8;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1986-07-24&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">36</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">40</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x7B11;&#x50B2;&#x6C5F;&#x6E56;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1995-12-24&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">20</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">80</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x96EA;&#x5C71;&#x98DE;&#x72D0;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1987-11-11&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">58</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">24</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">5</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x897F;&#x6E38;&#x8BB0;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1988-01-01&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">10</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">10</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;booktest/xiyouji.png&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">6</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x6C34;&#x6D52;&#x4F20;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1992-01-01&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">10</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">11</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">7</span>,
+        <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x7EA2;&#x697C;&#x68A6;&quot;</span>,
+        <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1990-01-01&quot;</span>,
+        <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    }
+]
+</code></pre>
+<p>2&#xFF09;&#x83B7;&#x53D6;&#x5355;&#x4E00;&#x56FE;&#x4E66;&#x6570;&#x636E;</p>
+<p>GET  &#x8BBF;&#x95EE; <a href="http://127.0.0.1:8000/books/5/" target="_blank">http://127.0.0.1:8000/books/5/</a> &#xFF0C;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;200&#xFF0C; &#x6570;&#x636E;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x897F;&#x6E38;&#x8BB0;&quot;</span>,
+    <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1988-01-01&quot;</span>,
+    <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;booktest/xiyouji.png&quot;</span>
+}
+</code></pre>
+<p>GET  &#x8BBF;&#x95EE;<a href="http://127.0.0.1:8000/books/100/&#xFF0C;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;404" target="_blank">http://127.0.0.1:8000/books/100/&#xFF0C;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;404</a></p>
+<p>3&#xFF09;&#x65B0;&#x589E;&#x56FE;&#x4E66;&#x6570;&#x636E;</p>
+<p>POST &#x8BBF;&#x95EE;<a href="http://127.0.0.1:8000/books/&#xFF0C;&#x53D1;&#x9001;JSON&#x6570;&#x636E;&#xFF1A;" target="_blank">http://127.0.0.1:8000/books/&#xFF0C;&#x53D1;&#x9001;JSON&#x6570;&#x636E;&#xFF1A;</a></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x4E09;&#x56FD;&#x6F14;&#x4E49;&quot;</span>,
+    <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1990-02-03&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;201&#xFF0C;&#x6570;&#x636E;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">8</span>,
+    <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x4E09;&#x56FD;&#x6F14;&#x4E49;&quot;</span>,
+    <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1990-02-03&quot;</span>,
+    <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+}
+</code></pre>
+<p>4&#xFF09;&#x4FEE;&#x6539;&#x56FE;&#x4E66;&#x6570;&#x636E;</p>
+<p>PUT &#x8BBF;&#x95EE;<a href="http://127.0.0.1:8000/books/8/&#xFF0C;&#x53D1;&#x9001;JSON&#x6570;&#x636E;&#xFF1A;" target="_blank">http://127.0.0.1:8000/books/8/&#xFF0C;&#x53D1;&#x9001;JSON&#x6570;&#x636E;&#xFF1A;</a></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x4E09;&#x56FD;&#x6F14;&#x4E49;&#xFF08;&#x7B2C;&#x4E8C;&#x7248;&#xFF09;&quot;</span>,
+    <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1990-02-03&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;200&#xFF0C;&#x6570;&#x636E;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">8</span>,
+    <span class="hljs-string">&quot;btitle&quot;</span>: <span class="hljs-string">&quot;&#x4E09;&#x56FD;&#x6F14;&#x4E49;&#xFF08;&#x7B2C;&#x4E8C;&#x7248;&#xFF09;&quot;</span>,
+    <span class="hljs-string">&quot;bpub_date&quot;</span>: <span class="hljs-string">&quot;1990-02-03&quot;</span>,
+    <span class="hljs-string">&quot;bread&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;bcomment&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+}
+</code></pre>
+<p>5&#xFF09;&#x5220;&#x9664;&#x56FE;&#x4E66;&#x6570;&#x636E;</p>
+<p>DELETE &#x8BBF;&#x95EE;<a href="http://127.0.0.1:8000/books/8/&#xFF0C;&#x8FD4;&#x56DE;204&#x72B6;&#x6001;&#x7801;" target="_blank">http://127.0.0.1:8000/books/8/&#xFF0C;&#x8FD4;&#x56DE;204&#x72B6;&#x6001;&#x7801;</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../C01-IntroduceToDRF/HowToDesignREST.html" class="navigation navigation-prev " aria-label="Previous page: RESTful设计方法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html" class="navigation navigation-next " aria-label="Next page: 明确REST接口开发的核心任务"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

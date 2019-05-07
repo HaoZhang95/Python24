@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<table border="0" height="600px" align="left">
+		<tbody><tr>
+			<td width="240px" align="left" valign="top" style="BORDER-RIGHT: #eeeeee 1px solid">
+				<ul id="tree" class="ztree" style="width: 240px; overflow: auto; position: fixed; z-index: 2147483647; border: 0px none; left: 0px; top: 0px;">
+				</ul>
+			</td>
+			<td width="80%" align="left" valign="top" style="padding-left: 20px; text-align:left;padding-right: 50px; " class="markdown-body"> 
+
+				<!-- ===========body(begin)============ -->
+
+
+
+
+
+
+<pre><code class="sql"><span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> department(name, create_date, is_delete) <span class="keyword">values</span>(<span class="string">"研发部"</span>, <span class="string">"2009-01-01"</span>, <span class="number">0</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> department(name, create_date, is_delete) <span class="keyword">values</span>(<span class="string">"人事部"</span>, <span class="string">"2009-03-01"</span>, <span class="number">0</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> department(name, create_date, is_delete) <span class="keyword">values</span>(<span class="string">"财务部"</span>, <span class="string">"2008-01-01"</span>, <span class="number">0</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> department(name, create_date, is_delete) <span class="keyword">values</span>(<span class="string">"行政部"</span>, <span class="string">"2008-01-02"</span>, <span class="number">1</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> department(name, create_date, is_delete) <span class="keyword">values</span>(<span class="string">"销售部"</span>, <span class="string">"2008-01-03"</span>, <span class="number">1</span>);</span>
+
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小一"</span>, <span class="number">28</span>, <span class="number">0</span>, <span class="number">12000</span>, <span class="string">"2011-01-01"</span>, <span class="keyword">null</span>, <span class="number">1</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小二"</span>, <span class="number">27</span>, <span class="number">0</span>, <span class="number">13000</span>, <span class="string">"2011-01-01"</span>, <span class="keyword">null</span>, <span class="number">1</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小三"</span>, <span class="number">23</span>, <span class="number">0</span>, <span class="number">11000</span>, <span class="string">"2015-01-01"</span>, <span class="keyword">null</span>, <span class="number">1</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小四"</span>, <span class="number">24</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="string">"2016-01-01"</span>, <span class="keyword">null</span>, <span class="number">1</span>);</span>
+
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小五"</span>, <span class="number">22</span>, <span class="number">1</span>, <span class="number">7000</span>, <span class="string">"2017-01-01"</span>, <span class="keyword">null</span>, <span class="number">2</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小六"</span>, <span class="number">20</span>, <span class="number">1</span>, <span class="number">6000</span>, <span class="string">"2013-01-01"</span>, <span class="keyword">null</span>, <span class="number">2</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小七"</span>, <span class="number">25</span>, <span class="number">0</span>, <span class="number">7000</span>, <span class="string">"2014-01-01"</span>, <span class="keyword">null</span>, <span class="number">2</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"赵小八"</span>, <span class="number">25</span>, <span class="number">0</span>, <span class="number">8000</span>, <span class="string">"2014-01-01"</span>, <span class="keyword">null</span>, <span class="number">2</span>);</span>
+
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"马云"</span>, <span class="number">53</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="string">"2011-01-01"</span>, <span class="string">"阿里"</span>, <span class="number">3</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"马化腾"</span>, <span class="number">46</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="string">"2010-01-01"</span>, <span class="string">"腾讯"</span>, <span class="number">3</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"李彦宏"</span>, <span class="number">49</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="string">"2010-01-01"</span>, <span class="string">"百度"</span>, <span class="number">3</span>);</span>
+<span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> employee(name, age, gender, salary, hire_date, comment, department_id) <span class="keyword">values</span>(<span class="string">"雷军"</span>, <span class="number">48</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="string">"2012-01-01"</span>, <span class="string">"小米"</span>, <span class="number">3</span>);</span>
+</code></pre>
+
+
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+
+
+
+
+
+
+
+
+
+
+
+				<!-- ===========body(end)============ -->
+			</td>
+
+		</tr>
+	</tbody>
+	</table>
+</body>
+
+
+<link rel="stylesheet" type="text/css" href="./resource/jscss/zTreeStyle.css">
+<link rel="stylesheet" type="text/css" href="./resource/jscss/github2-rightpart.css" media="all">
+<link rel="stylesheet" type="text/css" href="./resource/jscss/github1-contents.css">
+<script type="text/javascript" src="./resource/jscss/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="./resource/jscss/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="./resource/jscss/ztree_toc.js"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+	$('#tree').ztree_toc({
+	});
+});
+-->
+</script>
+
+
+<link rel="stylesheet" href="./resource/jscss/vs.min.css">
+<script src="./resource/jscss/highlight.min.js"></script>
+<script>hljs.tabReplace = '    ';hljs.initHighlightingOnLoad();</script>
+
+
+<style>
+	body {
+		background-color: white;
+		margin:0; padding:0;
+		text-align: center;
+	}
+	div, p, table, th, td {
+		list-style:none;
+		margin:0; padding:0;
+		color:#333; font-size:12px;
+		font-family:dotum, Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+	}
+	.ztree li a.curSelectedNode {
+		padding-top: 0px;
+		background-color: #FFE6B0;
+		color: black;
+		height: 16px;
+		border: 1px #FFB951 solid;
+		opacity: 0.8;
+	}
+	.ztree{
+		overflow: auto;
+		height:100%;
+		min-height: 300px;
+		top: 0px;
+	}
+</style>
+</html>

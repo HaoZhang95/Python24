@@ -1,0 +1,1574 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Selenium与PhantomJS | 可选择的IDE和编辑器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/part03/3.3.html" />
+    
+    
+    <link rel="prev" href="../../file/part03/3.1.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.2"
+        data-chapter-title="Selenium与PhantomJS"
+        data-filepath="file/part03/3.2.md"
+        data-basepath="../.."
+        data-revision="Sat Jul 22 2017 18:48:24 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/part01/1.html">
+            
+                
+                    <a href="../../file/part01/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        爬虫原理与数据抓取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/part01/1.1.html">
+            
+                
+                    <a href="../../file/part01/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        (了解)通用爬虫和聚焦爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="file/part01/1.2.html">
+            
+                
+                    <a href="../../file/part01/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        (复习)HTTP/HTTPS的请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/part01/2.0.html">
+            
+                
+                    <a href="../../file/part01/2.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        str和bytes的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/part01/2.1.html">
+            
+                
+                    <a href="../../file/part01/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Requests简单使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="file/part01/2.2.html">
+            
+                
+                    <a href="../../file/part01/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Requests深入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="file/part01/1.3.html">
+            
+                
+                    <a href="../../file/part01/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        HTTP/HTTPS抓包工具-Fiddler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="file/part01/1.4.html">
+            
+                
+                    <a href="../../file/part01/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        参考阅读：urllib模块的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file/part01/1.5.html">
+            
+                
+                    <a href="../../file/part01/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        参考阅读：urllib：GET请求和POST请求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="file/part01/1.6.html">
+            
+                
+                    <a href="../../file/part01/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        参考阅读：urllib：Handler处理器和自定义Opener
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="file/part01/1.9.html">
+            
+                
+                    <a href="../../file/part01/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        参考阅读：编码故事
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/part02/2.html">
+            
+                
+                    <a href="../../file/part02/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        非结构化数据与结构化数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/part02/2.1.html">
+            
+                
+                    <a href="../../file/part02/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        正则表达式re模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/part02/2.2.html">
+            
+                
+                    <a href="../../file/part02/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        案例：使用正则表达式的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="file/part02/2.3.html">
+            
+                
+                    <a href="../../file/part02/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        XPath与lxml类库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/part02/2.4.html">
+            
+                
+                    <a href="../../file/part02/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        案例：使用XPath的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="file/part02/2.7.html">
+            
+                
+                    <a href="../../file/part02/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        JSON模块与JsonPath
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="file/part02/2.8.html">
+            
+                
+                    <a href="../../file/part02/2.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        糗事百科案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="file/part02/2.9.html">
+            
+                
+                    <a href="../../file/part02/2.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        多线程爬虫案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="file/part02/2.5.html">
+            
+                
+                    <a href="../../file/part02/2.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        参考阅读：BeautifulSoup4 解析器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="file/part02/2.6.html">
+            
+                
+                    <a href="../../file/part02/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        参考阅读：案例：使用bs4的爬虫
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/part03/3.html">
+            
+                
+                    <a href="../../file/part03/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        动态HTML处理和机器图像识别
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/part03/3.1.html">
+            
+                
+                    <a href="../../file/part03/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        动态HTML介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="file/part03/3.2.html">
+            
+                
+                    <a href="../../file/part03/3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Selenium与PhantomJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/part03/3.3.html">
+            
+                
+                    <a href="../../file/part03/3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        案例一：网站模拟登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/part03/3.4.html">
+            
+                
+                    <a href="../../file/part03/3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        案例二：动态页面模拟点击
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="file/part03/3.6.html">
+            
+                
+                    <a href="../../file/part03/3.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        机器视觉与Tesseract介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="file/part03/3.7.html">
+            
+                
+                    <a href="../../file/part03/3.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        处理一些格式规范的文字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="file/part03/3.8.html">
+            
+                
+                    <a href="../../file/part03/3.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        尝试对验证码进行机器识别处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="file/part03/3.5.html">
+            
+                
+                    <a href="../../file/part03/3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        参考阅读：执行JavaScript语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="file/part03/3.9.html">
+            
+                
+                    <a href="../../file/part03/3.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        参考阅读：训练Tesseract
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/part04/4.html">
+            
+                
+                    <a href="../../file/part04/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/part04/4.1.html">
+            
+                
+                    <a href="../../file/part04/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        配置安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="file/part04/4.2.html">
+            
+                
+                    <a href="../../file/part04/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        入门案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="file/part04/4.3.html">
+            
+                
+                    <a href="../../file/part04/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Scrapy Shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="file/part04/4.4.html">
+            
+                
+                    <a href="../../file/part04/4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Item Pipeline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="file/part04/4.5.html">
+            
+                
+                    <a href="../../file/part04/4.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="file/part04/4.6.html">
+            
+                
+                    <a href="../../file/part04/4.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="file/part04/4.7.html">
+            
+                
+                    <a href="../../file/part04/4.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Request/Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="file/part04/4.8.html">
+            
+                
+                    <a href="../../file/part04/4.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Downloader Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="file/part04/4.9.html">
+            
+                
+                    <a href="../../file/part04/4.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Settings
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/part05/5.html">
+            
+                
+                    <a href="../../file/part05/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Scrapy实战项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/part05/5.1.html">
+            
+                
+                    <a href="../../file/part05/5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        (案例一)手机App抓包爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/part05/5.2.html">
+            
+                
+                    <a href="../../file/part05/5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        (案例二)阳光热线问政平台爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/part05/5.3.html">
+            
+                
+                    <a href="../../file/part05/5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        (案例三)新浪网分类资讯爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="file/part05/5.4.html">
+            
+                
+                    <a href="../../file/part05/5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        (案例四)Cosplay图片下载器爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="file/part05/5.5.html">
+            
+                
+                    <a href="../../file/part05/5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        (案例五)将数据保存在MongoDB中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="file/part05/5.6.html">
+            
+                
+                    <a href="../../file/part05/5.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        (案例六)三种scrapy模拟登陆策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="file/part05/5.7.html">
+            
+                
+                    <a href="../../file/part05/5.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        附：通过Fiddler进行手机抓包方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/part06/6.html">
+            
+                
+                    <a href="../../file/part06/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        scrapy-redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/part06/6.1.html">
+            
+                
+                    <a href="../../file/part06/6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        源码分析参考：Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/part06/6.2.html">
+            
+                
+                    <a href="../../file/part06/6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        源码分析参考：Dupefilter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="file/part06/6.3.html">
+            
+                
+                    <a href="../../file/part06/6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        源码分析参考：Picklecompat
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="file/part06/6.4.html">
+            
+                
+                    <a href="../../file/part06/6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        源码分析参考：Pipelines
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="file/part06/6.5.html">
+            
+                
+                    <a href="../../file/part06/6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        源码分析参考：Queue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="file/part06/6.6.html">
+            
+                
+                    <a href="../../file/part06/6.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        源码分析参考：Scheduler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="file/part06/6.7.html">
+            
+                
+                    <a href="../../file/part06/6.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        源码分析参考：Spider
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/part07/7.html">
+            
+                
+                    <a href="../../file/part07/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        scrapy-redis实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/part07/7.1.html">
+            
+                
+                    <a href="../../file/part07/7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        源码自带项目说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/part07/7.2.html">
+            
+                
+                    <a href="../../file/part07/7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        有缘网分布式爬虫项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/part07/7.3.html">
+            
+                
+                    <a href="../../file/part07/7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        有缘网分布式爬虫项目2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/part07/7.4.html">
+            
+                
+                    <a href="../../file/part07/7.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        处理Redis里的数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="file/part07/7.5.html">
+            
+                
+                    <a href="../../file/part07/7.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/part07/7.6.html">
+            
+                
+                    <a href="../../file/part07/7.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="file/part07/7.7.html">
+            
+                
+                    <a href="../../file/part07/7.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        IT桔子分布式项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="file/part07/7.8.html">
+            
+                
+                    <a href="../../file/part07/7.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        IT桔子分布式项目2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >可选择的IDE和编辑器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="selenium">Selenium</h2>
+<p><a href="http://www.seleniumhq.org/" target="_blank">Selenium</a>&#x662F;&#x4E00;&#x4E2A;Web&#x7684;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x6700;&#x521D;&#x662F;&#x4E3A;&#x7F51;&#x7AD9;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x800C;&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x7C7B;&#x578B;&#x50CF;&#x6211;&#x4EEC;&#x73A9;&#x6E38;&#x620F;&#x7528;&#x7684;&#x6309;&#x952E;&#x7CBE;&#x7075;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x6307;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#x81EA;&#x52A8;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x540C;&#x662F;Selenium &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x6240;&#x6709;&#x4E3B;&#x6D41;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF08;&#x5305;&#x62EC;PhantomJS&#x8FD9;&#x4E9B;&#x65E0;&#x754C;&#x9762;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF09;&#x3002;</p>
+<p>Selenium &#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6211;&#x4EEC;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF0C;&#x83B7;&#x53D6;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x751A;&#x81F3;&#x9875;&#x9762;&#x622A;&#x5C4F;&#xFF0C;&#x6216;&#x8005;&#x5224;&#x65AD;&#x7F51;&#x7AD9;&#x4E0A;&#x67D0;&#x4E9B;&#x52A8;&#x4F5C;&#x662F;&#x5426;&#x53D1;&#x751F;&#x3002;</p>
+<p>Selenium &#x81EA;&#x5DF1;&#x4E0D;&#x5E26;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x6D4F;&#x89C8;&#x5668;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x6709;&#x65F6;&#x5019;&#x9700;&#x8981;&#x8BA9;&#x5B83;&#x5185;&#x5D4C;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x53EB; PhantomJS &#x7684;&#x5DE5;&#x5177;&#x4EE3;&#x66FF;&#x771F;&#x5B9E;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x3002;</p>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x4ECE; PyPI &#x7F51;&#x7AD9;&#x4E0B;&#x8F7D; Selenium&#x5E93;<a href="https://pypi.python.org/simple/selenium/" target="_blank">https://pypi.python.org/simple/selenium</a> &#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; &#x7B2C;&#x4E09;&#x65B9;&#x7BA1;&#x7406;&#x5668; pip&#x7528;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#xFF1A;<code>sudo pip install selenium</code></p>
+<p>Selenium &#x5B98;&#x65B9;&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;<a href="http://selenium-python.readthedocs.io/index.html" target="_blank">http://selenium-python.readthedocs.io/index.html</a></p>
+</blockquote>
+<h2 id="phantomjs">PhantomJS</h2>
+<p><a href="http://phantomjs.org" target="_blank">PhantomJS</a> &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Webkit&#x7684;&#x201C;&#x65E0;&#x754C;&#x9762;&#x201D;(headless)&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5B83;&#x4F1A;&#x628A;&#x7F51;&#x7AD9;&#x52A0;&#x8F7D;&#x5230;&#x5185;&#x5B58;&#x5E76;&#x6267;&#x884C;&#x9875;&#x9762;&#x4E0A;&#x7684; JavaScript&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x4F1A;&#x5C55;&#x793A;&#x56FE;&#x5F62;&#x754C;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#x6BD4;&#x5B8C;&#x6574;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8981;&#x9AD8;&#x6548;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x628A; Selenium &#x548C; PhantomJS &#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x7F51;&#x7EDC;&#x722C;&#x866B;&#x4E86;&#xFF0C;&#x8FD9;&#x4E2A;&#x722C;&#x866B;&#x53EF;&#x4EE5;&#x5904;&#x7406; JavaScrip&#x3001;Cookie&#x3001;headers&#xFF0C;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x6211;&#x4EEC;&#x771F;&#x5B9E;&#x7528;&#x6237;&#x9700;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<blockquote>
+<p>PhantomJS &#x662F;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x5B8C;&#x5584;(&#x867D;&#x7136;&#x65E0;&#x754C;&#x9762;)&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x800C;&#x975E;&#x4E00;&#x4E2A; Python &#x5E93;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4E0D;&#x9700;&#x8981;&#x50CF; Python &#x7684;&#x5176;&#x4ED6;&#x5E93;&#x4E00;&#x6837;&#x5B89;&#x88C5;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Selenium&#x8C03;&#x7528;PhantomJS&#x6765;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x5728;Ubuntu16.04&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#xFF1A;<code>sudo apt-get install phantomjs</code></p>
+<p>&#x5982;&#x679C;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x65E0;&#x6CD5;&#x5B89;&#x88C5;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x5B83;&#x7684;&#x5B98;&#x65B9;&#x7F51;&#x7AD9;<a href="http://phantomjs.org/download.html" target="_blank">http://phantomjs.org/download.html)</a> &#x4E0B;&#x8F7D;&#x3002;</p>
+<p>PhantomJS &#x5B98;&#x65B9;&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;<a href="http://phantomjs.org/documentation/" target="_blank">http://phantomjs.org/documentation</a></p>
+</blockquote>
+<h2 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+<p>Selenium &#x5E93;&#x91CC;&#x6709;&#x4E2A;&#x53EB; WebDriver &#x7684; API&#x3002;WebDriver &#x6709;&#x70B9;&#x513F;&#x50CF;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x7F51;&#x7AD9;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x50CF; BeautifulSoup &#x6216;&#x8005;&#x5176;&#x4ED6; Selector &#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x7528;&#x6765;&#x67E5;&#x627E;&#x9875;&#x9762;&#x5143;&#x7D20;&#xFF0C;&#x4E0E;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x4EA4;&#x4E92; (&#x53D1;&#x9001;&#x6587;&#x672C;&#x3001;&#x70B9;&#x51FB;&#x7B49;)&#xFF0C;&#x4EE5;&#x53CA;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x52A8;&#x4F5C;&#x6765;&#x8FD0;&#x884C;&#x7F51;&#x7EDC;&#x722C;&#x866B;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># IPython2 &#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</span>
+
+<span class="hljs-comment"># &#x5BFC;&#x5165; webdriver</span>
+<span class="hljs-keyword">from</span> selenium <span class="hljs-keyword">import</span> webdriver
+
+<span class="hljs-comment"># &#x8C03;&#x7528;&#x952E;&#x76D8;&#x6309;&#x952E;&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x8981;&#x5F15;&#x5165;&#x7684;Keys&#x5305;</span>
+<span class="hljs-keyword">from</span> selenium.webdriver.common.keys <span class="hljs-keyword">import</span> Keys
+
+<span class="hljs-comment"># &#x8C03;&#x7528;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6307;&#x5B9A;&#x7684;PhantomJS&#x6D4F;&#x89C8;&#x5668;&#x521B;&#x5EFA;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x8C61;</span>
+driver = webdriver.PhantomJS()
+
+<span class="hljs-comment"># &#x5982;&#x679C;&#x6CA1;&#x6709;&#x5728;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6307;&#x5B9A;PhantomJS&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment"># driver = webdriver.PhantomJS(executable_path=&quot;./phantomjs&quot;))</span>
+
+<span class="hljs-comment"># get&#x65B9;&#x6CD5;&#x4F1A;&#x4E00;&#x76F4;&#x7B49;&#x5230;&#x9875;&#x9762;&#x88AB;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x4F1A;&#x7EE7;&#x7EED;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x5E38;&#x6D4B;&#x8BD5;&#x4F1A;&#x5728;&#x8FD9;&#x91CC;&#x9009;&#x62E9; time.sleep(2)</span>
+driver.get(<span class="hljs-string">&quot;http://www.baidu.com/&quot;</span>)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x9875;&#x9762;&#x540D;&#x4E3A; wrapper&#x7684;id&#x6807;&#x7B7E;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;</span>
+data = driver.find_element_by_id(<span class="hljs-string">&quot;wrapper&quot;</span>).text
+
+<span class="hljs-comment"># &#x6253;&#x5370;&#x6570;&#x636E;&#x5185;&#x5BB9;</span>
+<span class="hljs-keyword">print</span> data
+
+<span class="hljs-comment"># &#x6253;&#x5370;&#x9875;&#x9762;&#x6807;&#x9898; &quot;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&#xFF0C;&#x4F60;&#x5C31;&#x77E5;&#x9053;&quot;</span>
+<span class="hljs-keyword">print</span> driver.title
+
+<span class="hljs-comment"># &#x751F;&#x6210;&#x5F53;&#x524D;&#x9875;&#x9762;&#x5FEB;&#x7167;&#x5E76;&#x4FDD;&#x5B58;</span>
+driver.save_screenshot(<span class="hljs-string">&quot;baidu.png&quot;</span>)
+
+<span class="hljs-comment"># id=&quot;kw&quot;&#x662F;&#x767E;&#x5EA6;&#x641C;&#x7D22;&#x8F93;&#x5165;&#x6846;&#xFF0C;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;&quot;&#x957F;&#x57CE;&quot;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;kw&quot;</span>).send_keys(<span class="hljs-string">u&quot;&#x957F;&#x57CE;&quot;</span>)
+
+<span class="hljs-comment"># id=&quot;su&quot;&#x662F;&#x767E;&#x5EA6;&#x641C;&#x7D22;&#x6309;&#x94AE;&#xFF0C;click() &#x662F;&#x6A21;&#x62DF;&#x70B9;&#x51FB;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;su&quot;</span>).click()
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x65B0;&#x7684;&#x9875;&#x9762;&#x5FEB;&#x7167;</span>
+driver.save_screenshot(<span class="hljs-string">&quot;&#x957F;&#x57CE;.png&quot;</span>)
+
+<span class="hljs-comment"># &#x6253;&#x5370;&#x7F51;&#x9875;&#x6E32;&#x67D3;&#x540E;&#x7684;&#x6E90;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">print</span> driver.page_source
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;Cookie</span>
+<span class="hljs-keyword">print</span> driver.get_cookies()
+
+<span class="hljs-comment"># ctrl+a &#x5168;&#x9009;&#x8F93;&#x5165;&#x6846;&#x5185;&#x5BB9;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;kw&quot;</span>).send_keys(Keys.CONTROL,<span class="hljs-string">&apos;a&apos;</span>)
+
+<span class="hljs-comment"># ctrl+x &#x526A;&#x5207;&#x8F93;&#x5165;&#x6846;&#x5185;&#x5BB9;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;kw&quot;</span>).send_keys(Keys.CONTROL,<span class="hljs-string">&apos;x&apos;</span>)
+
+<span class="hljs-comment"># &#x8F93;&#x5165;&#x6846;&#x91CD;&#x65B0;&#x8F93;&#x5165;&#x5185;&#x5BB9;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;kw&quot;</span>).send_keys(<span class="hljs-string">&quot;itcast&quot;</span>)
+
+<span class="hljs-comment"># &#x6A21;&#x62DF;Enter&#x56DE;&#x8F66;&#x952E;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;su&quot;</span>).send_keys(Keys.RETURN)
+
+<span class="hljs-comment"># &#x6E05;&#x9664;&#x8F93;&#x5165;&#x6846;&#x5185;&#x5BB9;</span>
+driver.find_element_by_id(<span class="hljs-string">&quot;kw&quot;</span>).clear()
+
+<span class="hljs-comment"># &#x751F;&#x6210;&#x65B0;&#x7684;&#x9875;&#x9762;&#x5FEB;&#x7167;</span>
+driver.save_screenshot(<span class="hljs-string">&quot;itcast.png&quot;</span>)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;url</span>
+<span class="hljs-keyword">print</span> driver.current_url
+
+<span class="hljs-comment"># &#x5173;&#x95ED;&#x5F53;&#x524D;&#x9875;&#x9762;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x4F1A;&#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;</span>
+<span class="hljs-comment"># driver.close()</span>
+
+<span class="hljs-comment"># &#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;</span>
+driver.quit()
+</code></pre>
+<h2 id="&#x9875;&#x9762;&#x64CD;&#x4F5C;">&#x9875;&#x9762;&#x64CD;&#x4F5C;</h2>
+<p>Selenium &#x7684; WebDriver&#x63D0;&#x4F9B;&#x4E86;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x5BFB;&#x627E;&#x5143;&#x7D20;&#xFF0C;&#x5047;&#x8BBE;&#x4E0B;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x8F93;&#x5165;&#x6846;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;user-name&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;passwd-id&quot;</span> /&gt;</span>
+</code></pre>
+<p>&#x90A3;&#x4E48;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x83B7;&#x53D6;id&#x6807;&#x7B7E;&#x503C;</span>
+element = driver.find_element_by_id(<span class="hljs-string">&quot;passwd-id&quot;</span>)
+<span class="hljs-comment"># &#x83B7;&#x53D6;name&#x6807;&#x7B7E;&#x503C;</span>
+element = driver.find_element_by_name(<span class="hljs-string">&quot;user-name&quot;</span>)
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x6807;&#x7B7E;&#x540D;&#x503C;</span>
+element = driver.find_elements_by_tag_name(<span class="hljs-string">&quot;input&quot;</span>)
+<span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;XPath&#x6765;&#x5339;&#x914D;</span>
+element = driver.find_element_by_xpath(<span class="hljs-string">&quot;//input[@id=&apos;passwd-id&apos;]&quot;</span>)
+</code></pre>
+<h3 id="&#x5B9A;&#x4F4D;ui&#x5143;&#x7D20;-webelements">&#x5B9A;&#x4F4D;UI&#x5143;&#x7D20; (WebElements)</h3>
+<h5 id="&#x5173;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#x9009;&#x53D6;&#xFF0C;&#x6709;&#x5982;&#x4E0B;&#x7684;api-&#x5355;&#x4E2A;&#x5143;&#x7D20;&#x9009;&#x53D6;">&#x5173;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#x9009;&#x53D6;&#xFF0C;&#x6709;&#x5982;&#x4E0B;&#x7684;API &#x5355;&#x4E2A;&#x5143;&#x7D20;&#x9009;&#x53D6;</h5>
+<pre><code>find_element_by_id
+find_elements_by_name
+find_elements_by_xpath
+find_elements_by_link_text
+find_elements_by_partial_link_text
+find_elements_by_tag_name
+find_elements_by_class_name
+find_elements_by_css_selector
+</code></pre><ol>
+<li><p>By ID</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;coolestWidgetEvah&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">element = driver.find_element_by_id(<span class="hljs-string">&quot;coolestWidgetEvah&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+element = driver.find_element(by=By.ID, value=<span class="hljs-string">&quot;coolestWidgetEvah&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<ol>
+<li><p>By Class Name</p>
+<pre><code class="lang-python">&lt;div class=&quot;cheese&quot;&gt;&lt;span&gt;Cheddar&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cheese&quot;&gt;&lt;span&gt;Gouda&lt;/span&gt;&lt;/div&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">cheeses = driver.find_elements_by_class_name(<span class="hljs-string">&quot;cheese&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+cheeses = driver.find_elements(By.CLASS_NAME, <span class="hljs-string">&quot;cheese&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>By Tag Name</p>
+<pre><code class="lang-python">&lt;iframe src=&quot;...&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">frame = driver.find_element_by_tag_name(<span class="hljs-string">&quot;iframe&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+frame = driver.find_element(By.TAG_NAME, <span class="hljs-string">&quot;iframe&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>By Name</p>
+<pre><code class="lang-python">&lt;input name=<span class="hljs-string">&quot;cheese&quot;</span> type=<span class="hljs-string">&quot;text&quot;</span>/&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">cheese = driver.find_element_by_name(<span class="hljs-string">&quot;cheese&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+cheese = driver.find_element(By.NAME, <span class="hljs-string">&quot;cheese&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>By Link Text</p>
+<pre><code class="lang-python">&lt;a href=&quot;http://www.google.com/search?q=cheese&quot;&gt;cheese&lt;/a&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">cheese = driver.find_element_by_link_text(<span class="hljs-string">&quot;cheese&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+cheese = driver.find_element(By.LINK_TEXT, <span class="hljs-string">&quot;cheese&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>By Partial Link Text</p>
+<pre><code class="lang-python">&lt;a href=&quot;http://www.google.com/search?q=cheese&quot;&gt;search for cheese&lt;/a&gt;&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">cheese = driver.find_element_by_partial_link_text(<span class="hljs-string">&quot;cheese&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+cheese = driver.find_element(By.PARTIAL_LINK_TEXT, <span class="hljs-string">&quot;cheese&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>By CSS</p>
+<pre><code class="lang-python">&lt;div id=&quot;food&quot;&gt;&lt;span class=&quot;dairy&quot;&gt;milk&lt;/span&gt;&lt;span class=&quot;dairy aged&quot;&gt;cheese&lt;/span&gt;&lt;/div&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">cheese = driver.find_element_by_css_selector(<span class="hljs-string">&quot;#food span.dairy.aged&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+cheese = driver.find_element(By.CSS_SELECTOR, <span class="hljs-string">&quot;#food span.dairy.aged&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>By XPath</p>
+<pre><code class="lang-python">&lt;input type=<span class="hljs-string">&quot;text&quot;</span> name=<span class="hljs-string">&quot;example&quot;</span> /&gt;
+&lt;INPUT type=<span class="hljs-string">&quot;text&quot;</span> name=<span class="hljs-string">&quot;other&quot;</span> /&gt;
+</code></pre>
+<ul>
+<li><p>&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-python">inputs = driver.find_elements_by_xpath(<span class="hljs-string">&quot;//input&quot;</span>)
+------------------------ <span class="hljs-keyword">or</span> -------------------------
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+inputs = driver.find_elements(By.XPATH, <span class="hljs-string">&quot;//input&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x9F20;&#x6807;&#x52A8;&#x4F5C;&#x94FE;">&#x9F20;&#x6807;&#x52A8;&#x4F5C;&#x94FE;</h2>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x518D;&#x9875;&#x9762;&#x4E0A;&#x6A21;&#x62DF;&#x4E00;&#x4E9B;&#x9F20;&#x6807;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x53CC;&#x51FB;&#x3001;&#x53F3;&#x51FB;&#x3001;&#x62D6;&#x62FD;&#x751A;&#x81F3;&#x6309;&#x4F4F;&#x4E0D;&#x52A8;&#x7B49;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5BFC;&#x5165; ActionChains &#x7C7B;&#x6765;&#x505A;&#x5230;&#xFF1A;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">
+<span class="hljs-comment">#&#x5BFC;&#x5165; ActionChains &#x7C7B;</span>
+<span class="hljs-keyword">from</span> selenium.webdriver <span class="hljs-keyword">import</span> ActionChains
+
+<span class="hljs-comment"># &#x9F20;&#x6807;&#x79FB;&#x52A8;&#x5230; ac &#x4F4D;&#x7F6E;</span>
+ac = driver.find_element_by_xpath(<span class="hljs-string">&apos;element&apos;</span>)
+ActionChains(driver).move_to_element(ac).perform()
+
+
+<span class="hljs-comment"># &#x5728; ac &#x4F4D;&#x7F6E;&#x5355;&#x51FB;</span>
+ac = driver.find_element_by_xpath(<span class="hljs-string">&quot;elementA&quot;</span>)
+ActionChains(driver).move_to_element(ac).click(ac).perform()
+
+<span class="hljs-comment"># &#x5728; ac &#x4F4D;&#x7F6E;&#x53CC;&#x51FB;</span>
+ac = driver.find_element_by_xpath(<span class="hljs-string">&quot;elementB&quot;</span>)
+ActionChains(driver).move_to_element(ac).double_click(ac).perform()
+
+<span class="hljs-comment"># &#x5728; ac &#x4F4D;&#x7F6E;&#x53F3;&#x51FB;</span>
+ac = driver.find_element_by_xpath(<span class="hljs-string">&quot;elementC&quot;</span>)
+ActionChains(driver).move_to_element(ac).context_click(ac).perform()
+
+<span class="hljs-comment"># &#x5728; ac &#x4F4D;&#x7F6E;&#x5DE6;&#x952E;&#x5355;&#x51FB;hold&#x4F4F;</span>
+ac = driver.find_element_by_xpath(<span class="hljs-string">&apos;elementF&apos;</span>)
+ActionChains(driver).move_to_element(ac).click_and_hold(ac).perform()
+
+<span class="hljs-comment"># &#x5C06; ac1 &#x62D6;&#x62FD;&#x5230; ac2 &#x4F4D;&#x7F6E;</span>
+ac1 = driver.find_element_by_xpath(<span class="hljs-string">&apos;elementD&apos;</span>)
+ac2 = driver.find_element_by_xpath(<span class="hljs-string">&apos;elementE&apos;</span>)
+ActionChains(driver).drag_and_drop(ac1, ac2).perform()
+</code></pre>
+<h2 id="&#x586B;&#x5145;&#x8868;&#x5355;">&#x586B;&#x5145;&#x8868;&#x5355;</h2>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x600E;&#x6837;&#x5411;&#x6587;&#x672C;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x6587;&#x5B57;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x4F1A;&#x78B0;&#x5230;<code>&lt;select&gt; &lt;/select&gt;</code>&#x6807;&#x7B7E;&#x7684;&#x4E0B;&#x62C9;&#x6846;&#x3002;&#x76F4;&#x63A5;&#x70B9;&#x51FB;&#x4E0B;&#x62C9;&#x6846;&#x4E2D;&#x7684;&#x9009;&#x9879;&#x4E0D;&#x4E00;&#x5B9A;&#x53EF;&#x884C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;status&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control valid&quot;</span> <span class="hljs-attribute">onchange</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;status&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;0&quot;</span>&gt;</span>&#x672A;&#x5BA1;&#x6838;<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>&#x521D;&#x5BA1;&#x901A;&#x8FC7;<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>&#x590D;&#x5BA1;&#x901A;&#x8FC7;<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>&#x5BA1;&#x6838;&#x4E0D;&#x901A;&#x8FC7;<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+</code></pre>
+<p><img src="../images/support.ui.select.png" alt=""></p>
+<p>Selenium&#x4E13;&#x95E8;&#x63D0;&#x4F9B;&#x4E86;Select&#x7C7B;&#x6765;&#x5904;&#x7406;&#x4E0B;&#x62C9;&#x6846;&#x3002;
+&#x5176;&#x5B9E; WebDriver &#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EB; Select &#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x8FD9;&#x4E9B;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5BFC;&#x5165; Select &#x7C7B;</span>
+<span class="hljs-keyword">from</span> selenium.webdriver.support.ui <span class="hljs-keyword">import</span> Select
+
+<span class="hljs-comment"># &#x627E;&#x5230; name &#x7684;&#x9009;&#x9879;&#x5361;</span>
+select = Select(driver.find_element_by_name(<span class="hljs-string">&apos;status&apos;</span>))
+
+<span class="hljs-comment"># </span>
+select.select_by_index(<span class="hljs-number">1</span>)
+select.select_by_value(<span class="hljs-string">&quot;0&quot;</span>)
+select.select_by_visible_text(<span class="hljs-string">u&quot;&#x672A;&#x5BA1;&#x6838;&quot;</span>)
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x662F;&#x4E09;&#x79CD;&#x9009;&#x62E9;&#x4E0B;&#x62C9;&#x6846;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7D22;&#x5F15;&#x6765;&#x9009;&#x62E9;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x503C;&#x6765;&#x9009;&#x62E9;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6587;&#x5B57;&#x6765;&#x9009;&#x62E9;&#x3002;&#x6CE8;&#x610F;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>index &#x7D22;&#x5F15;&#x4ECE; 0 &#x5F00;&#x59CB;</li>
+<li>value&#x662F;option&#x6807;&#x7B7E;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x663E;&#x793A;&#x5728;&#x4E0B;&#x62C9;&#x6846;&#x4E2D;&#x7684;&#x503C;</li>
+<li>visible_text&#x662F;&#x5728;option&#x6807;&#x7B7E;&#x6587;&#x672C;&#x7684;&#x503C;&#xFF0C;&#x662F;&#x663E;&#x793A;&#x5728;&#x4E0B;&#x62C9;&#x6846;&#x7684;&#x503C;</li>
+</ul>
+</blockquote>
+<p>&#x5168;&#x90E8;&#x53D6;&#x6D88;&#x9009;&#x62E9;&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;&#x5F88;&#x7B80;&#x5355;:</p>
+<pre><code class="lang-python">select.deselect_all()
+</code></pre>
+<h2 id="&#x5F39;&#x7A97;&#x5904;&#x7406;">&#x5F39;&#x7A97;&#x5904;&#x7406;</h2>
+<p>&#x5F53;&#x4F60;&#x89E6;&#x53D1;&#x4E86;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x9875;&#x9762;&#x51FA;&#x73B0;&#x4E86;&#x5F39;&#x7A97;&#x63D0;&#x793A;&#xFF0C;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x63D0;&#x793A;&#x6216;&#x8005;&#x83B7;&#x53D6;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">alert = driver.switch_to_alert()
+</code></pre>
+<h2 id="&#x9875;&#x9762;&#x5207;&#x6362;">&#x9875;&#x9762;&#x5207;&#x6362;</h2>
+<p>&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x80AF;&#x5B9A;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x7A97;&#x53E3;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x8981;&#x6709;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x7A97;&#x53E3;&#x7684;&#x5207;&#x6362;&#x3002;&#x5207;&#x6362;&#x7A97;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">driver.switch_to.window(<span class="hljs-string">&quot;this is window name&quot;</span>)
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; window_handles &#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x7A97;&#x53E3;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> handle <span class="hljs-keyword">in</span> driver.window_handles:
+    driver.switch_to_window(handle)
+</code></pre>
+<h2 id="&#x9875;&#x9762;&#x524D;&#x8FDB;&#x548C;&#x540E;&#x9000;">&#x9875;&#x9762;&#x524D;&#x8FDB;&#x548C;&#x540E;&#x9000;</h2>
+<p>&#x64CD;&#x4F5C;&#x9875;&#x9762;&#x7684;&#x524D;&#x8FDB;&#x548C;&#x540E;&#x9000;&#x529F;&#x80FD;&#xFF1A;</p>
+<pre><code class="lang-python">driver.forward()     <span class="hljs-comment">#&#x524D;&#x8FDB;</span>
+driver.back()        <span class="hljs-comment"># &#x540E;&#x9000;</span>
+</code></pre>
+<h2 id="cookies">Cookies</h2>
+<p>&#x83B7;&#x53D6;&#x9875;&#x9762;&#x6BCF;&#x4E2A;Cookies&#x503C;&#xFF0C;&#x7528;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> cookie <span class="hljs-keyword">in</span> driver.get_cookies():
+    <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;%s -&gt; %s&quot;</span> % (cookie[<span class="hljs-string">&apos;name&apos;</span>], cookie[<span class="hljs-string">&apos;value&apos;</span>])
+</code></pre>
+<p>&#x5220;&#x9664;Cookies&#xFF0C;&#x7528;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># By name</span>
+driver.delete_cookie(<span class="hljs-string">&quot;CookieName&quot;</span>)
+
+<span class="hljs-comment"># all</span>
+driver.delete_all_cookies()
+</code></pre>
+<h2 id="&#x9875;&#x9762;&#x7B49;&#x5F85;">&#x9875;&#x9762;&#x7B49;&#x5F85;</h2>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF01;&#xFF01;</p>
+<p>&#x73B0;&#x5728;&#x7684;&#x7F51;&#x9875;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x91C7;&#x7528;&#x4E86; Ajax &#x6280;&#x672F;&#xFF0C;&#x8FD9;&#x6837;&#x7A0B;&#x5E8F;&#x4FBF;&#x4E0D;&#x80FD;&#x786E;&#x5B9A;&#x4F55;&#x65F6;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;&#x51FA;&#x6765;&#x4E86;&#x3002;&#x5982;&#x679C;&#x5B9E;&#x9645;&#x9875;&#x9762;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x5BFC;&#x81F4;&#x67D0;&#x4E2A;dom&#x5143;&#x7D20;&#x8FD8;&#x6CA1;&#x51FA;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E86;&#x8FD9;&#x4E2A;WebElement&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x629B;&#x51FA;NullPointer&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x5143;&#x7D20;&#x5B9A;&#x4F4D;&#x56F0;&#x96BE;&#x800C;&#x4E14;&#x4F1A;&#x63D0;&#x9AD8;&#x4EA7;&#x751F; ElementNotVisibleException &#x7684;&#x6982;&#x7387;&#x3002;&#x6240;&#x4EE5; Selenium &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x7B49;&#x5F85;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x9690;&#x5F0F;&#x7B49;&#x5F85;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x663E;&#x5F0F;&#x7B49;&#x5F85;&#x3002;</p>
+<p>&#x9690;&#x5F0F;&#x7B49;&#x5F85;&#x662F;&#x7B49;&#x5F85;&#x7279;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x663E;&#x5F0F;&#x7B49;&#x5F85;&#x662F;&#x6307;&#x5B9A;&#x67D0;&#x4E00;&#x6761;&#x4EF6;&#x76F4;&#x5230;&#x8FD9;&#x4E2A;&#x6761;&#x4EF6;&#x6210;&#x7ACB;&#x65F6;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</p>
+<h4 id="&#x663E;&#x5F0F;&#x7B49;&#x5F85;">&#x663E;&#x5F0F;&#x7B49;&#x5F85;</h4>
+<p>&#x663E;&#x5F0F;&#x7B49;&#x5F85;&#x6307;&#x5B9A;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x6700;&#x957F;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x3002;&#x5982;&#x679C;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x8FD8;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x4FBF;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x4E86;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> selenium <span class="hljs-keyword">import</span> webdriver
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+<span class="hljs-comment"># WebDriverWait &#x5E93;&#xFF0C;&#x8D1F;&#x8D23;&#x5FAA;&#x73AF;&#x7B49;&#x5F85;</span>
+<span class="hljs-keyword">from</span> selenium.webdriver.support.ui <span class="hljs-keyword">import</span> WebDriverWait
+<span class="hljs-comment"># expected_conditions &#x7C7B;&#xFF0C;&#x8D1F;&#x8D23;&#x6761;&#x4EF6;&#x51FA;&#x53D1;</span>
+<span class="hljs-keyword">from</span> selenium.webdriver.support <span class="hljs-keyword">import</span> expected_conditions <span class="hljs-keyword">as</span> EC
+
+driver = webdriver.Chrome()
+driver.get(<span class="hljs-string">&quot;http://www.xxxxx.com/loading&quot;</span>)
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># &#x9875;&#x9762;&#x4E00;&#x76F4;&#x5FAA;&#x73AF;&#xFF0C;&#x76F4;&#x5230; id=&quot;myDynamicElement&quot; &#x51FA;&#x73B0;</span>
+    element = WebDriverWait(driver, <span class="hljs-number">10</span>).until(
+        EC.presence_of_element_located((By.ID, <span class="hljs-string">&quot;myDynamicElement&quot;</span>))
+    )
+<span class="hljs-keyword">finally</span>:
+    driver.quit()
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5199;&#x53C2;&#x6570;&#xFF0C;&#x7A0B;&#x5E8F;&#x9ED8;&#x8BA4;&#x4F1A; 0.5s &#x8C03;&#x7528;&#x4E00;&#x6B21;&#x6765;&#x67E5;&#x770B;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x672C;&#x6765;&#x5143;&#x7D20;&#x5C31;&#x662F;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5185;&#x7F6E;&#x7684;&#x7B49;&#x5F85;&#x6761;&#x4EF6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x6761;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x5199;&#x67D0;&#x4E9B;&#x7B49;&#x5F85;&#x6761;&#x4EF6;&#x4E86;&#x3002;</p>
+<pre><code>title_is
+title_contains
+presence_of_element_located
+visibility_of_element_located
+visibility_of
+presence_of_all_elements_located
+text_to_be_present_in_element
+text_to_be_present_in_element_value
+frame_to_be_available_and_switch_to_it
+invisibility_of_element_located
+element_to_be_clickable &#x2013; it is Displayed and Enabled.
+staleness_of
+element_to_be_selected
+element_located_to_be_selected
+element_selection_state_to_be
+element_located_selection_state_to_be
+alert_is_present
+</code></pre><h4 id="&#x9690;&#x5F0F;&#x7B49;&#x5F85;">&#x9690;&#x5F0F;&#x7B49;&#x5F85;</h4>
+<p>&#x9690;&#x5F0F;&#x7B49;&#x5F85;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x7B80;&#x5355;&#x5730;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> selenium <span class="hljs-keyword">import</span> webdriver
+
+driver = webdriver.Chrome()
+driver.implicitly_wait(<span class="hljs-number">10</span>) <span class="hljs-comment"># seconds</span>
+driver.get(<span class="hljs-string">&quot;http://www.xxxxx.com/loading&quot;</span>)
+myDynamicElement = driver.find_element_by_id(<span class="hljs-string">&quot;myDynamicElement&quot;</span>)
+</code></pre>
+<p>&#x5F53;&#x7136;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x4E3A;0&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/part03/3.1.html" class="navigation navigation-prev " aria-label="Previous page: 动态HTML介绍"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/part03/3.3.html" class="navigation navigation-next " aria-label="Next page: 案例一：网站模拟登录"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

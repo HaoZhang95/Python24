@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Git单人本地仓库操作 | Git源代码管理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./gityuan-cheng-cang-ku-github.html" />
+    
+    
+    <link rel="prev" href="./gong-zuo-qu-zan-cun-qu-he-cang-ku-qu.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="0.3"
+        data-chapter-title="Git单人本地仓库操作"
+        data-filepath="gitdan-ren-ben-di-cang-ku-cao-zuo.md"
+        data-basepath="."
+        data-revision="Tue Apr 17 2018 02:39:56 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Git管理源代码
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="gitjian-jie.html">
+            
+                
+                    <a href="./gitjian-jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Git简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="gong-zuo-qu-zan-cun-qu-he-cang-ku-qu.html">
+            
+                
+                    <a href="./gong-zuo-qu-zan-cun-qu-he-cang-ku-qu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        工作区暂存区和仓库区
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.3" data-path="gitdan-ren-ben-di-cang-ku-cao-zuo.html">
+            
+                
+                    <a href="./gitdan-ren-ben-di-cang-ku-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        Git单人本地仓库操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="gityuan-cheng-cang-ku-github.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Git远程仓库Github
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="gityuan-cheng-cang-ku-github/chuang-jian-yuan-cheng-chuang-jian.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github/chuang-jian-yuan-cheng-chuang-jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        创建远程仓库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.2" data-path="gityuan-cheng-cang-ku-github/ke-long-xiang-mu.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github/ke-long-xiang-mu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.2.</b>
+                        
+                        克隆项目
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.3" data-path="gityuan-cheng-cang-ku-github/duo-ren-xie-tong-kai-fa.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github/duo-ren-xie-tong-kai-fa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.3.</b>
+                        
+                        多人协同开发
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4" data-path="gityuan-cheng-cang-ku-github/dai-ma-chong-tu.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github/dai-ma-chong-tu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.</b>
+                        
+                        代码冲突
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.5" data-path="gityuan-cheng-cang-ku-github/biao-qian.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github/biao-qian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.5.</b>
+                        
+                        标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.6" data-path="gityuan-cheng-cang-ku-github/fen-zhi.html">
+            
+                
+                    <a href="./gityuan-cheng-cang-ku-github/fen-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.6.</b>
+                        
+                        分支
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Git源代码管理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="git&#x5355;&#x4EBA;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x64CD;&#x4F5C;">Git&#x5355;&#x4EBA;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li>&#x8BFE;&#x7A0B;&#x76EE;&#x6807;&#xFF1A;&#x5B66;&#x4E60;&#x5E38;&#x7528;&#x7684;Git&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;</li>
+<li>&#x63D0;&#x793A;&#xFF1A;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x662F;&#x4E2A;<code>.git</code>&#x9690;&#x85CF;&#x6587;&#x4EF6;</li>
+</ul>
+<blockquote>
+<p>&#x4EE5;&#x4E0B;&#x4E3A;&#x6F14;&#x793A;Git&#x5355;&#x4EBA;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<ul>
+<li><p><strong>1.&#x5B89;&#x88C5;git</strong></p>
+<pre><code>  sudo apt-get install git
+  &#x5BC6;&#x7801;&#xFF1A;chuanzhi
+</code></pre><p>  <img src="images/&#x5B89;&#x88C5;Git.png" alt=""></p>
+</li>
+<li><p><strong>2.&#x67E5;&#x770B;git&#x5B89;&#x88C5;&#x7ED3;&#x679C;</strong></p>
+<pre><code>  git
+</code></pre></li>
+<li><p><strong>3.&#x521B;&#x5EFA;&#x9879;&#x76EE;</strong></p>
+<ul>
+<li><p>&#x5728;&#x684C;&#x9762;&#x521B;&#x5EFA;<code>test</code>&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8868;&#x793A;&#x662F;&#x5DE5;&#x4F5C;&#x9879;&#x76EE;</p>
+<pre><code>  Desktop/test/
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>4.&#x521B;&#x5EFA;&#x672C;&#x5730;&#x4ED3;&#x5E93;</strong></p>
+<ul>
+<li>&#x8FDB;&#x5165;&#x5230;<code>test</code>&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x672C;&#x5730;&#x4ED3;&#x5E93;<code>.git</code></li>
+<li><p>&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x672C;&#x5730;&#x4ED3;&#x5E93;<code>.git</code>&#x662F;&#x4E2A;&#x7A7A;&#x4ED3;&#x5E93;</p>
+<pre><code>  cd Desktop/test/
+  git init
+</code></pre><p><img src="images/&#x521B;&#x5EFA;&#x672C;&#x5730;&#x4ED3;&#x5E93;.png" alt=""></p>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x672C;&#x5730;&#x4ED3;&#x5E93;<code>.git</code>&#x540E;</p>
+<p>  <img src="images/&#x7A7A;&#x4ED3;&#x5E93;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>5.&#x914D;&#x7F6E;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;</strong></p>
+<pre><code>  git config user.name &apos;&#x5F20;&#x4E09;&apos;
+  git config user.email &apos;zhangsan@163.com&apos;
+</code></pre><p>  <img src="images/&#x914D;&#x7F6E;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;.png" alt=""></p>
+<ul>
+<li><p>&#x914D;&#x7F6E;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x540E;</p>
+<p>  <img src="images/&#x914D;&#x7F6E;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x540E;.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x9ED8;&#x8BA4;&#x4E0D;&#x914D;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x91CC;&#x9762;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x90AE;&#x7BB1;
+&#x5168;&#x5C40;git&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF1A;~/.gitconfig</p>
+</blockquote>
+<ul>
+<li><p><strong>6.&#x65B0;&#x5EFA;py&#x6587;&#x4EF6;</strong></p>
+<ul>
+<li><p>&#x5728;&#x9879;&#x76EE;&#x6587;&#x4EF6;<code>test</code>&#x91CC;&#x9762;&#x521B;&#x5EFA;<code>login.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x7248;&#x672C;&#x63A7;&#x5236;&#x6F14;&#x793A;</p>
+<p>  <img src="images/&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x8BE6;&#x60C5;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>7.&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;</strong></p>
+<ul>
+<li>&#x7EA2;&#x8272;&#x8868;&#x793A;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x65B0;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;,&#x90FD;&#x5728;&#x5DE5;&#x4F5C;&#x533A;.</li>
+<li>&#x7EFF;&#x8272;&#x8868;&#x793A;&#x6587;&#x4EF6;&#x5728;&#x6682;&#x5B58;&#x533A;</li>
+<li><p>&#x65B0;&#x5EFA;&#x7684;<code>login.py</code>&#x6587;&#x4EF6;&#x5728;&#x5DE5;&#x4F5C;&#x533A;&#xFF0C;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;&#x5E76;&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;&#x533A;</p>
+<pre><code>git status
+</code></pre><p><img src="images/&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>8.&#x5C06;&#x5DE5;&#x4F5C;&#x533A;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;</strong></p>
+<pre><code>  # &#x6DFB;&#x52A0;&#x9879;&#x76EE;&#x4E2D;&#x6240;&#x6709;&#x6587;&#x4EF6;
+  git add .
+  &#x6216;&#x8005;
+  # &#x6DFB;&#x52A0;&#x6307;&#x5B9A;&#x6587;&#x4EF6;
+  git add login.py
+</code></pre><p>  <img src="images/&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;.png" alt=""></p>
+</li>
+<li><p><strong>9.&#x5C06;&#x6682;&#x5B58;&#x533A;&#x6587;&#x4EF6;&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;&#x533A;</strong></p>
+<ul>
+<li><code>commit</code>&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x6761;&#x7248;&#x672C;&#x8BB0;&#x5F55;</li>
+<li><p><code>-m</code>&#x540E;&#x9762;&#x662F;&#x7248;&#x672C;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;</p>
+<pre><code>git commit -m &apos;&#x7248;&#x672C;&#x63CF;&#x8FF0;&apos;
+</code></pre><p><img src="images/&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;&#x533A;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>10.&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x5728;<code>login.py</code>&#x6587;&#x4EF6;&#x4E2D;&#x7F16;&#x8F91;&#x4EE3;&#x7801;</strong></p>
+<ul>
+<li>&#x4EE3;&#x7801;&#x7F16;&#x8F91;&#x5B8C;&#x6210;&#x540E;&#x5373;&#x53EF;&#x8FDB;&#x884C;<code>add</code>&#x548C;<code>commit</code>&#x64CD;&#x4F5C;</li>
+<li><p>&#x63D0;&#x793A;&#xFF1A;&#x6DFB;&#x52A0;&#x548C;&#x63D0;&#x4EA4;&#x5408;&#x5E76;&#x547D;&#x4EE4;</p>
+<pre><code>  git commit -am &quot;&#x7248;&#x672C;&#x63CF;&#x8FF0;&quot;
+</code></pre></li>
+<li><p>&#x63D0;&#x4EA4;&#x4E24;&#x6B21;&#x4EE3;&#x7801;&#xFF0C;&#x4F1A;&#x6709;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x8BB0;&#x5F55;</p>
+<p>  <img src="images/&#x4E24;&#x6B21;&#x7248;&#x672C;&#x63D0;&#x4EA4;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>11.&#x67E5;&#x770B;&#x5386;&#x53F2;&#x7248;&#x672C;</strong></p>
+<pre><code>  git log
+  &#x6216;&#x8005;
+  git reflog
+</code></pre><p>  <img src="images/&#x67E5;&#x770B;&#x5386;&#x53F2;&#x8BB0;&#x5F55;log.png" alt=""></p>
+</li>
+</ul>
+<blockquote>
+<p>git reflog &#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x652F;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;&#xFF08;&#x5305;&#x62EC;commit&#x548C;reset&#x7684;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x5305;&#x62EC;&#x5DF2;&#x7ECF;&#x88AB;&#x5220;&#x9664;&#x7684;commit&#x8BB0;&#x5F55;&#xFF0C;git log &#x5219;&#x4E0D;&#x80FD;&#x5BDF;&#x770B;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#x4E86;&#x7684;commit&#x8BB0;&#x5F55;</p>
+</blockquote>
+<ul>
+<li><p><strong>12.&#x56DE;&#x9000;&#x7248;&#x672C;</strong></p>
+<ul>
+<li><p><strong>&#x65B9;&#x6848;&#x4E00;&#xFF1A;</strong></p>
+<ul>
+<li><code>HEAD</code>&#x8868;&#x793A;&#x5F53;&#x524D;&#x6700;&#x65B0;&#x7248;&#x672C;</li>
+<li><code>HEAD^</code>&#x8868;&#x793A;&#x5F53;&#x524D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x524D;&#x4E00;&#x4E2A;&#x7248;&#x672C;</li>
+<li><code>HEAD^^</code>&#x8868;&#x793A;&#x5F53;&#x524D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x524D;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#xFF0C;<strong>&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;...</strong></li>
+<li><code>HEAD~1</code>&#x8868;&#x793A;&#x5F53;&#x524D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x524D;&#x4E00;&#x4E2A;&#x7248;&#x672C;</li>
+<li><p><code>HEAD~10</code>&#x8868;&#x793A;&#x5F53;&#x524D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x524D;10&#x4E2A;&#x7248;&#x672C;&#xFF0C;<strong>&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;...</strong></p>
+<pre><code>git reset --hard HEAD^
+</code></pre><p><img src="images/&#x56DE;&#x9000;&#x7248;&#x672C;HEAD.png" alt=""></p>
+<p><img src="images/&#x56DE;&#x9000;&#x7248;&#x672C;&#x540E;HEAD.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x5F53;&#x7248;&#x672C;&#x975E;&#x5E38;&#x591A;&#x65F6;&#x53EF;&#x9009;&#x62E9;&#x7684;&#x65B9;&#x6848;</strong></p>
+<ul>
+<li><p>&#x901A;&#x8FC7;&#x6BCF;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x7248;&#x672C;&#x53F7;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;</p>
+<pre><code>  git reset --hard &#x7248;&#x672C;&#x53F7;
+</code></pre><p>  <img src="images/&#x56DE;&#x9000;&#x7248;&#x672C;&#x7248;&#x672C;&#x53F7;.png" alt=""></p>
+<p>  <img src="images/&#x56DE;&#x9000;&#x7248;&#x672C;&#x540E;&#x7248;&#x672C;&#x53F7;.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>13.&#x64A4;&#x9500;&#x4FEE;&#x6539;</strong></p>
+<ul>
+<li>&#x53EA;&#x80FD;&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x3001;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4EE3;&#x7801;,&#x4E0D;&#x80FD;&#x64A4;&#x9500;&#x4ED3;&#x5E93;&#x533A;&#x7684;&#x4EE3;&#x7801;</li>
+<li><p>&#x64A4;&#x9500;&#x4ED3;&#x5E93;&#x533A;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x56DE;&#x9000;&#x7248;&#x672C;&#x64CD;&#x4F5C;</p>
+<ul>
+<li><p>&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x4EE3;&#x7801;</p>
+<ul>
+<li><p>&#x65B0;&#x52A0;&#x4EE3;&#x7801;<code>num3 = 30</code>&#xFF0C;&#x4E0D;<code>add</code>&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x4FDD;&#x7559;&#x5728;&#x5DE5;&#x4F5C;&#x533A;</p>
+<pre><code>git checkout &#x6587;&#x4EF6;&#x540D;
+</code></pre><p><img src="images/&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x4EE3;&#x7801;&#x524D;.png" alt=""></p>
+<p><img src="images/&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x4EE3;&#x7801;&#x540E;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>&#x64A4;&#x9500;&#x6682;&#x5B58;&#x533A;&#x4EE3;&#x7801;</p>
+<ul>
+<li><p>&#x65B0;&#x52A0;&#x4EE3;&#x7801;<code>num3 = 30</code>&#xFF0C;&#x5E76;<code>add</code>&#x5230;&#x6682;&#x5B58;&#x533A;</p>
+<pre><code># &#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5C06;&#x6682;&#x5B58;&#x533A;&#x4EE3;&#x7801;&#x64A4;&#x9500;&#x5230;&#x5DE5;&#x4F5C;&#x533A;
+git reset HEAD  &#x6587;&#x4EF6;&#x540D;
+# &#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x4EE3;&#x7801;
+git checkout &#x6587;&#x4EF6;&#x540D;
+</code></pre><p><img src="images/&#x64A4;&#x9500;&#x6682;&#x5B58;&#x533A;&#x4EE3;&#x7801;.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>14.&#x5BF9;&#x6BD4;&#x7248;&#x672C;</strong></p>
+<ul>
+<li><p>&#x5BF9;&#x6BD4;&#x7248;&#x672C;&#x5E93;&#x4E0E;&#x5DE5;&#x4F5C;&#x533A;</p>
+<ul>
+<li>&#x65B0;&#x52A0;&#x4EE3;&#x7801;<code>num3 = 30</code>&#xFF0C;&#x4E0D;<code>add</code>&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x4FDD;&#x7559;&#x5728;&#x5DE5;&#x4F5C;&#x533A;</li>
+<li><p><code>git diff HEAD -- login.py</code></p>
+<p>  <img src="images/&#x5BF9;&#x6BD4;&#x7248;&#x672C;&#x5E93;&#x4E0E;&#x5DE5;&#x4F5C;&#x533A;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>&#x5BF9;&#x6BD4;&#x7248;&#x672C;&#x5E93;</p>
+<ul>
+<li>&#x65B0;&#x52A0;&#x4EE3;&#x7801;<code>num3 = 30</code>&#xFF0C;&#x5E76;<code>add</code>&#x5230;&#x6682;&#x5B58;&#x533A;</li>
+<li><p><code>git diff HEAD HEAD^ -- login.py</code></p>
+<p>  <img src="images/&#x5BF9;&#x6BD4;&#x7248;&#x672C;&#x5E93;.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>15.&#x5220;&#x9664;&#x6587;&#x4EF6;</strong>&#xFF1A;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x5206;&#x4E3A;&#x786E;&#x5B9A;&#x5220;&#x9664;&#x548C;&#x8BEF;&#x5220;</p>
+<ul>
+<li><p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x65B0;&#x5EFA;<code>test.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x548C;&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;</p>
+<ul>
+<li><p>&#x786E;&#x5B9A;&#x5220;&#x9664;&#x5904;&#x7406;&#xFF1A;</p>
+<pre><code>  # &#x5220;&#x9664;&#x6587;&#x4EF6;
+  rm &#x6587;&#x4EF6;&#x540D;
+  # git&#x786E;&#x5B9A;&#x5220;&#x9664;&#x6587;&#x4EF6;&#xFF0C;&#x5BF9;&#x6BD4;&#x6DFB;&#x52A0;&#x6587;&#x4EF6;git add 
+  git rm &#x6587;&#x4EF6;&#x540D;
+  # &#x5220;&#x9664;&#x540E;&#x8BB0;&#x5F55;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x7248;&#x672C;
+  git commit -m &apos;&#x5220;&#x9664;&#x63CF;&#x8FF0;&apos;
+</code></pre><p>  <img src="images/&#x786E;&#x5B9A;&#x5220;&#x9664;&#x5904;&#x7406;.png" alt=""></p>
+</li>
+<li><p>&#x8BEF;&#x5220;&#x5904;&#x7406;&#xFF1A;&#x64A4;&#x9500;&#x4FEE;&#x6539;&#x5373;&#x53EF;</p>
+<pre><code>  # &#x5220;&#x9664;&#x6587;&#x4EF6;
+  rm &#x6587;&#x4EF6;&#x540D;
+  # git&#x64A4;&#x9500;&#x4FEE;&#x6539;
+  git checkout -- &#x6587;&#x4EF6;&#x540D;
+</code></pre><p>  <img src="images/&#x8BEF;&#x5220;&#x5904;&#x7406;.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./gong-zuo-qu-zan-cun-qu-he-cang-ku-qu.html" class="navigation navigation-prev " aria-label="Previous page: 工作区暂存区和仓库区"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./gityuan-cheng-cang-ku-github.html" class="navigation navigation-next " aria-label="Next page: Git远程仓库Github"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

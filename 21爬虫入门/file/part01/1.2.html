@@ -1,0 +1,1633 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>(复习)HTTP/HTTPS的请求与响应 | 可选择的IDE和编辑器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/part01/2.0.html" />
+    
+    
+    <link rel="prev" href="../../file/part01/1.1.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.2"
+        data-chapter-title="(复习)HTTP/HTTPS的请求与响应"
+        data-filepath="file/part01/1.2.md"
+        data-basepath="../.."
+        data-revision="Sat Jul 22 2017 18:48:24 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/part01/1.html">
+            
+                
+                    <a href="../../file/part01/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        爬虫原理与数据抓取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/part01/1.1.html">
+            
+                
+                    <a href="../../file/part01/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        (了解)通用爬虫和聚焦爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="file/part01/1.2.html">
+            
+                
+                    <a href="../../file/part01/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        (复习)HTTP/HTTPS的请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/part01/2.0.html">
+            
+                
+                    <a href="../../file/part01/2.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        str和bytes的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/part01/2.1.html">
+            
+                
+                    <a href="../../file/part01/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Requests简单使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="file/part01/2.2.html">
+            
+                
+                    <a href="../../file/part01/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Requests深入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="file/part01/1.3.html">
+            
+                
+                    <a href="../../file/part01/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        HTTP/HTTPS抓包工具-Fiddler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="file/part01/1.4.html">
+            
+                
+                    <a href="../../file/part01/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        参考阅读：urllib模块的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file/part01/1.5.html">
+            
+                
+                    <a href="../../file/part01/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        参考阅读：urllib：GET请求和POST请求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="file/part01/1.6.html">
+            
+                
+                    <a href="../../file/part01/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        参考阅读：urllib：Handler处理器和自定义Opener
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="file/part01/1.9.html">
+            
+                
+                    <a href="../../file/part01/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        参考阅读：编码故事
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/part02/2.html">
+            
+                
+                    <a href="../../file/part02/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        非结构化数据与结构化数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/part02/2.1.html">
+            
+                
+                    <a href="../../file/part02/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        正则表达式re模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/part02/2.2.html">
+            
+                
+                    <a href="../../file/part02/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        案例：使用正则表达式的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="file/part02/2.3.html">
+            
+                
+                    <a href="../../file/part02/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        XPath与lxml类库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/part02/2.4.html">
+            
+                
+                    <a href="../../file/part02/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        案例：使用XPath的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="file/part02/2.7.html">
+            
+                
+                    <a href="../../file/part02/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        JSON模块与JsonPath
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="file/part02/2.8.html">
+            
+                
+                    <a href="../../file/part02/2.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        糗事百科案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="file/part02/2.9.html">
+            
+                
+                    <a href="../../file/part02/2.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        多线程爬虫案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="file/part02/2.5.html">
+            
+                
+                    <a href="../../file/part02/2.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        参考阅读：BeautifulSoup4 解析器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="file/part02/2.6.html">
+            
+                
+                    <a href="../../file/part02/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        参考阅读：案例：使用bs4的爬虫
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/part03/3.html">
+            
+                
+                    <a href="../../file/part03/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        动态HTML处理和机器图像识别
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/part03/3.1.html">
+            
+                
+                    <a href="../../file/part03/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        动态HTML介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="file/part03/3.2.html">
+            
+                
+                    <a href="../../file/part03/3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Selenium与PhantomJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/part03/3.3.html">
+            
+                
+                    <a href="../../file/part03/3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        案例一：网站模拟登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/part03/3.4.html">
+            
+                
+                    <a href="../../file/part03/3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        案例二：动态页面模拟点击
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="file/part03/3.6.html">
+            
+                
+                    <a href="../../file/part03/3.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        机器视觉与Tesseract介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="file/part03/3.7.html">
+            
+                
+                    <a href="../../file/part03/3.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        处理一些格式规范的文字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="file/part03/3.8.html">
+            
+                
+                    <a href="../../file/part03/3.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        尝试对验证码进行机器识别处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="file/part03/3.5.html">
+            
+                
+                    <a href="../../file/part03/3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        参考阅读：执行JavaScript语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="file/part03/3.9.html">
+            
+                
+                    <a href="../../file/part03/3.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        参考阅读：训练Tesseract
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/part04/4.html">
+            
+                
+                    <a href="../../file/part04/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/part04/4.1.html">
+            
+                
+                    <a href="../../file/part04/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        配置安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="file/part04/4.2.html">
+            
+                
+                    <a href="../../file/part04/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        入门案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="file/part04/4.3.html">
+            
+                
+                    <a href="../../file/part04/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Scrapy Shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="file/part04/4.4.html">
+            
+                
+                    <a href="../../file/part04/4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Item Pipeline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="file/part04/4.5.html">
+            
+                
+                    <a href="../../file/part04/4.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="file/part04/4.6.html">
+            
+                
+                    <a href="../../file/part04/4.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="file/part04/4.7.html">
+            
+                
+                    <a href="../../file/part04/4.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Request/Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="file/part04/4.8.html">
+            
+                
+                    <a href="../../file/part04/4.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Downloader Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="file/part04/4.9.html">
+            
+                
+                    <a href="../../file/part04/4.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Settings
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/part05/5.html">
+            
+                
+                    <a href="../../file/part05/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Scrapy实战项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/part05/5.1.html">
+            
+                
+                    <a href="../../file/part05/5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        (案例一)手机App抓包爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/part05/5.2.html">
+            
+                
+                    <a href="../../file/part05/5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        (案例二)阳光热线问政平台爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/part05/5.3.html">
+            
+                
+                    <a href="../../file/part05/5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        (案例三)新浪网分类资讯爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="file/part05/5.4.html">
+            
+                
+                    <a href="../../file/part05/5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        (案例四)Cosplay图片下载器爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="file/part05/5.5.html">
+            
+                
+                    <a href="../../file/part05/5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        (案例五)将数据保存在MongoDB中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="file/part05/5.6.html">
+            
+                
+                    <a href="../../file/part05/5.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        (案例六)三种scrapy模拟登陆策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="file/part05/5.7.html">
+            
+                
+                    <a href="../../file/part05/5.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        附：通过Fiddler进行手机抓包方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/part06/6.html">
+            
+                
+                    <a href="../../file/part06/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        scrapy-redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/part06/6.1.html">
+            
+                
+                    <a href="../../file/part06/6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        源码分析参考：Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/part06/6.2.html">
+            
+                
+                    <a href="../../file/part06/6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        源码分析参考：Dupefilter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="file/part06/6.3.html">
+            
+                
+                    <a href="../../file/part06/6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        源码分析参考：Picklecompat
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="file/part06/6.4.html">
+            
+                
+                    <a href="../../file/part06/6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        源码分析参考：Pipelines
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="file/part06/6.5.html">
+            
+                
+                    <a href="../../file/part06/6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        源码分析参考：Queue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="file/part06/6.6.html">
+            
+                
+                    <a href="../../file/part06/6.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        源码分析参考：Scheduler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="file/part06/6.7.html">
+            
+                
+                    <a href="../../file/part06/6.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        源码分析参考：Spider
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/part07/7.html">
+            
+                
+                    <a href="../../file/part07/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        scrapy-redis实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/part07/7.1.html">
+            
+                
+                    <a href="../../file/part07/7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        源码自带项目说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/part07/7.2.html">
+            
+                
+                    <a href="../../file/part07/7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        有缘网分布式爬虫项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/part07/7.3.html">
+            
+                
+                    <a href="../../file/part07/7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        有缘网分布式爬虫项目2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/part07/7.4.html">
+            
+                
+                    <a href="../../file/part07/7.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        处理Redis里的数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="file/part07/7.5.html">
+            
+                
+                    <a href="../../file/part07/7.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/part07/7.6.html">
+            
+                
+                    <a href="../../file/part07/7.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="file/part07/7.7.html">
+            
+                
+                    <a href="../../file/part07/7.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        IT桔子分布式项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="file/part07/7.8.html">
+            
+                
+                    <a href="../../file/part07/7.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        IT桔子分布式项目2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >可选择的IDE和编辑器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="http&#x548C;https">HTTP&#x548C;HTTPS</h1>
+<p><code>HTTP&#x534F;&#x8BAE;</code>&#xFF08;HyperText Transfer Protocol&#xFF0C;&#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF09;&#xFF1A;&#x662F;&#x4E00;&#x79CD;&#x53D1;&#x5E03;&#x548C;&#x63A5;&#x6536; HTML&#x9875;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><code>HTTPS</code>&#xFF08;Hypertext Transfer Protocol over Secure Socket Layer&#xFF09;&#x7B80;&#x5355;&#x8BB2;&#x662F;HTTP&#x7684;&#x5B89;&#x5168;&#x7248;&#xFF0C;&#x5728;HTTP&#x4E0B;&#x52A0;&#x5165;SSL&#x5C42;&#x3002;</p>
+<p><code>SSL</code>&#xFF08;Secure Sockets Layer &#x5B89;&#x5168;&#x5957;&#x63A5;&#x5C42;&#xFF09;&#x4E3B;&#x8981;&#x7528;&#x4E8E;Web&#x7684;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF0C;&#x5728;&#x4F20;&#x8F93;&#x5C42;&#x5BF9;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x4FDD;&#x969C;&#x5728;Internet&#x4E0A;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x7684;&#x5B89;&#x5168;&#x3002;</p>
+<ul>
+<li><code>HTTP</code>&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;<code>80</code>&#xFF0C;</li>
+<li><code>HTTPS</code>&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;<code>443</code></li>
+</ul>
+<h1 id="http&#x7684;&#x8BF7;&#x6C42;&#x4E0E;&#x54CD;&#x5E94;">HTTP&#x7684;&#x8BF7;&#x6C42;&#x4E0E;&#x54CD;&#x5E94;</h1>
+<p>HTTP&#x901A;&#x4FE1;&#x7531;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1A; <strong>&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x6D88;&#x606F;</strong> &#x4E0E; <strong>&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x6D88;&#x606F;</strong></p>
+<p><img src="../images/02_http_pro.jpg" alt=""></p>
+<h3 id="&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x9001;http&#x8BF7;&#x6C42;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;">&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x9001;HTTP&#x8BF7;&#x6C42;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;</h3>
+<ol>
+<li><p>&#x5F53;&#x7528;&#x6237;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5730;&#x5740;&#x680F;&#x4E2D;&#x8F93;&#x5165;&#x4E00;&#x4E2A;URL&#x5E76;&#x6309;&#x56DE;&#x8F66;&#x952E;&#x4E4B;&#x540E;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x5411;HTTP&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;HTTP&#x8BF7;&#x6C42;&#x3002;HTTP&#x8BF7;&#x6C42;&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x201C;Get&#x201D;&#x548C;&#x201C;Post&#x201D;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;URL <a href="http://www.baidu.com" target="_blank">http://www.baidu.com</a> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x9001;&#x4E00;&#x4E2A;Request&#x8BF7;&#x6C42;&#x53BB;&#x83B7;&#x53D6; <a href="http://www.baidu.com" target="_blank">http://www.baidu.com</a> &#x7684;html&#x6587;&#x4EF6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x628A;Response&#x6587;&#x4EF6;&#x5BF9;&#x8C61;&#x53D1;&#x9001;&#x56DE;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x3002;</p>
+</li>
+<li><p>&#x6D4F;&#x89C8;&#x5668;&#x5206;&#x6790;Response&#x4E2D;&#x7684; HTML&#xFF0C;&#x53D1;&#x73B0;&#x5176;&#x4E2D;&#x5F15;&#x7528;&#x4E86;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;Images&#x6587;&#x4EF6;&#xFF0C;CSS&#x6587;&#x4EF6;&#xFF0C;JS&#x6587;&#x4EF6;&#x3002; &#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x81EA;&#x52A8;&#x518D;&#x6B21;&#x53D1;&#x9001;Request&#x53BB;&#x83B7;&#x53D6;&#x56FE;&#x7247;&#xFF0C;CSS&#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x8005;JS&#x6587;&#x4EF6;&#x3002;</p>
+</li>
+<li><p>&#x5F53;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x90FD;&#x4E0B;&#x8F7D;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x7F51;&#x9875;&#x4F1A;&#x6839;&#x636E;HTML&#x8BED;&#x6CD5;&#x7ED3;&#x6784;&#xFF0C;&#x5B8C;&#x6574;&#x7684;&#x663E;&#x793A;&#x51FA;&#x6765;&#x4E86;&#x3002;</p>
+</li>
+</ol>
+<p>URL&#xFF08;Uniform / Universal Resource Locator&#x7684;&#x7F29;&#x5199;&#xFF09;&#xFF1A;&#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x5B9A;&#x4F4D;&#x7B26;&#xFF0C;&#x662F;&#x7528;&#x4E8E;&#x5B8C;&#x6574;&#x5730;&#x63CF;&#x8FF0;Internet&#x4E0A;&#x7F51;&#x9875;&#x548C;&#x5176;&#x4ED6;&#x8D44;&#x6E90;&#x7684;&#x5730;&#x5740;&#x7684;&#x4E00;&#x79CD;&#x6807;&#x8BC6;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><img src="../images/01-httpstruct.jpg" alt=""></p>
+<p>&#x57FA;&#x672C;&#x683C;&#x5F0F;&#xFF1A;<code>scheme://host[:port#]/path/&#x2026;/[?query-string][#anchor]</code></p>
+<ul>
+<li>scheme&#xFF1A;&#x534F;&#x8BAE;(&#x4F8B;&#x5982;&#xFF1A;http, https, ftp)</li>
+<li>host&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x5730;&#x5740;&#x6216;&#x8005;&#x57DF;&#x540D;</li>
+<li>port#&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#xFF08;&#x5982;&#x679C;&#x662F;&#x8D70;&#x534F;&#x8BAE;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#xFF0C;&#x7F3A;&#x7701;&#x7AEF;&#x53E3;80&#xFF09;</li>
+<li>path&#xFF1A;&#x8BBF;&#x95EE;&#x8D44;&#x6E90;&#x7684;&#x8DEF;&#x5F84;</li>
+<li>query-string&#xFF1A;&#x53C2;&#x6570;&#xFF0C;&#x53D1;&#x9001;&#x7ED9;http&#x670D;&#x52A1;&#x5668;&#x7684;&#x6570;&#x636E;</li>
+<li>anchor&#xFF1A;&#x951A;&#xFF08;&#x8DF3;&#x8F6C;&#x5230;&#x7F51;&#x9875;&#x7684;&#x6307;&#x5B9A;&#x951A;&#x70B9;&#x4F4D;&#x7F6E;&#xFF09;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<ul>
+<li><p><a href="ftp://192.168.0.116:8080/index" target="_blank">ftp://192.168.0.116:8080/index</a></p>
+</li>
+<li><p><a href="http://www.baidu.com" target="_blank">http://www.baidu.com</a></p>
+</li>
+<li><p><a href="http://item.jd.com/11936238.html#product-detail" target="_blank">http://item.jd.com/11936238.html#product-detail</a></p>
+</li>
+</ul>
+<h1 id="&#x5BA2;&#x6237;&#x7AEF;http&#x8BF7;&#x6C42;">&#x5BA2;&#x6237;&#x7AEF;HTTP&#x8BF7;&#x6C42;</h1>
+<p>URL&#x53EA;&#x662F;&#x6807;&#x8BC6;&#x8D44;&#x6E90;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x800C;HTTP&#x662F;&#x7528;&#x6765;&#x63D0;&#x4EA4;&#x548C;&#x83B7;&#x53D6;&#x8D44;&#x6E90;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4E00;&#x4E2A;HTTP&#x8BF7;&#x6C42;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BF7;&#x6C42;&#x6D88;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;</p>
+<p><code>&#x8BF7;&#x6C42;&#x884C;</code>&#x3001;<code>&#x8BF7;&#x6C42;&#x5934;&#x90E8;</code>&#x3001;<code>&#x7A7A;&#x884C;</code>&#x3001;<code>&#x8BF7;&#x6C42;&#x6570;&#x636E;</code></p>
+<p>&#x56DB;&#x4E2A;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x4E0B;&#x56FE;&#x7ED9;&#x51FA;&#x4E86;&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#x7684;&#x4E00;&#x822C;&#x683C;&#x5F0F;&#x3002;</p>
+<p><img src="../images/01_request.png" alt=""></p>
+<h5 id="&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;http&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;HTTP&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-sh">GET https://www.baidu.com/ HTTP/<span class="hljs-number">1.1</span>
+Host: www.baidu.com
+Connection: keep-alive
+Upgrade-Insecure-Requests: <span class="hljs-number">1</span>
+User-Agent: Mozilla/<span class="hljs-number">5.0</span> (Windows NT <span class="hljs-number">10.0</span>; W<span class="hljs-keyword">in</span>64; x64) AppleWebKit/<span class="hljs-number">537.36</span> (KHTML, like Gecko) Chrome/<span class="hljs-number">54.0</span>.<span class="hljs-number">2840.99</span> Safari/<span class="hljs-number">537.36</span>
+Accept: text/html,application/xhtml+xml,application/xml;q=<span class="hljs-number">0.9</span>,image/webp,*/*;q=<span class="hljs-number">0.8</span>
+Referer: http://www.baidu.com/
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: zh-CN,zh;q=<span class="hljs-number">0.8</span>,en;q=<span class="hljs-number">0.6</span>
+Cookie: BAIDUID=<span class="hljs-number">04</span>E4001F34EA74AD4601512DD3C41A7B:FG=<span class="hljs-number">1</span>; BIDUPSID=<span class="hljs-number">04</span>E4001F34EA74AD4601512DD3C41A7B; PSTM=<span class="hljs-number">1470329258</span>; MCITY=-<span class="hljs-number">343</span>%<span class="hljs-number">3</span>A340%<span class="hljs-number">3</span>A; BDUSS=nF0MVFiMTVLcUh-Q2MxQ0M3STZGQUZ4N2hBa1FFRkIzUDI3QlBCZjg5cFdOd1pZQVFBQUFBJCQAAAAAAAAAAAEAAADpLvgG0KGyvLrcyfrG-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFaq3ldWqt5XN; H_PS_PSSID=<span class="hljs-number">1447</span>_18240_21105_21386_21454_21409_21554; BD_UPN=<span class="hljs-number">12314753</span>; sug=<span class="hljs-number">3</span>; sugstore=<span class="hljs-number">0</span>; ORIGIN=<span class="hljs-number">0</span>; bdime=<span class="hljs-number">0</span>; H_PS_645EC=<span class="hljs-number">7</span>e2ad3QHl181NSPbFbd7PRUCE1LlufzxrcFmwY<span class="hljs-keyword">in</span>0E6b%<span class="hljs-number">2</span>BW8bbTMKHZbDP0g; BDSVRTM=<span class="hljs-number">0</span>
+</code></pre>
+<h2 id="&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;">&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;</h2>
+<p><code>GET https://www.baidu.com/ HTTP/1.1</code></p>
+<p>&#x6839;&#x636E;HTTP&#x6807;&#x51C6;&#xFF0C;HTTP&#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>HTTP 0.9&#xFF1A;&#x53EA;&#x6709;&#x57FA;&#x672C;&#x7684;&#x6587;&#x672C; GET &#x529F;&#x80FD;&#x3002;</p>
+<p>HTTP 1.0&#xFF1A;&#x5B8C;&#x5584;&#x7684;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x5C06;&#x534F;&#x8BAE;&#x8865;&#x5145;&#x5B8C;&#x6574;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x79CD;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF1A; GET, POST &#x548C; HEAD&#x65B9;&#x6CD5;&#x3002;</p>
+<p>HTTP 1.1&#xFF1A;&#x5728; 1.0 &#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#xFF0C;&#x65B0;&#x589E;&#x4E86;&#x4E94;&#x79CD;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF1A;OPTIONS, PUT, DELETE, TRACE &#x548C; CONNECT &#x65B9;&#x6CD5;&#x3002;</p>
+<p>HTTP 2.0&#xFF08;&#x672A;&#x666E;&#x53CA;&#xFF09;&#xFF1A;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x9996;&#x90E8;&#x7684;&#x5B9A;&#x4E49;&#x57FA;&#x672C;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#xFF0C;&#x53EA;&#x662F;&#x6240;&#x6709;&#x9996;&#x90E8;&#x952E;&#x5FC5;&#x987B;&#x5168;&#x90E8;&#x5C0F;&#x5199;&#xFF0C;&#x800C;&#x4E14;&#x8BF7;&#x6C42;&#x884C;&#x8981;&#x72EC;&#x7ACB;&#x4E3A; :method&#x3001;:scheme&#x3001;:host&#x3001;:path&#x8FD9;&#x4E9B;&#x952E;&#x503C;&#x5BF9;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5E8F;&#x53F7;</th>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GET</td>
+<td>&#x8BF7;&#x6C42;&#x6307;&#x5B9A;&#x7684;&#x9875;&#x9762;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5B9E;&#x4F53;&#x4E3B;&#x4F53;&#x3002;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HEAD</td>
+<td>&#x7C7B;&#x4F3C;&#x4E8E;get&#x8BF7;&#x6C42;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x8FD4;&#x56DE;&#x7684;&#x54CD;&#x5E94;&#x4E2D;&#x6CA1;&#x6709;&#x5177;&#x4F53;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x62A5;&#x5934;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>POST</td>
+<td>&#x5411;&#x6307;&#x5B9A;&#x8D44;&#x6E90;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#xFF08;&#x4F8B;&#x5982;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x6216;&#x8005;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x6570;&#x636E;&#x88AB;&#x5305;&#x542B;&#x5728;&#x8BF7;&#x6C42;&#x4F53;&#x4E2D;&#x3002;POST&#x8BF7;&#x6C42;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x65B0;&#x7684;&#x8D44;&#x6E90;&#x7684;&#x5EFA;&#x7ACB;&#x548C;/&#x6216;&#x5DF2;&#x6709;&#x8D44;&#x6E90;&#x7684;&#x4FEE;&#x6539;&#x3002;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PUT</td>
+<td>&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x5668;&#x4F20;&#x9001;&#x7684;&#x6570;&#x636E;&#x53D6;&#x4EE3;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x6863;&#x7684;&#x5185;&#x5BB9;&#x3002;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>DELETE</td>
+<td>&#x8BF7;&#x6C42;&#x670D;&#x52A1;&#x5668;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x9875;&#x9762;&#x3002;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CONNECT</td>
+<td>HTTP/1.1&#x534F;&#x8BAE;&#x4E2D;&#x9884;&#x7559;&#x7ED9;&#x80FD;&#x591F;&#x5C06;&#x8FDE;&#x63A5;&#x6539;&#x4E3A;&#x7BA1;&#x9053;&#x65B9;&#x5F0F;&#x7684;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>OPTIONS</td>
+<td>&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x7AEF;&#x67E5;&#x770B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6027;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>TRACE</td>
+<td>&#x56DE;&#x663E;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6D4B;&#x8BD5;&#x6216;&#x8BCA;&#x65AD;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="http&#x8BF7;&#x6C42;&#x4E3B;&#x8981;&#x5206;&#x4E3A;get&#x548C;post&#x4E24;&#x79CD;&#x65B9;&#x6CD5;">HTTP&#x8BF7;&#x6C42;&#x4E3B;&#x8981;&#x5206;&#x4E3A;<code>Get</code>&#x548C;<code>Post</code>&#x4E24;&#x79CD;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><p>GET&#x662F;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x83B7;&#x53D6;&#x6570;&#x636E;&#xFF0C;POST&#x662F;&#x5411;&#x670D;&#x52A1;&#x5668;&#x4F20;&#x9001;&#x6570;&#x636E;</p>
+</li>
+<li><p>GET&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x663E;&#x793A;&#xFF0C;&#x90FD;&#x663E;&#x793A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7F51;&#x5740;&#x4E0A;&#xFF0C;HTTP&#x670D;&#x52A1;&#x5668;&#x6839;&#x636E;&#x8BE5;&#x8BF7;&#x6C42;&#x6240;&#x5305;&#x542B;URL&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x6765;&#x4EA7;&#x751F;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#xFF0C;&#x5373;&#x201C;Get&#x201D;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x662F;URL&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;
+  &#x4F8B;&#x5982;&#xFF1A; <code>http://www.baidu.com/s?wd=Chinese</code></p>
+</li>
+<li><p>POST&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x5728;&#x8BF7;&#x6C42;&#x4F53;&#x5F53;&#x4E2D;&#xFF0C;&#x6D88;&#x606F;&#x957F;&#x5EA6;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x800C;&#x4E14;&#x4EE5;&#x9690;&#x5F0F;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x53D1;&#x9001;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x6765;&#x5411;HTTP&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4EA4;&#x91CF;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x6570;&#x636E;&#xFF08;&#x6BD4;&#x5982;&#x8BF7;&#x6C42;&#x4E2D;&#x5305;&#x542B;&#x8BB8;&#x591A;&#x53C2;&#x6570;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x64CD;&#x4F5C;&#x7B49;&#xFF09;&#xFF0C;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x5305;&#x542B;&#x5728;&#x201C;Content-Type&#x201D;&#x6D88;&#x606F;&#x5934;&#x91CC;&#xFF0C;&#x6307;&#x660E;&#x8BE5;&#x6D88;&#x606F;&#x4F53;&#x7684;&#x5A92;&#x4F53;&#x7C7B;&#x578B;&#x548C;&#x7F16;&#x7801;&#xFF0C;</p>
+</li>
+</ul>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x907F;&#x514D;&#x4F7F;&#x7528;Get&#x65B9;&#x5F0F;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#xFF0C;&#x56E0;&#x4E3A;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x3002; &#x6BD4;&#x5982;&#x8BF4;&#x5728;&#x767B;&#x9646;&#x8868;&#x5355;&#x4E2D;&#x7528;Get&#x65B9;&#x5F0F;&#xFF0C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x5C06;&#x5728;&#x5730;&#x5740;&#x680F;&#x4E2D;&#x66B4;&#x9732;&#x65E0;&#x9057;&#x3002;</strong></p>
+<h3 id="&#x5E38;&#x7528;&#x7684;&#x8BF7;&#x6C42;&#x62A5;&#x5934;">&#x5E38;&#x7528;&#x7684;&#x8BF7;&#x6C42;&#x62A5;&#x5934;</h3>
+<h3 id="1-host-&#x4E3B;&#x673A;&#x548C;&#x7AEF;&#x53E3;&#x53F7;">1. Host (&#x4E3B;&#x673A;&#x548C;&#x7AEF;&#x53E3;&#x53F7;)</h3>
+<p>Host&#xFF1A;&#x5BF9;&#x5E94;&#x7F51;&#x5740;URL&#x4E2D;&#x7684;Web&#x540D;&#x79F0;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x88AB;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x7684;Internet&#x4E3B;&#x673A;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x901A;&#x5E38;&#x5C5E;&#x4E8E;URL&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<h3 id="2-connection-&#x94FE;&#x63A5;&#x7C7B;&#x578B;">2. Connection (&#x94FE;&#x63A5;&#x7C7B;&#x578B;)</h3>
+<p>Connection&#xFF1A;&#x8868;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x8FDE;&#x63A5;&#x7C7B;&#x578B;</p>
+<ol>
+<li><p>Client &#x53D1;&#x8D77;&#x4E00;&#x4E2A;&#x5305;&#x542B; <code>Connection:keep-alive</code> &#x7684;&#x8BF7;&#x6C42;&#xFF0C;HTTP/1.1&#x4F7F;&#x7528; <code>keep-alive</code> &#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+</li>
+<li><p>Server&#x6536;&#x5230;&#x8BF7;&#x6C42;&#x540E;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C; Server &#x652F;&#x6301; keep-alive&#xFF0C;&#x56DE;&#x590D;&#x4E00;&#x4E2A;&#x5305;&#x542B; Connection:keep-alive &#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x4E0D;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#xFF1B;</li>
+<li>&#x5982;&#x679C; Server &#x4E0D;&#x652F;&#x6301; keep-alive&#xFF0C;&#x56DE;&#x590D;&#x4E00;&#x4E2A;&#x5305;&#x542B; Connection:close &#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x5982;&#x679C;client&#x6536;&#x5230;&#x5305;&#x542B; <code>Connection:keep-alive</code> &#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x53D1;&#x9001;&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x76F4;&#x5230;&#x4E00;&#x65B9;&#x4E3B;&#x52A8;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+</ol>
+<p><strong>keep-alive&#x5728;&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#x80FD;&#x591F;&#x91CD;&#x7528;&#x8FDE;&#x63A5;&#xFF0C;&#x51CF;&#x5C11;&#x8D44;&#x6E90;&#x6D88;&#x8017;&#xFF0C;&#x7F29;&#x77ED;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;(&#x6BD4;&#x5982;&#x4E00;&#x4E2A;HTML&#x6587;&#x4EF6;&#x548C;&#x76F8;&#x5173;&#x7684;&#x56FE;&#x5F62;&#x6587;&#x4EF6;)&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x6B21;&#x90FD;&#x53BB;&#x8BF7;&#x6C42;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x3002;</strong></p>
+<h3 id="3-upgradeinsecurerequests-&#x5347;&#x7EA7;&#x4E3A;https&#x8BF7;&#x6C42;">3. Upgrade-Insecure-Requests (&#x5347;&#x7EA7;&#x4E3A;HTTPS&#x8BF7;&#x6C42;)</h3>
+<p>Upgrade-Insecure-Requests&#xFF1A;&#x5347;&#x7EA7;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x4F1A;&#x5728;&#x52A0;&#x8F7D; http &#x8D44;&#x6E90;&#x65F6;&#x81EA;&#x52A8;&#x66FF;&#x6362;&#x6210; https &#x8BF7;&#x6C42;&#xFF0C;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x518D;&#x663E;&#x793A;https&#x9875;&#x9762;&#x4E2D;&#x7684;http&#x8BF7;&#x6C42;&#x8B66;&#x62A5;&#x3002;</p>
+<p><strong><em>HTTPS &#x662F;&#x4EE5;&#x5B89;&#x5168;&#x4E3A;&#x76EE;&#x6807;&#x7684; HTTP &#x901A;&#x9053;&#xFF0C;&#x6240;&#x4EE5;&#x5728; HTTPS &#x627F;&#x8F7D;&#x7684;&#x9875;&#x9762;&#x4E0A;&#x4E0D;&#x5141;&#x8BB8;&#x51FA;&#x73B0; HTTP &#x8BF7;&#x6C42;&#xFF0C;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x5C31;&#x662F;&#x63D0;&#x793A;&#x6216;&#x62A5;&#x9519;&#x3002;</em></strong></p>
+<h3 id="4-useragent-&#x6D4F;&#x89C8;&#x5668;&#x540D;&#x79F0;">4. User-Agent (&#x6D4F;&#x89C8;&#x5668;&#x540D;&#x79F0;)</h3>
+<p>User-Agent&#xFF1A;&#x662F;&#x5BA2;&#x6237;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4EE5;&#x540E;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x3002;</p>
+<h3 id="5-accept-&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x7C7B;&#x578B;">5. Accept (&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x7C7B;&#x578B;)</h3>
+<p>Accept&#xFF1A;&#x6307;&#x6D4F;&#x89C8;&#x5668;&#x6216;&#x5176;&#x4ED6;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;MIME&#xFF08;Multipurpose Internet Mail Extensions&#xFF08;&#x591A;&#x7528;&#x9014;&#x4E92;&#x8054;&#x7F51;&#x90AE;&#x4EF6;&#x6269;&#x5C55;&#xFF09;&#xFF09;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B83;&#x5224;&#x65AD;&#x5E76;&#x8FD4;&#x56DE;&#x9002;&#x5F53;&#x7684;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x3002;</p>
+<h5 id="&#x4E3E;&#x4F8B;&#xFF1A;">&#x4E3E;&#x4F8B;&#xFF1A;</h5>
+<p><code>Accept: */*</code>&#xFF1A;&#x8868;&#x793A;&#x4EC0;&#x4E48;&#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x3002;</p>
+<p><code>Accept&#xFF1A;image/gif</code>&#xFF1A;&#x8868;&#x660E;&#x5BA2;&#x6237;&#x7AEF;&#x5E0C;&#x671B;&#x63A5;&#x53D7;GIF&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x7684;&#x8D44;&#x6E90;&#xFF1B;</p>
+<p><code>Accept&#xFF1A;text/html</code>&#xFF1A;&#x8868;&#x660E;&#x5BA2;&#x6237;&#x7AEF;&#x5E0C;&#x671B;&#x63A5;&#x53D7;html&#x6587;&#x672C;&#x3002;</p>
+<p><code>Accept: text/html, application/xhtml+xml;q=0.9, image/*;q=0.8</code>&#xFF1A;&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x7684; MIME &#x7C7B;&#x578B;&#x5206;&#x522B;&#x662F; html&#x6587;&#x672C;&#x3001;xhtml&#x548C;xml&#x6587;&#x6863;&#x3001;&#x6240;&#x6709;&#x7684;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x8D44;&#x6E90;&#x3002;</p>
+<p><strong><em>q&#x662F;&#x6743;&#x91CD;&#x7CFB;&#x6570;&#xFF0C;&#x8303;&#x56F4; 0 =&lt; q &lt;= 1&#xFF0C;q &#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x8BF7;&#x6C42;&#x8D8A;&#x503E;&#x5411;&#x4E8E;&#x83B7;&#x5F97;&#x5176;&#x201C;;&#x201D;&#x4E4B;&#x524D;&#x7684;&#x7C7B;&#x578B;&#x8868;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x82E5;&#x6CA1;&#x6709;&#x6307;&#x5B9A;q&#x503C;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;1&#xFF0C;&#x6309;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6392;&#x5E8F;&#x987A;&#x5E8F;&#xFF1B;&#x82E5;&#x88AB;&#x8D4B;&#x503C;&#x4E3A;0&#xFF0C;&#x5219;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x63A5;&#x53D7;&#x6B64;&#x5185;&#x5BB9;&#x7C7B;&#x578B;&#x3002;</em></strong></p>
+<p><strong><em>Text&#xFF1A;&#x7528;&#x4E8E;&#x6807;&#x51C6;&#x5316;&#x5730;&#x8868;&#x793A;&#x7684;&#x6587;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x6587;&#x672C;&#x6D88;&#x606F;&#x53EF;&#x4EE5;&#x662F;&#x591A;&#x79CD;&#x5B57;&#x7B26;&#x96C6;&#x548C;&#x6216;&#x8005;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#xFF1B;Application&#xFF1A;&#x7528;&#x4E8E;&#x4F20;&#x8F93;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6570;&#x636E;&#x6216;&#x8005;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;<a href="http://blog.sina.com.cn/s/blog_866e403f010179f1.html" target="_blank">&#x8BE6;&#x7EC6;&#x8BF7;&#x70B9;&#x51FB;</a></em></strong></p>
+<h3 id="6-referer-&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x5904;">6. Referer (&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x5904;)</h3>
+<p>Referer&#xFF1A;&#x8868;&#x660E;&#x4EA7;&#x751F;&#x8BF7;&#x6C42;&#x7684;&#x7F51;&#x9875;&#x6765;&#x81EA;&#x4E8E;&#x54EA;&#x4E2A;URL&#xFF0C;&#x7528;&#x6237;&#x662F;&#x4ECE;&#x8BE5; Referer&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x5230;&#x5F53;&#x524D;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x3002;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8DDF;&#x8E2A;Web&#x8BF7;&#x6C42;&#x6765;&#x81EA;&#x54EA;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x662F;&#x4ECE;&#x4EC0;&#x4E48;&#x7F51;&#x7AD9;&#x6765;&#x7684;&#x7B49;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x9047;&#x5230;&#x4E0B;&#x8F7D;&#x67D0;&#x7F51;&#x7AD9;&#x56FE;&#x7247;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x7684;referer&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x4E0B;&#x8F7D;&#x56FE;&#x7247;&#xFF0C;&#x90A3;&#x662F;&#x56E0;&#x4E3A;&#x4EBA;&#x5BB6;&#x505A;&#x4E86;&#x9632;&#x76D7;&#x94FE;&#xFF0C;&#x539F;&#x7406;&#x5C31;&#x662F;&#x6839;&#x636E;referer&#x53BB;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x672C;&#x7F51;&#x7AD9;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x5219;&#x62D2;&#x7EDD;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#xFF1B;</p>
+<h3 id="7-acceptencoding&#xFF08;&#x6587;&#x4EF6;&#x7F16;&#x89E3;&#x7801;&#x683C;&#x5F0F;&#xFF09;">7. Accept-Encoding&#xFF08;&#x6587;&#x4EF6;&#x7F16;&#x89E3;&#x7801;&#x683C;&#x5F0F;&#xFF09;</h3>
+<p>Accept-Encoding&#xFF1A;&#x6307;&#x51FA;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#x3002;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#x4E8E;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x5B83;&#x662F;&#x4E3A;&#x4E86;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x5E76;&#x52A0;&#x901F;&#x6587;&#x4EF6;&#x4F20;&#x9012;&#x901F;&#x5EA6;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x63A5;&#x6536;&#x5230;Web&#x54CD;&#x5E94;&#x4E4B;&#x540E;&#x5148;&#x89E3;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x8BB8;&#x591A;&#x60C5;&#x5F62;&#x4E0B;&#x8FD9;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x5927;&#x91CF;&#x7684;&#x4E0B;&#x8F7D;&#x65F6;&#x95F4;&#x3002;</p>
+<h5 id="&#x4E3E;&#x4F8B;&#xFF1A;acceptencodinggzipq10-identity-q05-q0">&#x4E3E;&#x4F8B;&#xFF1A;Accept-Encoding:gzip;q=1.0, identity; q=0.5, *;q=0</h5>
+<p>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;Encoding&#x540C;&#x65F6;&#x5339;&#x914D;, &#x6309;&#x7167;q&#x503C;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x672C;&#x4F8B;&#x4E2D;&#x6309;&#x987A;&#x5E8F;&#x652F;&#x6301; gzip, identity&#x538B;&#x7F29;&#x7F16;&#x7801;&#xFF0C;&#x652F;&#x6301;gzip&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x8FD4;&#x56DE;&#x7ECF;&#x8FC7;gzip&#x7F16;&#x7801;&#x7684;HTML&#x9875;&#x9762;&#x3002;
+<strong>&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x4E2D;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x57DF;&#x670D;&#x52A1;&#x5668;&#x5047;&#x5B9A;&#x5BA2;&#x6237;&#x7AEF;&#x5BF9;&#x5404;&#x79CD;&#x5185;&#x5BB9;&#x7F16;&#x7801;&#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x3002;</strong></p>
+<h3 id="8-acceptlanguage&#xFF08;&#x8BED;&#x8A00;&#x79CD;&#x7C7B;&#xFF09;">8. Accept-Language&#xFF08;&#x8BED;&#x8A00;&#x79CD;&#x7C7B;&#xFF09;</h3>
+<p>Accept-Langeuage&#xFF1A;&#x6307;&#x51FA;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x8BED;&#x8A00;&#x79CD;&#x7C7B;&#xFF0C;&#x5982;en&#x6216;en-us&#x6307;&#x82F1;&#x8BED;&#xFF0C;zh&#x6216;&#x8005;zh-cn&#x6307;&#x4E2D;&#x6587;&#xFF0C;&#x5F53;&#x670D;&#x52A1;&#x5668;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x4EE5;&#x4E0A;&#x7684;&#x8BED;&#x8A00;&#x7248;&#x672C;&#x65F6;&#x8981;&#x7528;&#x5230;&#x3002;</p>
+<h3 id="9-acceptcharset&#xFF08;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF09;">9. Accept-Charset&#xFF08;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF09;</h3>
+<p>Accept-Charset&#xFF1A;&#x6307;&#x51FA;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x3002;</p>
+<h5 id="&#x4E3E;&#x4F8B;&#xFF1A;acceptcharsetiso88591gb2312utf8">&#x4E3E;&#x4F8B;&#xFF1A;Accept-Charset:iso-8859-1,gb2312,utf-8</h5>
+<ul>
+<li>ISO8859-1&#xFF1A;&#x901A;&#x5E38;&#x53EB;&#x505A;Latin-1&#x3002;Latin-1&#x5305;&#x62EC;&#x4E86;&#x4E66;&#x5199;&#x6240;&#x6709;&#x897F;&#x65B9;&#x6B27;&#x6D32;&#x8BED;&#x8A00;&#x4E0D;&#x53EF;&#x7F3A;&#x5C11;&#x7684;&#x9644;&#x52A0;&#x5B57;&#x7B26;&#xFF0C;&#x82F1;&#x6587;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;ISO-8859-1.</li>
+<li>gb2312&#xFF1A;&#x6807;&#x51C6;&#x7B80;&#x4F53;&#x4E2D;&#x6587;&#x5B57;&#x7B26;&#x96C6;;</li>
+<li>utf-8&#xFF1A;UNICODE &#x7684;&#x4E00;&#x79CD;&#x53D8;&#x957F;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x591A;&#x79CD;&#x8BED;&#x8A00;&#x6587;&#x672C;&#x663E;&#x793A;&#x95EE;&#x9898;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x5E94;&#x7528;&#x56FD;&#x9645;&#x5316;&#x548C;&#x672C;&#x5730;&#x5316;&#x3002;</li>
+</ul>
+<p><strong>&#x5982;&#x679C;&#x5728;&#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x4E2D;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x57DF;&#xFF0C;&#x7F3A;&#x7701;&#x662F;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x96C6;&#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x3002;</strong></p>
+<h3 id="10-cookie-&#xFF08;cookie&#xFF09;">10. Cookie &#xFF08;Cookie&#xFF09;</h3>
+<p>Cookie&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;Cookie&#x3002;Cookie&#x662F;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5BC4;&#x5B58;&#x7684;&#x5C0F;&#x578B;&#x6570;&#x636E;&#x4F53;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x8BB0;&#x8F7D;&#x548C;&#x670D;&#x52A1;&#x5668;&#x76F8;&#x5173;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x4F1A;&#x8BDD;&#x529F;&#x80FD;&#xFF0C;&#x4EE5;&#x540E;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x3002;</p>
+<h3 id="11-contenttype-post&#x6570;&#x636E;&#x7C7B;&#x578B;">11. Content-Type (POST&#x6570;&#x636E;&#x7C7B;&#x578B;)</h3>
+<p>Content-Type&#xFF1A;POST&#x8BF7;&#x6C42;&#x91CC;&#x7528;&#x6765;&#x8868;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x7C7B;&#x578B;&#x3002;</p>
+<h5 id="&#x4E3E;&#x4F8B;&#xFF1A;contenttype--textxml-charsetgb2312&#xFF1A;">&#x4E3E;&#x4F8B;&#xFF1A;Content-Type = Text/XML; charset=gb2312&#xFF1A;</h5>
+<p>&#x6307;&#x660E;&#x8BE5;&#x8BF7;&#x6C42;&#x7684;&#x6D88;&#x606F;&#x4F53;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x7684;XML&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x91C7;&#x7528;&#x201C;gb2312&#x201D;&#x3002;</p>
+<h2 id="&#x670D;&#x52A1;&#x7AEF;http&#x54CD;&#x5E94;">&#x670D;&#x52A1;&#x7AEF;HTTP&#x54CD;&#x5E94;</h2>
+<p>HTTP&#x54CD;&#x5E94;&#x4E5F;&#x7531;&#x56DB;&#x4E2A;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;
+<code>&#x72B6;&#x6001;&#x884C;</code>&#x3001;<code>&#x6D88;&#x606F;&#x62A5;&#x5934;</code>&#x3001;<code>&#x7A7A;&#x884C;</code>&#x3001;<code>&#x54CD;&#x5E94;&#x6B63;&#x6587;</code></p>
+<p><img src="../images/01_response.jpg" alt=""></p>
+<pre><code>HTTP/1.1 200 OK
+Server: Tengine
+Connection: keep-alive
+Date: Wed, 30 Nov 2016 07:58:21 GMT
+Cache-Control: no-cache
+Content-Type: text/html;charset=UTF-8
+Keep-Alive: timeout=20
+Vary: Accept-Encoding
+Pragma: no-cache
+X-NWS-LOG-UUID: bd27210a-24e5-4740-8f6c-25dbafa9c395
+Content-Length: 180945
+
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; ....
+</code></pre><h3 id="&#x5E38;&#x7528;&#x7684;&#x54CD;&#x5E94;&#x62A5;&#x5934;&#x4E86;&#x89E3;">&#x5E38;&#x7528;&#x7684;&#x54CD;&#x5E94;&#x62A5;&#x5934;(&#x4E86;&#x89E3;)</h3>
+<p>&#x7406;&#x8BBA;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x4FE1;&#x606F;&#x90FD;&#x5E94;&#x8BE5;&#x662F;&#x56DE;&#x5E94;&#x8BF7;&#x6C42;&#x5934;&#x7684;&#x3002;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x4E3A;&#x4E86;&#x6548;&#x7387;&#xFF0C;&#x5B89;&#x5168;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x65B9;&#x9762;&#x7684;&#x8003;&#x8651;&#xFF0C;&#x4F1A;&#x6DFB;&#x52A0;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x4E0A;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;</p>
+<h3 id="1-cachecontrol&#xFF1A;mustrevalidate-nocache-private&#x3002;">1. Cache-Control&#xFF1A;must-revalidate, no-cache, private&#x3002;</h3>
+<p>&#x8FD9;&#x4E2A;&#x503C;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x5E0C;&#x671B;&#x5BA2;&#x6237;&#x7AEF;&#x7F13;&#x5B58;&#x8D44;&#x6E90;&#xFF0C;&#x5728;&#x4E0B;&#x6B21;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x4ECE;&#x65B0;&#x8BF7;&#x6C42;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E0D;&#x80FD;&#x4ECE;&#x7F13;&#x5B58;&#x526F;&#x672C;&#x4E2D;&#x83B7;&#x53D6;&#x8D44;&#x6E90;&#x3002;</p>
+<ul>
+<li><p>Cache-Control&#x662F;&#x54CD;&#x5E94;&#x5934;&#x4E2D;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x5305;&#x542B;Cache-Control:max-age=0&#x8BF7;&#x6C42;&#xFF0C;&#x660E;&#x786E;&#x8868;&#x793A;&#x4E0D;&#x4F1A;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;&#x65F6;,Cache-Control&#x4F5C;&#x4E3A;&#x4F5C;&#x4E3A;&#x56DE;&#x5E94;&#x4FE1;&#x606F;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x8FD4;&#x56DE;no-cache&#xFF0C;&#x610F;&#x601D;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&quot;&#x90A3;&#x5C31;&#x4E0D;&#x7F13;&#x5B58;&#x5457;&quot;&#x3002;</p>
+</li>
+<li><p>&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x6CA1;&#x6709;&#x5305;&#x542B;Cache-Control&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x5F80;&#x5F80;&#x4F1A;&#x5B9A;,&#x4E0D;&#x540C;&#x7684;&#x8D44;&#x6E90;&#x4E0D;&#x540C;&#x7684;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;oschina&#x5728;&#x7F13;&#x5B58;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x7684;&#x7B56;&#x7565;&#x5C31;&#x662F;Cache-Control&#xFF1A;max-age=86400,&#x8FD9;&#x4E2A;&#x610F;&#x601D;&#x662F;&#xFF0C;&#x4ECE;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x5F00;&#x59CB;&#xFF0C;&#x5728;86400&#x79D2;&#x7684;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;&#x7F13;&#x5B58;&#x526F;&#x672C;&#x4E2D;&#x8BFB;&#x53D6;&#x8D44;&#x6E90;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x3002;</p>
+</li>
+</ul>
+<h3 id="2-connection&#xFF1A;keepalive">2. Connection&#xFF1A;keep-alive</h3>
+<p>&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x4F5C;&#x4E3A;&#x56DE;&#x5E94;&#x5BA2;&#x6237;&#x7AEF;&#x7684;Connection&#xFF1A;keep-alive&#xFF0C;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;tcp&#x8FDE;&#x63A5;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;tcp&#x8FDE;&#x63A5;&#x53D1;&#x9001;http&#x8BF7;&#x6C42;&#x3002;</p>
+<h3 id="3-contentencodinggzip">3. Content-Encoding:gzip</h3>
+<p>&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8D44;&#x6E90;&#x662F;&#x91C7;&#x7528;gzip&#x7F16;&#x7801;&#x7684;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x5E94;&#x8BE5;&#x91C7;&#x7528;gzip&#x5BF9;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x89E3;&#x7801;&#x3002;</p>
+<h3 id="4-contenttype&#xFF1A;texthtmlcharsetutf8">4. Content-Type&#xFF1A;text/html;charset=UTF-8</h3>
+<p>&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x8FD8;&#x6709;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;utf-8&#x5BF9;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x89E3;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x8D44;&#x6E90;&#x8FDB;&#x884C;html&#x89E3;&#x6790;&#x3002;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#x6709;&#x4E9B;&#x7F51;&#x7AD9;&#x662F;&#x4E71;&#x7801;&#x7684;&#xFF0C;&#x5F80;&#x5F80;&#x5C31;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x6B63;&#x786E;&#x7684;&#x7F16;&#x7801;&#x3002;</p>
+<h3 id="5-date&#xFF1A;sun-21-sep-2016-061821-gmt">5. Date&#xFF1A;Sun, 21 Sep 2016 06:18:21 GMT</h3>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x8D44;&#x6E90;&#x65F6;&#x7684;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x95F4;&#xFF0C;GMT&#x662F;&#x683C;&#x6797;&#x5C3C;&#x6CBB;&#x6240;&#x5728;&#x5730;&#x7684;&#x6807;&#x51C6;&#x65F6;&#x95F4;&#x3002;http&#x534F;&#x8BAE;&#x4E2D;&#x53D1;&#x9001;&#x7684;&#x65F6;&#x95F4;&#x90FD;&#x662F;GMT&#x7684;&#xFF0C;&#x8FD9;&#x4E3B;&#x8981;&#x662F;&#x89E3;&#x51B3;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#xFF0C;&#x4E0D;&#x540C;&#x65F6;&#x533A;&#x5728;&#x76F8;&#x4E92;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x65F6;&#x95F4;&#x6DF7;&#x4E71;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="6-expiressun-1-jan-2000-010000-gmt">6. Expires:Sun, 1 Jan 2000 01:00:00 GMT</h3>
+<p>&#x8FD9;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x4E5F;&#x662F;&#x8DDF;&#x7F13;&#x5B58;&#x6709;&#x5173;&#x7684;&#xFF0C;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x524D;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7F13;&#x5B58;&#x526F;&#x672C;&#xFF0C;&#x5F88;&#x663E;&#x7136;&#x8FD9;&#x4E2A;&#x503C;&#x4F1A;&#x5B58;&#x5728;&#x95EE;&#x9898;&#xFF0C;&#x56E0;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65F6;&#x95F4;&#x4E0D;&#x4E00;&#x5B9A;&#x4F1A;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x65F6;&#x95F4;&#x4E0D;&#x540C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x95EE;&#x9898;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x662F;&#x6CA1;&#x6709;Cache-Control&#xFF1A;max-age=*&#x8FD9;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x51C6;&#x786E;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;max-age=date&#x4E2D;&#x7684;date&#x662F;&#x4E2A;&#x76F8;&#x5BF9;&#x65F6;&#x95F4;&#xFF0C;&#x4E0D;&#x4EC5;&#x66F4;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x4E5F;&#x66F4;&#x51C6;&#x786E;&#x3002;</p>
+<h3 id="7-pragmanocache">7. Pragma:no-cache</h3>
+<p>&#x8FD9;&#x4E2A;&#x542B;&#x4E49;&#x4E0E;Cache-Control&#x7B49;&#x540C;&#x3002;</p>
+<h3 id="8server&#xFF1A;tengine146">8.Server&#xFF1A;Tengine/1.4.6</h3>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x670D;&#x52A1;&#x5668;&#x548C;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x53EA;&#x662F;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="9-transferencoding&#xFF1A;chunked">9. Transfer-Encoding&#xFF1A;chunked</h3>
+<p>&#x8FD9;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x7684;&#x8D44;&#x6E90;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5206;&#x5757;&#x53D1;&#x9001;&#x7684;&#x3002;&#x4E00;&#x822C;&#x5206;&#x5757;&#x53D1;&#x9001;&#x7684;&#x8D44;&#x6E90;&#x90FD;&#x662F;&#x670D;&#x52A1;&#x5668;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5728;&#x53D1;&#x9001;&#x65F6;&#x8FD8;&#x4E0D;&#x77E5;&#x9053;&#x53D1;&#x9001;&#x8D44;&#x6E90;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x6240;&#x4EE5;&#x91C7;&#x7528;&#x5206;&#x5757;&#x53D1;&#x9001;&#xFF0C;&#x6BCF;&#x4E00;&#x5757;&#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x72EC;&#x7ACB;&#x7684;&#x5757;&#x90FD;&#x80FD;&#x6807;&#x793A;&#x81EA;&#x5DF1;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x5757;&#x662F;0&#x957F;&#x5EA6;&#x7684;&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x8BFB;&#x5230;&#x8FD9;&#x4E2A;0&#x957F;&#x5EA6;&#x7684;&#x5757;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x8D44;&#x6E90;&#x5DF2;&#x7ECF;&#x4F20;&#x8F93;&#x5B8C;&#x4E86;&#x3002;</p>
+<h3 id="10-vary-acceptencoding">10. Vary: Accept-Encoding</h3>
+<p>&#x544A;&#x8BC9;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7F13;&#x5B58;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x548C;&#x975E;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x7528;&#x5904;&#x5E76;&#x4E0D;&#x5927;&#xFF0C;&#x56E0;&#x4E3A;&#x73B0;&#x5728;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x662F;&#x652F;&#x6301;&#x538B;&#x7F29;&#x7684;&#x3002;</p>
+<h2 id="cookie-&#x548C;-session&#xFF1A;">Cookie &#x548C; Session&#xFF1A;</h2>
+<p>&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4EA4;&#x4E92;&#x4EC5;&#x9650;&#x4E8E;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x8FC7;&#x7A0B;&#xFF0C;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#x4FBF;&#x65AD;&#x5F00;&#xFF0C;&#x5728;&#x4E0B;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x8BA4;&#x4E3A;&#x65B0;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x7EF4;&#x62A4;&#x4ED6;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x77E5;&#x9053;&#x8FD9;&#x662F;&#x524D;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x4FDD;&#x5B58;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p><strong>Cookie</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5728; &#x5BA2;&#x6237;&#x7AEF; &#x8BB0;&#x5F55;&#x7684;&#x4FE1;&#x606F;&#x786E;&#x5B9A;&#x7528;&#x6237;&#x7684;&#x8EAB;&#x4EFD;&#x3002;</p>
+<p><strong>Session</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5728; &#x670D;&#x52A1;&#x5668;&#x7AEF; &#x8BB0;&#x5F55;&#x7684;&#x4FE1;&#x606F;&#x786E;&#x5B9A;&#x7528;&#x6237;&#x7684;&#x8EAB;&#x4EFD;&#x3002;</p>
+<h2 id="&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;">&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;</h2>
+<p>&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x4EE3;&#x7801;&#x6709;&#x4E09;&#x4F4D;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5B9A;&#x4E49;&#x4E86;&#x54CD;&#x5E94;&#x7684;&#x7C7B;&#x522B;&#xFF0C;&#x4E14;&#x6709;&#x4E94;&#x79CD;&#x53EF;&#x80FD;&#x53D6;&#x503C;&#x3002;</p>
+<h4 id="&#x5E38;&#x89C1;&#x72B6;&#x6001;&#x7801;&#xFF1A;">&#x5E38;&#x89C1;&#x72B6;&#x6001;&#x7801;&#xFF1A;</h4>
+<ul>
+<li><p><code>100~199</code>&#xFF1A;&#x8868;&#x793A;&#x670D;&#x52A1;&#x5668;&#x6210;&#x529F;&#x63A5;&#x6536;&#x90E8;&#x5206;&#x8BF7;&#x6C42;&#xFF0C;&#x8981;&#x6C42;&#x5BA2;&#x6237;&#x7AEF;&#x7EE7;&#x7EED;&#x63D0;&#x4EA4;&#x5176;&#x4F59;&#x8BF7;&#x6C42;&#x624D;&#x80FD;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x3002;</p>
+</li>
+<li><p><code>200~299</code>&#xFF1A;&#x8868;&#x793A;&#x670D;&#x52A1;&#x5668;&#x6210;&#x529F;&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#x5E76;&#x5DF2;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x3002;&#x5E38;&#x7528;200&#xFF08;OK &#x8BF7;&#x6C42;&#x6210;&#x529F;&#xFF09;&#x3002;</p>
+</li>
+<li><code>300~399</code>&#xFF1A;&#x4E3A;&#x5B8C;&#x6210;&#x8BF7;&#x6C42;&#xFF0C;&#x5BA2;&#x6237;&#x9700;&#x8FDB;&#x4E00;&#x6B65;&#x7EC6;&#x5316;&#x8BF7;&#x6C42;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x8BF7;&#x6C42;&#x7684;&#x8D44;&#x6E90;&#x5DF2;&#x7ECF;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x65B0;&#x5730;&#x5740;&#x3001;&#x5E38;&#x7528;302&#xFF08;&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x5DF2;&#x7ECF;&#x4E34;&#x65F6;&#x8F6C;&#x79FB;&#x81F3;&#x65B0;&#x7684;url&#xFF09;&#x3001;307&#x548C;304&#xFF08;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x8D44;&#x6E90;&#xFF09;&#x3002;</li>
+<li><code>400~499</code>&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x5E38;&#x7528;404&#xFF08;&#x670D;&#x52A1;&#x5668;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x88AB;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#xFF09;&#x3001;403&#xFF08;&#x670D;&#x52A1;&#x5668;&#x62D2;&#x7EDD;&#x8BBF;&#x95EE;&#xFF0C;&#x6743;&#x9650;&#x4E0D;&#x591F;&#xFF09;&#x3002;</li>
+<li><code>500~599</code>&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x5E38;&#x7528;500&#xFF08;&#x8BF7;&#x6C42;&#x672A;&#x5B8C;&#x6210;&#x3002;&#x670D;&#x52A1;&#x5668;&#x9047;&#x5230;&#x4E0D;&#x53EF;&#x9884;&#x77E5;&#x7684;&#x60C5;&#x51B5;&#xFF09;&#x3002;</li>
+</ul>
+<h1 id="http&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#x53C2;&#x8003;&#xFF1A;">HTTP&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#x53C2;&#x8003;&#xFF1A;</h1>
+<pre><code class="lang-python"><span class="hljs-number">1</span>xx:&#x4FE1;&#x606F;
+
+<span class="hljs-number">100</span> Continue
+&#x670D;&#x52A1;&#x5668;&#x4EC5;&#x63A5;&#x6536;&#x5230;&#x90E8;&#x5206;&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x65E6;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x6CA1;&#x6709;&#x62D2;&#x7EDD;&#x8BE5;&#x8BF7;&#x6C42;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x8BE5;&#x7EE7;&#x7EED;&#x53D1;&#x9001;&#x5176;&#x4F59;&#x7684;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">101</span> Switching Protocols
+&#x670D;&#x52A1;&#x5668;&#x8F6C;&#x6362;&#x534F;&#x8BAE;&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x5C06;&#x9075;&#x4ECE;&#x5BA2;&#x6237;&#x7684;&#x8BF7;&#x6C42;&#x8F6C;&#x6362;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x534F;&#x8BAE;&#x3002;
+
+
+
+<span class="hljs-number">2</span>xx:&#x6210;&#x529F;
+
+<span class="hljs-number">200</span> OK
+&#x8BF7;&#x6C42;&#x6210;&#x529F;&#xFF08;&#x5176;&#x540E;&#x662F;&#x5BF9;GET&#x548C;POST&#x8BF7;&#x6C42;&#x7684;&#x5E94;&#x7B54;&#x6587;&#x6863;&#xFF09;
+<span class="hljs-number">201</span> Created
+&#x8BF7;&#x6C42;&#x88AB;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#xFF0C;&#x540C;&#x65F6;&#x65B0;&#x7684;&#x8D44;&#x6E90;&#x88AB;&#x521B;&#x5EFA;&#x3002;
+<span class="hljs-number">202</span> Accepted
+&#x4F9B;&#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;&#x5DF2;&#x88AB;&#x63A5;&#x53D7;&#xFF0C;&#x4F46;&#x662F;&#x5904;&#x7406;&#x672A;&#x5B8C;&#x6210;&#x3002;
+<span class="hljs-number">203</span> Non-authoritative Information
+&#x6587;&#x6863;&#x5DF2;&#x7ECF;&#x6B63;&#x5E38;&#x5730;&#x8FD4;&#x56DE;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x5E94;&#x7B54;&#x5934;&#x53EF;&#x80FD;&#x4E0D;&#x6B63;&#x786E;&#xFF0C;&#x56E0;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x6587;&#x6863;&#x7684;&#x62F7;&#x8D1D;&#x3002;
+<span class="hljs-number">204</span> No Content
+&#x6CA1;&#x6709;&#x65B0;&#x6587;&#x6863;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x8BE5;&#x7EE7;&#x7EED;&#x663E;&#x793A;&#x539F;&#x6765;&#x7684;&#x6587;&#x6863;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x5B9A;&#x671F;&#x5730;&#x5237;&#x65B0;&#x9875;&#x9762;&#xFF0C;&#x800C;Servlet&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x7528;&#x6237;&#x6587;&#x6863;&#x8DB3;&#x591F;&#x65B0;&#xFF0C;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x4EE3;&#x7801;&#x662F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x3002;
+<span class="hljs-number">205</span> Reset Content
+&#x6CA1;&#x6709;&#x65B0;&#x6587;&#x6863;&#x3002;&#x4F46;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x8BE5;&#x91CD;&#x7F6E;&#x5B83;&#x6240;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x7528;&#x6765;&#x5F3A;&#x5236;&#x6D4F;&#x89C8;&#x5668;&#x6E05;&#x9664;&#x8868;&#x5355;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x3002;
+<span class="hljs-number">206</span> Partial Content
+&#x5BA2;&#x6237;&#x53D1;&#x9001;&#x4E86;&#x4E00;&#x4E2A;&#x5E26;&#x6709;Range&#x5934;&#x7684;GET&#x8BF7;&#x6C42;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5B8C;&#x6210;&#x4E86;&#x5B83;&#x3002;
+
+
+
+<span class="hljs-number">3</span>xx:&#x91CD;&#x5B9A;&#x5411;
+
+<span class="hljs-number">300</span> Multiple Choices
+&#x591A;&#x91CD;&#x9009;&#x62E9;&#x3002;&#x94FE;&#x63A5;&#x5217;&#x8868;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x67D0;&#x94FE;&#x63A5;&#x5230;&#x8FBE;&#x76EE;&#x7684;&#x5730;&#x3002;&#x6700;&#x591A;&#x5141;&#x8BB8;&#x4E94;&#x4E2A;&#x5730;&#x5740;&#x3002;
+<span class="hljs-number">301</span> Moved Permanently
+&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x5DF2;&#x7ECF;&#x8F6C;&#x79FB;&#x81F3;&#x65B0;&#x7684;url&#x3002;
+<span class="hljs-number">302</span> Moved Temporarily
+&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x5DF2;&#x7ECF;&#x4E34;&#x65F6;&#x8F6C;&#x79FB;&#x81F3;&#x65B0;&#x7684;url&#x3002;
+<span class="hljs-number">303</span> See Other
+&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x53EF;&#x5728;&#x522B;&#x7684;url&#x4E0B;&#x88AB;&#x627E;&#x5230;&#x3002;
+<span class="hljs-number">304</span> Not Modified
+&#x672A;&#x6309;&#x9884;&#x671F;&#x4FEE;&#x6539;&#x6587;&#x6863;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x6709;&#x7F13;&#x51B2;&#x7684;&#x6587;&#x6863;&#x5E76;&#x53D1;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x6027;&#x7684;&#x8BF7;&#x6C42;&#xFF08;&#x4E00;&#x822C;&#x662F;&#x63D0;&#x4F9B;If-Modified-Since&#x5934;&#x8868;&#x793A;&#x5BA2;&#x6237;&#x53EA;&#x60F3;&#x6BD4;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x66F4;&#x65B0;&#x7684;&#x6587;&#x6863;&#xFF09;&#x3002;&#x670D;&#x52A1;&#x5668;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#xFF0C;&#x539F;&#x6765;&#x7F13;&#x51B2;&#x7684;&#x6587;&#x6863;&#x8FD8;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x3002;
+<span class="hljs-number">305</span> Use Proxy
+&#x5BA2;&#x6237;&#x8BF7;&#x6C42;&#x7684;&#x6587;&#x6863;&#x5E94;&#x8BE5;&#x901A;&#x8FC7;Location&#x5934;&#x6240;&#x6307;&#x660E;&#x7684;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x53D6;&#x3002;
+<span class="hljs-number">306</span> Unused
+&#x6B64;&#x4EE3;&#x7801;&#x88AB;&#x7528;&#x4E8E;&#x524D;&#x4E00;&#x7248;&#x672C;&#x3002;&#x76EE;&#x524D;&#x5DF2;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x4EE3;&#x7801;&#x4F9D;&#x7136;&#x88AB;&#x4FDD;&#x7559;&#x3002;
+<span class="hljs-number">307</span> Temporary Redirect
+&#x88AB;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x5DF2;&#x7ECF;&#x4E34;&#x65F6;&#x79FB;&#x81F3;&#x65B0;&#x7684;url&#x3002;
+
+
+
+<span class="hljs-number">4</span>xx:&#x5BA2;&#x6237;&#x7AEF;&#x9519;&#x8BEF;
+
+<span class="hljs-number">400</span> Bad Request
+&#x670D;&#x52A1;&#x5668;&#x672A;&#x80FD;&#x7406;&#x89E3;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">401</span> Unauthorized
+&#x88AB;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x9700;&#x8981;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x3002;
+<span class="hljs-number">401.1</span>
+&#x767B;&#x5F55;&#x5931;&#x8D25;&#x3002;
+<span class="hljs-number">401.2</span>
+&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x5BFC;&#x81F4;&#x767B;&#x5F55;&#x5931;&#x8D25;&#x3002;
+<span class="hljs-number">401.3</span>
+&#x7531;&#x4E8E; ACL &#x5BF9;&#x8D44;&#x6E90;&#x7684;&#x9650;&#x5236;&#x800C;&#x672A;&#x83B7;&#x5F97;&#x6388;&#x6743;&#x3002;
+<span class="hljs-number">401.4</span>
+&#x7B5B;&#x9009;&#x5668;&#x6388;&#x6743;&#x5931;&#x8D25;&#x3002;
+<span class="hljs-number">401.5</span>
+ISAPI/CGI &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6388;&#x6743;&#x5931;&#x8D25;&#x3002;
+<span class="hljs-number">401.7</span>
+&#x8BBF;&#x95EE;&#x88AB; Web &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684; URL &#x6388;&#x6743;&#x7B56;&#x7565;&#x62D2;&#x7EDD;&#x3002;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A; IIS <span class="hljs-number">6.0</span> &#x6240;&#x4E13;&#x7528;&#x3002;
+<span class="hljs-number">402</span> Payment Required
+&#x6B64;&#x4EE3;&#x7801;&#x5C1A;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x3002;
+<span class="hljs-number">403</span> Forbidden
+&#x5BF9;&#x88AB;&#x8BF7;&#x6C42;&#x9875;&#x9762;&#x7684;&#x8BBF;&#x95EE;&#x88AB;&#x7981;&#x6B62;&#x3002;
+<span class="hljs-number">403.1</span>
+&#x6267;&#x884C;&#x8BBF;&#x95EE;&#x88AB;&#x7981;&#x6B62;&#x3002;
+<span class="hljs-number">403.2</span>
+&#x8BFB;&#x8BBF;&#x95EE;&#x88AB;&#x7981;&#x6B62;&#x3002;
+<span class="hljs-number">403.3</span>
+&#x5199;&#x8BBF;&#x95EE;&#x88AB;&#x7981;&#x6B62;&#x3002;
+<span class="hljs-number">403.4</span>
+&#x8981;&#x6C42; SSL&#x3002;
+<span class="hljs-number">403.5</span>
+&#x8981;&#x6C42; SSL <span class="hljs-number">128</span>&#x3002;
+<span class="hljs-number">403.6</span>
+IP &#x5730;&#x5740;&#x88AB;&#x62D2;&#x7EDD;&#x3002;
+<span class="hljs-number">403.7</span>
+&#x8981;&#x6C42;&#x5BA2;&#x6237;&#x7AEF;&#x8BC1;&#x4E66;&#x3002;
+<span class="hljs-number">403.8</span>
+&#x7AD9;&#x70B9;&#x8BBF;&#x95EE;&#x88AB;&#x62D2;&#x7EDD;&#x3002;
+<span class="hljs-number">403.9</span>
+&#x7528;&#x6237;&#x6570;&#x8FC7;&#x591A;&#x3002;
+<span class="hljs-number">403.10</span>
+&#x914D;&#x7F6E;&#x65E0;&#x6548;&#x3002;
+<span class="hljs-number">403.11</span>
+&#x5BC6;&#x7801;&#x66F4;&#x6539;&#x3002;
+<span class="hljs-number">403.12</span>
+&#x62D2;&#x7EDD;&#x8BBF;&#x95EE;&#x6620;&#x5C04;&#x8868;&#x3002;
+<span class="hljs-number">403.13</span>
+&#x5BA2;&#x6237;&#x7AEF;&#x8BC1;&#x4E66;&#x88AB;&#x540A;&#x9500;&#x3002;
+<span class="hljs-number">403.14</span>
+&#x62D2;&#x7EDD;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x3002;
+<span class="hljs-number">403.15</span>
+&#x8D85;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;&#x8BBF;&#x95EE;&#x8BB8;&#x53EF;&#x3002;
+<span class="hljs-number">403.16</span>
+&#x5BA2;&#x6237;&#x7AEF;&#x8BC1;&#x4E66;&#x4E0D;&#x53D7;&#x4FE1;&#x4EFB;&#x6216;&#x65E0;&#x6548;&#x3002;
+<span class="hljs-number">403.17</span>
+&#x5BA2;&#x6237;&#x7AEF;&#x8BC1;&#x4E66;&#x5DF2;&#x8FC7;&#x671F;&#x6216;&#x5C1A;&#x672A;&#x751F;&#x6548;&#x3002;
+<span class="hljs-number">403.18</span>
+&#x5728;&#x5F53;&#x524D;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6C60;&#x4E2D;&#x4E0D;&#x80FD;&#x6267;&#x884C;&#x6240;&#x8BF7;&#x6C42;&#x7684; URL&#x3002;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A; IIS <span class="hljs-number">6.0</span> &#x6240;&#x4E13;&#x7528;&#x3002;
+<span class="hljs-number">403.19</span>
+&#x4E0D;&#x80FD;&#x4E3A;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6C60;&#x4E2D;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6267;&#x884C; CGI&#x3002;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A; IIS <span class="hljs-number">6.0</span> &#x6240;&#x4E13;&#x7528;&#x3002;
+<span class="hljs-number">403.20</span>
+Passport &#x767B;&#x5F55;&#x5931;&#x8D25;&#x3002;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A; IIS <span class="hljs-number">6.0</span> &#x6240;&#x4E13;&#x7528;&#x3002;
+<span class="hljs-number">404</span> Not Found
+&#x670D;&#x52A1;&#x5668;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x88AB;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x3002;
+<span class="hljs-number">404.0</span>
+&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#x3002;
+<span class="hljs-number">404.1</span>
+&#x65E0;&#x6CD5;&#x5728;&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x7AEF;&#x53E3;&#x4E0A;&#x8BBF;&#x95EE; Web &#x7AD9;&#x70B9;&#x3002;
+<span class="hljs-number">404.2</span>
+Web &#x670D;&#x52A1;&#x6269;&#x5C55;&#x9501;&#x5B9A;&#x7B56;&#x7565;&#x963B;&#x6B62;&#x672C;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">404.3</span>
+MIME &#x6620;&#x5C04;&#x7B56;&#x7565;&#x963B;&#x6B62;&#x672C;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">405</span> Method Not Allowed
+&#x8BF7;&#x6C42;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x88AB;&#x5141;&#x8BB8;&#x3002;
+<span class="hljs-number">406</span> Not Acceptable
+&#x670D;&#x52A1;&#x5668;&#x751F;&#x6210;&#x7684;&#x54CD;&#x5E94;&#x65E0;&#x6CD5;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#x6240;&#x63A5;&#x53D7;&#x3002;
+<span class="hljs-number">407</span> Proxy Authentication Required
+&#x7528;&#x6237;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x8FD9;&#x6837;&#x8BF7;&#x6C42;&#x624D;&#x4F1A;&#x88AB;&#x5904;&#x7406;&#x3002;
+<span class="hljs-number">408</span> Request Timeout
+&#x8BF7;&#x6C42;&#x8D85;&#x51FA;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x3002;
+<span class="hljs-number">409</span> Conflict
+&#x7531;&#x4E8E;&#x51B2;&#x7A81;&#xFF0C;&#x8BF7;&#x6C42;&#x65E0;&#x6CD5;&#x88AB;&#x5B8C;&#x6210;&#x3002;
+<span class="hljs-number">410</span> Gone
+&#x88AB;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x4E0D;&#x53EF;&#x7528;&#x3002;
+<span class="hljs-number">411</span> Length Required
+<span class="hljs-string">&quot;Content-Length&quot;</span> &#x672A;&#x88AB;&#x5B9A;&#x4E49;&#x3002;&#x5982;&#x679C;&#x65E0;&#x6B64;&#x5185;&#x5BB9;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F1A;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">412</span> Precondition Failed
+&#x8BF7;&#x6C42;&#x4E2D;&#x7684;&#x524D;&#x63D0;&#x6761;&#x4EF6;&#x88AB;&#x670D;&#x52A1;&#x5668;&#x8BC4;&#x4F30;&#x4E3A;&#x5931;&#x8D25;&#x3002;
+<span class="hljs-number">413</span> Request Entity Too Large
+&#x7531;&#x4E8E;&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x5B9E;&#x4F53;&#x7684;&#x592A;&#x5927;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F1A;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">414</span> Request-url Too Long
+&#x7531;&#x4E8E;url&#x592A;&#x957F;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F1A;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x3002;&#x5F53;post&#x8BF7;&#x6C42;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5E26;&#x6709;&#x5F88;&#x957F;&#x7684;&#x67E5;&#x8BE2;&#x4FE1;&#x606F;&#x7684;get&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x53D1;&#x751F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;
+<span class="hljs-number">415</span> Unsupported Media Type
+&#x7531;&#x4E8E;&#x5A92;&#x4ECB;&#x7C7B;&#x578B;&#x4E0D;&#x88AB;&#x652F;&#x6301;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F1A;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x3002;
+<span class="hljs-number">416</span> Requested Range Not Satisfiable
+&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x5BA2;&#x6237;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x6307;&#x5B9A;&#x7684;Range&#x5934;&#x3002;
+<span class="hljs-number">417</span> Expectation Failed
+&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;
+<span class="hljs-number">423</span>
+&#x9501;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x3002;
+
+
+
+<span class="hljs-number">5</span>xx:&#x670D;&#x52A1;&#x5668;&#x9519;&#x8BEF;
+
+<span class="hljs-number">500</span> Internal Server Error
+&#x8BF7;&#x6C42;&#x672A;&#x5B8C;&#x6210;&#x3002;&#x670D;&#x52A1;&#x5668;&#x9047;&#x5230;&#x4E0D;&#x53EF;&#x9884;&#x77E5;&#x7684;&#x60C5;&#x51B5;&#x3002;
+<span class="hljs-number">500.12</span>
+&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6B63;&#x5FD9;&#x4E8E;&#x5728; Web &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x3002;
+<span class="hljs-number">500.13</span>
+Web &#x670D;&#x52A1;&#x5668;&#x592A;&#x5FD9;&#x3002;
+<span class="hljs-number">500.15</span>
+&#x4E0D;&#x5141;&#x8BB8;&#x76F4;&#x63A5;&#x8BF7;&#x6C42; Global.asa&#x3002;
+<span class="hljs-number">500.16</span>
+UNC &#x6388;&#x6743;&#x51ED;&#x636E;&#x4E0D;&#x6B63;&#x786E;&#x3002;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A; IIS <span class="hljs-number">6.0</span> &#x6240;&#x4E13;&#x7528;&#x3002;
+<span class="hljs-number">500.18</span>
+URL &#x6388;&#x6743;&#x5B58;&#x50A8;&#x4E0D;&#x80FD;&#x6253;&#x5F00;&#x3002;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A; IIS <span class="hljs-number">6.0</span> &#x6240;&#x4E13;&#x7528;&#x3002;
+<span class="hljs-number">500.100</span>
+&#x5185;&#x90E8; ASP &#x9519;&#x8BEF;&#x3002;
+<span class="hljs-number">501</span> Not Implemented
+&#x8BF7;&#x6C42;&#x672A;&#x5B8C;&#x6210;&#x3002;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x652F;&#x6301;&#x6240;&#x8BF7;&#x6C42;&#x7684;&#x529F;&#x80FD;&#x3002;
+<span class="hljs-number">502</span> Bad Gateway
+&#x8BF7;&#x6C42;&#x672A;&#x5B8C;&#x6210;&#x3002;&#x670D;&#x52A1;&#x5668;&#x4ECE;&#x4E0A;&#x6E38;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x4E00;&#x4E2A;&#x65E0;&#x6548;&#x7684;&#x54CD;&#x5E94;&#x3002;
+<span class="hljs-number">502.1</span>
+CGI &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8D85;&#x65F6;&#x3002;&#x3000;&#xB7;
+<span class="hljs-number">502.2</span>
+CGI &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x51FA;&#x9519;&#x3002;
+<span class="hljs-number">503</span> Service Unavailable
+&#x8BF7;&#x6C42;&#x672A;&#x5B8C;&#x6210;&#x3002;&#x670D;&#x52A1;&#x5668;&#x4E34;&#x65F6;&#x8FC7;&#x8F7D;&#x6216;&#x5F53;&#x673A;&#x3002;
+<span class="hljs-number">504</span> Gateway Timeout
+&#x7F51;&#x5173;&#x8D85;&#x65F6;&#x3002;
+<span class="hljs-number">505</span> HTTP Version Not Supported
+&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x652F;&#x6301;&#x8BF7;&#x6C42;&#x4E2D;&#x6307;&#x660E;&#x7684;HTTP&#x534F;&#x8BAE;&#x7248;&#x672C;
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/part01/1.1.html" class="navigation navigation-prev " aria-label="Previous page: (了解)通用爬虫和聚焦爬虫"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/part01/2.0.html" class="navigation navigation-next " aria-label="Next page: str和bytes的区别"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

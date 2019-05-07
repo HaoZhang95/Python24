@@ -1,0 +1,1378 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>多线程爬虫案例 | 可选择的IDE和编辑器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/part02/2.5.html" />
+    
+    
+    <link rel="prev" href="../../file/part02/2.8.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.7"
+        data-chapter-title="多线程爬虫案例"
+        data-filepath="file/part02/2.9.md"
+        data-basepath="../.."
+        data-revision="Sat Jul 22 2017 18:48:24 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/part01/1.html">
+            
+                
+                    <a href="../../file/part01/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        爬虫原理与数据抓取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/part01/1.1.html">
+            
+                
+                    <a href="../../file/part01/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        (了解)通用爬虫和聚焦爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="file/part01/1.2.html">
+            
+                
+                    <a href="../../file/part01/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        (复习)HTTP/HTTPS的请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/part01/2.0.html">
+            
+                
+                    <a href="../../file/part01/2.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        str和bytes的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/part01/2.1.html">
+            
+                
+                    <a href="../../file/part01/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Requests简单使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="file/part01/2.2.html">
+            
+                
+                    <a href="../../file/part01/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Requests深入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="file/part01/1.3.html">
+            
+                
+                    <a href="../../file/part01/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        HTTP/HTTPS抓包工具-Fiddler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="file/part01/1.4.html">
+            
+                
+                    <a href="../../file/part01/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        参考阅读：urllib模块的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file/part01/1.5.html">
+            
+                
+                    <a href="../../file/part01/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        参考阅读：urllib：GET请求和POST请求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="file/part01/1.6.html">
+            
+                
+                    <a href="../../file/part01/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        参考阅读：urllib：Handler处理器和自定义Opener
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="file/part01/1.9.html">
+            
+                
+                    <a href="../../file/part01/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        参考阅读：编码故事
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/part02/2.html">
+            
+                
+                    <a href="../../file/part02/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        非结构化数据与结构化数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/part02/2.1.html">
+            
+                
+                    <a href="../../file/part02/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        正则表达式re模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/part02/2.2.html">
+            
+                
+                    <a href="../../file/part02/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        案例：使用正则表达式的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="file/part02/2.3.html">
+            
+                
+                    <a href="../../file/part02/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        XPath与lxml类库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/part02/2.4.html">
+            
+                
+                    <a href="../../file/part02/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        案例：使用XPath的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="file/part02/2.7.html">
+            
+                
+                    <a href="../../file/part02/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        JSON模块与JsonPath
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="file/part02/2.8.html">
+            
+                
+                    <a href="../../file/part02/2.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        糗事百科案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="file/part02/2.9.html">
+            
+                
+                    <a href="../../file/part02/2.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        多线程爬虫案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="file/part02/2.5.html">
+            
+                
+                    <a href="../../file/part02/2.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        参考阅读：BeautifulSoup4 解析器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="file/part02/2.6.html">
+            
+                
+                    <a href="../../file/part02/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        参考阅读：案例：使用bs4的爬虫
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/part03/3.html">
+            
+                
+                    <a href="../../file/part03/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        动态HTML处理和机器图像识别
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/part03/3.1.html">
+            
+                
+                    <a href="../../file/part03/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        动态HTML介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="file/part03/3.2.html">
+            
+                
+                    <a href="../../file/part03/3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Selenium与PhantomJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/part03/3.3.html">
+            
+                
+                    <a href="../../file/part03/3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        案例一：网站模拟登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/part03/3.4.html">
+            
+                
+                    <a href="../../file/part03/3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        案例二：动态页面模拟点击
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="file/part03/3.6.html">
+            
+                
+                    <a href="../../file/part03/3.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        机器视觉与Tesseract介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="file/part03/3.7.html">
+            
+                
+                    <a href="../../file/part03/3.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        处理一些格式规范的文字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="file/part03/3.8.html">
+            
+                
+                    <a href="../../file/part03/3.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        尝试对验证码进行机器识别处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="file/part03/3.5.html">
+            
+                
+                    <a href="../../file/part03/3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        参考阅读：执行JavaScript语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="file/part03/3.9.html">
+            
+                
+                    <a href="../../file/part03/3.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        参考阅读：训练Tesseract
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/part04/4.html">
+            
+                
+                    <a href="../../file/part04/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/part04/4.1.html">
+            
+                
+                    <a href="../../file/part04/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        配置安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="file/part04/4.2.html">
+            
+                
+                    <a href="../../file/part04/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        入门案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="file/part04/4.3.html">
+            
+                
+                    <a href="../../file/part04/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Scrapy Shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="file/part04/4.4.html">
+            
+                
+                    <a href="../../file/part04/4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Item Pipeline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="file/part04/4.5.html">
+            
+                
+                    <a href="../../file/part04/4.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="file/part04/4.6.html">
+            
+                
+                    <a href="../../file/part04/4.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="file/part04/4.7.html">
+            
+                
+                    <a href="../../file/part04/4.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Request/Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="file/part04/4.8.html">
+            
+                
+                    <a href="../../file/part04/4.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Downloader Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="file/part04/4.9.html">
+            
+                
+                    <a href="../../file/part04/4.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Settings
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/part05/5.html">
+            
+                
+                    <a href="../../file/part05/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Scrapy实战项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/part05/5.1.html">
+            
+                
+                    <a href="../../file/part05/5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        (案例一)手机App抓包爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/part05/5.2.html">
+            
+                
+                    <a href="../../file/part05/5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        (案例二)阳光热线问政平台爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/part05/5.3.html">
+            
+                
+                    <a href="../../file/part05/5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        (案例三)新浪网分类资讯爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="file/part05/5.4.html">
+            
+                
+                    <a href="../../file/part05/5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        (案例四)Cosplay图片下载器爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="file/part05/5.5.html">
+            
+                
+                    <a href="../../file/part05/5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        (案例五)将数据保存在MongoDB中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="file/part05/5.6.html">
+            
+                
+                    <a href="../../file/part05/5.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        (案例六)三种scrapy模拟登陆策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="file/part05/5.7.html">
+            
+                
+                    <a href="../../file/part05/5.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        附：通过Fiddler进行手机抓包方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/part06/6.html">
+            
+                
+                    <a href="../../file/part06/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        scrapy-redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/part06/6.1.html">
+            
+                
+                    <a href="../../file/part06/6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        源码分析参考：Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/part06/6.2.html">
+            
+                
+                    <a href="../../file/part06/6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        源码分析参考：Dupefilter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="file/part06/6.3.html">
+            
+                
+                    <a href="../../file/part06/6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        源码分析参考：Picklecompat
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="file/part06/6.4.html">
+            
+                
+                    <a href="../../file/part06/6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        源码分析参考：Pipelines
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="file/part06/6.5.html">
+            
+                
+                    <a href="../../file/part06/6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        源码分析参考：Queue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="file/part06/6.6.html">
+            
+                
+                    <a href="../../file/part06/6.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        源码分析参考：Scheduler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="file/part06/6.7.html">
+            
+                
+                    <a href="../../file/part06/6.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        源码分析参考：Spider
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/part07/7.html">
+            
+                
+                    <a href="../../file/part07/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        scrapy-redis实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/part07/7.1.html">
+            
+                
+                    <a href="../../file/part07/7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        源码自带项目说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/part07/7.2.html">
+            
+                
+                    <a href="../../file/part07/7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        有缘网分布式爬虫项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/part07/7.3.html">
+            
+                
+                    <a href="../../file/part07/7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        有缘网分布式爬虫项目2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/part07/7.4.html">
+            
+                
+                    <a href="../../file/part07/7.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        处理Redis里的数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="file/part07/7.5.html">
+            
+                
+                    <a href="../../file/part07/7.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/part07/7.6.html">
+            
+                
+                    <a href="../../file/part07/7.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="file/part07/7.7.html">
+            
+                
+                    <a href="../../file/part07/7.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        IT桔子分布式项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="file/part07/7.8.html">
+            
+                
+                    <a href="../../file/part07/7.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        IT桔子分布式项目2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >可选择的IDE和编辑器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x591A;&#x7EBF;&#x7A0B;&#x7CD7;&#x4E8B;&#x767E;&#x79D1;&#x6848;&#x4F8B;">&#x591A;&#x7EBF;&#x7A0B;&#x7CD7;&#x4E8B;&#x767E;&#x79D1;&#x6848;&#x4F8B;</h1>
+<p>&#x6848;&#x4F8B;&#x8981;&#x6C42;&#x53C2;&#x8003;&#x4E0A;&#x4E00;&#x4E2A;&#x7CD7;&#x4E8B;&#x767E;&#x79D1;&#x5355;&#x8FDB;&#x7A0B;&#x6848;&#x4F8B;</p>
+<h3 id="queue&#xFF08;&#x961F;&#x5217;&#x5BF9;&#x8C61;&#xFF09;">Queue&#xFF08;&#x961F;&#x5217;&#x5BF9;&#x8C61;&#xFF09;</h3>
+<p>Queue&#x662F;python&#x4E2D;&#x7684;&#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;import Queue&#x5F15;&#x7528;;&#x961F;&#x5217;&#x662F;&#x7EBF;&#x7A0B;&#x95F4;&#x6700;&#x5E38;&#x7528;&#x7684;&#x4EA4;&#x6362;&#x6570;&#x636E;&#x7684;&#x5F62;&#x5F0F;</p>
+<p>python&#x4E0B;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x601D;&#x8003;</p>
+<p>&#x5BF9;&#x4E8E;&#x8D44;&#x6E90;&#xFF0C;&#x52A0;&#x9501;&#x662F;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x73AF;&#x8282;&#x3002;&#x56E0;&#x4E3A;python&#x539F;&#x751F;&#x7684;list,dict&#x7B49;&#xFF0C;&#x90FD;&#x662F;not thread safe&#x7684;&#x3002;&#x800C;Queue&#xFF0C;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x6EE1;&#x8DB3;&#x4F7F;&#x7528;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x961F;&#x5217;</p>
+<ol>
+<li><p>&#x521D;&#x59CB;&#x5316;&#xFF1A; class Queue.Queue(maxsize) FIFO &#x5148;&#x8FDB;&#x5148;&#x51FA;</p>
+</li>
+<li><p>&#x5305;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;:</p>
+<ul>
+<li><p>Queue.qsize() &#x8FD4;&#x56DE;&#x961F;&#x5217;&#x7684;&#x5927;&#x5C0F;</p>
+</li>
+<li><p>Queue.empty() &#x5982;&#x679C;&#x961F;&#x5217;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD4;&#x56DE;True,&#x53CD;&#x4E4B;False</p>
+</li>
+<li><p>Queue.full() &#x5982;&#x679C;&#x961F;&#x5217;&#x6EE1;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE;True,&#x53CD;&#x4E4B;False</p>
+</li>
+<li><p>Queue.full &#x4E0E; maxsize &#x5927;&#x5C0F;&#x5BF9;&#x5E94;</p>
+</li>
+<li><p>Queue.get([block[, timeout]])&#x83B7;&#x53D6;&#x961F;&#x5217;&#xFF0C;timeout&#x7B49;&#x5F85;&#x65F6;&#x95F4;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x201C;&#x961F;&#x5217;&#x201D;&#x5BF9;&#x8C61;</p>
+<ul>
+<li>import Queue</li>
+<li>myqueue = Queue.Queue(maxsize = 10)</li>
+</ul>
+</li>
+<li><p>&#x5C06;&#x4E00;&#x4E2A;&#x503C;&#x653E;&#x5165;&#x961F;&#x5217;&#x4E2D;</p>
+<ul>
+<li>myqueue.put(10)</li>
+</ul>
+</li>
+<li><p>&#x5C06;&#x4E00;&#x4E2A;&#x503C;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x53D6;&#x51FA;</p>
+<ul>
+<li>myqueue.get()</li>
+</ul>
+</li>
+</ol>
+<h3 id="&#x591A;&#x7EBF;&#x7A0B;&#x793A;&#x610F;&#x56FE;">&#x591A;&#x7EBF;&#x7A0B;&#x793A;&#x610F;&#x56FE;</h3>
+<p><img src="../images/03-mulithread.png" alt=""></p>
+<pre><code class="lang-python"><span class="hljs-comment"># coding=utf-8</span>
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">from</span> queue <span class="hljs-keyword">import</span> Queue
+<span class="hljs-keyword">import</span> threading
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Qiubai</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.headers = {
+            <span class="hljs-string">&quot;User-Agent&quot;</span>: <span class="hljs-string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWeb\
+            Kit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&quot;</span>}
+        self.url_queue = Queue()   <span class="hljs-comment">#&#x5B9E;&#x4F8B;&#x5316;&#x4E09;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x653E;&#x5185;&#x5BB9;</span>
+        self.html_queue =Queue()
+        self.content_queue = Queue()
+
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_total_url</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x83B7;&#x53D6;&#x4E86;&#x6240;&#x6709;&#x7684;&#x9875;&#x9762;url&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;urllist
+        return &#xFF1A;list
+        &apos;&apos;&apos;</span>
+        url_temp = <span class="hljs-string">&apos;https://www.qiushibaike.com/8hr/page/{}/&apos;</span>
+        url_list = []
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,<span class="hljs-number">36</span>):
+            <span class="hljs-comment"># url_list.append(url_temp.format(i))</span>
+            self.url_queue.put(url_temp.format(i))
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse_url</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x4E00;&#x4E2A;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#xFF0C;&#x83B7;&#x53D6;&#x54CD;&#x5E94;&#xFF0C;&#x540C;&#x65F6;etree&#x5904;&#x7406;html
+        &apos;&apos;&apos;</span>
+        <span class="hljs-keyword">while</span> self.url_queue.not_empty:
+            url = self.url_queue.get()
+            print(<span class="hljs-string">&quot;parsing url:&quot;</span>,url)
+            response = requests.get(url,headers=self.headers,timeout=<span class="hljs-number">10</span>) <span class="hljs-comment">#&#x53D1;&#x9001;&#x8BF7;&#x6C42;</span>
+            html = response.content.decode() <span class="hljs-comment">#&#x83B7;&#x53D6;html&#x5B57;&#x7B26;&#x4E32;</span>
+            html = etree.HTML(html) <span class="hljs-comment">#&#x83B7;&#x53D6;element &#x7C7B;&#x578B;&#x7684;html</span>
+            self.html_queue.put(html)
+            self.url_queue.task_done()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_content</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        :param url:
+        :return: &#x4E00;&#x4E2A;list&#xFF0C;&#x5305;&#x542B;&#x4E00;&#x4E2A;url&#x5BF9;&#x5E94;&#x9875;&#x9762;&#x7684;&#x6240;&#x6709;&#x6BB5;&#x5B50;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x7684;&#x5217;&#x8868;
+        &apos;&apos;&apos;</span>
+        <span class="hljs-keyword">while</span> self.html_queue.not_empty:
+            html = self.html_queue.get()
+            total_div = html.xpath(<span class="hljs-string">&apos;//div[@class=&quot;article block untagged mb15&quot;]&apos;</span>) <span class="hljs-comment">#&#x8FD4;&#x56DE;divelememtn&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;</span>
+            items = []
+            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> total_div: <span class="hljs-comment">#&#x904D;&#x5386;div&#x6807;&#x67AA;&#xFF0C;&#x83B7;&#x53D6;&#x7CD7;&#x4E8B;&#x767E;&#x79D1;&#x6BCF;&#x6761;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x5168;&#x90E8;&#x4FE1;&#x606F;</span>
+                author_img = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;author clearfix&quot;]/a[1]/img/@src&apos;</span>)
+                author_img = <span class="hljs-string">&quot;https:&quot;</span> + author_img[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(author_img) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                author_name = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;author clearfix&quot;]/a[2]/h2/text()&apos;</span>)
+                author_name = author_name[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(author_name) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                author_href = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;author clearfix&quot;]/a[1]/@href&apos;</span>)
+                author_href = <span class="hljs-string">&quot;https://www.qiushibaike.com&quot;</span> + author_href[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(author_href) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                author_gender = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;author clearfix&quot;]//div/@class&apos;</span>)
+                author_gender = author_gender[<span class="hljs-number">0</span>].split(<span class="hljs-string">&quot; &quot;</span>)[-<span class="hljs-number">1</span>].replace(<span class="hljs-string">&quot;Icon&quot;</span>, <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-keyword">if</span> len(author_gender) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                author_age = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;author clearfix&quot;]//div/text()&apos;</span>)
+                author_age = author_age[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(author_age) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                content = i.xpath(<span class="hljs-string">&apos;./a[@class=&quot;contentHerf&quot;]/div/span/text()&apos;</span>)
+                content_vote = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;stats&quot;]/span[1]/i/text()&apos;</span>)
+                content_vote = content_vote[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(content_vote) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                content_comment_numbers = i.xpath(<span class="hljs-string">&apos;./div[@class=&quot;stats&quot;]/span[2]/a/i/text()&apos;</span>)
+                content_comment_numbers = content_comment_numbers[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(content_comment_numbers) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                hot_comment_author = i.xpath(<span class="hljs-string">&apos;./a[@class=&quot;indexGodCmt&quot;]/div/span[last()]/text()&apos;</span>)
+                hot_comment_author = hot_comment_author[<span class="hljs-number">0</span>] <span class="hljs-keyword">if</span> len(hot_comment_author) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                hot_comment = i.xpath(<span class="hljs-string">&apos;./a[@class=&quot;indexGodCmt&quot;]/div/div/text()&apos;</span>)
+                hot_comment = hot_comment[<span class="hljs-number">0</span>].replace(<span class="hljs-string">&quot;\n&#xFF1A;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>).replace(<span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-keyword">if</span> len(hot_comment) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                hot_comment_like_num = i.xpath(<span class="hljs-string">&apos;./a[@class=&quot;indexGodCmt&quot;]/div/div/div/text()&apos;</span>)
+                hot_comment_like_num = hot_comment_like_num[-<span class="hljs-number">1</span>].replace(<span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-keyword">if</span> len(hot_comment_like_num) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">None</span>
+                item = dict(
+                    author_name=author_name,
+                    author_img=author_img,
+                    author_href=author_href,
+                    author_gender=author_gender,
+                    author_age=author_age,
+                    content=content,
+                    content_vote=content_vote,
+                    content_comment_numbers=content_comment_numbers,
+                    hot_comment=hot_comment,
+                    hot_comment_author=hot_comment_author,
+                    hot_comment_like_num=hot_comment_like_num
+                )
+                items.append(item)
+            self.content_queue.put(items)
+            self.html_queue.task_done()  <span class="hljs-comment">#task_done&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x961F;&#x5217;&#x8BA1;&#x6570;&#x51CF;&#x4E00;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_items</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x4FDD;&#x5B58;items
+        :param items:&#x5217;&#x8868;
+        &apos;&apos;&apos;</span>
+        <span class="hljs-keyword">while</span> self.content_queue.not_empty:
+            items = self.content_queue.get()
+            f = open(<span class="hljs-string">&quot;qiubai.txt&quot;</span>,<span class="hljs-string">&quot;a&quot;</span>)
+            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items:
+                json.dump(i,f,ensure_ascii=<span class="hljs-keyword">False</span>,indent=<span class="hljs-number">2</span>)
+                <span class="hljs-comment"># f.write(json.dumps(i))</span>
+            f.close()
+            self.content_queue.task_done()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment"># 1.&#x83B7;&#x53D6;url list</span>
+        <span class="hljs-comment"># url_list = self.get_total_url()</span>
+        thread_list = []
+        thread_url = threading.Thread(target=self.get_total_url)
+        thread_list.append(thread_url)
+        <span class="hljs-comment">#&#x53D1;&#x9001;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+            thread_parse = threading.Thread(target=self.parse_url)
+            thread_list.append(thread_parse)
+        <span class="hljs-comment">#&#x63D0;&#x53D6;&#x6570;&#x636E;</span>
+        thread_get_content = threading.Thread(target=self.get_content)
+        thread_list.append(thread_get_content)
+        <span class="hljs-comment">#&#x4FDD;&#x5B58;</span>
+        thread_save = threading.Thread(target=self.save_items)
+        thread_list.append(thread_save)
+        <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> thread_list:
+            t.setDaemon(<span class="hljs-keyword">True</span>)  <span class="hljs-comment">#&#x4E3A;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x8BBE;&#x7F6E;&#x4E3A;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#xFF0C;&#x6548;&#x679C;&#x662F;&#x4E3B;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x5B50;&#x8FDB;&#x7A0B;&#x4E5F;&#x4F1A;&#x9000;&#x51FA;</span>
+            t.start()          <span class="hljs-comment">#&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;&#x65E0;&#x6CD5;&#x9000;&#x51FA;&#x7684;&#x95EE;&#x9898;</span>
+        <span class="hljs-comment">#</span>
+        <span class="hljs-comment"># for t in thread_list:</span>
+        <span class="hljs-comment">#     t.join()</span>
+
+        self.url_queue.join()   <span class="hljs-comment">#&#x8BA9;&#x4E3B;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x961F;&#x5217;&#x4E3A;&#x7A7A;&#x7684;&#x65F6;&#x5019;&#x624D;&#x80FD;&#x9000;&#x51FA;</span>
+        self.html_queue.join()
+        self.content_queue.join()
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:
+    qiubai = Qiubai()
+    qiubai.run()
+</code></pre>
+<p><img src="../images/threadqiushibaike.png" alt=""></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/part02/2.8.html" class="navigation navigation-prev " aria-label="Previous page: 糗事百科案例"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/part02/2.5.html" class="navigation navigation-next " aria-label="Next page: 参考阅读：BeautifulSoup4 解析器"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

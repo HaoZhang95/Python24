@@ -1,0 +1,1766 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>XPath与lxml类库 | 可选择的IDE和编辑器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/part02/2.4.html" />
+    
+    
+    <link rel="prev" href="../../file/part02/2.2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.3"
+        data-chapter-title="XPath与lxml类库"
+        data-filepath="file/part02/2.3.md"
+        data-basepath="../.."
+        data-revision="Sat Jul 22 2017 18:48:24 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/part01/1.html">
+            
+                
+                    <a href="../../file/part01/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        爬虫原理与数据抓取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/part01/1.1.html">
+            
+                
+                    <a href="../../file/part01/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        (了解)通用爬虫和聚焦爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="file/part01/1.2.html">
+            
+                
+                    <a href="../../file/part01/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        (复习)HTTP/HTTPS的请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/part01/2.0.html">
+            
+                
+                    <a href="../../file/part01/2.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        str和bytes的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/part01/2.1.html">
+            
+                
+                    <a href="../../file/part01/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Requests简单使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="file/part01/2.2.html">
+            
+                
+                    <a href="../../file/part01/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Requests深入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="file/part01/1.3.html">
+            
+                
+                    <a href="../../file/part01/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        HTTP/HTTPS抓包工具-Fiddler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="file/part01/1.4.html">
+            
+                
+                    <a href="../../file/part01/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        参考阅读：urllib模块的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file/part01/1.5.html">
+            
+                
+                    <a href="../../file/part01/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        参考阅读：urllib：GET请求和POST请求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="file/part01/1.6.html">
+            
+                
+                    <a href="../../file/part01/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        参考阅读：urllib：Handler处理器和自定义Opener
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="file/part01/1.9.html">
+            
+                
+                    <a href="../../file/part01/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        参考阅读：编码故事
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/part02/2.html">
+            
+                
+                    <a href="../../file/part02/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        非结构化数据与结构化数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/part02/2.1.html">
+            
+                
+                    <a href="../../file/part02/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        正则表达式re模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/part02/2.2.html">
+            
+                
+                    <a href="../../file/part02/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        案例：使用正则表达式的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="file/part02/2.3.html">
+            
+                
+                    <a href="../../file/part02/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        XPath与lxml类库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/part02/2.4.html">
+            
+                
+                    <a href="../../file/part02/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        案例：使用XPath的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="file/part02/2.7.html">
+            
+                
+                    <a href="../../file/part02/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        JSON模块与JsonPath
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="file/part02/2.8.html">
+            
+                
+                    <a href="../../file/part02/2.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        糗事百科案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="file/part02/2.9.html">
+            
+                
+                    <a href="../../file/part02/2.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        多线程爬虫案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="file/part02/2.5.html">
+            
+                
+                    <a href="../../file/part02/2.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        参考阅读：BeautifulSoup4 解析器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="file/part02/2.6.html">
+            
+                
+                    <a href="../../file/part02/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        参考阅读：案例：使用bs4的爬虫
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/part03/3.html">
+            
+                
+                    <a href="../../file/part03/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        动态HTML处理和机器图像识别
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/part03/3.1.html">
+            
+                
+                    <a href="../../file/part03/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        动态HTML介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="file/part03/3.2.html">
+            
+                
+                    <a href="../../file/part03/3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Selenium与PhantomJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/part03/3.3.html">
+            
+                
+                    <a href="../../file/part03/3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        案例一：网站模拟登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/part03/3.4.html">
+            
+                
+                    <a href="../../file/part03/3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        案例二：动态页面模拟点击
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="file/part03/3.6.html">
+            
+                
+                    <a href="../../file/part03/3.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        机器视觉与Tesseract介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="file/part03/3.7.html">
+            
+                
+                    <a href="../../file/part03/3.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        处理一些格式规范的文字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="file/part03/3.8.html">
+            
+                
+                    <a href="../../file/part03/3.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        尝试对验证码进行机器识别处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="file/part03/3.5.html">
+            
+                
+                    <a href="../../file/part03/3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        参考阅读：执行JavaScript语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="file/part03/3.9.html">
+            
+                
+                    <a href="../../file/part03/3.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        参考阅读：训练Tesseract
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/part04/4.html">
+            
+                
+                    <a href="../../file/part04/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/part04/4.1.html">
+            
+                
+                    <a href="../../file/part04/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        配置安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="file/part04/4.2.html">
+            
+                
+                    <a href="../../file/part04/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        入门案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="file/part04/4.3.html">
+            
+                
+                    <a href="../../file/part04/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Scrapy Shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="file/part04/4.4.html">
+            
+                
+                    <a href="../../file/part04/4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Item Pipeline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="file/part04/4.5.html">
+            
+                
+                    <a href="../../file/part04/4.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="file/part04/4.6.html">
+            
+                
+                    <a href="../../file/part04/4.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="file/part04/4.7.html">
+            
+                
+                    <a href="../../file/part04/4.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Request/Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="file/part04/4.8.html">
+            
+                
+                    <a href="../../file/part04/4.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Downloader Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="file/part04/4.9.html">
+            
+                
+                    <a href="../../file/part04/4.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Settings
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/part05/5.html">
+            
+                
+                    <a href="../../file/part05/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Scrapy实战项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/part05/5.1.html">
+            
+                
+                    <a href="../../file/part05/5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        (案例一)手机App抓包爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/part05/5.2.html">
+            
+                
+                    <a href="../../file/part05/5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        (案例二)阳光热线问政平台爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/part05/5.3.html">
+            
+                
+                    <a href="../../file/part05/5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        (案例三)新浪网分类资讯爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="file/part05/5.4.html">
+            
+                
+                    <a href="../../file/part05/5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        (案例四)Cosplay图片下载器爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="file/part05/5.5.html">
+            
+                
+                    <a href="../../file/part05/5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        (案例五)将数据保存在MongoDB中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="file/part05/5.6.html">
+            
+                
+                    <a href="../../file/part05/5.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        (案例六)三种scrapy模拟登陆策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="file/part05/5.7.html">
+            
+                
+                    <a href="../../file/part05/5.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        附：通过Fiddler进行手机抓包方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/part06/6.html">
+            
+                
+                    <a href="../../file/part06/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        scrapy-redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/part06/6.1.html">
+            
+                
+                    <a href="../../file/part06/6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        源码分析参考：Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/part06/6.2.html">
+            
+                
+                    <a href="../../file/part06/6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        源码分析参考：Dupefilter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="file/part06/6.3.html">
+            
+                
+                    <a href="../../file/part06/6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        源码分析参考：Picklecompat
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="file/part06/6.4.html">
+            
+                
+                    <a href="../../file/part06/6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        源码分析参考：Pipelines
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="file/part06/6.5.html">
+            
+                
+                    <a href="../../file/part06/6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        源码分析参考：Queue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="file/part06/6.6.html">
+            
+                
+                    <a href="../../file/part06/6.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        源码分析参考：Scheduler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="file/part06/6.7.html">
+            
+                
+                    <a href="../../file/part06/6.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        源码分析参考：Spider
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/part07/7.html">
+            
+                
+                    <a href="../../file/part07/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        scrapy-redis实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/part07/7.1.html">
+            
+                
+                    <a href="../../file/part07/7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        源码自带项目说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/part07/7.2.html">
+            
+                
+                    <a href="../../file/part07/7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        有缘网分布式爬虫项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/part07/7.3.html">
+            
+                
+                    <a href="../../file/part07/7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        有缘网分布式爬虫项目2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/part07/7.4.html">
+            
+                
+                    <a href="../../file/part07/7.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        处理Redis里的数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="file/part07/7.5.html">
+            
+                
+                    <a href="../../file/part07/7.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/part07/7.6.html">
+            
+                
+                    <a href="../../file/part07/7.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="file/part07/7.7.html">
+            
+                
+                    <a href="../../file/part07/7.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        IT桔子分布式项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="file/part07/7.8.html">
+            
+                
+                    <a href="../../file/part07/7.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        IT桔子分布式项目2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >可选择的IDE和编辑器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>&#x6709;&#x540C;&#x5B66;&#x8BF4;&#xFF0C;&#x6211;&#x6B63;&#x5219;&#x7528;&#x7684;&#x4E0D;&#x597D;&#xFF0C;&#x5904;&#x7406;HTML&#x6587;&#x6863;&#x5F88;&#x7D2F;&#xFF0C;&#x6709;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;</p>
+<p>&#x6709;&#xFF01;&#x90A3;&#x5C31;&#x662F;XPath&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5148;&#x5C06; HTML&#x6587;&#x4EF6; &#x8F6C;&#x6362;&#x6210; XML&#x6587;&#x6863;&#xFF0C;&#x7136;&#x540E;&#x7528; XPath &#x67E5;&#x627E; HTML &#x8282;&#x70B9;&#x6216;&#x5143;&#x7D20;&#x3002;</p>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;xml">&#x4EC0;&#x4E48;&#x662F;XML</h2>
+<ul>
+<li>XML &#x6307;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;EXtensible Markup Language&#xFF09;</li>
+<li>XML &#x662F;&#x4E00;&#x79CD;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x5F88;&#x7C7B;&#x4F3C; HTML</li>
+<li>XML &#x7684;&#x8BBE;&#x8BA1;&#x5B97;&#x65E8;&#x662F;&#x4F20;&#x8F93;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x975E;&#x663E;&#x793A;&#x6570;&#x636E;</li>
+<li>XML &#x7684;&#x6807;&#x7B7E;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#x3002;</li>
+<li>XML &#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x5177;&#x6709;&#x81EA;&#x6211;&#x63CF;&#x8FF0;&#x6027;&#x3002;</li>
+<li>XML &#x662F; W3C &#x7684;&#x63A8;&#x8350;&#x6807;&#x51C6;</li>
+</ul>
+<p>W3School&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="http://www.w3school.com.cn/xml/index.asp" target="_blank">http://www.w3school.com.cn/xml/index.asp</a></p>
+<h4 id="xml-&#x548C;-html-&#x7684;&#x533A;&#x522B;">XML &#x548C; HTML &#x7684;&#x533A;&#x522B;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x6570;&#x636E;&#x683C;&#x5F0F;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+<th>&#x8BBE;&#x8BA1;&#x76EE;&#x6807;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td style="text-align:center">Extensible Markup Language <code>&#xFF08;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF09;</code></td>
+<td>&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x4F20;&#x8F93;&#x548C;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x7126;&#x70B9;&#x662F;&#x6570;&#x636E;&#x7684;&#x5185;&#x5BB9;&#x3002;</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td style="text-align:center">HyperText Markup Language <code>&#xFF08;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF09;</code></td>
+<td>&#x663E;&#x793A;&#x6570;&#x636E;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x66F4;&#x597D;&#x663E;&#x793A;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td>HTML DOM</td>
+<td style="text-align:center">Document Object Model for HTML <code>(&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B;)</code></td>
+<td>&#x901A;&#x8FC7; HTML DOM&#xFF0C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x6240;&#x6709;&#x7684; HTML &#x5143;&#x7D20;&#xFF0C;&#x8FDE;&#x540C;&#x5B83;&#x4EEC;&#x6240;&#x5305;&#x542B;&#x7684;&#x6587;&#x672C;&#x548C;&#x5C5E;&#x6027;&#x3002;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="xml&#x6587;&#x6863;&#x793A;&#x4F8B;">XML&#x6587;&#x6863;&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">bookstore</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">book</span> <span class="hljs-attribute">category</span>=<span class="hljs-value">&quot;cooking&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>Everyday Italian<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>Giada De Laurentiis<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>30.00<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">book</span> <span class="hljs-attribute">category</span>=<span class="hljs-value">&quot;children&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">book</span> <span class="hljs-attribute">category</span>=<span class="hljs-value">&quot;web&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>XQuery Kick Start<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>James McGovern<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>Per Bothner<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>Kurt Cagle<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>James Linn<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>Vaidyanathan Nagarajan<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>49.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">book</span> <span class="hljs-attribute">category</span>=<span class="hljs-value">&quot;web&quot;</span> <span class="hljs-attribute">cover</span>=<span class="hljs-value">&quot;paperback&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>Learning XML<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>Erik T. Ray<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>39.95<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">bookstore</span>&gt;</span>
+</code></pre>
+<h5 id="html-dom-&#x6A21;&#x578B;&#x793A;&#x4F8B;">HTML DOM &#x6A21;&#x578B;&#x793A;&#x4F8B;</h5>
+<p>HTML DOM &#x5B9A;&#x4E49;&#x4E86;&#x8BBF;&#x95EE;&#x548C;&#x64CD;&#x4F5C; HTML &#x6587;&#x6863;&#x7684;&#x6807;&#x51C6;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x6811;&#x7ED3;&#x6784;&#x65B9;&#x5F0F;&#x8868;&#x8FBE; HTML &#x6587;&#x6863;&#x3002;</p>
+<p><img src="../images/02-htmltree.gif" alt=""></p>
+<hr>
+<h3 id="xml&#x7684;&#x8282;&#x70B9;&#x5173;&#x7CFB;">XML&#x7684;&#x8282;&#x70B9;&#x5173;&#x7CFB;</h3>
+<h4 id="1-&#x7236;&#xFF08;parent&#xFF09;">1. &#x7236;&#xFF08;Parent&#xFF09;</h4>
+<p>&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4EE5;&#x53CA;&#x5C5E;&#x6027;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;XML&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;book &#x5143;&#x7D20;&#x662F; title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#x7684;&#x7236;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+</code></pre>
+<h4 id="2-&#x5B50;&#xFF08;children&#xFF09;">2. &#x5B50;&#xFF08;Children&#xFF09;</h4>
+<p>&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53EF;&#x6709;&#x96F6;&#x4E2A;&#x3001;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B50;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#x90FD;&#x662F; book &#x5143;&#x7D20;&#x7684;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+</code></pre>
+<h4 id="3-&#x540C;&#x80DE;&#xFF08;sibling&#xFF09;">3. &#x540C;&#x80DE;&#xFF08;Sibling&#xFF09;</h4>
+<p>&#x62E5;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7236;&#x7684;&#x8282;&#x70B9;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#x90FD;&#x662F;&#x540C;&#x80DE;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+</code></pre>
+<h4 id="4-&#x5148;&#x8F88;&#xFF08;ancestor&#xFF09;">4. &#x5148;&#x8F88;&#xFF08;Ancestor&#xFF09;</h4>
+<p>&#x67D0;&#x8282;&#x70B9;&#x7684;&#x7236;&#x3001;&#x7236;&#x7684;&#x7236;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;title &#x5143;&#x7D20;&#x7684;&#x5148;&#x8F88;&#x662F; book &#x5143;&#x7D20;&#x548C; bookstore &#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">bookstore</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">bookstore</span>&gt;</span>
+</code></pre>
+<h4 id="5-&#x540E;&#x4EE3;&#xFF08;descendant&#xFF09;">5. &#x540E;&#x4EE3;&#xFF08;Descendant&#xFF09;</h4>
+<p>&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5B50;&#xFF0C;&#x5B50;&#x7684;&#x5B50;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;bookstore &#x7684;&#x540E;&#x4EE3;&#x662F; book&#x3001;title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">bookstore</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-title">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-title">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-title">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">bookstore</span>&gt;</span>
+</code></pre>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;xpath&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;XPath&#xFF1F;</h2>
+<blockquote>
+<p>XPath (XML Path Language) &#x662F;&#x4E00;&#x95E8;&#x5728; XML &#x6587;&#x6863;&#x4E2D;&#x67E5;&#x627E;&#x4FE1;&#x606F;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x7528;&#x6765;&#x5728; XML &#x6587;&#x6863;&#x4E2D;&#x5BF9;&#x5143;&#x7D20;&#x548C;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x904D;&#x5386;&#x3002;</p>
+<p>W3School&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="http://www.w3school.com.cn/xpath/index.asp" target="_blank">http://www.w3school.com.cn/xpath/index.asp</a></p>
+</blockquote>
+<h3 id="xpath-&#x5F00;&#x53D1;&#x5DE5;&#x5177;">XPath &#x5F00;&#x53D1;&#x5DE5;&#x5177;</h3>
+<ol>
+<li>&#x5F00;&#x6E90;&#x7684;XPath&#x8868;&#x8FBE;&#x5F0F;&#x7F16;&#x8F91;&#x5DE5;&#x5177;:XMLQuire(XML&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x53EF;&#x7528;)</li>
+<li>Chrome&#x63D2;&#x4EF6; XPath Helper</li>
+<li>Firefox&#x63D2;&#x4EF6; XPath Checker</li>
+</ol>
+<h3 id="&#x9009;&#x53D6;&#x8282;&#x70B9;">&#x9009;&#x53D6;&#x8282;&#x70B9;</h3>
+<p>XPath &#x4F7F;&#x7528;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x9009;&#x53D6; XML &#x6587;&#x6863;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x6216;&#x8005;&#x8282;&#x70B9;&#x96C6;&#x3002;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x6211;&#x4EEC;&#x5728;&#x5E38;&#x89C4;&#x7684;&#x7535;&#x8111;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x770B;&#x5230;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E86;&#x6700;&#x5E38;&#x7528;&#x7684;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nodename</td>
+<td>&#x9009;&#x53D6;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>/</td>
+<td>&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x9009;&#x53D6;&#x3002;</td>
+</tr>
+<tr>
+<td>//</td>
+<td>&#x4ECE;&#x5339;&#x914D;&#x9009;&#x62E9;&#x7684;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x9009;&#x62E9;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x5B83;&#x4EEC;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>.</td>
+<td>&#x9009;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>..</td>
+<td>&#x9009;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>@</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x4EE5;&#x53CA;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bookstore</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore</td>
+<td>&#x9009;&#x53D6;&#x6839;&#x5143;&#x7D20; bookstore&#x3002;&#x6CE8;&#x91CA;&#xFF1A;&#x5047;&#x5982;&#x8DEF;&#x5F84;&#x8D77;&#x59CB;&#x4E8E;&#x6B63;&#x659C;&#x6760;( / )&#xFF0C;&#x5219;&#x6B64;&#x8DEF;&#x5F84;&#x59CB;&#x7EC8;&#x4EE3;&#x8868;&#x5230;&#x67D0;&#x5143;&#x7D20;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF01;</td>
+</tr>
+<tr>
+<td>bookstore/book</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x7684;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//book</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709; book &#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;&#x5B83;&#x4EEC;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>bookstore//book</td>
+<td>&#x9009;&#x62E9;&#x5C5E;&#x4E8E; bookstore &#x5143;&#x7D20;&#x7684;&#x540E;&#x4EE3;&#x7684;&#x6240;&#x6709; book &#x5143;&#x7D20;&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;&#x5B83;&#x4EEC;&#x4F4D;&#x4E8E; bookstore &#x4E4B;&#x4E0B;&#x7684;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>//@lang</td>
+<td>&#x9009;&#x53D6;&#x540D;&#x4E3A; lang &#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8C13;&#x8BED;&#xFF08;predicates&#xFF09;">&#x8C13;&#x8BED;&#xFF08;Predicates&#xFF09;</h3>
+<p>&#x8C13;&#x8BED;&#x7528;&#x6765;&#x67E5;&#x627E;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x8282;&#x70B9;&#x6216;&#x8005;&#x5305;&#x542B;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x88AB;&#x5D4C;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5217;&#x51FA;&#x4E86;&#x5E26;&#x6709;&#x8C13;&#x8BED;&#x7684;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/bookstore/book[1]</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5B50;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[last()]</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5B50;&#x5143;&#x7D20;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[last()-1]</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5B50;&#x5143;&#x7D20;&#x7684;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[position()&lt;3]</td>
+<td>&#x9009;&#x53D6;&#x6700;&#x524D;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x5C5E;&#x4E8E; bookstore &#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x7684; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//title[@lang]</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709;&#x62E5;&#x6709;&#x540D;&#x4E3A; lang &#x7684;&#x5C5E;&#x6027;&#x7684; title &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//title[@lang=&#x2019;eng&#x2019;]</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709; title &#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x62E5;&#x6709;&#x503C;&#x4E3A; eng &#x7684; lang &#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; book &#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x5176;&#x4E2D;&#x7684; price &#x5143;&#x7D20;&#x7684;&#x503C;&#x987B;&#x5927;&#x4E8E; 35.00&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]/title</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x4E2D;&#x7684; book &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; title &#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x5176;&#x4E2D;&#x7684; price &#x5143;&#x7D20;&#x7684;&#x503C;&#x987B;&#x5927;&#x4E8E; 35.00&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x9009;&#x53D6;&#x672A;&#x77E5;&#x8282;&#x70B9;">&#x9009;&#x53D6;&#x672A;&#x77E5;&#x8282;&#x70B9;</h3>
+<p>XPath &#x901A;&#x914D;&#x7B26;&#x53EF;&#x7528;&#x6765;&#x9009;&#x53D6;&#x672A;&#x77E5;&#x7684; XML &#x5143;&#x7D20;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x901A;&#x914D;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>@*</td>
+<td>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>node()</td>
+<td>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD9;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/bookstore/*</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//*</td>
+<td>&#x9009;&#x53D6;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>html/node()/meta/@*</td>
+<td>&#x9009;&#x62E9;html&#x4E0B;&#x9762;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x4E0B;&#x7684;meta&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td>//title[@*]</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709;&#x5E26;&#x6709;&#x5C5E;&#x6027;&#x7684; title &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x9009;&#x53D6;&#x82E5;&#x5E72;&#x8DEF;&#x5F84;">&#x9009;&#x53D6;&#x82E5;&#x5E72;&#x8DEF;&#x5F84;</h3>
+<p>&#x901A;&#x8FC7;&#x5728;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x201C;|&#x201D;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x9009;&#x53D6;&#x82E5;&#x5E72;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD9;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>//book/title | //book/price</td>
+<td>&#x9009;&#x53D6; book &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; title &#x548C; price &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//title | //price</td>
+<td>&#x9009;&#x53D6;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x6240;&#x6709; title &#x548C; price &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book/title | //price</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5143;&#x7D20;&#x7684; book &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; title &#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x53CA;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x6709;&#x7684; price &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xpath&#x7684;&#x8FD0;&#x7B97;&#x7B26;">XPath&#x7684;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E86;&#x53EF;&#x7528;&#x5728; XPath &#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<p><img src="../images/xpath.png" alt=""></p>
+<h5 id="&#x8FD9;&#x4E9B;&#x5C31;&#x662F;xpath&#x7684;&#x8BED;&#x6CD5;&#x5185;&#x5BB9;&#xFF0C;&#x5728;&#x8FD0;&#x7528;&#x5230;python&#x6293;&#x53D6;&#x65F6;&#x8981;&#x5148;&#x8F6C;&#x6362;&#x4E3A;xml&#x3002;">&#x8FD9;&#x4E9B;&#x5C31;&#x662F;XPath&#x7684;&#x8BED;&#x6CD5;&#x5185;&#x5BB9;&#xFF0C;&#x5728;&#x8FD0;&#x7528;&#x5230;Python&#x6293;&#x53D6;&#x65F6;&#x8981;&#x5148;&#x8F6C;&#x6362;&#x4E3A;xml&#x3002;</h5>
+<h2 id="lxml&#x5E93;">lxml&#x5E93;</h2>
+<blockquote>
+<p>lxml &#x662F; &#x4E00;&#x4E2A;HTML/XML&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5982;&#x4F55;&#x89E3;&#x6790;&#x548C;&#x63D0;&#x53D6; HTML/XML &#x6570;&#x636E;&#x3002;</p>
+<p>lxml&#x548C;&#x6B63;&#x5219;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x662F;&#x7528; C &#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x662F;&#x4E00;&#x6B3E;&#x9AD8;&#x6027;&#x80FD;&#x7684; Python HTML/XML &#x89E3;&#x6790;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4E4B;&#x524D;&#x5B66;&#x4E60;&#x7684;XPath&#x8BED;&#x6CD5;&#xFF0C;&#x6765;&#x5FEB;&#x901F;&#x7684;&#x5B9A;&#x4F4D;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x4EE5;&#x53CA;&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x3002;</p>
+<p>lxml python &#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="http://lxml.de/index.html" target="_blank">http://lxml.de/index.html</a></p>
+<p>&#x9700;&#x8981;&#x5B89;&#x88C5;C&#x8BED;&#x8A00;&#x5E93;&#xFF0C;&#x53EF;&#x4F7F;&#x7528; pip &#x5B89;&#x88C5;&#xFF1A;<code>pip install lxml</code> &#xFF08;&#x6216;&#x901A;&#x8FC7;wheel&#x65B9;&#x5F0F;&#x5B89;&#x88C5;&#xFF09;</p>
+</blockquote>
+<h3 id="&#x521D;&#x6B65;&#x4F7F;&#x7528;">&#x521D;&#x6B65;&#x4F7F;&#x7528;</h3>
+<p>&#x6211;&#x4EEC;&#x5229;&#x7528;&#x5B83;&#x6765;&#x89E3;&#x6790; HTML &#x4EE3;&#x7801;&#xFF0C;&#x7B80;&#x5355;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># lxml_test.py</span>
+
+<span class="hljs-comment"># &#x4F7F;&#x7528; lxml &#x7684; etree &#x5E93;</span>
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+text = <span class="hljs-string">&apos;&apos;&apos;
+&lt;div&gt;
+    &lt;ul&gt;
+         &lt;li class=&quot;item-0&quot;&gt;&lt;a href=&quot;link1.html&quot;&gt;first item&lt;/a&gt;&lt;/li&gt;
+         &lt;li class=&quot;item-1&quot;&gt;&lt;a href=&quot;link2.html&quot;&gt;second item&lt;/a&gt;&lt;/li&gt;
+         &lt;li class=&quot;item-inactive&quot;&gt;&lt;a href=&quot;link3.html&quot;&gt;third item&lt;/a&gt;&lt;/li&gt;
+         &lt;li class=&quot;item-1&quot;&gt;&lt;a href=&quot;link4.html&quot;&gt;fourth item&lt;/a&gt;&lt;/li&gt;
+         &lt;li class=&quot;item-0&quot;&gt;&lt;a href=&quot;link5.html&quot;&gt;fifth item&lt;/a&gt; # &#x6CE8;&#x610F;&#xFF0C;&#x6B64;&#x5904;&#x7F3A;&#x5C11;&#x4E00;&#x4E2A; &lt;/li&gt; &#x95ED;&#x5408;&#x6807;&#x7B7E;
+     &lt;/ul&gt;
+ &lt;/div&gt;
+&apos;&apos;&apos;</span>
+
+<span class="hljs-comment">#&#x5229;&#x7528;etree.HTML&#xFF0C;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x89E3;&#x6790;&#x4E3A;HTML&#x6587;&#x6863;</span>
+html = etree.HTML(text)
+
+<span class="hljs-comment"># &#x6309;&#x5B57;&#x7B26;&#x4E32;&#x5E8F;&#x5217;&#x5316;HTML&#x6587;&#x6863;</span>
+result = etree.tostring(html)
+
+print(result)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-0&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link1.html&quot;</span>&gt;</span>first item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link2.html&quot;</span>&gt;</span>second item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-inactive&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link3.html&quot;</span>&gt;</span>third item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link4.html&quot;</span>&gt;</span>fourth item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-0&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link5.html&quot;</span>&gt;</span>fifth item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>lxml &#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x4FEE;&#x6B63; html &#x4EE3;&#x7801;&#xFF0C;&#x4F8B;&#x5B50;&#x91CC;&#x4E0D;&#x4EC5;&#x8865;&#x5168;&#x4E86; li &#x6807;&#x7B7E;&#xFF0C;&#x8FD8;&#x6DFB;&#x52A0;&#x4E86; body&#xFF0C;html &#x6807;&#x7B7E;&#x3002;</p>
+<h3 id="&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#xFF1A;">&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#xFF1A;</h3>
+<p>&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;lxml&#x8FD8;&#x652F;&#x6301;&#x4ECE;&#x6587;&#x4EF6;&#x91CC;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#x3002;&#x6211;&#x4EEC;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;hello.html&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- hello.html --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-0&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link1.html&quot;</span>&gt;</span>first item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link2.html&quot;</span>&gt;</span>second item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-inactive&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link3.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bold&quot;</span>&gt;</span>third item<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link4.html&quot;</span>&gt;</span>fourth item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-0&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link5.html&quot;</span>&gt;</span>fifth item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>&#x518D;&#x5229;&#x7528; etree.parse() &#x65B9;&#x6CD5;&#x6765;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># lxml_parse.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x5916;&#x90E8;&#x6587;&#x4EF6; hello.html</span>
+html = etree.parse(<span class="hljs-string">&apos;./hello.html&apos;</span>)
+result = etree.tostring(html, pretty_print=<span class="hljs-keyword">True</span>)
+
+print(result)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E0E;&#x4E4B;&#x524D;&#x76F8;&#x540C;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-0&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link1.html&quot;</span>&gt;</span>first item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link2.html&quot;</span>&gt;</span>second item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-inactive&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link3.html&quot;</span>&gt;</span>third item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link4.html&quot;</span>&gt;</span>fourth item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;item-0&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;link5.html&quot;</span>&gt;</span>fifth item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<h3 id="xpath&#x5B9E;&#x4F8B;&#x6D4B;&#x8BD5;">XPath&#x5B9E;&#x4F8B;&#x6D4B;&#x8BD5;</h3>
+<h4 id="1-&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;-li-&#x6807;&#x7B7E;">1. &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684; <code>&lt;li&gt;</code> &#x6807;&#x7B7E;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+<span class="hljs-keyword">print</span> type(html)  <span class="hljs-comment"># &#x663E;&#x793A;etree.parse() &#x8FD4;&#x56DE;&#x7C7B;&#x578B;</span>
+
+result = html.xpath(<span class="hljs-string">&apos;//li&apos;</span>)
+
+<span class="hljs-keyword">print</span> result  <span class="hljs-comment"># &#x6253;&#x5370;&lt;li&gt;&#x6807;&#x7B7E;&#x7684;&#x5143;&#x7D20;&#x96C6;&#x5408;</span>
+<span class="hljs-keyword">print</span> len(result)
+<span class="hljs-keyword">print</span> type(result)
+<span class="hljs-keyword">print</span> type(result[<span class="hljs-number">0</span>])
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-python">&lt;type <span class="hljs-string">&apos;lxml.etree._ElementTree&apos;</span>&gt;
+[&lt;Element li at <span class="hljs-number">0x1014e0e18</span>&gt;, &lt;Element li at <span class="hljs-number">0x1014e0ef0</span>&gt;, &lt;Element li at <span class="hljs-number">0x1014e0f38</span>&gt;, &lt;Element li at <span class="hljs-number">0x1014e0f80</span>&gt;, &lt;Element li at <span class="hljs-number">0x1014e0fc8</span>&gt;]
+<span class="hljs-number">5</span>
+&lt;type <span class="hljs-string">&apos;list&apos;</span>&gt;
+&lt;type <span class="hljs-string">&apos;lxml.etree._Element&apos;</span>&gt;
+</code></pre>
+<h4 id="2-&#x7EE7;&#x7EED;&#x83B7;&#x53D6;li-&#x6807;&#x7B7E;&#x7684;&#x6240;&#x6709;-class&#x5C5E;&#x6027;">2. &#x7EE7;&#x7EED;&#x83B7;&#x53D6;<code>&lt;li&gt;</code> &#x6807;&#x7B7E;&#x7684;&#x6240;&#x6709; <code>class</code>&#x5C5E;&#x6027;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+result = html.xpath(<span class="hljs-string">&apos;//li/@class&apos;</span>)
+
+<span class="hljs-keyword">print</span> result
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code class="lang-c">[&apos;item-0&apos;, &apos;item-1&apos;, &apos;item-inactive&apos;, &apos;item-1&apos;, &apos;item-0&apos;]
+</code></pre>
+<h4 id="3-&#x7EE7;&#x7EED;&#x83B7;&#x53D6;li&#x6807;&#x7B7E;&#x4E0B;hre-&#x4E3A;-link1html-&#x7684;-a-&#x6807;&#x7B7E;">3. &#x7EE7;&#x7EED;&#x83B7;&#x53D6;<code>&lt;li&gt;</code>&#x6807;&#x7B7E;&#x4E0B;<code>hre</code> &#x4E3A; <code>link1.html</code> &#x7684; <code>&lt;a&gt;</code> &#x6807;&#x7B7E;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+result = html.xpath(<span class="hljs-string">&apos;//li/a[@href=&quot;link1.html&quot;]&apos;</span>)
+
+<span class="hljs-keyword">print</span> result
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code>[&lt;Element a at 0x10ffaae18&gt;]
+</code></pre><h4 id="4-&#x83B7;&#x53D6;li-&#x6807;&#x7B7E;&#x4E0B;&#x7684;&#x6240;&#x6709;-span-&#x6807;&#x7B7E;">4. &#x83B7;&#x53D6;<code>&lt;li&gt;</code> &#x6807;&#x7B7E;&#x4E0B;&#x7684;&#x6240;&#x6709; <code>&lt;span&gt;</code> &#x6807;&#x7B7E;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+
+<span class="hljs-comment">#result = html.xpath(&apos;//li/span&apos;)</span>
+<span class="hljs-comment">#&#x6CE8;&#x610F;&#x8FD9;&#x4E48;&#x5199;&#x662F;&#x4E0D;&#x5BF9;&#x7684;&#xFF1A;</span>
+<span class="hljs-comment">#&#x56E0;&#x4E3A; / &#x662F;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x5B50;&#x5143;&#x7D20;&#x7684;&#xFF0C;&#x800C; &lt;span&gt; &#x5E76;&#x4E0D;&#x662F; &lt;li&gt; &#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8981;&#x7528;&#x53CC;&#x659C;&#x6760;</span>
+
+result = html.xpath(<span class="hljs-string">&apos;//li//span&apos;</span>)
+
+<span class="hljs-keyword">print</span> result
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code>[&lt;Element span at 0x10d698e18&gt;]
+</code></pre><h4 id="5-&#x83B7;&#x53D6;-li-&#x6807;&#x7B7E;&#x4E0B;&#x7684;a&#x6807;&#x7B7E;&#x91CC;&#x7684;&#x6240;&#x6709;-class">5. &#x83B7;&#x53D6; <code>&lt;li&gt;</code> &#x6807;&#x7B7E;&#x4E0B;&#x7684;<code>&lt;a&gt;</code>&#x6807;&#x7B7E;&#x91CC;&#x7684;&#x6240;&#x6709; class</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+result = html.xpath(<span class="hljs-string">&apos;//li/a//@class&apos;</span>)
+
+<span class="hljs-keyword">print</span> result
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code>[&apos;blod&apos;]
+</code></pre><h4 id="6-&#x83B7;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x4E2A;-li-&#x7684;-a-&#x7684;-href">6. &#x83B7;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x4E2A; <code>&lt;li&gt;</code> &#x7684; <code>&lt;a&gt;</code> &#x7684; href</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+
+result = html.xpath(<span class="hljs-string">&apos;//li[last()]/a/@href&apos;</span>)
+<span class="hljs-comment"># &#x8C13;&#x8BED; [last()] &#x53EF;&#x4EE5;&#x627E;&#x5230;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+
+<span class="hljs-keyword">print</span> result
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code>[&apos;link5.html&apos;]
+</code></pre><h4 id="7-&#x83B7;&#x53D6;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;">7. &#x83B7;&#x53D6;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+result = html.xpath(<span class="hljs-string">&apos;//li[last()-1]/a&apos;</span>)
+
+<span class="hljs-comment"># text &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x5185;&#x5BB9;</span>
+<span class="hljs-keyword">print</span> result[<span class="hljs-number">0</span>].text
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code>fourth item
+</code></pre><h4 id="8-&#x83B7;&#x53D6;-class-&#x503C;&#x4E3A;-bold-&#x7684;&#x6807;&#x7B7E;&#x540D;">8. &#x83B7;&#x53D6; <code>class</code> &#x503C;&#x4E3A; <code>bold</code> &#x7684;&#x6807;&#x7B7E;&#x540D;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># xpath_li.py</span>
+
+<span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree
+
+html = etree.parse(<span class="hljs-string">&apos;hello.html&apos;</span>)
+
+result = html.xpath(<span class="hljs-string">&apos;//*[@class=&quot;bold&quot;]&apos;</span>)
+
+<span class="hljs-comment"># tag&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6807;&#x7B7E;&#x540D;</span>
+<span class="hljs-keyword">print</span> result[<span class="hljs-number">0</span>].tag
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</p>
+<pre><code>span
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/part02/2.2.html" class="navigation navigation-prev " aria-label="Previous page: 案例：使用正则表达式的爬虫"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/part02/2.4.html" class="navigation navigation-next " aria-label="Next page: 案例：使用XPath的爬虫"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

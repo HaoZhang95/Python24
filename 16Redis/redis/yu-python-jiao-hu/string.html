@@ -1,0 +1,593 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>string | 欢迎学习Redis课程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../redis/da-jian-zhu-cong.html" />
+    
+    
+    <link rel="prev" href="../../redis/yu-python-jiao-hu/strictredis.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.5.2"
+        data-chapter-title="string"
+        data-filepath="redis/yu-python-jiao-hu/string.md"
+        data-basepath="../.."
+        data-revision="Tue Apr 17 2018 01:53:41 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="redis.html">
+            
+                
+                    <a href="../../redis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Redis
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="redis/an-zhuang.html">
+            
+                
+                    <a href="../../redis/an-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="redis/pei-zhi.html">
+            
+                
+                    <a href="../../redis/pei-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="redis/fu-wu-duan-he-ke-hu-duan-ming-ling.html">
+            
+                
+                    <a href="../../redis/fu-wu-duan-he-ke-hu-duan-ming-ling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        服务端和客户端命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="redis/shu-ju-cao-zuo.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        数据操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="redis/shu-ju-cao-zuo/string.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        string
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="redis/shu-ju-cao-zuo/jian-ming-ling.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/jian-ming-ling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        键命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="redis/shu-ju-cao-zuo/hash.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.3.</b>
+                        
+                        hash
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="redis/shu-ju-cao-zuo/list.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.4.</b>
+                        
+                        list
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="redis/shu-ju-cao-zuo/set.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/set.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.5.</b>
+                        
+                        set
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="redis/shu-ju-cao-zuo/zset.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/zset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.6.</b>
+                        
+                        zset
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="redis/yu-python-jiao-hu.html">
+            
+                
+                    <a href="../../redis/yu-python-jiao-hu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        与Python交互
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="redis/yu-python-jiao-hu/strictredis.html">
+            
+                
+                    <a href="../../redis/yu-python-jiao-hu/strictredis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        StrictRedis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="redis/yu-python-jiao-hu/string.html">
+            
+                
+                    <a href="../../redis/yu-python-jiao-hu/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        string
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="redis/da-jian-zhu-cong.html">
+            
+                
+                    <a href="../../redis/da-jian-zhu-cong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        搭建主从
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="redis/da-jian-ji-qun.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        搭建集群
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="redis/da-jian-ji-qun/pei-zhi-ji-qi-1.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/pei-zhi-ji-qi-1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.1.</b>
+                        
+                        配置机器1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="redis/da-jian-ji-qun/pei-zhi-ji-qi-2.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/pei-zhi-ji-qi-2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.2.</b>
+                        
+                        配置机器2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="redis/da-jian-ji-qun/chuang-jian-ji-qun.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/chuang-jian-ji-qun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.3.</b>
+                        
+                        创建集群
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="redis/da-jian-ji-qun/yu-python-jiao-hu.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/yu-python-jiao-hu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.4.</b>
+                        
+                        与Python交互
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >欢迎学习Redis课程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807; </h1>
+<ul>
+<li>&#x80FD;&#x591F;&#x4F7F;&#x7528;StrictRedis&#x5BF9;&#x8C61;&#x5BF9;string&#x7C7B;&#x578B;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x589E;&#x5220;&#x6539;&#x67E5;</li>
+</ul>
+<h1 id="&#x51C6;&#x5907;">&#x51C6;&#x5907; </h1>
+<ul>
+<li>&#x5728;&#x684C;&#x9762;&#x4E0A;&#x521B;&#x5EFA;redis&#x76EE;&#x5F55;</li>
+<li>&#x4F7F;&#x7528;pycharm&#x6253;&#x5F00; redis&#x76EE;&#x5F55;</li>
+<li>&#x521B;&#x5EFA;redis_string.py&#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-comment">#&#x521B;&#x5EFA;StrictRedis&#x5BF9;&#x8C61;&#xFF0C;&#x4E0E;redis&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x2F74;&#x8FDE;&#x63A5;</span>
+        sr=StrictRedis()
+
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+</code></pre>
+<h1 id="string&#x589E;&#x52A0;">string-&#x589E;&#x52A0; </h1>
+<ul>
+<li>&#x2F45;&#x6CD5;set&#xFF0C;&#x6DFB;&#x52A0;&#x952E;&#x3001;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;True&#xFF0C;&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x5931;&#x8D25;&#x5219;&#x8FD4;&#x56DE;False</li>
+<li>&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-comment">#&#x521B;&#x5EFA;StrictRedis&#x5BF9;&#x8C61;&#xFF0C;&#x4E0E;redis&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x2F74;&#x8FDE;&#x63A5;</span>
+        sr=StrictRedis()
+        <span class="hljs-comment">#&#x6DFB;&#x52A0;&#x952E;name&#xFF0C;&#x503C;&#x4E3A;itheima</span>
+        result=sr.set(<span class="hljs-string">&apos;name&apos;</span>,<span class="hljs-string">&apos;itheima&apos;</span>)
+        <span class="hljs-comment">#&#x8F93;&#x51FA;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;False</span>
+        print(result)
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+</code></pre>
+<h1 id="string&#x83B7;&#x53D6;">string-&#x83B7;&#x53D6; </h1>
+<ul>
+<li>&#x2F45;&#x6CD5;get&#xFF0C;&#x6DFB;&#x52A0;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x5B58;&#x5728;&#x5219;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x8FD4;&#x56DE;None</li>
+<li>&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-comment">#&#x521B;&#x5EFA;StrictRedis&#x5BF9;&#x8C61;&#xFF0C;&#x4E0E;redis&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x2F74;&#x8FDE;&#x63A5;</span>
+        sr=StrictRedis()
+        <span class="hljs-comment">#&#x83B7;&#x53D6;&#x952E;name&#x7684;&#x503C;</span>
+        result = sr.get(<span class="hljs-string">&apos;name&apos;</span>)
+        <span class="hljs-comment">#&#x8F93;&#x51FA;&#x952E;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x8FD4;&#x56DE;None</span>
+        print(result)
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+</code></pre>
+<h1 id="string&#x4FEE;&#x6539;">string-&#x4FEE;&#x6539; </h1>
+<ul>
+<li>&#x2F45;&#x6CD5;set&#xFF0C;&#x5982;&#x679C;&#x952E;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x5219;&#x8FDB;&#x2F8F;&#x4FEE;&#x6539;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x8FDB;&#x2F8F;&#x6DFB;&#x52A0;</li>
+<li>&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-comment">#&#x521B;&#x5EFA;StrictRedis&#x5BF9;&#x8C61;&#xFF0C;&#x4E0E;redis&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x2F74;&#x8FDE;&#x63A5;</span>
+        sr=StrictRedis()
+        <span class="hljs-comment">#&#x8BBE;&#x7F6E;&#x952E;name&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x5219;&#x8FDB;&#x2F8F;&#x4FEE;&#x6539;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x8FDB;&#x2F8F;&#x6DFB;&#x52A0;</span>
+        result = sr.set(<span class="hljs-string">&apos;name&apos;</span>,<span class="hljs-string">&apos;itcast&apos;</span>)
+        <span class="hljs-comment">#&#x8F93;&#x51FA;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;False</span>
+        print(result)
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+</code></pre>
+<h1 id="string&#x5220;&#x9664;">string-&#x5220;&#x9664; </h1>
+<ul>
+<li>&#x2F45;&#x6CD5;delete&#xFF0C;&#x5220;&#x9664;&#x952E;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x5220;&#x9664;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x952E;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x5219;&#x8FD4; &#x56DE;0</li>
+<li>&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-comment">#&#x521B;&#x5EFA;StrictRedis&#x5BF9;&#x8C61;&#xFF0C;&#x4E0E;redis&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x2F74;&#x8FDE;&#x63A5;</span>
+        sr=StrictRedis()
+        <span class="hljs-comment">#&#x8BBE;&#x7F6E;&#x952E;name&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x5219;&#x8FDB;&#x2F8F;&#x4FEE;&#x6539;&#xFF0C;&#x5982;&#x679C;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x8FDB;&#x2F8F;&#x6DFB;&#x52A0;</span>
+        result = sr.delete(<span class="hljs-string">&apos;name&apos;</span>)
+        <span class="hljs-comment">#&#x8F93;&#x51FA;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x5220;&#x9664;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x952E;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x5219;&#x8FD4;&#x56DE;0</span>
+        print(result)
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+</code></pre>
+<h1 id="&#x83B7;&#x53D6;&#x952E;">&#x83B7;&#x53D6;&#x952E; </h1>
+<ul>
+<li>&#x2F45;&#x6CD5;keys&#xFF0C;&#x6839;&#x636E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x83B7;&#x53D6;&#x952E;</li>
+<li>&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-comment">#&#x521B;&#x5EFA;StrictRedis&#x5BF9;&#x8C61;&#xFF0C;&#x4E0E;redis&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x2F74;&#x8FDE;&#x63A5;</span>
+        sr=StrictRedis()
+        <span class="hljs-comment">#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x952E;</span>
+        result=sr.keys()
+        <span class="hljs-comment">#&#x8F93;&#x51FA;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x952E;&#x6784;&#x6210;&#x2F00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x952E;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x5217;&#x8868;</span>
+        print(result)
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../redis/yu-python-jiao-hu/strictredis.html" class="navigation navigation-prev " aria-label="Previous page: StrictRedis"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../redis/da-jian-zhu-cong.html" class="navigation navigation-next " aria-label="Next page: 搭建主从"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

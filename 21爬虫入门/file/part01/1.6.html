@@ -1,0 +1,1452 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>参考阅读：urllib：Handler处理器和自定义Opener | 可选择的IDE和编辑器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/part01/1.9.html" />
+    
+    
+    <link rel="prev" href="../../file/part01/1.5.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.9"
+        data-chapter-title="参考阅读：urllib：Handler处理器和自定义Opener"
+        data-filepath="file/part01/1.6.md"
+        data-basepath="../.."
+        data-revision="Sat Jul 22 2017 18:48:24 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/part01/1.html">
+            
+                
+                    <a href="../../file/part01/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        爬虫原理与数据抓取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/part01/1.1.html">
+            
+                
+                    <a href="../../file/part01/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        (了解)通用爬虫和聚焦爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="file/part01/1.2.html">
+            
+                
+                    <a href="../../file/part01/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        (复习)HTTP/HTTPS的请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/part01/2.0.html">
+            
+                
+                    <a href="../../file/part01/2.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        str和bytes的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/part01/2.1.html">
+            
+                
+                    <a href="../../file/part01/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Requests简单使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="file/part01/2.2.html">
+            
+                
+                    <a href="../../file/part01/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Requests深入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="file/part01/1.3.html">
+            
+                
+                    <a href="../../file/part01/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        HTTP/HTTPS抓包工具-Fiddler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="file/part01/1.4.html">
+            
+                
+                    <a href="../../file/part01/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        参考阅读：urllib模块的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file/part01/1.5.html">
+            
+                
+                    <a href="../../file/part01/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        参考阅读：urllib：GET请求和POST请求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="file/part01/1.6.html">
+            
+                
+                    <a href="../../file/part01/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        参考阅读：urllib：Handler处理器和自定义Opener
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="file/part01/1.9.html">
+            
+                
+                    <a href="../../file/part01/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        参考阅读：编码故事
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/part02/2.html">
+            
+                
+                    <a href="../../file/part02/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        非结构化数据与结构化数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/part02/2.1.html">
+            
+                
+                    <a href="../../file/part02/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        正则表达式re模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/part02/2.2.html">
+            
+                
+                    <a href="../../file/part02/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        案例：使用正则表达式的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="file/part02/2.3.html">
+            
+                
+                    <a href="../../file/part02/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        XPath与lxml类库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/part02/2.4.html">
+            
+                
+                    <a href="../../file/part02/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        案例：使用XPath的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="file/part02/2.7.html">
+            
+                
+                    <a href="../../file/part02/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        JSON模块与JsonPath
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="file/part02/2.8.html">
+            
+                
+                    <a href="../../file/part02/2.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        糗事百科案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="file/part02/2.9.html">
+            
+                
+                    <a href="../../file/part02/2.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        多线程爬虫案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="file/part02/2.5.html">
+            
+                
+                    <a href="../../file/part02/2.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        参考阅读：BeautifulSoup4 解析器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="file/part02/2.6.html">
+            
+                
+                    <a href="../../file/part02/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        参考阅读：案例：使用bs4的爬虫
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/part03/3.html">
+            
+                
+                    <a href="../../file/part03/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        动态HTML处理和机器图像识别
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/part03/3.1.html">
+            
+                
+                    <a href="../../file/part03/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        动态HTML介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="file/part03/3.2.html">
+            
+                
+                    <a href="../../file/part03/3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Selenium与PhantomJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/part03/3.3.html">
+            
+                
+                    <a href="../../file/part03/3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        案例一：网站模拟登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/part03/3.4.html">
+            
+                
+                    <a href="../../file/part03/3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        案例二：动态页面模拟点击
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="file/part03/3.6.html">
+            
+                
+                    <a href="../../file/part03/3.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        机器视觉与Tesseract介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="file/part03/3.7.html">
+            
+                
+                    <a href="../../file/part03/3.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        处理一些格式规范的文字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="file/part03/3.8.html">
+            
+                
+                    <a href="../../file/part03/3.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        尝试对验证码进行机器识别处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="file/part03/3.5.html">
+            
+                
+                    <a href="../../file/part03/3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        参考阅读：执行JavaScript语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="file/part03/3.9.html">
+            
+                
+                    <a href="../../file/part03/3.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        参考阅读：训练Tesseract
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/part04/4.html">
+            
+                
+                    <a href="../../file/part04/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/part04/4.1.html">
+            
+                
+                    <a href="../../file/part04/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        配置安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="file/part04/4.2.html">
+            
+                
+                    <a href="../../file/part04/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        入门案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="file/part04/4.3.html">
+            
+                
+                    <a href="../../file/part04/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Scrapy Shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="file/part04/4.4.html">
+            
+                
+                    <a href="../../file/part04/4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Item Pipeline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="file/part04/4.5.html">
+            
+                
+                    <a href="../../file/part04/4.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="file/part04/4.6.html">
+            
+                
+                    <a href="../../file/part04/4.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="file/part04/4.7.html">
+            
+                
+                    <a href="../../file/part04/4.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Request/Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="file/part04/4.8.html">
+            
+                
+                    <a href="../../file/part04/4.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Downloader Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="file/part04/4.9.html">
+            
+                
+                    <a href="../../file/part04/4.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Settings
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/part05/5.html">
+            
+                
+                    <a href="../../file/part05/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Scrapy实战项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/part05/5.1.html">
+            
+                
+                    <a href="../../file/part05/5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        (案例一)手机App抓包爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/part05/5.2.html">
+            
+                
+                    <a href="../../file/part05/5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        (案例二)阳光热线问政平台爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/part05/5.3.html">
+            
+                
+                    <a href="../../file/part05/5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        (案例三)新浪网分类资讯爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="file/part05/5.4.html">
+            
+                
+                    <a href="../../file/part05/5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        (案例四)Cosplay图片下载器爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="file/part05/5.5.html">
+            
+                
+                    <a href="../../file/part05/5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        (案例五)将数据保存在MongoDB中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="file/part05/5.6.html">
+            
+                
+                    <a href="../../file/part05/5.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        (案例六)三种scrapy模拟登陆策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="file/part05/5.7.html">
+            
+                
+                    <a href="../../file/part05/5.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        附：通过Fiddler进行手机抓包方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/part06/6.html">
+            
+                
+                    <a href="../../file/part06/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        scrapy-redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/part06/6.1.html">
+            
+                
+                    <a href="../../file/part06/6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        源码分析参考：Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/part06/6.2.html">
+            
+                
+                    <a href="../../file/part06/6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        源码分析参考：Dupefilter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="file/part06/6.3.html">
+            
+                
+                    <a href="../../file/part06/6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        源码分析参考：Picklecompat
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="file/part06/6.4.html">
+            
+                
+                    <a href="../../file/part06/6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        源码分析参考：Pipelines
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="file/part06/6.5.html">
+            
+                
+                    <a href="../../file/part06/6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        源码分析参考：Queue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="file/part06/6.6.html">
+            
+                
+                    <a href="../../file/part06/6.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        源码分析参考：Scheduler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="file/part06/6.7.html">
+            
+                
+                    <a href="../../file/part06/6.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        源码分析参考：Spider
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/part07/7.html">
+            
+                
+                    <a href="../../file/part07/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        scrapy-redis实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/part07/7.1.html">
+            
+                
+                    <a href="../../file/part07/7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        源码自带项目说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/part07/7.2.html">
+            
+                
+                    <a href="../../file/part07/7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        有缘网分布式爬虫项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/part07/7.3.html">
+            
+                
+                    <a href="../../file/part07/7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        有缘网分布式爬虫项目2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/part07/7.4.html">
+            
+                
+                    <a href="../../file/part07/7.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        处理Redis里的数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="file/part07/7.5.html">
+            
+                
+                    <a href="../../file/part07/7.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/part07/7.6.html">
+            
+                
+                    <a href="../../file/part07/7.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="file/part07/7.7.html">
+            
+                
+                    <a href="../../file/part07/7.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        IT桔子分布式项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="file/part07/7.8.html">
+            
+                
+                    <a href="../../file/part07/7.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        IT桔子分布式项目2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >可选择的IDE和编辑器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="handler&#x5904;&#x7406;&#x5668;-&#x548C;-&#x81EA;&#x5B9A;&#x4E49;opener">Handler&#x5904;&#x7406;&#x5668; &#x548C; &#x81EA;&#x5B9A;&#x4E49;Opener</h1>
+<ul>
+<li><p>opener&#x662F; urllib.request.OpenerDirector &#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x4E00;&#x76F4;&#x90FD;&#x5728;&#x4F7F;&#x7528;&#x7684;urlopen&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;opener&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6A21;&#x5757;&#x5E2E;&#x6211;&#x4EEC;&#x6784;&#x5EFA;&#x597D;&#x7684;&#xFF09;&#x3002;</p>
+</li>
+<li><p>&#x4F46;&#x662F;&#x57FA;&#x672C;&#x7684;urlopen()&#x65B9;&#x6CD5;&#x4E0D;&#x652F;&#x6301;&#x4EE3;&#x7406;&#x3001;cookie&#x7B49;&#x5176;&#x4ED6;&#x7684;HTTP/HTTPS&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#x3002;&#x6240;&#x4EE5;&#x8981;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x76F8;&#x5173;&#x7684; <code>Handler&#x5904;&#x7406;&#x5668;</code> &#x6765;&#x521B;&#x5EFA;&#x7279;&#x5B9A;&#x529F;&#x80FD;&#x7684;&#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF1B;</li>
+<li>&#x7136;&#x540E;&#x901A;&#x8FC7; <code>urllib.request.build_opener()</code>&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;opener&#x5BF9;&#x8C61;&#xFF1B;</li>
+<li>&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;opener&#x5BF9;&#x8C61;&#xFF0C;&#x8C03;&#x7528;<code>open()</code>&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x91CC;&#x6240;&#x6709;&#x7684;&#x8BF7;&#x6C42;&#x90FD;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;opener&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>urllib.request.install_opener()</code> &#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x7684; opener &#x5BF9;&#x8C61; &#x5B9A;&#x4E49;&#x4E3A; &#x5168;&#x5C40;opener&#xFF0C;&#x8868;&#x793A;&#x5982;&#x679C;&#x4E4B;&#x540E;&#x51E1;&#x662F;&#x8C03;&#x7528;urlopen&#xFF0C;&#x90FD;&#x5C06;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;opener&#xFF08;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x6C42;&#x6765;&#x9009;&#x62E9;&#xFF09;</p>
+</li>
+</ul>
+<h2 id="&#x7B80;&#x5355;&#x7684;&#x81EA;&#x5B9A;&#x4E49;opener">&#x7B80;&#x5355;&#x7684;&#x81EA;&#x5B9A;&#x4E49;opener()</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> urllib.request
+
+<span class="hljs-comment"># &#x6784;&#x5EFA;&#x4E00;&#x4E2A;HTTPHandler &#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x652F;&#x6301;&#x5904;&#x7406;HTTP&#x8BF7;&#x6C42;</span>
+http_handler = urllib.request.HTTPHandler()
+
+<span class="hljs-comment"># &#x6784;&#x5EFA;&#x4E00;&#x4E2A;HTTPHandler &#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x652F;&#x6301;&#x5904;&#x7406;HTTPS&#x8BF7;&#x6C42;</span>
+<span class="hljs-comment"># http_handler = urllib.request.HTTPSHandler()</span>
+
+<span class="hljs-comment"># &#x8C03;&#x7528;urllib.request.build_opener()&#x65B9;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x652F;&#x6301;&#x5904;&#x7406;HTTP&#x8BF7;&#x6C42;&#x7684;opener&#x5BF9;&#x8C61;</span>
+opener = urllib.request.build_opener(http_handler)
+
+<span class="hljs-comment"># &#x6784;&#x5EFA; Request&#x8BF7;&#x6C42;</span>
+request = urllib.request.Request(<span class="hljs-string">&quot;http://www.baidu.com/&quot;</span>)
+
+<span class="hljs-comment"># &#x8C03;&#x7528;&#x81EA;&#x5B9A;&#x4E49;opener&#x5BF9;&#x8C61;&#x7684;open()&#x65B9;&#x6CD5;&#xFF0C;&#x53D1;&#x9001;request&#x8BF7;&#x6C42;</span>
+response = opener.open(request)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x5185;&#x5BB9;</span>
+<span class="hljs-keyword">print</span> (response.read().decode())
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x548C;&#x4F7F;&#x7528;<code>urllib.request.urlopen()</code>&#x53D1;&#x9001;HTTP/HTTPS&#x8BF7;&#x6C42;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728; HTTPHandler()&#x589E;&#x52A0; <code>debuglevel=1</code>&#x53C2;&#x6570;&#xFF0C;&#x8FD8;&#x4F1A;&#x5C06; Debug Log &#x6253;&#x5F00;&#xFF0C;&#x8FD9;&#x6837;&#x7A0B;&#x5E8F;&#x5728;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x628A;&#x6536;&#x5305;&#x548C;&#x53D1;&#x5305;&#x7684;&#x62A5;&#x5934;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x81EA;&#x52A8;&#x6253;&#x5370;&#x51FA;&#x6765;&#xFF0C;&#x65B9;&#x4FBF;&#x8C03;&#x8BD5;&#xFF0C;&#x6709;&#x65F6;&#x53EF;&#x4EE5;&#x7701;&#x53BB;&#x6293;&#x5305;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4EC5;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x4EE3;&#x7801;&#x90E8;&#x5206;&#xFF1A;</span>
+
+<span class="hljs-comment"># &#x6784;&#x5EFA;&#x4E00;&#x4E2A;HTTPHandler &#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x652F;&#x6301;&#x5904;&#x7406;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x540C;&#x65F6;&#x5F00;&#x542F;Debug Log&#xFF0C;debuglevel &#x503C;&#x9ED8;&#x8BA4; 0</span>
+http_handler = urllib.request.HTTPHandler(debuglevel=<span class="hljs-number">1</span>)
+
+<span class="hljs-comment"># &#x6784;&#x5EFA;&#x4E00;&#x4E2A;HTTPHSandler &#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x652F;&#x6301;&#x5904;&#x7406;HTTPS&#x8BF7;&#x6C42;&#xFF0C;&#x540C;&#x65F6;&#x5F00;&#x542F;Debug Log&#xFF0C;debuglevel &#x503C;&#x9ED8;&#x8BA4; 0</span>
+https_handler = urllib.request.HTTPSHandler(debuglevel=<span class="hljs-number">1</span>)
+</code></pre>
+<h2 id="proxyhandler&#x5904;&#x7406;&#x5668;&#xFF08;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#xFF09;">ProxyHandler&#x5904;&#x7406;&#x5668;&#xFF08;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#xFF09;</h2>
+<p>&#x4F7F;&#x7528;&#x4EE3;&#x7406;IP&#xFF0C;&#x8FD9;&#x662F;&#x722C;&#x866B;/&#x53CD;&#x722C;&#x866B;&#x7684;&#x7B2C;&#x4E8C;&#x5927;&#x62DB;&#xFF0C;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x6700;&#x597D;&#x7528;&#x7684;&#x3002;</p>
+<p>&#x5F88;&#x591A;&#x7F51;&#x7AD9;&#x4F1A;&#x68C0;&#x6D4B;&#x67D0;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x67D0;&#x4E2A;IP&#x7684;&#x8BBF;&#x95EE;&#x6B21;&#x6570;(&#x901A;&#x8FC7;&#x6D41;&#x91CF;&#x7EDF;&#x8BA1;&#xFF0C;&#x7CFB;&#x7EDF;&#x65E5;&#x5FD7;&#x7B49;)&#xFF0C;&#x5982;&#x679C;&#x8BBF;&#x95EE;&#x6B21;&#x6570;&#x591A;&#x7684;&#x4E0D;&#x50CF;&#x6B63;&#x5E38;&#x4EBA;&#xFF0C;&#x5B83;&#x4F1A;&#x7981;&#x6B62;&#x8FD9;&#x4E2A;IP&#x7684;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E9B;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x6362;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#xFF0C;&#x5C31;&#x7B97;IP&#x88AB;&#x7981;&#x6B62;&#xFF0C;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x6362;&#x4E2A;IP&#x7EE7;&#x7EED;&#x722C;&#x53D6;&#x3002;</p>
+<p>urllib.request&#x4E2D;&#x901A;&#x8FC7;ProxyHandler&#x6765;&#x8BBE;&#x7F6E;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;opener&#x6765;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#urllib_proxy1.py</span>
+
+<span class="hljs-keyword">import</span> urllib.request
+
+<span class="hljs-comment"># &#x6784;&#x5EFA;&#x4E86;&#x4E24;&#x4E2A;&#x4EE3;&#x7406;Handler&#xFF0C;&#x4E00;&#x4E2A;&#x6709;&#x4EE3;&#x7406;IP&#xFF0C;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x4EE3;&#x7406;IP</span>
+httpproxy_handler = urllib.request.ProxyHandler({<span class="hljs-string">&quot;http&quot;</span> : <span class="hljs-string">&quot;124.88.67.81:80&quot;</span>})
+nullproxy_handler = urllib.request.ProxyHandler({})
+
+proxySwitch = <span class="hljs-keyword">True</span> <span class="hljs-comment">#&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5F00;&#x5173;</span>
+
+<span class="hljs-comment"># &#x901A;&#x8FC7; urllib.request.build_opener()&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x4EE3;&#x7406;Handler&#x5BF9;&#x8C61;&#xFF0C;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;opener&#x5BF9;&#x8C61;</span>
+<span class="hljs-comment"># &#x6839;&#x636E;&#x4EE3;&#x7406;&#x5F00;&#x5173;&#x662F;&#x5426;&#x6253;&#x5F00;&#xFF0C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</span>
+<span class="hljs-keyword">if</span> proxySwitch:  
+    opener = urllib.request.build_opener(httpproxy_handler)
+<span class="hljs-keyword">else</span>:
+    opener = urllib.request.build_opener(nullproxy_handler)
+
+request = urllib.request.Request(<span class="hljs-string">&quot;http://www.baidu.com/&quot;</span>)
+
+<span class="hljs-comment"># 1. &#x5982;&#x679C;&#x8FD9;&#x4E48;&#x5199;&#xFF0C;&#x53EA;&#x6709;&#x4F7F;&#x7528;opener.open()&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x624D;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x800C;urlopen()&#x5219;&#x4E0D;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x4EE3;&#x7406;&#x3002;</span>
+response = opener.open(request)
+
+<span class="hljs-comment"># 2. &#x5982;&#x679C;&#x8FD9;&#x4E48;&#x5199;&#xFF0C;&#x5C31;&#x662F;&#x5C06;opener&#x5E94;&#x7528;&#x5230;&#x5168;&#x5C40;&#xFF0C;&#x4E4B;&#x540E;&#x6240;&#x6709;&#x7684;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;opener.open()&#x8FD8;&#x662F;urlopen() &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#xFF0C;&#x90FD;&#x5C06;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x4EE3;&#x7406;&#x3002;</span>
+<span class="hljs-comment"># urllib.request.install_opener(opener)</span>
+<span class="hljs-comment"># response = urlopen(request)</span>
+
+<span class="hljs-keyword">print</span> (response.read().decode())
+</code></pre>
+<p>&#x514D;&#x8D39;&#x7684;&#x5F00;&#x653E;&#x4EE3;&#x7406;&#x83B7;&#x53D6;&#x57FA;&#x672C;&#x6CA1;&#x6709;&#x6210;&#x672C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E9B;&#x4EE3;&#x7406;&#x7F51;&#x7AD9;&#x4E0A;&#x6536;&#x96C6;&#x8FD9;&#x4E9B;&#x514D;&#x8D39;&#x4EE3;&#x7406;&#xFF0C;&#x6D4B;&#x8BD5;&#x540E;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x7528;&#xFF0C;&#x5C31;&#x628A;&#x5B83;&#x6536;&#x96C6;&#x8D77;&#x6765;&#x7528;&#x5728;&#x722C;&#x866B;&#x4E0A;&#x9762;&#x3002;</p>
+<p>&#x514D;&#x8D39;&#x77ED;&#x671F;&#x4EE3;&#x7406;&#x7F51;&#x7AD9;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<ul>
+<li><a href="http://www.xicidaili.com/" target="_blank">&#x897F;&#x523A;&#x514D;&#x8D39;&#x4EE3;&#x7406;IP</a></li>
+<li><a href="http://www.kuaidaili.com/free/inha/" target="_blank">&#x5FEB;&#x4EE3;&#x7406;&#x514D;&#x8D39;&#x4EE3;&#x7406;</a></li>
+<li><a href="http://www.proxy360.cn/default.aspx" target="_blank">Proxy360&#x4EE3;&#x7406;</a></li>
+<li><a href="http://www.goubanjia.com/free/index.shtml" target="_blank">&#x5168;&#x7F51;&#x4EE3;&#x7406;IP</a></li>
+</ul>
+<p>&#x5982;&#x679C;&#x4EE3;&#x7406;IP&#x8DB3;&#x591F;&#x591A;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x50CF;&#x968F;&#x673A;&#x83B7;&#x53D6;User-Agent&#x4E00;&#x6837;&#xFF0C;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x53BB;&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> urllib.request
+<span class="hljs-keyword">import</span> random
+
+proxy_list = [
+    {<span class="hljs-string">&quot;http&quot;</span> : <span class="hljs-string">&quot;124.88.67.81:80&quot;</span>},
+    {<span class="hljs-string">&quot;http&quot;</span> : <span class="hljs-string">&quot;124.88.67.81:80&quot;</span>},
+    {<span class="hljs-string">&quot;http&quot;</span> : <span class="hljs-string">&quot;124.88.67.81:80&quot;</span>},
+    {<span class="hljs-string">&quot;http&quot;</span> : <span class="hljs-string">&quot;124.88.67.81:80&quot;</span>},
+    {<span class="hljs-string">&quot;http&quot;</span> : <span class="hljs-string">&quot;124.88.67.81:80&quot;</span>}
+]
+
+<span class="hljs-comment"># &#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;</span>
+proxy = random.choice(proxy_list)
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x9009;&#x62E9;&#x7684;&#x4EE3;&#x7406;&#x6784;&#x5EFA;&#x4EE3;&#x7406;&#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;</span>
+httpproxy_handler = urllib.request.ProxyHandler(proxy)
+
+opener = urllib.request.build_opener(httpproxy_handler)
+
+request = urllib.request.Request(<span class="hljs-string">&quot;http://www.baidu.com/&quot;</span>)
+response = opener.open(request)
+<span class="hljs-keyword">print</span> (response.read())
+</code></pre>
+<blockquote>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x4E9B;&#x514D;&#x8D39;&#x5F00;&#x653E;&#x4EE3;&#x7406;&#x4E00;&#x822C;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x4EBA;&#x90FD;&#x5728;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x4EE3;&#x7406;&#x6709;&#x5BFF;&#x547D;&#x77ED;&#xFF0C;&#x901F;&#x5EA6;&#x6162;&#xFF0C;&#x533F;&#x540D;&#x5EA6;&#x4E0D;&#x9AD8;&#xFF0C;HTTP/HTTPS&#x652F;&#x6301;&#x4E0D;&#x7A33;&#x5B9A;&#x7B49;&#x7F3A;&#x70B9;&#xFF08;&#x514D;&#x8D39;&#x6CA1;&#x597D;&#x8D27;&#xFF09;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x4E13;&#x4E1A;&#x722C;&#x866B;&#x5DE5;&#x7A0B;&#x5E08;&#x6216;&#x722C;&#x866B;&#x516C;&#x53F8;&#x4F1A;&#x4F7F;&#x7528;&#x9AD8;&#x54C1;&#x8D28;&#x7684;&#x79C1;&#x5BC6;&#x4EE3;&#x7406;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EE3;&#x7406;&#x901A;&#x5E38;&#x9700;&#x8981;&#x627E;&#x4E13;&#x95E8;&#x7684;&#x4EE3;&#x7406;&#x4F9B;&#x5E94;&#x5546;&#x8D2D;&#x4E70;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x7528;&#x6237;&#x540D;/&#x5BC6;&#x7801;&#x6388;&#x6743;&#x4F7F;&#x7528;&#xFF08;&#x820D;&#x4E0D;&#x5F97;&#x5B69;&#x5B50;&#x5957;&#x4E0D;&#x5230;&#x72FC;&#xFF09;&#x3002;</p>
+</blockquote>
+<h2 id="cookie">Cookie</h2>
+<p>Cookie &#x662F;&#x6307;&#x67D0;&#x4E9B;&#x7F51;&#x7AD9;&#x670D;&#x52A1;&#x5668;&#x4E3A;&#x4E86;&#x8FA8;&#x522B;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x548C;&#x8FDB;&#x884C;Session&#x8DDF;&#x8E2A;&#xFF0C;&#x800C;&#x50A8;&#x5B58;&#x5728;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;Cookie&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#x5230;&#x7528;&#x6237;&#x4E0B;&#x6B21;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4F1A;&#x8BDD;&#x3002;</p>
+<h3 id="cookie&#x539F;&#x7406;">Cookie&#x539F;&#x7406;</h3>
+<p>HTTP&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#x9762;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x534F;&#x8BAE;, &#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x8FDE;&#x63A5;&#x72B6;&#x6001;, &#x5F15;&#x5165;&#x4E86;Cookie&#x673A;&#x5236;
+Cookie&#x662F;http&#x6D88;&#x606F;&#x5934;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x5C5E;&#x6027;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+<pre><code>Cookie&#x540D;&#x5B57;&#xFF08;Name&#xFF09;
+Cookie&#x7684;&#x503C;&#xFF08;Value&#xFF09;
+Cookie&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF08;Expires/Max-Age&#xFF09;
+Cookie&#x4F5C;&#x7528;&#x8DEF;&#x5F84;&#xFF08;Path&#xFF09;
+Cookie&#x6240;&#x5728;&#x57DF;&#x540D;&#xFF08;Domain&#xFF09;&#xFF0C;
+&#x4F7F;&#x7528;Cookie&#x8FDB;&#x884C;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#xFF08;Secure&#xFF09;&#x3002;
+
+&#x524D;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x662F;Cookie&#x5E94;&#x7528;&#x7684;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#xFF0C;&#x53E6;&#x5916;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;Cookie&#x5927;&#x5C0F;&#xFF08;Size&#xFF0C;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;Cookie&#x4E2A;&#x6570;&#x53CA;&#x5927;&#x5C0F;&#x9650;&#x5236;&#x662F;&#x6709;&#x5DEE;&#x5F02;&#x7684;&#xFF09;&#x3002;
+</code></pre><p>Cookie&#x7531;&#x53D8;&#x91CF;&#x540D;&#x548C;&#x503C;&#x7EC4;&#x6210;&#xFF0C;&#x6839;&#x636E; Netscape&#x516C;&#x53F8;&#x7684;&#x89C4;&#x5B9A;&#xFF0C;Cookie&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><code>Set&#xFF0D;Cookie: NAME=VALUE&#xFF1B;Expires=DATE&#xFF1B;Path=PATH&#xFF1B;Domain=DOMAIN_NAME&#xFF1B;SECURE</code></p>
+<h3 id="cookie&#x5E94;&#x7528;">Cookie&#x5E94;&#x7528;</h3>
+<p>Cookies&#x5728;&#x722C;&#x866B;&#x65B9;&#x9762;&#x6700;&#x5178;&#x578B;&#x7684;&#x5E94;&#x7528;&#x662F;&#x5224;&#x5B9A;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x767B;&#x5F55;&#x7F51;&#x7AD9;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x80FD;&#x4F1A;&#x5F97;&#x5230;&#x63D0;&#x793A;&#xFF0C;&#x662F;&#x5426;&#x5728;&#x4E0B;&#x4E00;&#x6B21;&#x8FDB;&#x5165;&#x6B64;&#x7F51;&#x7AD9;&#x65F6;&#x4FDD;&#x7559;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x4EE5;&#x4FBF;&#x7B80;&#x5316;&#x767B;&#x5F55;&#x624B;&#x7EED;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x6709;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#x7684;Cookie&#x6A21;&#x62DF;&#x767B;&#x9646;</span>
+
+<span class="hljs-keyword">import</span> urllib
+
+<span class="hljs-comment"># 1. &#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x767B;&#x5F55;&#x8FC7;&#x7684;&#x7528;&#x6237;&#x7684;headers&#x4FE1;&#x606F;</span>
+headers = {
+    <span class="hljs-string">&quot;Host&quot;</span>:<span class="hljs-string">&quot;www.renren.com&quot;</span>,
+    <span class="hljs-string">&quot;Connection&quot;</span>:<span class="hljs-string">&quot;keep-alive&quot;</span>,
+    <span class="hljs-string">&quot;Upgrade-Insecure-Requests&quot;</span>:<span class="hljs-string">&quot;1&quot;</span>,
+    <span class="hljs-string">&quot;User-Agent&quot;</span>:<span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&quot;</span>,
+    <span class="hljs-string">&quot;Accept&quot;</span>:<span class="hljs-string">&quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&quot;</span>,
+    <span class="hljs-string">&quot;Accept-Language&quot;</span>:<span class="hljs-string">&quot;zh-CN,zh;q=0.8,en;q=0.6&quot;</span>,
+    <span class="hljs-string">&quot;Referer&quot;</span>:<span class="hljs-string">&quot;http://www.renren.com/SysHome.do&quot;</span>,
+    <span class="hljs-comment"># &#x4FBF;&#x4E8E;&#x7EC8;&#x7AEF;&#x9605;&#x8BFB;&#xFF0C;&#x8868;&#x793A;&#x4E0D;&#x652F;&#x6301;&#x538B;&#x7F29;&#x6587;&#x4EF6;</span>
+    <span class="hljs-comment"># Accept-Encoding: gzip, deflate, sdch,</span>
+
+    <span class="hljs-comment"># &#x91CD;&#x70B9;&#xFF1A;&#x8FD9;&#x4E2A;Cookie&#x662F;&#x4FDD;&#x5B58;&#x4E86;&#x5BC6;&#x7801;&#x65E0;&#x9700;&#x91CD;&#x590D;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x7684;Cookie&#xFF0C;&#x8FD9;&#x4E2A;Cookie&#x91CC;&#x8BB0;&#x5F55;&#x4E86;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5BC6;&#x7801;(&#x901A;&#x5E38;&#x7ECF;&#x8FC7;RAS&#x52A0;&#x5BC6;)</span>
+    <span class="hljs-string">&quot;Cookie&quot;</span>: <span class="hljs-string">&quot;anonymid=j3jxk555-nrn0wh; depovince=BJ; _r01_=1; JSESSIONID=abcnLjz9MSvBa-3lJK3Xv; ick=3babfba4-e0ed-4e9f-9312-8e833e4cb826; jebecookies=764bacbd-0e4a-4534-b8e8-37c10560770c|||||; ick_login=84f70f68-7ebd-4c5c-9c0f-d1d9aac778e0; _de=7A7A02E9254501DA6278B9C75EAEEB7A; p=91063de8b39ac5e0d2a57500de7e34077; first_login_flag=1; ln_uact=13146128763; ln_hurl=http://head.xiaonei.com/photos/0/0/men_main.gif; t=39fca09219c06df42604435129960e1f7; societyguester=39fca09219c06df42604435129960e1f7; id=941954027; xnsid=8868df75; ver=7.0; loginfrom=null; XNESSESSIONID=a6da759fe858; WebOnLineNotice_941954027=1; wp_fold=0&quot;</span>
+}
+
+<span class="hljs-comment"># 2. &#x901A;&#x8FC7;headers&#x91CC;&#x7684;&#x62A5;&#x5934;&#x4FE1;&#x606F;&#xFF08;&#x4E3B;&#x8981;&#x662F;Cookie&#x4FE1;&#x606F;&#xFF09;&#xFF0C;&#x6784;&#x5EFA;Request&#x5BF9;&#x8C61;</span>
+urllib.request.Request(<span class="hljs-string">&quot;http://www.renren.com/941954027#&quot;</span>, headers = headers)
+
+<span class="hljs-comment"># 3. &#x76F4;&#x63A5;&#x8BBF;&#x95EE;renren&#x4E3B;&#x9875;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x6839;&#x636E;headers&#x62A5;&#x5934;&#x4FE1;&#x606F;&#xFF08;&#x4E3B;&#x8981;&#x662F;Cookie&#x4FE1;&#x606F;&#xFF09;&#xFF0C;&#x5224;&#x65AD;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x9875;&#x9762;</span>
+response = urllib.request.urlopen(request)
+
+<span class="hljs-comment"># 4. &#x6253;&#x5370;&#x54CD;&#x5E94;&#x5185;&#x5BB9;</span>
+<span class="hljs-keyword">print</span> (response.read().decode())
+</code></pre>
+<p><img src="../images/renrenmaozhaojun.png" alt=""></p>
+<p>&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x592A;&#x8FC7;&#x590D;&#x6742;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x9700;&#x8981;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x767B;&#x5F55;&#x8D26;&#x6237;&#xFF0C;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;&#x4FDD;&#x5B58;&#x5BC6;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x6293;&#x5305;&#x624D;&#x80FD;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;Cookie&#xFF0C;&#x90A3;&#x6709;&#x4E48;&#x6709;&#x66F4;&#x7B80;&#x5355;&#x65B9;&#x4FBF;&#x7684;&#x65B9;&#x6CD5;&#x5462;&#xFF1F;</p>
+<h2 id="cookiejar&#x5E93;-&#x548C;-httpcookieprocessor&#x5904;&#x7406;&#x5668;">cookiejar&#x5E93; &#x548C; HTTPCookieProcessor&#x5904;&#x7406;&#x5668;</h2>
+<p>&#x5728;Python&#x5904;&#x7406;Cookie&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x901A;&#x8FC7;<code>cookiejar</code>&#x6A21;&#x5757;&#x548C; urllib&#x6A21;&#x5757;&#x7684;<code>HTTPCookieProcessor</code>&#x5904;&#x7406;&#x5668;&#x7C7B;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;</p>
+<blockquote>
+<p><code>cookiejar</code>&#x6A21;&#x5757;&#xFF1A;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x63D0;&#x4F9B;&#x7528;&#x4E8E;&#x5B58;&#x50A8;cookie&#x7684;&#x5BF9;&#x8C61;</p>
+<p><code>HTTPCookieProcessor</code>&#x5904;&#x7406;&#x5668;&#xFF1A;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x5904;&#x7406;&#x8FD9;&#x4E9B;cookie&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x6784;&#x5EFA;handler&#x5BF9;&#x8C61;&#x3002;</p>
+</blockquote>
+<h3 id="cookiejar-&#x5E93;">cookiejar &#x5E93;</h3>
+<p>&#x8BE5;&#x6A21;&#x5757;&#x4E3B;&#x8981;&#x7684;&#x5BF9;&#x8C61;&#x6709;CookieJar&#x3001;FileCookieJar&#x3001;MozillaCookieJar&#x3001;LWPCookieJar&#x3002;</p>
+<blockquote>
+<ul>
+<li>CookieJar&#xFF1A;&#x7BA1;&#x7406;HTTP cookie&#x503C;&#x3001;&#x5B58;&#x50A8;HTTP&#x8BF7;&#x6C42;&#x751F;&#x6210;&#x7684;cookie&#x3001;&#x5411;&#x4F20;&#x51FA;&#x7684;HTTP&#x8BF7;&#x6C42;&#x6DFB;&#x52A0;cookie&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x6574;&#x4E2A;cookie&#x90FD;&#x5B58;&#x50A8;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5BF9;CookieJar&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x540E;cookie&#x4E5F;&#x5C06;&#x4E22;&#x5931;&#x3002;</li>
+</ul>
+</blockquote>
+<p>&#x6211;&#x4EEC;&#x6765;&#x505A;&#x51E0;&#x4E2A;&#x6848;&#x4F8B;&#xFF1A;</p>
+<h5 id="1&#xFF09;&#x83B7;&#x53D6;cookie&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x5230;cookiejar&#x5BF9;&#x8C61;&#x4E2D;">1&#xFF09;&#x83B7;&#x53D6;Cookie&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x5230;CookieJar()&#x5BF9;&#x8C61;&#x4E2D;</h5>
+<pre><code class="lang-python"><span class="hljs-comment"># urllib_cookiejar_test1.py</span>
+
+<span class="hljs-keyword">import</span> urllib
+<span class="hljs-keyword">from</span> http <span class="hljs-keyword">import</span> cookiejar
+
+<span class="hljs-comment"># &#x6784;&#x5EFA;&#x4E00;&#x4E2A;CookieJar&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6765;&#x4FDD;&#x5B58;cookie</span>
+cookiejar = cookiejar.CookieJar()
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;HTTPCookieProcessor()&#x6765;&#x521B;&#x5EFA;cookie&#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;CookieJar()&#x5BF9;&#x8C61;</span>
+handler=urllib.request.HTTPCookieProcessor(cookiejar)
+
+<span class="hljs-comment"># &#x901A;&#x8FC7; build_opener() &#x6765;&#x6784;&#x5EFA;opener</span>
+opener = urllib.request.build_opener(handler)
+
+<span class="hljs-comment"># 4. &#x4EE5;get&#x65B9;&#x6CD5;&#x8BBF;&#x95EE;&#x9875;&#x9762;&#xFF0C;&#x8BBF;&#x95EE;&#x4E4B;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;cookie&#x5230;cookiejar&#x4E2D;</span>
+opener.open(<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>)
+
+<span class="hljs-comment">## &#x53EF;&#x4EE5;&#x6309;&#x6807;&#x51C6;&#x683C;&#x5F0F;&#x5C06;&#x4FDD;&#x5B58;&#x7684;Cookie&#x6253;&#x5370;&#x51FA;&#x6765;</span>
+cookieStr = <span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> cookiejar:
+    cookieStr = cookieStr + item.name + <span class="hljs-string">&quot;=&quot;</span> + item.value + <span class="hljs-string">&quot;;&quot;</span>
+
+<span class="hljs-comment">## &#x820D;&#x53BB;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x7684;&#x5206;&#x53F7;</span>
+<span class="hljs-keyword">print</span> (cookieStr[:-<span class="hljs-number">1</span>])
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4EE5;&#x4E0A;&#x65B9;&#x6CD5;&#x5C06;Cookie&#x4FDD;&#x5B58;&#x5230;cookiejar&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x6253;&#x5370;&#x51FA;&#x4E86;cookie&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BBF;&#x95EE;&#x767E;&#x5EA6;&#x9996;&#x9875;&#x7684;Cookie&#x503C;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-j">BAIDUID=4327A58E63A92B73FF7A297FB3B2B4D0:FG=1;BIDUPSID=4327A58E63A92B73FF7A297FB3B2B4D0;H_PS_PSSID=1429_21115_17001_21454_21409_21554_21398;PSTM=1480815736;BDSVRTM=0;BD_HOME=0
+</code></pre>
+<h4 id="&#x5229;&#x7528;cookiejar&#x548C;post&#x767B;&#x5F55;&#x4EBA;&#x4EBA;&#x7F51;">&#x5229;&#x7528;cookiejar&#x548C;post&#x767B;&#x5F55;&#x4EBA;&#x4EBA;&#x7F51;</h4>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> urllib
+<span class="hljs-keyword">from</span> http <span class="hljs-keyword">import</span> cookiejar
+
+<span class="hljs-comment"># 1. &#x6784;&#x5EFA;&#x4E00;&#x4E2A;CookieJar&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6765;&#x4FDD;&#x5B58;cookie</span>
+cookie = cookiejar.CookieJar()
+
+<span class="hljs-comment"># 2. &#x4F7F;&#x7528;HTTPCookieProcessor()&#x6765;&#x521B;&#x5EFA;cookie&#x5904;&#x7406;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;CookieJar()&#x5BF9;&#x8C61;</span>
+cookie_handler = urllib.request.HTTPCookieProcessor(cookie)
+
+<span class="hljs-comment"># 3. &#x901A;&#x8FC7; build_opener() &#x6765;&#x6784;&#x5EFA;opener</span>
+opener = urllib.request.build_opener(cookie_handler)
+
+<span class="hljs-comment"># 4. addheaders &#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x91CC;&#x9762;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x4E00;&#x4E2A;headers&#x4FE1;&#x606F;&#x7684;&#x5143;&#x7956;, opener&#x5C06;&#x9644;&#x5E26;headers&#x4FE1;&#x606F;</span>
+opener.addheaders = [(<span class="hljs-string">&quot;User-Agent&quot;</span>, <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&quot;</span>)]
+
+<span class="hljs-comment"># 5. &#x9700;&#x8981;&#x767B;&#x5F55;&#x7684;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;</span>
+data = {<span class="hljs-string">&quot;email&quot;</span>:<span class="hljs-string">&quot;13****46**8763&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>:<span class="hljs-string">&quot;****&quot;</span>}  
+
+<span class="hljs-comment"># 6. &#x901A;&#x8FC7;urlencode()&#x8F6C;&#x7801;</span>
+postdata = urllib.parse.urlencode(data).encode()
+
+<span class="hljs-comment"># 7. &#x6784;&#x5EFA;Request&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x9700;&#x8981;&#x53D1;&#x9001;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;</span>
+request = urllib.request.Request(<span class="hljs-string">&quot;http://www.renren.com/PLogin.do&quot;</span>, data = postdata)
+
+<span class="hljs-comment"># 8. &#x901A;&#x8FC7;opener&#x53D1;&#x9001;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x540E;&#x7684;Cookie&#x503C;&#xFF0C;</span>
+opener.open(request)                                              
+
+<span class="hljs-comment"># 9. opener&#x5305;&#x542B;&#x7528;&#x6237;&#x767B;&#x5F55;&#x540E;&#x7684;Cookie&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x90A3;&#x4E9B;&#x767B;&#x5F55;&#x540E;&#x624D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684;&#x9875;&#x9762;</span>
+response = opener.open(<span class="hljs-string">&quot;http://www.renren.com/410043129/profile&quot;</span>)  
+
+<span class="hljs-comment"># 10. &#x6253;&#x5370;&#x54CD;&#x5E94;&#x5185;&#x5BB9;</span>
+<span class="hljs-keyword">print</span> (response.read().decode())
+</code></pre>
+<p>&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x8981;&#x6CE8;&#x610F;&#x51E0;&#x70B9;&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>&#x767B;&#x5F55;&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x5148;&#x6709;&#x4E00;&#x4E2A;HTTP GET&#xFF0C;&#x7528;&#x4E8E;&#x62C9;&#x53D6;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x53CA;&#x83B7;&#x5F97;Cookie&#xFF0C;&#x7136;&#x540E;&#x518D;HTTP POST&#x767B;&#x5F55;&#x3002;</li>
+<li>HTTP POST&#x767B;&#x5F55;&#x7684;&#x94FE;&#x63A5;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x52A8;&#x6001;&#x7684;&#xFF0C;&#x4ECE;GET&#x8FD4;&#x56DE;&#x7684;&#x4FE1;&#x606F;&#x4E2D;&#x83B7;&#x53D6;&#x3002;</li>
+<li>password &#x6709;&#x4E9B;&#x662F;&#x660E;&#x6587;&#x53D1;&#x9001;&#xFF0C;&#x6709;&#x4E9B;&#x662F;&#x52A0;&#x5BC6;&#x540E;&#x53D1;&#x9001;&#x3002;&#x6709;&#x4E9B;&#x7F51;&#x7AD9;&#x751A;&#x81F3;&#x91C7;&#x7528;&#x52A8;&#x6001;&#x52A0;&#x5BC6;&#x7684;&#xFF0C;&#x540C;&#x65F6;&#x5305;&#x62EC;&#x4E86;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x7684;&#x52A0;&#x5BC6;&#x4FE1;&#x606F;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x67E5;&#x770B;JS&#x6E90;&#x7801;&#x83B7;&#x5F97;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x518D;&#x53BB;&#x7834;&#x89E3;&#x52A0;&#x5BC6;&#xFF0C;&#x975E;&#x5E38;&#x56F0;&#x96BE;&#x3002;</li>
+<li>&#x5927;&#x591A;&#x6570;&#x7F51;&#x7AD9;&#x7684;&#x767B;&#x5F55;&#x6574;&#x4F53;&#x6D41;&#x7A0B;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x4E9B;&#x7EC6;&#x8282;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x5176;&#x4ED6;&#x7F51;&#x7AD9;&#x767B;&#x5F55;&#x6210;&#x529F;&#x3002;</li>
+</ol>
+</blockquote>
+<h6 id="&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x60F3;&#x8BA9;&#x5927;&#x5BB6;&#x5FEB;&#x901F;&#x7406;&#x89E3;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x4EBA;&#x4EBA;&#x7F51;&#x767B;&#x5F55;&#x63A5;&#x53E3;&#x662F;&#x4EBA;&#x4EBA;&#x7F51;&#x6539;&#x7248;&#x524D;&#x7684;&#x9690;&#x85CF;&#x63A5;&#x53E3;&#x5618;&#xFF0C;&#x767B;&#x5F55;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#x3002;">&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x60F3;&#x8BA9;&#x5927;&#x5BB6;&#x5FEB;&#x901F;&#x7406;&#x89E3;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x4EBA;&#x4EBA;&#x7F51;&#x767B;&#x5F55;&#x63A5;&#x53E3;&#x662F;&#x4EBA;&#x4EBA;&#x7F51;&#x6539;&#x7248;&#x524D;&#x7684;&#x9690;&#x85CF;&#x63A5;&#x53E3;(&#x5618;....)&#xFF0C;&#x767B;&#x5F55;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#x3002;</h6>
+<h6 id="&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x53D1;&#x9001;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x5230;&#x767B;&#x5F55;&#x754C;&#x9762;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x7F51;&#x9875;&#x91C7;&#x7528;javascript&#x52A8;&#x6001;&#x6280;&#x672F;&#x4EE5;&#x540E;&#xFF0C;&#x60F3;&#x5C01;&#x9501;&#x57FA;&#x4E8E;-httpclient-&#x7684;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x5C31;&#x592A;&#x5BB9;&#x6613;&#x4E86;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x7684;&#x9F20;&#x6807;&#x6D3B;&#x52A8;&#x7684;&#x7279;&#x5F81;&#x51C6;&#x786E;&#x5730;&#x5224;&#x65AD;&#x51FA;&#x662F;&#x4E0D;&#x662F;&#x771F;&#x4EBA;&#x5728;&#x64CD;&#x4F5C;&#x3002;">&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x53D1;&#x9001;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x5230;&#x767B;&#x5F55;&#x754C;&#x9762;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x7F51;&#x9875;&#x91C7;&#x7528;JavaScript&#x52A8;&#x6001;&#x6280;&#x672F;&#x4EE5;&#x540E;&#xFF0C;&#x60F3;&#x5C01;&#x9501;&#x57FA;&#x4E8E; HttpClient &#x7684;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x5C31;&#x592A;&#x5BB9;&#x6613;&#x4E86;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x7684;&#x9F20;&#x6807;&#x6D3B;&#x52A8;&#x7684;&#x7279;&#x5F81;&#x51C6;&#x786E;&#x5730;&#x5224;&#x65AD;&#x51FA;&#x662F;&#x4E0D;&#x662F;&#x771F;&#x4EBA;&#x5728;&#x64CD;&#x4F5C;&#x3002;</h6>
+<h6 id="&#x6240;&#x4EE5;&#xFF0C;&#x60F3;&#x505A;&#x901A;&#x7528;&#x7684;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x8FD8;&#x5F97;&#x9009;&#x522B;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x5185;&#x7F6E;&#x6D4F;&#x89C8;&#x5668;&#x5F15;&#x64CE;&#x7684;&#x722C;&#x866B;&#x5173;&#x952E;&#x8BCD;&#xFF1A;selenium-&#xFF0C;phantomjs&#xFF0C;&#x8FD9;&#x4E2A;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4EE5;&#x540E;&#x4F1A;&#x5B66;&#x4E60;&#x5230;&#x3002;">&#x6240;&#x4EE5;&#xFF0C;&#x60F3;&#x505A;&#x901A;&#x7528;&#x7684;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x8FD8;&#x5F97;&#x9009;&#x522B;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x5185;&#x7F6E;&#x6D4F;&#x89C8;&#x5668;&#x5F15;&#x64CE;&#x7684;&#x722C;&#x866B;(&#x5173;&#x952E;&#x8BCD;&#xFF1A;Selenium &#xFF0C;PhantomJS)&#xFF0C;&#x8FD9;&#x4E2A;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4EE5;&#x540E;&#x4F1A;&#x5B66;&#x4E60;&#x5230;&#x3002;</h6>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/part01/1.5.html" class="navigation navigation-prev " aria-label="Previous page: 参考阅读：urllib：GET请求和POST请求"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/part01/1.9.html" class="navigation navigation-next " aria-label="Next page: 参考阅读：编码故事"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

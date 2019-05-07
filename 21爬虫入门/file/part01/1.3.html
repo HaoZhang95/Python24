@@ -1,0 +1,1282 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>HTTP/HTTPS抓包工具-Fiddler | 可选择的IDE和编辑器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/part01/1.4.html" />
+    
+    
+    <link rel="prev" href="../../file/part01/2.2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.6"
+        data-chapter-title="HTTP/HTTPS抓包工具-Fiddler"
+        data-filepath="file/part01/1.3.md"
+        data-basepath="../.."
+        data-revision="Sat Jul 22 2017 18:48:24 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/part01/1.html">
+            
+                
+                    <a href="../../file/part01/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        爬虫原理与数据抓取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/part01/1.1.html">
+            
+                
+                    <a href="../../file/part01/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        (了解)通用爬虫和聚焦爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="file/part01/1.2.html">
+            
+                
+                    <a href="../../file/part01/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        (复习)HTTP/HTTPS的请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/part01/2.0.html">
+            
+                
+                    <a href="../../file/part01/2.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        str和bytes的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/part01/2.1.html">
+            
+                
+                    <a href="../../file/part01/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Requests简单使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="file/part01/2.2.html">
+            
+                
+                    <a href="../../file/part01/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Requests深入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="file/part01/1.3.html">
+            
+                
+                    <a href="../../file/part01/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        HTTP/HTTPS抓包工具-Fiddler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="file/part01/1.4.html">
+            
+                
+                    <a href="../../file/part01/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        参考阅读：urllib模块的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file/part01/1.5.html">
+            
+                
+                    <a href="../../file/part01/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        参考阅读：urllib：GET请求和POST请求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="file/part01/1.6.html">
+            
+                
+                    <a href="../../file/part01/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        参考阅读：urllib：Handler处理器和自定义Opener
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="file/part01/1.9.html">
+            
+                
+                    <a href="../../file/part01/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        参考阅读：编码故事
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/part02/2.html">
+            
+                
+                    <a href="../../file/part02/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        非结构化数据与结构化数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/part02/2.1.html">
+            
+                
+                    <a href="../../file/part02/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        正则表达式re模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/part02/2.2.html">
+            
+                
+                    <a href="../../file/part02/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        案例：使用正则表达式的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="file/part02/2.3.html">
+            
+                
+                    <a href="../../file/part02/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        XPath与lxml类库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/part02/2.4.html">
+            
+                
+                    <a href="../../file/part02/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        案例：使用XPath的爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="file/part02/2.7.html">
+            
+                
+                    <a href="../../file/part02/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        JSON模块与JsonPath
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="file/part02/2.8.html">
+            
+                
+                    <a href="../../file/part02/2.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        糗事百科案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="file/part02/2.9.html">
+            
+                
+                    <a href="../../file/part02/2.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        多线程爬虫案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="file/part02/2.5.html">
+            
+                
+                    <a href="../../file/part02/2.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        参考阅读：BeautifulSoup4 解析器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="file/part02/2.6.html">
+            
+                
+                    <a href="../../file/part02/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        参考阅读：案例：使用bs4的爬虫
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/part03/3.html">
+            
+                
+                    <a href="../../file/part03/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        动态HTML处理和机器图像识别
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/part03/3.1.html">
+            
+                
+                    <a href="../../file/part03/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        动态HTML介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="file/part03/3.2.html">
+            
+                
+                    <a href="../../file/part03/3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Selenium与PhantomJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/part03/3.3.html">
+            
+                
+                    <a href="../../file/part03/3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        案例一：网站模拟登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/part03/3.4.html">
+            
+                
+                    <a href="../../file/part03/3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        案例二：动态页面模拟点击
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="file/part03/3.6.html">
+            
+                
+                    <a href="../../file/part03/3.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        机器视觉与Tesseract介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="file/part03/3.7.html">
+            
+                
+                    <a href="../../file/part03/3.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        处理一些格式规范的文字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="file/part03/3.8.html">
+            
+                
+                    <a href="../../file/part03/3.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        尝试对验证码进行机器识别处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="file/part03/3.5.html">
+            
+                
+                    <a href="../../file/part03/3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        参考阅读：执行JavaScript语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="file/part03/3.9.html">
+            
+                
+                    <a href="../../file/part03/3.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        参考阅读：训练Tesseract
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/part04/4.html">
+            
+                
+                    <a href="../../file/part04/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/part04/4.1.html">
+            
+                
+                    <a href="../../file/part04/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        配置安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="file/part04/4.2.html">
+            
+                
+                    <a href="../../file/part04/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        入门案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="file/part04/4.3.html">
+            
+                
+                    <a href="../../file/part04/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Scrapy Shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="file/part04/4.4.html">
+            
+                
+                    <a href="../../file/part04/4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Item Pipeline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="file/part04/4.5.html">
+            
+                
+                    <a href="../../file/part04/4.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Spider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="file/part04/4.6.html">
+            
+                
+                    <a href="../../file/part04/4.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="file/part04/4.7.html">
+            
+                
+                    <a href="../../file/part04/4.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Request/Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="file/part04/4.8.html">
+            
+                
+                    <a href="../../file/part04/4.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Downloader Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="file/part04/4.9.html">
+            
+                
+                    <a href="../../file/part04/4.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Settings
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/part05/5.html">
+            
+                
+                    <a href="../../file/part05/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Scrapy实战项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/part05/5.1.html">
+            
+                
+                    <a href="../../file/part05/5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        (案例一)手机App抓包爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/part05/5.2.html">
+            
+                
+                    <a href="../../file/part05/5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        (案例二)阳光热线问政平台爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/part05/5.3.html">
+            
+                
+                    <a href="../../file/part05/5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        (案例三)新浪网分类资讯爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="file/part05/5.4.html">
+            
+                
+                    <a href="../../file/part05/5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        (案例四)Cosplay图片下载器爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="file/part05/5.5.html">
+            
+                
+                    <a href="../../file/part05/5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        (案例五)将数据保存在MongoDB中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="file/part05/5.6.html">
+            
+                
+                    <a href="../../file/part05/5.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        (案例六)三种scrapy模拟登陆策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="file/part05/5.7.html">
+            
+                
+                    <a href="../../file/part05/5.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        附：通过Fiddler进行手机抓包方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/part06/6.html">
+            
+                
+                    <a href="../../file/part06/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        scrapy-redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/part06/6.1.html">
+            
+                
+                    <a href="../../file/part06/6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        源码分析参考：Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/part06/6.2.html">
+            
+                
+                    <a href="../../file/part06/6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        源码分析参考：Dupefilter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="file/part06/6.3.html">
+            
+                
+                    <a href="../../file/part06/6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        源码分析参考：Picklecompat
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="file/part06/6.4.html">
+            
+                
+                    <a href="../../file/part06/6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        源码分析参考：Pipelines
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="file/part06/6.5.html">
+            
+                
+                    <a href="../../file/part06/6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        源码分析参考：Queue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="file/part06/6.6.html">
+            
+                
+                    <a href="../../file/part06/6.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        源码分析参考：Scheduler
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="file/part06/6.7.html">
+            
+                
+                    <a href="../../file/part06/6.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        源码分析参考：Spider
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/part07/7.html">
+            
+                
+                    <a href="../../file/part07/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        scrapy-redis实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/part07/7.1.html">
+            
+                
+                    <a href="../../file/part07/7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        源码自带项目说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/part07/7.2.html">
+            
+                
+                    <a href="../../file/part07/7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        有缘网分布式爬虫项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/part07/7.3.html">
+            
+                
+                    <a href="../../file/part07/7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        有缘网分布式爬虫项目2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/part07/7.4.html">
+            
+                
+                    <a href="../../file/part07/7.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        处理Redis里的数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="file/part07/7.5.html">
+            
+                
+                    <a href="../../file/part07/7.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/part07/7.6.html">
+            
+                
+                    <a href="../../file/part07/7.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        尝试改写新浪网分类资讯爬虫2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="file/part07/7.7.html">
+            
+                
+                    <a href="../../file/part07/7.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        IT桔子分布式项目1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="file/part07/7.8.html">
+            
+                
+                    <a href="../../file/part07/7.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        IT桔子分布式项目2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >可选择的IDE和编辑器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="http&#x4EE3;&#x7406;&#x795E;&#x5668;fiddler">HTTP&#x4EE3;&#x7406;&#x795E;&#x5668;Fiddler</h1>
+<p>Fiddler&#x662F;&#x4E00;&#x6B3E;&#x5F3A;&#x5927;Web&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x80FD;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7684;HTTP&#x8BF7;&#x6C42;&#x3002;
+Fiddler&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9ED8;&#x8BA4;IE&#x7684;&#x4EE3;&#x7406;&#x8BBE;&#x4E3A;&#x4E86;127.0.0.1:8888&#xFF0C;&#x800C;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x662F;&#x9700;&#x8981;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h2 id="&#x5DE5;&#x4F5C;&#x539F;&#x7406;">&#x5DE5;&#x4F5C;&#x539F;&#x7406;</h2>
+<p>Fiddler &#x662F;&#x4EE5;&#x4EE3;&#x7406;web&#x670D;&#x52A1;&#x5668;&#x7684;&#x5F62;&#x5F0F;&#x5DE5;&#x4F5C;&#x7684;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x5730;&#x5740;&#xFF1A;127.0.0.1&#xFF0C;&#x7AEF;&#x53E3;&#xFF1A;8888</p>
+<p><img src="../images/fidder_pro.jpg" alt=""></p>
+<h2 id="fiddler&#x6293;&#x53D6;https&#x8BBE;&#x7F6E;">Fiddler&#x6293;&#x53D6;HTTPS&#x8BBE;&#x7F6E;</h2>
+<ol>
+<li><p>&#x542F;&#x52A8;Fiddler&#xFF0C;&#x6253;&#x5F00;&#x83DC;&#x5355;&#x680F;&#x4E2D;&#x7684; Tools &gt; Telerik Fiddler Options&#xFF0C;&#x6253;&#x5F00;&#x201C;Fiddler Options&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+<p> <img src="../images/01-fidder.png" alt=""></p>
+</li>
+<li><p>&#x5BF9;Fiddler&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<ul>
+<li>&#x6253;&#x5F00;&#x5DE5;&#x5177;&#x680F;-&gt;Tools-&gt;Fiddler Options-&gt;HTTPS&#xFF0C;</li>
+<li>&#x9009;&#x4E2D;Capture HTTPS CONNECTs (&#x6355;&#x6349;HTTPS&#x8FDE;&#x63A5;)&#xFF0C;</li>
+<li>&#x9009;&#x4E2D;Decrypt HTTPS traffic&#xFF08;&#x89E3;&#x5BC6;HTTPS&#x901A;&#x4FE1;&#xFF09;</li>
+<li>&#x53E6;&#x5916;&#x6211;&#x4EEC;&#x8981;&#x7528;Fiddler&#x83B7;&#x53D6;&#x672C;&#x673A;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;HTTPS&#x8BF7;&#x6C42;&#xFF0C;&#x6240;&#x4EE5;&#x4E2D;&#x95F4;&#x7684;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x4E2D;...from all processes &#xFF08;&#x4ECE;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#xFF09;</li>
+<li><p>&#x9009;&#x4E2D;&#x4E0B;&#x65B9;Ignore server certificate errors&#xFF08;&#x5FFD;&#x7565;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x9519;&#x8BEF;&#xFF09;</p>
+<p><img src="../images/01-fidder_01.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>&#x4E3A; Fiddler &#x914D;&#x7F6E;Windows&#x4FE1;&#x4EFB;&#x8FD9;&#x4E2A;&#x6839;&#x8BC1;&#x4E66;&#x89E3;&#x51B3;&#x5B89;&#x5168;&#x8B66;&#x544A;&#xFF1A;Trust Root Certificate&#xFF08;&#x53D7;&#x4FE1;&#x4EFB;&#x7684;&#x6839;&#x8BC1;&#x4E66;&#xFF09;&#x3002;</p>
+<p> <img src="../images/01-fidder_03.png" alt=""></p>
+</li>
+<li><p>Fiddler &#x4E3B;&#x83DC;&#x5355; Tools -&gt; Fiddler Options&#x2026;-&gt; Connections</p>
+<ul>
+<li>&#x9009;&#x4E2D;Allow remote computers to connect&#xFF08;&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#xFF09;</li>
+<li><p>Act as system proxy on startup&#xFF08;&#x4F5C;&#x4E3A;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x4EE3;&#x7406;&#xFF09;</p>
+<p><img src="../images/01-fidder_02.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>&#x91CD;&#x542F;Fiddler&#xFF0C;&#x4F7F;&#x914D;&#x7F6E;&#x751F;&#x6548;&#xFF08;&#x8FD9;&#x4E00;&#x6B65;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x5FC5;&#x987B;&#x505A;&#xFF09;&#x3002;</p>
+</li>
+</ol>
+<h2 id="fiddler-&#x5982;&#x4F55;&#x6355;&#x83B7;chrome&#x7684;&#x4F1A;&#x8BDD;">Fiddler &#x5982;&#x4F55;&#x6355;&#x83B7;Chrome&#x7684;&#x4F1A;&#x8BDD;</h2>
+<ol>
+<li><p>&#x5B89;&#x88C5;SwitchyOmega &#x4EE3;&#x7406;&#x7BA1;&#x7406; Chrome &#x6D4F;&#x89C8;&#x5668;&#x63D2;&#x4EF6;</p>
+<p> <img src="../images/switchyomega.png" alt=""></p>
+</li>
+<li><p>&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x4E3A;127.0.0.1:8888</p>
+<p> <img src="../images/switchyomega_setting.png" alt=""></p>
+</li>
+<li><p>&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x63D2;&#x4EF6;&#x5207;&#x6362;&#x4E3A;&#x8BBE;&#x7F6E;&#x597D;&#x7684;&#x4EE3;&#x7406;&#x3002;</p>
+<p> <img src="../images/SwitchyOmega_switch.png" alt=""></p>
+</li>
+</ol>
+<h2 id="fiddler&#x754C;&#x9762;">Fiddler&#x754C;&#x9762;</h2>
+<p>&#x8BBE;&#x7F6E;&#x597D;&#x540E;&#xFF0C;&#x672C;&#x673A;HTTP&#x901A;&#x4FE1;&#x90FD;&#x4F1A;&#x7ECF;&#x8FC7;127.0.0.1:8888&#x4EE3;&#x7406;&#xFF0C;&#x4E5F;&#x5C31;&#x4F1A;&#x88AB;Fiddler&#x62E6;&#x622A;&#x5230;&#x3002;</p>
+<p><img src="../images/fiddler_show.png" alt=""></p>
+<h4 id="&#x8BF7;&#x6C42;-request-&#x90E8;&#x5206;&#x8BE6;&#x89E3;">&#x8BF7;&#x6C42; (Request) &#x90E8;&#x5206;&#x8BE6;&#x89E3;</h4>
+<blockquote>
+<ol>
+<li>Headers &#x2014;&#x2014; &#x663E;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684; HTTP &#x8BF7;&#x6C42;&#x7684; header&#xFF0C;&#x663E;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;&#x5206;&#x7EA7;&#x89C6;&#x56FE;&#xFF0C;&#x5305;&#x542B;&#x4E86; Web &#x5BA2;&#x6237;&#x7AEF;&#x4FE1;&#x606F;&#x3001;Cookie&#x3001;&#x4F20;&#x8F93;&#x72B6;&#x6001;&#x7B49;&#x3002;</li>
+<li>Textview &#x2014;&#x2014; &#x663E;&#x793A; POST &#x8BF7;&#x6C42;&#x7684; body &#x90E8;&#x5206;&#x4E3A;&#x6587;&#x672C;&#x3002;</li>
+<li>WebForms &#x2014;&#x2014; &#x663E;&#x793A;&#x8BF7;&#x6C42;&#x7684; GET &#x53C2;&#x6570; &#x548C; POST body &#x5185;&#x5BB9;&#x3002;</li>
+<li>HexView &#x2014;&#x2014; &#x7528;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x663E;&#x793A;&#x8BF7;&#x6C42;&#x3002;</li>
+<li>Auth &#x2014;&#x2014; &#x663E;&#x793A;&#x54CD;&#x5E94; header &#x4E2D;&#x7684; Proxy-Authorization(&#x4EE3;&#x7406;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;) &#x548C; Authorization(&#x6388;&#x6743;) &#x4FE1;&#x606F;.</li>
+<li>Raw &#x2014;&#x2014; &#x5C06;&#x6574;&#x4E2A;&#x8BF7;&#x6C42;&#x663E;&#x793A;&#x4E3A;&#x7EAF;&#x6587;&#x672C;&#x3002;</li>
+<li>JSON - &#x663E;&#x793A;JSON&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x3002;</li>
+<li>XML &#x2014;&#x2014; &#x5982;&#x679C;&#x8BF7;&#x6C42;&#x7684; body &#x662F; XML &#x683C;&#x5F0F;&#xFF0C;&#x5C31;&#x662F;&#x7528;&#x5206;&#x7EA7;&#x7684; XML &#x6811;&#x6765;&#x663E;&#x793A;&#x5B83;&#x3002;</li>
+</ol>
+</blockquote>
+<h4 id="&#x54CD;&#x5E94;-response-&#x90E8;&#x5206;&#x8BE6;&#x89E3;">&#x54CD;&#x5E94; (Response) &#x90E8;&#x5206;&#x8BE6;&#x89E3;</h4>
+<blockquote>
+<ol>
+<li>Transformer &#x2014;&#x2014; &#x663E;&#x793A;&#x54CD;&#x5E94;&#x7684;&#x7F16;&#x7801;&#x4FE1;&#x606F;&#x3002;</li>
+<li>Headers &#x2014;&#x2014; &#x7528;&#x5206;&#x7EA7;&#x89C6;&#x56FE;&#x663E;&#x793A;&#x54CD;&#x5E94;&#x7684; header&#x3002;</li>
+<li>TextView &#x2014;&#x2014; &#x4F7F;&#x7528;&#x6587;&#x672C;&#x663E;&#x793A;&#x76F8;&#x5E94;&#x7684; body&#x3002;</li>
+<li>ImageVies &#x2014;&#x2014; &#x5982;&#x679C;&#x8BF7;&#x6C42;&#x662F;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#xFF0C;&#x663E;&#x793A;&#x54CD;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x3002;</li>
+<li>HexView &#x2014;&#x2014; &#x7528;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x663E;&#x793A;&#x54CD;&#x5E94;&#x3002;</li>
+<li>WebView &#x2014;&#x2014; &#x54CD;&#x5E94;&#x5728; Web &#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;&#x9884;&#x89C8;&#x6548;&#x679C;&#x3002;</li>
+<li>Auth &#x2014;&#x2014; &#x663E;&#x793A;&#x54CD;&#x5E94; header &#x4E2D;&#x7684; Proxy-Authorization(&#x4EE3;&#x7406;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;) &#x548C; Authorization(&#x6388;&#x6743;) &#x4FE1;&#x606F;&#x3002;</li>
+<li>Caching &#x2014;&#x2014; &#x663E;&#x793A;&#x6B64;&#x8BF7;&#x6C42;&#x7684;&#x7F13;&#x5B58;&#x4FE1;&#x606F;&#x3002;</li>
+<li>Privacy &#x2014;&#x2014; &#x663E;&#x793A;&#x6B64;&#x8BF7;&#x6C42;&#x7684;&#x79C1;&#x5BC6; (P3P) &#x4FE1;&#x606F;&#x3002;</li>
+<li>Raw &#x2014;&#x2014; &#x5C06;&#x6574;&#x4E2A;&#x54CD;&#x5E94;&#x663E;&#x793A;&#x4E3A;&#x7EAF;&#x6587;&#x672C;&#x3002;</li>
+<li>JSON - &#x663E;&#x793A;JSON&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x3002;</li>
+<li>XML &#x2014;&#x2014; &#x5982;&#x679C;&#x54CD;&#x5E94;&#x7684; body &#x662F; XML &#x683C;&#x5F0F;&#xFF0C;&#x5C31;&#x662F;&#x7528;&#x5206;&#x7EA7;&#x7684; XML &#x6811;&#x6765;&#x663E;&#x793A;&#x5B83; &#x3002;</li>
+</ol>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/part01/2.2.html" class="navigation navigation-prev " aria-label="Previous page: Requests深入"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/part01/1.4.html" class="navigation navigation-next " aria-label="Next page: 参考阅读：urllib模块的基本使用"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

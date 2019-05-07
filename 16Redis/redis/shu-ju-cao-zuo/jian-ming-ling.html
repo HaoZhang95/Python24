@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>键命令 | 欢迎学习Redis课程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../redis/shu-ju-cao-zuo/hash.html" />
+    
+    
+    <link rel="prev" href="../../redis/shu-ju-cao-zuo/string.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.4.2"
+        data-chapter-title="键命令"
+        data-filepath="redis/shu-ju-cao-zuo/jian-ming-ling.md"
+        data-basepath="../.."
+        data-revision="Tue Apr 17 2018 01:53:41 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="redis.html">
+            
+                
+                    <a href="../../redis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Redis
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="redis/an-zhuang.html">
+            
+                
+                    <a href="../../redis/an-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="redis/pei-zhi.html">
+            
+                
+                    <a href="../../redis/pei-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="redis/fu-wu-duan-he-ke-hu-duan-ming-ling.html">
+            
+                
+                    <a href="../../redis/fu-wu-duan-he-ke-hu-duan-ming-ling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        服务端和客户端命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="redis/shu-ju-cao-zuo.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        数据操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="redis/shu-ju-cao-zuo/string.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        string
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="redis/shu-ju-cao-zuo/jian-ming-ling.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/jian-ming-ling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        键命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="redis/shu-ju-cao-zuo/hash.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.3.</b>
+                        
+                        hash
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="redis/shu-ju-cao-zuo/list.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.4.</b>
+                        
+                        list
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="redis/shu-ju-cao-zuo/set.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/set.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.5.</b>
+                        
+                        set
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="redis/shu-ju-cao-zuo/zset.html">
+            
+                
+                    <a href="../../redis/shu-ju-cao-zuo/zset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.6.</b>
+                        
+                        zset
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="redis/yu-python-jiao-hu.html">
+            
+                
+                    <a href="../../redis/yu-python-jiao-hu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        与Python交互
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="redis/yu-python-jiao-hu/strictredis.html">
+            
+                
+                    <a href="../../redis/yu-python-jiao-hu/strictredis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        StrictRedis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="redis/yu-python-jiao-hu/string.html">
+            
+                
+                    <a href="../../redis/yu-python-jiao-hu/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        string
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="redis/da-jian-zhu-cong.html">
+            
+                
+                    <a href="../../redis/da-jian-zhu-cong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        搭建主从
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="redis/da-jian-ji-qun.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        搭建集群
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="redis/da-jian-ji-qun/pei-zhi-ji-qi-1.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/pei-zhi-ji-qi-1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.1.</b>
+                        
+                        配置机器1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="redis/da-jian-ji-qun/pei-zhi-ji-qi-2.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/pei-zhi-ji-qi-2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.2.</b>
+                        
+                        配置机器2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="redis/da-jian-ji-qun/chuang-jian-ji-qun.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/chuang-jian-ji-qun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.3.</b>
+                        
+                        创建集群
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="redis/da-jian-ji-qun/yu-python-jiao-hu.html">
+            
+                
+                    <a href="../../redis/da-jian-ji-qun/yu-python-jiao-hu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.4.</b>
+                        
+                        与Python交互
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >欢迎学习Redis课程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807; </h1>
+<ul>
+<li>&#x80FD;&#x591F;&#x5199;&#x51FA;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x952E;&#x7684;&#x76F8;&#x5173;&#x547D;&#x4EE4;</li>
+</ul>
+<h1 id="&#x952E;&#x547D;&#x4EE4;">&#x952E;&#x547D;&#x4EE4; </h1>
+<ul>
+<li><p>&#x67E5;&#x627E;&#x952E;&#xFF0C;&#x53C2;&#x6570;&#x2F40;&#x6301;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</p>
+<blockquote>
+<p>keys pattern</p>
+</blockquote>
+</li>
+<li><p>&#x4F8B;1&#xFF1A;&#x67E5;&#x770B;&#x6240;&#x6709;&#x952E;</p>
+<blockquote>
+<p>keys *</p>
+</blockquote>
+<p><img src="../../assets/p1_20.png" alt="" title="&#x67E5;&#x770B;&#x6240;&#x6709;&#x952E;"></p>
+</li>
+<li><p>&#x4F8B;2&#xFF1A;&#x67E5;&#x770B;&#x540D;&#x79F0;&#x4E2D;&#x5305;&#x542B;a&#x7684;&#x952E;</p>
+<blockquote>
+<p>keys &apos;a*&apos;</p>
+</blockquote>
+<p><img src="../../assets/p1_21.png" alt="" title="&#x67E5;&#x770B;&#x952E;"></p>
+</li>
+<li><p>&#x5224;&#x65AD;&#x952E;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x8FD4;&#x56DE;1&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x8FD4;&#x56DE;0</p>
+<blockquote>
+<p>exists key1</p>
+</blockquote>
+</li>
+<li><p>&#x4F8B;3&#xFF1A;&#x5224;&#x65AD;&#x952E;a1&#x662F;&#x5426;&#x5B58;&#x5728;</p>
+<blockquote>
+<p>exists a1</p>
+</blockquote>
+<p><img src="../../assets/p1_22.png" alt="" title="&#x5224;&#x65AD;&#x952E;&#x662F;&#x5426;&#x5B58;&#x5728;"></p>
+</li>
+<li><p>&#x67E5;&#x770B;&#x952E;&#x5BF9;&#x5E94;&#x7684;value&#x7684;&#x7C7B;&#x578B;</p>
+<blockquote>
+<p>type key</p>
+</blockquote>
+</li>
+<li><p>&#x4F8B;4&#xFF1A;&#x67E5;&#x770B;&#x952E;a1&#x7684;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x4E3A;redis&#x2F40;&#x6301;&#x7684;&#x4E94;&#x79CD;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x2F00;&#x79CD;</p>
+<blockquote>
+<p>type a1</p>
+</blockquote>
+<p><img src="../../assets/p1_23.png" alt="" title="&#x67E5;&#x770B;&#x503C;&#x7C7B;&#x578B;"></p>
+</li>
+<li><p>&#x5220;&#x9664;&#x952E;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x503C;</p>
+<blockquote>
+<p>del key1 key2 ...</p>
+</blockquote>
+</li>
+<li><p>&#x4F8B;5&#xFF1A;&#x5220;&#x9664;&#x952E;a2&#x3001;a3</p>
+<blockquote>
+<p>del a2 a3</p>
+</blockquote>
+<p><img src="../../assets/p1_24.png" alt="" title="&#x5220;&#x9664;&#x952E;"></p>
+</li>
+<li><p>&#x8BBE;&#x7F6E;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x4EE5;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x5219;&#x2F00;&#x76F4;&#x5B58;&#x5728;&#xFF0C;&#x76F4;&#x5230;&#x4F7F;&#x2F64;DEL&#x79FB;&#x9664;</p>
+<blockquote>
+<p>expire key seconds</p>
+</blockquote>
+</li>
+<li><p>&#x4F8B;6&#xFF1A;&#x8BBE;&#x7F6E;&#x952E;&apos;a1&apos;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x4E3A;3&#x79D2;</p>
+<blockquote>
+<p>expire &apos;a1&apos; 3</p>
+</blockquote>
+<p><img src="../../assets/p1_25.png" alt="" title="&#x8BBE;&#x7F6E;&#x8FC7;&#x671F;&#x65F6;&#x95F4;"></p>
+</li>
+<li><p>&#x67E5;&#x770B;&#x6709;&#x6548;&#x65F6;&#x95F4;&#xFF0C;&#x4EE5;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;</p>
+<blockquote>
+<p>ttl key</p>
+</blockquote>
+</li>
+<li><p>&#x4F8B;7&#xFF1A;&#x67E5;&#x770B;&#x952E;&apos;bb&apos;&#x7684;&#x6709;&#x6548;&#x65F6;&#x95F4;</p>
+<blockquote>
+<p>ttl bb</p>
+</blockquote>
+<p><img src="../../assets/p1_27.png" alt="" title="&#x67E5;&#x770B;&#x6709;&#x6548;&#x65F6;&#x95F4;"></p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../redis/shu-ju-cao-zuo/string.html" class="navigation navigation-prev " aria-label="Previous page: string"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../redis/shu-ju-cao-zuo/hash.html" class="navigation navigation-next " aria-label="Next page: hash"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
