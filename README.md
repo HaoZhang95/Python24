@@ -1,13 +1,13 @@
 # PythonAndMachineLearning [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-传智播客&黑马出品的Python24期人工智能整套代码和讲义集合，仓库主要为了学习**Python和机器学习基础**，每一章的具体知识点可以在下面的目录中详细查看**课程大纲**，具体的讲义文档，提供在线阅读和下载，大部分的章节讲义使用了Gitbook进行整章的阅读，同样的，在学习的过程中，我在代码中都每行进行了注释，方便进行阅读和理解，希望能够帮助大家。资源搜集劳神费力，望大家多多支持,多多Star。备注：讲义的内容来源于网络，如有侵权，请及时联系撤销发布。
+传智播客&黑马出品的Python24期人工智能整套代码和讲义集合，仓库主要为了学习**Python和机器学习基础**，每一章的具体知识点可以在下面的目录中详细查看**课程大纲**，具体的**讲义文档**，提供在线阅读和下载，大部分的章节讲义使用了Gitbook进行整章的阅读，同样的，在学习的过程中，我在代码中都每行进行了注释，基本上不用看文档也能理解，方便进行阅读和理解，希望能够帮助大家。资源搜集劳神费力，望大家多多支持,喜欢本仓库的话，记得Star哦。
                                                                                                                                       
 ****
 	
 |Author|白发老书生|
 |---|---
 |E-mail|Github联系我
-> 最近更新至第23章节：2019-05-08
+> 最近更新至第23章节（共30章节）：2019-05-08
 
 ****
 
@@ -58,15 +58,5 @@
 - [ ] [27数据挖掘](/27数据挖掘/README.md)
 
 
-
-
-## About Me
-- [Take a look](http://htmlpreview.github.io/?https://github.com/taijizhizao/markdowntoc/blob/master/index.html)
-
-## COMMITS
-
-[Commits](https://github.com/HaoZhang95/PythonAndMachineLearning/commits/master)
-
-## 报告问题
-[Issues](https://github.com/HaoZhang95/PythonAndMachineLearning/issues)
-
+## 备注
+学习还在进行中，章节还在更新中，本仓库中的所有内容均来自于网络，仅学习目的，如有侵权，请及时联系撤销发布。
