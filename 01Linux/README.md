@@ -8,24 +8,7 @@ Linux基础，没有具体的代码实现，具体的请查看该篇章中的htm
 |E-mail|china.hao.zhang@gmail.com
 
 ****
-<h2 id="catalog">讲义html</h2>
-* [Linux基础](#Linux基础)
-    * [01-学01_Python基础课程安排](/linux_html/01_Python基础课程安排.html)
-    * [Issues](https://github.com/HaoZhang95/PythonAndMachineLearning/01Linux/linux_html/01_Python基础课程安排.html)
-    * 02-操作系统相关(/linux_html/01_Python基础课程安排.html)
-    * 03-shell介绍
-    * 01_Python 基础课程安排
-    * 02_操作系统（科普章节）
-    * 03_操作系统的发展史（科普章节）
-    * 04_文件和目录（理解）
-    * 05_Ubuntu 图形界面入门
-    * 06_常用 Linux 命令的基本使用
-    * 07_Linux 终端命令格式
-    * 08_文件和目录常用命令
-    * 09_远程管理常用命令
-    * 10_用户权限常用命令
-    * 11_系统信息相关命令
-    * 12_其他命令
+
 
 * [Linux基础](#Linux基础)
     * [01-学01_Python基础课程安排](/linux_html/01_Python基础课程安排.html)
