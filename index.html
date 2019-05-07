@@ -1,55 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Python24_Lectures</title>
-</head>
-<body>
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href='http://fonts.useso.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/modernizr.custom.97074.js"></script>
+        <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+    </head>
+    <body>
+        <div class="container">
+        	<header class="clearfix">
+				<span>Hao &amp; Zhang</span>
+				<h1>Python24期 <span>讲义</span></h1>
+				<nav class="codrops-demos">
+<!--					<a class="current-demo" href="index.html">Default</a>-->
+					<a href="#">更新至23章</a>
+					<a href="#">最近一次更新： 2019-05-08</a>
+				</nav>
+				<p>大部分的章节使用了Gitbook进行整章的阅读，因为部分原因，第一章讲义使用了7个单独Html介绍整章，2-4章节Python网络</p>
+				<p>半程是pdf形式的讲义，pdf文件较大，提供百度云下载查看，提取码: htdi ,第10-13章主要讲解的是Html基础和Jqery的使</p>
+				<p>用，并没有对应的讲义. 同时24-25章节，讲述的是自动化运维，同样也没有讲义，虽然部分章节缺少html格式的讲义，但是在</p>
+				<p>在学习的过程中，我在代码中都每行进行了注释，方便进行理解，希望能够帮助大家。资源搜集劳神费力，望大家多多支持,多多Star。</p>
+			</header>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="./01Linux/index.html">
+							<img src="images/1.jpg" />
+							<div><span>Linux基础</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://pan.baidu.com/s/1YkmdkoomMrYy96BTz1pnnQ">
+							<img src="images/2.jpg" />
+							<div><span>提取码: htdi, Python网络编程， 多线程， Web服务器</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./5-9/index.html">
+							<img src="images/5.jpg" />
+							<div><span>正则表达式，Mysql，Python进阶，WSGI服务器， Web框架</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./14Django基础/index.html">
+							<img src="images/14.jpg" />
+							<div><span>Django基础</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./15Flask/index.html">
+							<img src="images/15.jpg" />
+							<div><span>Flask基础</span></div>
+						</a>
+					</li>
+					<li>	
+						<a href="./16Redis/index.html">
+							<img src="images/16.jpg" />
+							<div><span>Redis数据库</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./17Git版本管理/index.html">
+							<img src="images/17.jpg" />
+							<div><span>Git版本管理</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./18新经资Flask项目/index.html">
+							<img src="images/18.jpg" />
+							<div><span>18新经资Flask项目</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./19Django框架增强/Django_Rest_Framework/index.html">
+							<img src="images/19.jpg" />
+							<div><span>Django Rest Framewor框架</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.runtofuture.cn/gitbooks/project/index.html">
+							<img src="images/20.jpg" />
+							<div><span>天天生鲜Django项目</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="./21爬虫入门/index.html">
+							<img src="images/21.jpg" />
+							<div><span>爬虫入门，提高， 电商Scrapy爬虫</span></div>
+						</a>
+					</li>
 
+					<li>
+						<a onclick="alert('等待更新')">
+							<img src="images/26wait.jpg" />
+							<div><span>数据结构</span></div>
+						</a>
+					</li>
 
-    <ul>
+				</ul>
+			</section>
 
-        <li>
-            <a href="./01Linux/01_Python%20基础课程安排.html">01Linux基础</a>
-        </li>
-        <li>
-            <a href="./5-9/index.html">5-9</a>
-        </li>
-        <li>
-            <a href="./15Flask/index.html">15Flask</a>
-        </li>
+			<header class="clearfix">
+				<p style="font-weight: bold">讲义的内容来源于网络，如有侵权，请及时联系撤销发布。</p>
+			</header>
 
-        <li>
-            <a href="./16Redis/index.html">16Redis数据库</a>
-        </li>
+        </div>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+		<script type="text/javascript">
+			$(function() {
+			
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
-        <li>
-            <a href="./17Git版本管理/index.html">17Git版本管理</a>
-        </li>
-
-        <li>
-            <a href="./18新经资Flask项目/index.html">18新经资Flask项目</a>
-        </li>
-
-        <ul>
-
-            <ll>
-                <a href="./19Django框架增强/基础复习/index.html">Django基础复习</a>
-            </ll>
-            <ll>
-                <a href="./19Django框架增强/Django_Rest_Framework/index.html">Django Rest Framewor框架</a>
-            </ll>
-        </ul>
-
-
-
-        <li>
-            <a href="./21爬虫入门/index.html">21爬虫入门</a>
-        </li>
-
-    </ul>
-
-
-
-</body>
+			});
+		</script>
+    </body>
 </html>

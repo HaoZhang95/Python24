@@ -1,0 +1,1590 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book Django基础 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>站点管理 | Django基础</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day01-mvt/viewsandulrs.html" />
+    
+    
+    <link rel="prev" href="../day01-mvt/models.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="1.5"
+        data-chapter-title="站点管理"
+        data-filepath="day01-mvt/managesite.md"
+        data-basepath=".."
+        data-revision="Mon Jan 29 2018 23:56:31 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Django基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="day01-mvt.html">
+            
+                
+                    <a href="../day01-mvt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Django基础概念和MVT架构
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="day01-mvt/djangointroduce.html">
+            
+                
+                    <a href="../day01-mvt/djangointroduce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Django简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01-mvt/virtualenv.html">
+            
+                
+                    <a href="../day01-mvt/virtualenv.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        虚拟环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day01-mvt/createdjangoproject.html">
+            
+                
+                    <a href="../day01-mvt/createdjangoproject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        创建Django项目
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day01-mvt/models.html">
+            
+                
+                    <a href="../day01-mvt/models.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="day01-mvt/managesite.html">
+            
+                
+                    <a href="../day01-mvt/managesite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        站点管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day01-mvt/viewsandulrs.html">
+            
+                
+                    <a href="../day01-mvt/viewsandulrs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        视图和URL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="day01-mvt/summarymv.html">
+            
+                
+                    <a href="../day01-mvt/summarymv.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        总结View和URL匹配流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="day01-mvt/templates.html">
+            
+                
+                    <a href="../day01-mvt/templates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="day01-mvt/summarymvt.html">
+            
+                
+                    <a href="../day01-mvt/summarymvt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        总结View-Templates流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="day01-mvt/exampleimplementation.html">
+            
+                
+                    <a href="../day01-mvt/exampleimplementation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        案例实现
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="day01-mvt/exampleimplementation/showbooklist.html">
+            
+                
+                    <a href="../day01-mvt/exampleimplementation/showbooklist.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.1.</b>
+                        
+                        展示书籍列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="day01-mvt/exampleimplementation/showpeoplelist.html">
+            
+                
+                    <a href="../day01-mvt/exampleimplementation/showpeoplelist.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.2.</b>
+                        
+                        展示人物列表
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="day01-mvt/zongjiemvt-liucheng.html">
+            
+                
+                    <a href="../day01-mvt/zongjiemvt-liucheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        总结MVT流程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="day02-model.html">
+            
+                
+                    <a href="../day02-model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        模型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="day02-model/orm.html">
+            
+                
+                    <a href="../day02-model/orm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        ORM
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="day02-model/prepareproject.html">
+            
+                
+                    <a href="../day02-model/prepareproject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        项目准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="day02-model/mysqldatabase.html">
+            
+                
+                    <a href="../day02-model/mysqldatabase.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        MySQL数据库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="day02-model/fieldtype.html">
+            
+                
+                    <a href="../day02-model/fieldtype.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        字段类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="day02-model/definemodel.html">
+            
+                
+                    <a href="../day02-model/definemodel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        定义模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="day02-model/modelmember.html">
+            
+                
+                    <a href="../day02-model/modelmember.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        模型成员
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="day02-model/queryaction.html">
+            
+                
+                    <a href="../day02-model/queryaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        查询操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="day02-model/queryaction/queryset.html">
+            
+                
+                    <a href="../day02-model/queryaction/queryset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.1.</b>
+                        
+                        查询集
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="day02-model/queryaction/querycondition.html">
+            
+                
+                    <a href="../day02-model/queryaction/querycondition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.2.</b>
+                        
+                        基础条件查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="day02-model/queryaction/fandq.html">
+            
+                
+                    <a href="../day02-model/queryaction/fandq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.3.</b>
+                        
+                        F和Q对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="day02-model/queryaction/queryaggregate.html">
+            
+                
+                    <a href="../day02-model/queryaction/queryaggregate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.4.</b>
+                        
+                        聚合函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="day02-model/queryaction/association.html">
+            
+                
+                    <a href="../day02-model/queryaction/association.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.5.</b>
+                        
+                        关联查询
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="day03-view.html">
+            
+                
+                    <a href="../day03-view.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        视图
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="day03-view/viewsandprepare.html">
+            
+                
+                    <a href="../day03-view/viewsandprepare.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        视图介绍和项目准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="day03-view/urlconf.html">
+            
+                
+                    <a href="../day03-view/urlconf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        URLconf
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="day03-view/errorhtml.html">
+            
+                
+                    <a href="../day03-view/errorhtml.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        错误视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="day03-view/httprequest.html">
+            
+                
+                    <a href="../day03-view/httprequest.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        HttpRequest对象
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="day03-view/httprequest/httprequestproperty.html">
+            
+                
+                    <a href="../day03-view/httprequest/httprequestproperty.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                        属性介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="day03-view/httprequest/querydict.html">
+            
+                
+                    <a href="../day03-view/httprequest/querydict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                        QueryDict对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="day03-view/httprequest/httprequestproperty-get.html">
+            
+                
+                    <a href="../day03-view/httprequest/httprequestproperty-get.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.3.</b>
+                        
+                        GET属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="day03-view/httprequest/httprequestproperty-post.html">
+            
+                
+                    <a href="../day03-view/httprequest/httprequestproperty-post.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.4.</b>
+                        
+                        POST属性
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="day03-view/httpresponse.html">
+            
+                
+                    <a href="../day03-view/httpresponse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        HttpResponse对象
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="day03-view/httpresponse/jsonresponse.html">
+            
+                
+                    <a href="../day03-view/httpresponse/jsonresponse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        JsonResponse
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="day03-view/httpresponse/httpresponseredirect.html">
+            
+                
+                    <a href="../day03-view/httpresponse/httpresponseredirect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.2.</b>
+                        
+                        HttpResponseRedirect
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="day03-view/holdmode.html">
+            
+                
+                    <a href="../day03-view/holdmode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        状态保持
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="day03-view/holdmode/cookie.html">
+            
+                
+                    <a href="../day03-view/holdmode/cookie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        Cookie
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="day03-view/holdmode/session.html">
+            
+                
+                    <a href="../day03-view/holdmode/session.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.</b>
+                        
+                        Session
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.2.1" data-path="day03-view/holdmode/session/sessionaction.html">
+            
+                
+                    <a href="../day03-view/holdmode/session/sessionaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.1.</b>
+                        
+                        常见Session操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="day04-template.html">
+            
+                
+                    <a href="../day04-template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        模板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="day04-template/templatejianjie.html">
+            
+                
+                    <a href="../day04-template/templatejianjie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        模板介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="day04-template/tempplatelanguage.html">
+            
+                
+                    <a href="../day04-template/tempplatelanguage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        模板语言
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="day04-template/tempplatelanguage/tempplatelanguagevariable.html">
+            
+                
+                    <a href="../day04-template/tempplatelanguage/tempplatelanguagevariable.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="day04-template/tempplatelanguage/templatelanguagetags.html">
+            
+                
+                    <a href="../day04-template/tempplatelanguage/templatelanguagetags.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                        标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="day04-template/tempplatelanguage/templatelanguagefilter.html">
+            
+                
+                    <a href="../day04-template/tempplatelanguage/templatelanguagefilter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                        过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="day04-template/tempplatelanguage/templatelanguagecustomfillter.html">
+            
+                
+                    <a href="../day04-template/tempplatelanguage/templatelanguagecustomfillter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.4.</b>
+                        
+                        自定义过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="day04-template/tempplatelanguage/templatelanguagezhushi.html">
+            
+                
+                    <a href="../day04-template/tempplatelanguage/templatelanguagezhushi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.5.</b>
+                        
+                        注释
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="day04-template/templatejicheng.html">
+            
+                
+                    <a href="../day04-template/templatejicheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        模板继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="day04-template/htmlzhuanyi.html">
+            
+                
+                    <a href="../day04-template/htmlzhuanyi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        HTML转义
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="day04-template/csrf.html">
+            
+                
+                    <a href="../day04-template/csrf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        CSRF
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="day04-template/verifycode.html">
+            
+                
+                    <a href="../day04-template/verifycode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        验证码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="day04-template/fanxiangjiexi.html">
+            
+                
+                    <a href="../day04-template/fanxiangjiexi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        反向解析
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="day05chang-yong-gong-neng.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        常用功能
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="day05chang-yong-gong-neng/staticfiles.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/staticfiles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        静态文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="day05chang-yong-gong-neng/middleware.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/middleware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        中间件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="day05chang-yong-gong-neng/sitemanager.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/sitemanager.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        站点管理
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="day05chang-yong-gong-neng/sitemanager/sitelistpageoption.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/sitemanager/sitelistpageoption.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        列表页选项
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="day05chang-yong-gong-neng/sitemanager/siteeditpageoption.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/sitemanager/siteeditpageoption.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                        编辑页选项
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="day05chang-yong-gong-neng/sitemanager/siteoverwritetemplates.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/sitemanager/siteoverwritetemplates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.3.</b>
+                        
+                        重写模板
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="day05chang-yong-gong-neng/uploadpicture.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/uploadpicture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        上传图片
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="day05chang-yong-gong-neng/uploadpicture/uploadpicturesite.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/uploadpicture/uploadpicturesite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                        后台站点上传图片
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="day05chang-yong-gong-neng/uploadpicture/uploadpicturecustomform.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/uploadpicture/uploadpicturecustomform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                        自定义表单上传图片
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="day05chang-yong-gong-neng/uploadpicture/uploadpictureshow.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/uploadpicture/uploadpictureshow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.3.</b>
+                        
+                        展示上传的图片
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="day05chang-yong-gong-neng/paginator.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/paginator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="day05chang-yong-gong-neng/areasselect.html">
+            
+                
+                    <a href="../day05chang-yong-gong-neng/areasselect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        案例：省市区选择
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="day06-git.html">
+            
+                
+                    <a href="../day06-git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Git管理源代码
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="day06-git/gitintroduce.html">
+            
+                
+                    <a href="../day06-git/gitintroduce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Git简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="day06-git/gitworkingarea.html">
+            
+                
+                    <a href="../day06-git/gitworkingarea.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        工作区暂存区和仓库区
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="day06-git/gitsingleoperation.html">
+            
+                
+                    <a href="../day06-git/gitsingleoperation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Git单人本地仓库操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="day06-git/github.html">
+            
+                
+                    <a href="../day06-git/github.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Git远程仓库Github
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="day06-git/github/githubcreatedepository.html">
+            
+                
+                    <a href="../day06-git/github/githubcreatedepository.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.1.</b>
+                        
+                        创建远程仓库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="day06-git/github/githubssh.html">
+            
+                
+                    <a href="../day06-git/github/githubssh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.2.</b>
+                        
+                        配置SSH
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="day06-git/github/githubclong.html">
+            
+                
+                    <a href="../day06-git/github/githubclong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.3.</b>
+                        
+                        克隆项目
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.4" data-path="day06-git/github/githubmultiplayerteamwork.html">
+            
+                
+                    <a href="../day06-git/github/githubmultiplayerteamwork.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.4.</b>
+                        
+                        多人协同开发
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.5" data-path="day06-git/github/githubcodeconflict.html">
+            
+                
+                    <a href="../day06-git/github/githubcodeconflict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.5.</b>
+                        
+                        代码冲突
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.6" data-path="day06-git/github/githubtags.html">
+            
+                
+                    <a href="../day06-git/github/githubtags.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.6.</b>
+                        
+                        标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.7" data-path="day06-git/github/githubbranch.html">
+            
+                
+                    <a href="../day06-git/github/githubbranch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.7.</b>
+                        
+                        分支
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Django基础</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x7AD9;&#x70B9;&#x7BA1;&#x7406;">&#x7AD9;&#x70B9;&#x7BA1;&#x7406;</h1>
+<ul>
+<li><strong>&#x7AD9;&#x70B9;</strong> : &#x5206;&#x4E3A;<code>&#x5185;&#x5BB9;&#x53D1;&#x5E03;</code>&#x548C;<code>&#x516C;&#x5171;&#x8BBF;&#x95EE;</code>&#x4E24;&#x90E8;&#x5206;</li>
+<li><strong>&#x5185;&#x5BB9;&#x53D1;&#x5E03;</strong> &#x7684;&#x90E8;&#x5206;&#x7531;&#x7F51;&#x7AD9;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x8D1F;&#x8D23;&#x67E5;&#x770B;&#x3001;&#x6DFB;&#x52A0;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;&#x6570;&#x636E;</li>
+<li><code>Django</code>&#x80FD;&#x591F;&#x6839;&#x636E;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x81EA;&#x52A8;&#x5730;&#x751F;&#x6210;&#x7BA1;&#x7406;&#x6A21;&#x5757;</li>
+<li>&#x4F7F;&#x7528;<code>Django</code>&#x7684;&#x7BA1;&#x7406;&#x6A21;&#x5757;, &#x9700;&#x8981;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x6B65;&#x9AA4;&#x64CD;&#x4F5C; :<ul>
+<li>1.&#x7BA1;&#x7406;&#x754C;&#x9762;&#x672C;&#x5730;&#x5316;</li>
+<li>2.&#x521B;&#x5EFA;&#x7BA1;&#x7406;&#x5458;</li>
+<li>3.&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;</li>
+<li>4.&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#x5230;&#x6570;&#x636E;&#x5E93;</li>
+<li>5.&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x9875;&#x9762;</li>
+</ul>
+</li>
+</ul>
+<h4 id="1&#x7BA1;&#x7406;&#x754C;&#x9762;&#x672C;&#x5730;&#x5316;">1.&#x7BA1;&#x7406;&#x754C;&#x9762;&#x672C;&#x5730;&#x5316;</h4>
+<ul>
+<li>&#x672C;&#x5730;&#x5316;&#x662F;&#x5C06;&#x663E;&#x793A;&#x7684;&#x8BED;&#x8A00;&#x3001;&#x65F6;&#x95F4;&#x7B49;&#x4F7F;&#x7528;&#x672C;&#x5730;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x672C;&#x5730;&#x5316;&#x5C31;&#x662F;&#x8FDB;&#x884C;&#x4E2D;&#x56FD;&#x5316;.</li>
+<li>&#x4E2D;&#x56FD;&#x5927;&#x9646;&#x5730;&#x533A;&#x4F7F;&#x7528;<strong><code>&#x7B80;&#x4F53;&#x4E2D;&#x6587;</code></strong>, &#x65F6;&#x533A;&#x4F7F;&#x7528;<strong><code>&#x4E9A;&#x6D32;/&#x4E0A;&#x6D77;&#x65F6;&#x533A;</code></strong>, &#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x4E0D;&#x4F7F;&#x7528;&#x5317;&#x4EAC;&#x65F6;&#x533A;.</li>
+<li><p>&#x672C;&#x5730;&#x5316;&#x524D;</p>
+<p>  <img src="images/&#x672C;&#x5730;&#x5316;&#x524D;.png" alt=""></p>
+</li>
+<li><p>&#x672C;&#x5730;&#x5316;&#x540E;</p>
+<p>  <img src="images/&#x672C;&#x5730;&#x5316;&#x540E;.png" alt=""></p>
+</li>
+</ul>
+<h4 id="2&#x521B;&#x5EFA;&#x7BA1;&#x7406;&#x5458;">2.&#x521B;&#x5EFA;&#x7BA1;&#x7406;&#x5458;</h4>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x547D;&#x4EE4; :</p>
+<pre><code>  python manage.py createsuperuser
+</code></pre></li>
+<li><p>&#x6309;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x3001;&#x90AE;&#x7BB1;&#x3001;&#x5BC6;&#x7801;</p>
+<p>  <img src="images/&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x5458;.png" alt=""></p>
+</li>
+<li><p>&#x767B;&#x9646;&#x7AD9;&#x70B9; : <code>http://127.0.0.1:8000/admin</code></p>
+<ul>
+<li><p>&#x9700;&#x8981;&#x670D;&#x52A1;&#x5668;&#x662F;&#x542F;&#x52A8;&#x72B6;&#x6001;</p>
+<p><img src="images/&#x767B;&#x9646;&#x7AD9;&#x70B9;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>&#x767B;&#x9646;&#x7AD9;&#x70B9;&#x6210;&#x529F;</p>
+<ul>
+<li><p>&#x7AD9;&#x70B9;&#x754C;&#x9762;&#x4E2D;&#x6CA1;&#x6709;&#x4E66;&#x7C4D;&#x548C;&#x4EBA;&#x7269;&#x7BA1;&#x7406;&#x5165;&#x53E3;,&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;</p>
+<p><img src="images/&#x767B;&#x9646;&#x7AD9;&#x70B9;&#x6210;&#x529F;.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="3&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;">3.&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;</h4>
+<ul>
+<li><p>&#x5728;<code>&#x5E94;&#x7528;</code>&#x7684;<code>admin.py</code>&#x6587;&#x4EF6;&#x4E2D;&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;</p>
+<ul>
+<li><p>&#x9700;&#x8981;&#x5BFC;&#x5165;&#x6A21;&#x578B;&#x6A21;&#x5757; : <code>from models import *</code></p>
+<p><img src="images/admin&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x540E;</p>
+<p>  <img src="images/&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x540E;.png" alt=""></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x6210;&#x529F;&#x540E;, &#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x65B9;&#x4FBF;&#x5FEB;&#x901F;&#x7684;&#x7BA1;&#x7406;&#x6570;&#x636E;.</strong></p>
+</blockquote>
+<h4 id="4&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#x5230;&#x6570;&#x636E;&#x5E93;">4.&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#x5230;&#x6570;&#x636E;&#x5E93;</h4>
+<p><img src="images/&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#x5230;&#x6570;&#x636E;&#x5E93;.gif" alt=""></p>
+<ul>
+<li><p>&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x4F18;&#x5316;&#x6A21;&#x578B;&#x7C7B;&#x5C55;&#x793A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfo</span><span class="hljs-params">(models.Model)</span>:</span>
+  <span class="hljs-string">&quot;&quot;&quot;&#x5B9A;&#x4E49;&#x4E66;&#x7C4D;&#x4FE1;&#x606F;&#x6A21;&#x578B;&#x7C7B;&quot;&quot;&quot;</span>
+
+  name = models.CharField(max_length=<span class="hljs-number">10</span>)
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+      <span class="hljs-string">&quot;&quot;&quot;&#x5C06;&#x6A21;&#x578B;&#x7C7B;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;&quot;&quot;&quot;</span>
+      <span class="hljs-keyword">return</span> self.name
+</code></pre>
+<p>  <img src="images/&#x8F93;&#x51FA;&#x6A21;&#x578B;&#x7C7B;name&#x5B57;&#x6BB5;.png" alt=""></p>
+</li>
+</ul>
+<h4 id="5&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x9875;&#x9762;">5.&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x9875;&#x9762;</h4>
+<ul>
+<li><p>&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x524D;</p>
+<p>  <img src="images/&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x524D;.png" alt=""></p>
+</li>
+<li><p>&#x5982;&#x679C;&#x60F3;&#x5728;&#x7AD9;&#x70B9;&#x754C;&#x9762;&#x4E2D;&#x5C55;&#x793A;&#x8BE6;&#x7EC6;&#x7684;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;,&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x9875;&#x9762;</p>
+</li>
+<li><p>&#x5373; &#x5728;<code>&#x5E94;&#x7528;</code>&#x7684;<code>admin.py</code>&#x6587;&#x4EF6;&#x4E2D;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;</p>
+<ul>
+<li>&#x65B0;&#x5EFA;&#x7C7B;&#x7EE7;&#x627F;&#x81EA;<code>admin.ModelAdmin</code></li>
+<li>&#x91CD;&#x5199;<code>list_display</code>&#xFF0C;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x5C55;&#x793A;&#x7684;&#x5B57;&#x6BB5;</li>
+<li><p>&#x5C06;<code>PeopleAdmin</code>&#x6CE8;&#x518C;&#x5230;&#x7AD9;&#x70B9;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x7684;&#x7C7B; &#xFF1A; &#x91CD;&#x5199;list_display&#x5C5E;&#x6027;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PeopleAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+  list_display = [<span class="hljs-string">&apos;id&apos;</span>,<span class="hljs-string">&apos;name&apos;</span>,<span class="hljs-string">&apos;gender&apos;</span>,<span class="hljs-string">&apos;book&apos;</span>]
+
+<span class="hljs-comment"># &#x6CE8;&#x518C;&#x4EBA;&#x7269;&#x6A21;&#x578B;</span>
+admin.site.register(PeopleInfo,PeopleAdmin)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x540E;</p>
+<p>  <img src="images/&#x81EA;&#x5B9A;&#x4E49;&#x7AD9;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x540E;.png" alt=""></p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day01-mvt/models.html" class="navigation navigation-prev " aria-label="Previous page: 模型"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day01-mvt/viewsandulrs.html" class="navigation navigation-next " aria-label="Next page: 视图和URL"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Django基础 -->
+</html>
