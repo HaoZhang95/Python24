@@ -19,7 +19,7 @@
 
 > 讲义文档，在线阅读
 
-[![讲义文档](https://i.imgur.com/pE1FRnd.png)](https://haozhang95.github.io/PythonAndMachineLearning/)
+[![讲义文档](https://i.imgur.com/pE1FRnd.png)](https://haozhang95.github.io/Python24/)
 
 > 讲义文档，百度云下载
 
