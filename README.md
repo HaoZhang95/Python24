@@ -49,7 +49,7 @@
 - [x] [17Git](/17Git/README.md)
 - [x] [18新经资讯项目](/18NewsProject/README.md)
 - [x] [19Django_Advanced](/19Django_Advanced/README.md)
-- [x] [20美多商城项目](/20美多商城项目/README.md)
+- [x] [20美多商城项目](/20天天生鲜项目/README.md)
 
 - [x] [21爬虫入门](/21爬虫入门/README.md)
 - [x] [22爬虫提高](/22爬虫提高/README.md)
