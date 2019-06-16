@@ -90,28 +90,51 @@ class SingleCycleLinkedList(object):
             pre.next = node
 
     def remove(self, item):
+        if self.is_empty():
+            return
+
         cur = self.__head
         pre = None
 
-        while cur is not None:
+        while cur.next is not self.__head:
             if cur.elem == item:
                 # 判断是不是头节点
                 if cur == self.__head:
+                    rear = self.__head
+                    while rear.next is not self.__head:
+                        rear = rear.next
                     self.__head = cur.next
+                    rear.next = self.__head
+
                 else:
                     pre.next = cur.next
-                break
+                return
             else:
                 pre = cur
                 cur = cur.next
 
+        if cur.elem == item:
+            if cur is self.__head:
+                # 链表只有一个节点
+                self.__head = None
+            else:
+                pre.next = cur.next
+
     def search(self, item):
+
+        if self.is_empty():
+            return False
+
         cur = self.__head
-        while cur is not None:
+        while cur.next is not self.__head:
             if cur.elem == item:
                 return True
             else:
                 cur = cur.next
+        # 此时的cur指向最后一个元素
+        if cur.elem == item:
+            return True
+
         return False
 
 
