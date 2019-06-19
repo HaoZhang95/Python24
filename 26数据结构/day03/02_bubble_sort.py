@@ -18,5 +18,11 @@ def bubble_sort(alist):
             [1,2,3,9,8]第三次循环的时候发现count没变，直接return
         """
         if 0 == count:
+            """
+                break, continue, return的区别主要表现在终止循环的层数上面
+                break终止的是当前循环层，因为这里正好处于最外层的for j循环中，所以下面的return可以被break替换
+                return终止所有循环层，表示此函数终止
+                continue跳过本次循环
+            """
             return
 
