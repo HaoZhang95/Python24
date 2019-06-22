@@ -24,7 +24,7 @@
 > 讲义文档，百度云下载
 
 前往百度云(提取码：nhja)，点击[这里](https://pan.baidu.com/s/1stzmPEMGMo3W1g_CnlZ_bA)
-
+下载后的讲义解压密码：BJ黑马python培训第24期
 
 <h2 id="catalog">目录</h2>
 
