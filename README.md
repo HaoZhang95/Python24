@@ -17,7 +17,7 @@
 
 具体更详细的Python学习路线图可以在[此处](http://bbs.itheima.com/forum.php?mod=viewthread&tid=414606&page=1)中查看
 
-> 讲义文档，在线阅读
+> 讲义文档，在线阅读，点击即可
 
 [![讲义文档](https://i.imgur.com/pE1FRnd.png)](https://haozhang95.github.io/Python24/)
 
