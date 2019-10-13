@@ -8,14 +8,14 @@
 	
 |Author|白发老书生|
 |---|---
-|E-mail|Github联系
-> 最近更新至第26章节（共30章节）：2019-10-12
+|E-mail|china.hao.zhang@gmail.com
+> 最近更新至第26章节（共30章节）：2019-10-13
 
 ****
-### 重要更新(开放下载链接) 2019-10-12
+### 重要更新(开放下载链接) 2019-10-13
 > MP4无加密的视频整套教程下载(前往百度云(提取码：pgnt)，点击[这里](https://pan.baidu.com/s/1qmw-zf2cbKaweEsDsdh7DA))
 ****
-> 整套讲义下载 (前往百度云(提取码：9mvs)，点击[这里](https://pan.baidu.com/s/1nm5awtmSWpP13UKQi5EYfA)), 下载后的讲义解压密码：BJ黑马python培训第24期
+> 整套讲义下载 (点击[这里](https://pan.baidu.com/s/119sM1H4v49ktD4p07ljk2w))
 
 **链接设置为永久有效，如果百度云链接失效，请在issue联系我，我会及时回复。**
 ****
