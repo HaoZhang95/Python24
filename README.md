@@ -8,7 +8,7 @@
 	
 |Author|白发老书生|
 |---|---
-|E-mail|china.hao.zhang@gmail.com
+|E-mail|请提交issue方便其他人查看
 > 最近更新至第26章节（共30章节）：2019-10-15
 
 ****
