@@ -12,14 +12,14 @@
 > 最近更新至第26章节（共30章节）：2019-11-05
 
 ****
-### 失效链接已更新(开放下载链接) 2019-12-22
+### 失效链接已更新(开放下载链接) 2020-07-11
 
 链接:  提取码: yncn 复制这段内容后打开百度网盘手机App，操作更方便哦
 > MP4无加密的视频整套教程下载(前往百度云(提取码：txpm)，点击[这里](https://pan.baidu.com/s/1UOJF0pgnoL-JNf0AI8nTuA))
 ****
 > 第一套讲义下载 (前往百度云(提取码：uaxk)，点击[这里](https://pan.baidu.com/s/1dZxU6ueqvvsjJEnBeuA5wA))
 ****
-> 第二套讲义下载，前往百度云(提取码：vhet)，点击[这里](https://pan.baidu.com/s/1A1FR4Admt_D3p1fsI-5VoQ)
+> 第二套讲义下载，前往百度云(提取码：cqyn)，点击[这里](https://pan.baidu.com/s/1MJKHg-mFIhiee2QuaS557A)
 下载后的讲义解压密码：BJ黑马python培训第24期
 ****
 
@@ -37,7 +37,7 @@
 
 > 讲义文档，百度云下载
 
-前往百度云(提取码：gkns)，点击[这里](https://pan.baidu.com/s/1eiVW2goBkSsp_5snqikaVQ)
+前往百度云(提取码：cqyn)，点击[这里](https://pan.baidu.com/s/1MJKHg-mFIhiee2QuaS557A)
 下载后的讲义解压密码：BJ黑马python培训第24期
 
 <h2 id="catalog">目录</h2>
