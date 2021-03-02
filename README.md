@@ -9,13 +9,13 @@
 |Author|白发老书生|
 |---|---
 |E-mail|请提交issue方便其他人查看
-> 最近更新至第26章节（共30章节）：2021-01-12
+> 最近更新至第26章节（共30章节）：2021-03-01
 
 ****
-### 失效链接已更新(开放下载链接) 2021-01-012
+### 失效链接已更新(开放下载链接) 2021-03-01
 
 链接:  提取码: vgng 复制这段内容后打开百度网盘手机App，操作更方便哦
-> MP4无加密的视频整套教程下载(前往百度云(提取码：vgng)，点击[这里](https://pan.baidu.com/s/1oEBUDXaSgvPLicce4koqXQ))
+> MP4无加密的视频整套教程下载(前往百度云(提取码：sakw)，点击[这里](https://pan.baidu.com/s/1rVsNaNf0gv3EO3IiU_-EMA))
 ****
 > 第一套讲义下载 (前往百度云(提取码：uaxk)，点击[这里](https://pan.baidu.com/s/1dZxU6ueqvvsjJEnBeuA5wA))
 ****
