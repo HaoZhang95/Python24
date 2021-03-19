@@ -34,7 +34,7 @@ lxml==4.3.3
 mccabe==0.6.1
 mysql-connector-python==8.0.14
 parsel==1.5.1
-Pillow==6.0.0
+Pillow==8.1.1
 pyasn1==0.4.5
 pyasn1-modules==0.2.5
 pycodestyle==2.5.0
