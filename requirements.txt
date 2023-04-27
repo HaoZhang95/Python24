@@ -13,7 +13,7 @@ colorama==0.4.1
 constantly==15.1.0
 cryptography==2.6.1
 cssselect==1.0.3
-Django==2.1.7
+Django==2.2.24
 django-redis==4.10.0
 djangorestframework==3.9.2
 djangorestframework-stubs==0.4.2
