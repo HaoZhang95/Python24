@@ -74,5 +74,10 @@
 - [ ] [27数据挖掘](/27数据挖掘/README.md)
 
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/luckyzhz/Software-Designer.svg)](https://starchart.cc/luckyzhz/Software-Designer)
+
+
 ## 备注
 学习还在进行中，章节还在更新中，本仓库中的所有内容均来自于网络，仅学习目的，如有侵权，请及时联系撤销发布。
