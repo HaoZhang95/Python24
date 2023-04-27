@@ -15,7 +15,7 @@ cryptography==2.6.1
 cssselect==1.0.3
 Django==2.1.7
 django-redis==4.10.0
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 djangorestframework-stubs==0.4.2
 dnspython==1.15.0
 dnspython3==1.15.0
