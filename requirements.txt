@@ -5,7 +5,7 @@ attrs==19.1.0
 Automat==0.7.0
 autopep8==1.4.3
 billiard==3.6.0.0
-celery==4.3.0
+celery==5.2.2
 certifi==2019.3.9
 cffi==1.11.5
 chardet==3.0.4
