@@ -6,7 +6,7 @@ Automat==0.7.0
 autopep8==1.4.3
 billiard==3.6.0.0
 celery==4.3.0
-certifi==2019.3.9
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 colorama==0.4.1
